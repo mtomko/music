@@ -237,6 +237,29 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | fis2 fis'4
           | \mark \default g4\pp aes,8 aes g g
           | \repeat tremolo 2 c8 \repeat tremolo 2 b8 \repeat tremolo 2 e8 \break
+          | \repeat tremolo 2 d8 \clef treble \repeat tremolo 2 aes'8 \repeat tremolo 2 g8 
+          | \repeat tremolo 2 c8\< \repeat tremolo 2 b \repeat tremolo2 d
+          | c4\mf g'8 g (ees) ees (
+          | c8) c (bes) bes (g) g (
+          | \clef bass ees8) ees (c) c (bes) bes (
+          | g8)\> g (ees) ees d d ( \!
+          | c4) \repeat tremolo 2 des8\downbow\p \repeat tremolo 2 c8\break
+          | \repeat tremolo 2 f8 \repeat tremolo 2 e8 \repeat tremolo 2 aes
+          | \repeat tremolo 2 g8 \repeat tremolo 2 des'8 \repeat tremolo 2 c8
+          | \repeat tremolo 2 f8\< \repeat tremolo 2 e \repeat tremolo 2 g 
+          | f4\tenuto\mf c'8 c (g) g (
+          | bes8) bes (a) a (e) e (
+          | g8)\> g (f) f (b,) b (
+          | des8) des (c) c (f,) f ( \! \break
+          | \mark \default bes4) \repeat tremolo 2 bes,8\p \repeat tremolo 2 d8
+          | \repeat tremolo 2 f8 \repeat tremolo 2 bes8 \repeat tremolo 2 d8
+          | \clef treble \repeat tremolo 2 f8_\markup { \italic "sempre cresc ed accel."} \repeat tremolo 2 bes8 \repeat tremolo 2 c8
+          | \repeat tremolo 2 d8 \repeat tremolo 2 ees8 \repeat tremolo 2 e8
+          | \repeat tremolo 2 f8 \repeat tremolo 2 e8 \repeat tremolo 2 d8
+          | \repeat tremolo 2 cis8 \repeat tremolo 2 d8 \repeat tremolo 2 bes
+          | \repeat tremolo 2 a8 \repeat tremolo 2 g8 \repeat tremolo 2 f8
+          | \clef bass \repeat tremolo 2 e8 \repeat tremolo 2 f8 \repeat tremolo 2 d8 \break
+
         }
       }
     }
