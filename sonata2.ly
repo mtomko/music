@@ -235,7 +235,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | e2.
           | f8\< (c' f4-. c,-.\upbow)
           | fis2 fis'4
-          | \mark \default g4\pp aes,8 aes g g
+          | \mark \default g4^\markup{ \large "Tempo animoso." }\pp aes,8 aes g g
           | \repeat tremolo 2 c8 \repeat tremolo 2 b8 \repeat tremolo 2 e8 \break
           | \repeat tremolo 2 d8 \clef treble \repeat tremolo 2 aes'8 \repeat tremolo 2 g8 
           | \repeat tremolo 2 c8\< \repeat tremolo 2 b \repeat tremolo2 d
@@ -261,7 +261,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | \clef bass \repeat tremolo 2 e8 \repeat tremolo 2 f8 \repeat tremolo 2 d8 \break
           | e4\f a,,8^\markup { \italic "con fierezza" } b cis d
           | e8 d cis d e f
-          | g8 f e f g a
+          | g8\< f e f g a
           | bes8 a gis a b cis
           | \key d \minor d2.\ff^\markup{ \large "Tempo I." }~
           | d4 a (f')
