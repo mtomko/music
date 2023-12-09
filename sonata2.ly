@@ -253,13 +253,26 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | des8) des (c) c (f,) f ( \! \break
           | \mark \default bes4) \repeat tremolo 2 bes,8\p \repeat tremolo 2 d8
           | \repeat tremolo 2 f8 \repeat tremolo 2 bes8 \repeat tremolo 2 d8
-          | \clef treble \repeat tremolo 2 f8_\markup { \italic "sempre cresc ed accel."} \repeat tremolo 2 bes8 \repeat tremolo 2 c8
+          | \clef treble \repeat tremolo 2 f8_\markup { \italic "sempre cresc. ed accel."} \repeat tremolo 2 bes8 \repeat tremolo 2 c8
           | \repeat tremolo 2 d8 \repeat tremolo 2 ees8 \repeat tremolo 2 e8
           | \repeat tremolo 2 f8 \repeat tremolo 2 e8 \repeat tremolo 2 d8
           | \repeat tremolo 2 cis8 \repeat tremolo 2 d8 \repeat tremolo 2 bes
           | \repeat tremolo 2 a8 \repeat tremolo 2 g8 \repeat tremolo 2 f8
           | \clef bass \repeat tremolo 2 e8 \repeat tremolo 2 f8 \repeat tremolo 2 d8 \break
-
+          | e4\f a,,8^\markup { \italic "con fierezza" } b cis d
+          | e8 d cis d e f
+          | g8 f e f g a
+          | bes8 a gis a b cis
+          | \key d \minor d2.\ff^\markup{ \large "Tempo I." }~
+          | d4 a (f')
+          | f4. e8 d cis \break
+          | d4 a (a')
+          | \clef treble a4. g8 f e 
+          | f4 d (d')
+          | d4. (g,8) g (bes)
+          | bes8 (e,) e (g) g (bes,)
+          | \clef bass bes8 (e) e (g,) g (bes)
+          | bes8 (e,) e (f) g-. bes-. \break
         }
       }
     }
