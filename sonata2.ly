@@ -142,7 +142,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | e-. fis-. gis-. a-. b-. c-.
           | b4-. d8-. c-. c-. b-.
           | b4-. d8-. c-. c-. b-.
-          | b4-. b,8 c-. d-. e-. \break
+          | b4-. b,8-. c-. d-. e-. \break
           | f-. gis-. a-. b-. c-. d-.
           | c4-. e8-. d-. d-. c-.
           | d4-. f8-. e-. e-. d-.
