@@ -6,7 +6,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
   title = "SONATA No. 2"
   composer = "Adolf Míšek, Op. 6"
   instrument = "Contrabass"
-  copyright = "Ⓒ Mark Tomko, 2023"
+  copyright = "Engraving Ⓒ Mark Tomko, 2023"
   tagline = #f
 }
 
@@ -231,7 +231,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | d,,2.\f
           | ees8\upbow (bes' ees4-. des,-.\upbow\p)
           | d2.
-          | ees8\upbow_\markup { \italic "cresc. poco a poco"} (bes' ees4-. ees,-.\upbow)
+          | ees8_\markup { \italic "cresc. poco a poco"} (bes' ees4-. ees,-.\upbow)
           | e2.
           | f8\< (c' f4-. c,-.\upbow)
           | fis2 fis'4
