@@ -237,7 +237,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | fis2 fis'4
           | \mark \default g4^\markup{ \large "Tempo animoso." }\pp aes,8 aes g g
           | \repeat tremolo 2 c8 \repeat tremolo 2 b8 \repeat tremolo 2 e8 \break
-          | \repeat tremolo 2 d8 \clef treble \repeat tremolo 2 aes'8 \repeat tremolo 2 g8 
+          | \repeat tremolo 2 d8 \clef treble \repeat tremolo 2 aes'8 \repeat tremolo 2 g8
           | \repeat tremolo 2 c8\< \repeat tremolo 2 b \repeat tremolo2 d
           | c4\mf g'8 g (ees) ees (
           | c8) c (bes) bes (g) g (
@@ -246,7 +246,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | c4) \repeat tremolo 2 des8\downbow\p \repeat tremolo 2 c8\break
           | \repeat tremolo 2 f8 \repeat tremolo 2 e8 \repeat tremolo 2 aes
           | \repeat tremolo 2 g8 \repeat tremolo 2 des'8 \repeat tremolo 2 c8
-          | \repeat tremolo 2 f8\< \repeat tremolo 2 e \repeat tremolo 2 g 
+          | \repeat tremolo 2 f8\< \repeat tremolo 2 e \repeat tremolo 2 g
           | f4\tenuto\mf c'8 c (g) g (
           | bes8) bes (a) a (e) e (
           | g8)\> g (f) f (b,) b (
@@ -267,12 +267,96 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | d4 a (f')
           | f4. e8 d cis \break
           | d4 a (a')
-          | \clef treble a4. g8 f e 
+          | \clef treble a4. g8 f e
           | f4 d (d')
           | d4. (g,8) g (bes)
           | bes8 (e,) e (g) g (bes,)
           | \clef bass bes8 (e) e (g,) g (bes)
           | bes8 (e,) e (f) g-. bes-. \break
+          | a2 f8 d8
+          | bes'2.\accent
+          | b2.\accent
+          | \afterGrace cis2.\sf~\trill\sf{ b16 [cis] }
+          | d2.~\p_\markup { \italic subito }
+          | d4 a (f')
+          | f4. e8 d cis
+          | d4 a (a')
+          | \clef treble a4. g8 f e
+          | f4 d_\markup { \italic sempre} (d') \break
+          | ees4.\p ees8 d cis
+          | d2 d,4
+          | e4. \clef bass b8 cis d
+          | cis4\prall (b_\markup { \italic "poco rit." }) a
+          | f'2.^\markup { \italic "a tempo" }
+          | \afterGrace g2.~\trill {f16 [g] }
+          | a2.~
+          | a4 a, (a')
+          | bis2 bis8 (a)
+          | a8 (g) g (f) f (e) \break
+          | g8 (f) f (e) e (d)
+          | e (d) d (c) c (bes)
+          | \mark \default a4\p bes,8 bes a a
+          | \repeat tremolo 2 d8 \repeat tremolo 2 cis8 \repeat tremolo 2 f8
+          | \repeat tremolo 2 e8 \repeat tremolo 2 bes'8 \repeat tremolo 2 a8
+          | \repeat tremolo 2 d8 \repeat tremolo 2 cis8 \repeat tremolo 2 fis8
+          | \repeat tremolo 2 e8\< \repeat tremolo 2 b'8 \repeat tremolo 2 a8 \break
+          | \repeat tremolo 2 g8\< \repeat tremolo 2 fis8 \repeat tremolo 2 e8
+          | \key d \major d4\ff r r
+          | d,2.\accent\upbow
+          | c2.\accent\<
+          | b2.\accent
+          | ais2.~\fz
+          | ais4 r r
+          | b2.\fff\accent\downbow
+          | e2.\accent
+          | a,2.~\accent
+          | a4 r r
+          | \compressMMRests{ R2.*3 } \clef treble \pageBreak
+          |
+          <<
+            \new CueVoice {
+              \stemUp b''4_"piano" cis d
+            }
+            { R2. }
+          >>
+          |
+          <<
+            \new CueVoice {
+              \stemUp f4 e d
+            }
+            { R2. }
+          >>
+          |
+          <<
+            \new CueVoice {
+              \stemUp cis4 b a
+            }
+            { R2. }
+          >>
+          | \mark \default \set Staff.forceClef = ##t \clef treble r4 a\p_\markup { \italic "tempo tranquillo dolce" } (d)
+          | c2 (b4)
+          | f2 (b4)
+          | a2.
+          | r4 a (d)
+          | c2 (b4)
+          | f4 (d b')
+          | ais2. \break
+          | fis8\pp (eis fis eis fis gis)
+          | ais8 (gisis ais gisis ais cis)
+          | b8 (ais b cis b ais)
+          | gis8 (ais gis fis eis dis)
+          | cis8 (bis cis bis cis bis
+          | cis8) bis' (cis bis cis bis \break
+          | cis8) eis (fis gis ais b)
+          | cis2.
+          | \mark \default r4\p_\markup { \italic dolicss.} cis, (fis)
+          | e2 (d4)
+          | a2 (d4)
+          | cis2.
+          | r4 cis (fis)
+          | eis2 (dis4)
+          | ais (f dis')
+          | cisis2.\break
         }
       }
     }
