@@ -404,7 +404,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | a4 a,8\p b cis d
           | e8 fis g_\markup { \italic cresc } a b cis
           | d8 d,8 e\< f g a \break
-          | bes8 c d e f g 
+          | bes8 c d e f g
           | \mark \default a4\f_\markup { \italic "tempo stretto"} \clef treble f (d')
           | d2.~
           | d2.
