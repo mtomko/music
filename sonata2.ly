@@ -397,6 +397,33 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | d4 r d'
           | d,4 e'^arco (f)
           | g4 (a bis) \break
+          | a4 d,,\mf (d')
+          | cis4 cis,4 (cis'4)
+          | c4 c,_\markup { \italic cresc } (c')
+          | b4 b, (b')
+          | a4 a,8\p b cis d
+          | e8 fis g_\markup { \italic cresc } a b cis
+          | d8 d,8 e\< f g a \break
+          | bes8 c d e f g 
+          | \mark \default a4\f_\markup { \italic "tempo stretto"} \clef treble f (d')
+          | d2.~
+          | d2.
+          | d2.\accent
+          | cis4 a\ff (a')
+          | a2.~
+          | a2.
+          | \afterGrace cis,~\fz { b16 [cis] }
+          | d4\fff_\markup { \italic "marcatissimo" } f8\marcato e\marcato e\marcato d\marcato \break
+          | d8\marcato_\markup { \italic "e furioso" } bes\marcato bes\marcato a\marcato a\marcato f\marcato
+          | \clef bass f8\marcato e\marcato e\marcato d\marcato d\marcato bes\marcato
+          | bes8\marcato a\marcato a\marcato f\marcato f\marcato e\marcato
+          | d4\marcato r r
+          | R2.^\markup { \large \bold "G. P."}
+          | <<d2.\fz_\markup { \italic "pesante" } d'\accent>>
+          | <<d,2.\fz d'\accent>>
+          | <<d,2.\ff~ d'\accent~>>
+          | <<d,2.~ d'\accent~>>
+          | <<d,4 d'\accent>> r r \fine
         }
       }
     }
