@@ -349,7 +349,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | cis8) bis' (cis bis cis bis \break
           | cis8) eis (fis gis ais b)
           | cis2.
-          | \mark \default r4\p_\markup { \italic dolicss.} cis, (fis)
+          | \mark \default r4\p_\markup { \italic dolicss. } cis, (fis)
           | e2 (d4)
           | a2 (d4)
           | cis2.
@@ -357,6 +357,46 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | eis2 (dis4)
           | ais (f dis')
           | cisis2.\break
+          | \clef bass bes,8\pp (a bes a bes c)
+          | d8 (dis d cis d c)
+          | bis8 (a bis c d f)
+          | d8 (cis d e fis a)
+          | ees8 (d ees f g c)
+          | c,8 (b c d ees e) \break
+          | f2.\>
+          | f,2.\!
+          | r4^pizz << f f,\pp >> r
+          | r4 << f' f, >> r
+          | r4 << f' f, >> r
+          | r4 << f' f, >> r
+          | bes'2.~^\markup { \italic arco }
+          | bes2.\>
+          | a,2.^\markup {\italic "poco rit."} (
+          | a'2.)\!
+          | \key d \minor \mark \default d4-.\p_\markup { \italic "a tempo" } f8-. e-. e-. d-.\break
+          | d4-. f8-. e-. e-. d-.
+          | d4-. d,8-. e-. f-. g-.
+          | a-. b-. cis-. d-. e-. f-.
+          | e4-. g8-. f-. f-. e-.
+          | e4-. g8-. f-. f-. e-.
+          | e4-. e,8-. f-. g-. a-.
+          | bes8-. cis-. d-. e-. f-. g-.\break
+          | \clef treble f4-._\markup { \italic "cresc. poco a poco " } a8-. g-. g-. f-.
+          | g4-. bis8-. a-. a-. g-.
+          | a4-. c8-. bis-. bis-. a-.
+          | b4-. d8-. c-. c-. b-.
+          | cis4-. a8-. g-. f-. e-.
+          | \clef bass d8-. c-. bes-. a-. g-. fis-.
+          | g8\< (bis) d-. g-. bis-. d-.\! \break
+          | a4\tenuto gis,,8-.\> a-. b-. cis-.
+          | d4\p r d'^pizz
+          | d,4 r d'
+          | d,4 d'^arco (e)
+          | f4 (g a)
+          | d,4^pizz_\markup { \italic "cresc. sempre" } r d,
+          | d4 r d'
+          | d,4 e'^arco (f)
+          | g4 (a bis) \break
         }
       }
     }
