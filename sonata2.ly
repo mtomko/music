@@ -4,7 +4,8 @@ menoF = \markup { \tiny \italic meno \dynamic f }
 
 \header {
   title = "SONATA No. 2"
-  composer = "Adolf Míšek, Op. 6"
+  composer = "Adolf Míšek"
+  opus = "Op. 6"
   instrument = "Contrabass"
   copyright = "Engraving Ⓒ Mark Tomko, 2023"
   tagline = #f
@@ -16,14 +17,17 @@ menoF = \markup { \tiny \italic meno \dynamic f }
 
 \book {
   \score {
+    \header {
+      piece = "I."
+    }
     \new Staff {
       \new Voice {
         \relative {
-          \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
+          \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
           \clef bass
           \time 3/4
           \key d \minor
-          \tempo "Con fuoco"
+          \tempo "Con fuoco."
 
           | d'2.~ \f\>
           | d4 a4_\menoF\! (f'4)
@@ -75,22 +79,22 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | \compressMMRests{ R2.*4 }
           |
           <<
+            { R2. } \\
             \new CueVoice {
               \cueClef "treble" \stemUp d'4_"piano" e f
             }
-            { R2. }
           >>
           | <<
+            { R2. } \\
             \new CueVoice {
               \stemUp a4 g f
             }
-            { R2. }
           >>
           | <<
+            { R2. } \\
             \new CueVoice {
               \stemUp e4 d c \cueClefUnset
-            }
-            { R2. }
+            } 
           >> \break
           | \mark \default r4^\markup { \italic arco } c4\p_\markup{ \tiny \italic "tempo tranquillo dolce espress."  }-\upbow (f)
           | e2 (d4)
@@ -184,24 +188,24 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | \compressMMRests{ R2.*4 }
           |
           <<
+            { R2. } \\
             \new CueVoice {
               \cueClef "treble" \stemUp g2._"piano"
-            }
-            { R2. }
+            } 
           >>
           |
           <<
+            { R2. } \\
             \new CueVoice {
               \stemUp f2.
             }
-            { R2. }
           >>
           |
           <<
+            { R2. } \\
             \new CueVoice {
               \stemUp bes2. \cueClefUnset
             }
-            { R2. }
           >>
           | \mark \default \key ees \major ees,,8\> (g bes ees \clef treble g bes
           | ees4) ees,8\p (g ees g)
@@ -316,21 +320,21 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           <<
             \new CueVoice {
               \stemUp b''4_"piano" cis d
-            }
+            } \\
             { R2. }
           >>
           |
           <<
             \new CueVoice {
               \stemUp f4 e d
-            }
+            } \\
             { R2. }
           >>
           |
           <<
             \new CueVoice {
               \stemUp cis4 b a
-            }
+            } \\
             { R2. }
           >>
           | \mark \default \set Staff.forceClef = ##t \clef treble r4 a\p_\markup { \italic "tempo tranquillo dolce" } (d)
@@ -428,6 +432,49 @@ menoF = \markup { \tiny \italic meno \dynamic f }
       }
     }
   }
+
+  \score {
+    \header {
+      piece = "II."
+    }
+    \new Staff {
+      \new Voice {
+        \relative {
+          \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
+          \clef bass
+          \time 2/4
+          \key bes \major
+          \tempo "Andante Cantabile"
+          | \compressMMRests{ R2*12 }
+          | <<
+            \new CueVoice {
+              \cueClef "treble" \stemUp f'8^"piano" g a bes
+            } \\
+            {  R2 }
+          >>
+          | <<
+            \new CueVoice {
+              \stemUp c8 e4 d8
+            } \\
+            { R2 }
+          >>
+          | <<
+            \new CueVoice {
+              \stemUp c8 bes a g
+            } \\
+            { R2 }
+          >>
+          | <<
+            { g8\rest \cueClefUnset f,\p f' (ees) }
+            \new CueVoice {
+              \stemUp c'4 s
+            }
+          >>
+        }
+      }
+    }
+  }
+
 }
 
 
