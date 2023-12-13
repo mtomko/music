@@ -94,7 +94,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             { R2. } \\
             \new CueVoice {
               \stemUp e4 d c \cueClefUnset
-            } 
+            }
           >> \break
           | \mark \default r4^\markup { \italic arco } c4\p_\markup{ \tiny \italic "tempo tranquillo dolce espress."  }-\upbow (f)
           | e2 (d4)
@@ -191,7 +191,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             { R2. } \\
             \new CueVoice {
               \cueClef "treble" \stemUp g2._"piano"
-            } 
+            }
           >>
           |
           <<
@@ -470,6 +470,70 @@ menoF = \markup { \tiny \italic meno \dynamic f }
               \stemUp c'4 s
             }
           >>
+          | d,4^\markup { \italic "a tempo" } bes8. (c16)
+          | \clef treble d2~
+          | \tuplet 3/2 { d8 g (a } \tuplet 3/2 { bes a g) } \break
+          | a4 d,
+          | ees4 c8. (d16)
+          | ees8 (g c) bes\tenuto
+          | a8 (g) f\tenuto ees\tenuto
+          | d4 cis~
+          | cis8 cis_\markup { \italic cresc. } d e
+          | f8 e d4~
+          | d8\< e (f g)
+          | aes8 g f4~ \break
+          | f8 e\pp (f g)
+          | aes8 g f4~
+          | f8\< g (a bes)
+          | c4.\!_\markup {\italic rit.} c8
+          | \mark \default c2~\mf_\markup {\italic "a tempo" }
+          | c8 c (e d)
+          | d4 (c8) c
+          | c8 (d32 c b c) g'8 (c,) \break
+          | c8 (a f8. d16)
+          | c2\>
+          | \clef bass c8\p (aes f8. des16)
+          | c8 (des fes4)
+          | ees8\mf (aes c f)
+          | e4. e8\tenuto\downbow
+          | \clef treble ees8 (f) g\tenuto aes\tenuto
+          | bes8 bes8 (ees des)
+          | ces4.\pp (aes8) \break
+          | aes4_\markup { \italic "poco a poco cresc. ed affrettando" } ges
+          | ees'4. (ces8)
+          | ces4 bes
+          | \tuplet 3/2 { ges8 ges ges~ } \tuplet 3/2 { ges8 aes aes~ }
+          | \tuplet 3/2 { aes8\< bes bes~ } \tuplet 3/2 { bes8 c-. (c-.) }
+          | d4\ff_\markup { \italic pesante } bes8. (c16)
+          | d8\tenuto d\tenuto g\tenuto f\tenuto
+          | f8 (ees) d\tenuto c\tenuto \break
+          | bes8 ges ees (bes')
+          | \mark \default bes2_\menoF
+          | b8 (d) g4~
+          | g2_\markup {\italic "dim." }
+          | f4 ees8. (d16)
+          | d8\mf (c bes8. f16)
+          | \clef bass g4. d8\upbow
+          | f4_\markup{ \italic "dim." } (ees)
+          | d4 (c~
+          | c4\p) bes
+          | f2~
+          | f8 f (c^\markup { \italic \large "Sul D" } bes)
+          | f'2~
+          | f8 f (c' bes)
+          | g8\> (f d c)
+          | bes2~\pp
+          | bes2~
+          | bes2~
+          | bes8 bes'4\accent^\markup { \italic \large "Sul A" }_\markup{ \italic espress. } (bes,8)
+          | bes2~\pp
+          | bes2~
+          | bes2~
+          | bes8 bes''4\accent (bes,8) \break
+          | \time 12/8 \key c \minor c4._\markup { \italic "con affeto" }^\markup { \large Animato. }\mf ees4 (ees8-.) g4.~ g8 r8 ees8
+          | c4 (d8) ees4 (f8) g4.~ g8 r bes,
+          | c4\< (d8) ees\tenuto f\tenuto g\tenuto aes4.\! g4.
+          | f4. c4\> (ees8) ees4 (d8) c4 (bes8)\! \break
         }
       }
     }
