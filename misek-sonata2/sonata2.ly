@@ -152,7 +152,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | d4-. f8-. e-. e-. d-.
           | \clef treble e4-. g8-. f-. f-. e-.
           | fis4-. a8-. g-. g-. f-.
-          | g4 g'8 (fis) fis (eis)
+          | g4 g'8 (fis) fis (e)
           | e8 (d) d (c) c (b) \break
           | a4 c8 (b) b (a)
           | a8\< (g) g (f) f (e)
