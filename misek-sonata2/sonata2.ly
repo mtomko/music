@@ -534,6 +534,11 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | c4 (d8) ees4 (f8) g4.~ g8 r bes,
           | c4\< (d8) ees\tenuto f\tenuto g\tenuto aes4.\! g4.
           | f4. c4\> (ees8) ees4 (d8) c4 (bes8)\! \break
+          | c4. ees4~ ees8-. g4.~ g8 r e
+          | c4~ c8-. ees8 d ees g4. g8 r bes,
+          | c4\< (d8) ees f g \clef treble bes4. a4.\!
+          | g4. c,4\> (ees8) ees4. d4.\!
+          | d4. g8\< a bes d4. c4.\!
         }
       }
     }
