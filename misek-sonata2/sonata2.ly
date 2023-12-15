@@ -51,7 +51,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | f4 \clef treble d4\< (d'4)
           | ees4.\ff ees8 d8 cis8
           | d2 d,4
-          | e4._\markup {\italic dim. } \clef bass b8 c8 d8
+          | e4._\markup {\italic dim. } \clef bass b8 cis8 d8
           | cis4^\markup{ \italic \tiny "poco rit." }\prall\> (b4) a4 \break
           | \mark \default f'2.\mf^\markup { \italic "a tempo" }
           | \afterGrace g2.~\trill { f16 [g] }
