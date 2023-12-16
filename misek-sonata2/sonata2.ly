@@ -280,7 +280,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | bes'2.\accent
           | b2.\accent
           | \afterGrace cis2.\sf~\trill\sf{ b16 [cis] }
-          | d2.~\p_\markup { \italic subito }
+          | \mark \default d2.~\p_\markup { \italic subito }
           | d4 a (f')
           | f4. e8 d cis
           | d4 a (a')
@@ -392,7 +392,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | \clef bass d8-. c-. bes-. a-. g-. fis-.
           | g8\< (bis) d-. g-. bis-. d-.\! \break
           | a4\tenuto gis,,8-.\> a-. b-. cis-.
-          | d4\p r d'^pizz
+          | \mark \default d4\p r d'^pizz
           | d,4 r d'
           | d,4 d'^arco (e)
           | f4 (g a)
@@ -485,7 +485,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | aes8 g f4~
           | f8\< g (a bes)
           | c4.\!_\markup {\italic rit.} c8
-          | \mark \default c2~\mf_\markup {\italic "a tempo" }
+          | \mark #19 c2~\mf_\markup {\italic "a tempo" }
           | c8 c (e d)
           | d4 (c8) c
           | c8 (d32 c b c) g'8 (c,) \break
@@ -497,7 +497,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | e4. e8\tenuto\downbow
           | \clef treble ees8 (f) g\tenuto aes\tenuto
           | bes8 bes8 (ees des)
-          | ces4.\pp (aes8) \break
+          | \mark \default ces4.\pp (aes8) \break
           | aes4_\markup { \italic "poco a poco cresc. ed affrettando" } ges
           | ees'4. (ces8)
           | ces4 bes
@@ -521,7 +521,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | f'2~
           | f8 f (c' bes)
           | g8\> (f d c)
-          | bes2~\pp
+          | \mark \default bes2~\pp
           | bes2~
           | bes2~
           | bes8 bes'4\accent^\markup { \italic \large "Sul A" }_\markup{ \italic espress. } (bes,8)
@@ -538,8 +538,8 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | c4\< (d8) ees f g \clef treble bes4. a4.\!
           | g4. c,4\> (ees8) ees4. d4.\!
           | d4. g8\< a bes d4. c4.\! \break
-          | c4 (bes8-.) d (a g) g4\> c,8 (ees4) a,8-.
-          | \clef bass bes4. r4\! r8 r2.
+          | c4 (bes8-.) d (a g) g4\> \clef bass c,8 \((ees4) a,8-.\)
+          | \mark \default bes4. r4\! r8 r2.
           | \compressMMRests{ R1.*3 }
           | <<
             \new CueVoice {
@@ -555,6 +555,9 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           >> \pageBreak
           | \key bes \minor r4 r8 r4 aes,8\mf bes4. des4~ des8-.
           | f4.~ f8 r8 des8 bes4 (c8) des4 (f8)
+          | \clef treble ges4. f4. ees4\< (f8) ges8 aes bes
+          | c4.\> bes4. \clef bass aes,4\< (bes8) c des ees \break
+          | \mark \default aes,8_\markup { \italic Sul D }\p (bes aes) aes-. aes-. aes-. aes (bes aes) aes-. aes-. aes-.
         }
       }
     }
