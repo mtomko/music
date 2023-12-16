@@ -3,9 +3,8 @@
 menoF = \markup { \tiny \italic meno \dynamic f }
 
 \header {
-  title = "SONATA No. 2"
+  title = "SONATA No. 2, Op. 6"
   composer = "Adolf Míšek"
-  opus = "Op. 6"
   instrument = "Contrabass"
   copyright = "Engraving Ⓒ Mark Tomko, 2023"
   tagline = #f
@@ -538,12 +537,27 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | c4~ c8-. ees8 d ees g4. g8 r bes,
           | c4\< (d8) ees f g \clef treble bes4. a4.\!
           | g4. c,4\> (ees8) ees4. d4.\!
-          | d4. g8\< a bes d4. c4.\!
+          | d4. g8\< a bes d4. c4.\! \break
+          | c4 (bes8-.) d (a g) g4\> c,8 (ees4) a,8-.
+          | \clef bass bes4. r4\! r8 r2.
+          | \compressMMRests{ R1.*3 }
+          | <<
+            \new CueVoice {
+              \cueClef "treble" \stemUp des'4^"piano" ees8 f ges aes bes4. aes4.
+            } \\
+            { R1. }
+          >>
+          | <<
+            \new CueVoice {
+              \stemUp aes4 bes,8 f'4 ees8 des4 ces8 bes4 aes8 \cueClefUnset
+            } \\
+            { R1.} 
+          >> \pageBreak
+          | \key bes \minor r4 r8 r4 aes,8\mf bes4. des4~ des8-.
+          | f4.~ f8 r8 des8 bes4 (c8) des4 (f8)
         }
       }
     }
   }
 
 }
-
-
