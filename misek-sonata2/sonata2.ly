@@ -232,11 +232,11 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | ces4. bes8 \> aes g \!
           | aes4 \< fes (ces') \pageBreak
           | d,,2.\f
-          | ees8\upbow (bes' ees4-. des,-.\upbow\p)
+          | ees8\upbow \((bes' ees4-.) des,-.\upbow\p\)
           | d2.
-          | ees8_\markup { \italic "cresc. poco a poco"} (bes' ees4-. ees,-.\upbow)
+          | ees8\upbow_\markup { \italic "cresc. poco a poco"} (bes' ees4-.) ees,-.\upbow
           | e2.
-          | f8\< (c' f4-. c,-.\upbow)
+          | f8\< (c' f4-.) c,-.\upbow
           | fis2 fis'4
           | \mark \default g4^\markup{ \large "Tempo animoso." }\pp aes,8 aes g g
           | \repeat tremolo 2 c8 \repeat tremolo 2 b8 \repeat tremolo 2 e8 \break
@@ -551,13 +551,18 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             \new CueVoice {
               \stemUp aes4 bes,8 f'4 ees8 des4 ces8 bes4 aes8 \cueClefUnset
             } \\
-            { R1.} 
+            { R1.}
           >> \pageBreak
           | \key bes \minor r4 r8 r4 aes,8\mf bes4. des4~ des8-.
           | f4.~ f8 r8 des8 bes4 (c8) des4 (f8)
           | \clef treble ges4. f4. ees4\< (f8) ges8 aes bes
           | c4.\> bes4. \clef bass aes,4\< (bes8) c des ees \break
           | \mark \default aes,8_\markup { \italic Sul D }\p (bes aes) aes-. aes-. aes-. aes (bes aes) aes-. aes-. aes-.
+          | aes8 g aes aes g\< aes aes4 (bes8-.) ces4 (des8-.) \key d \major a8\pp (b a) a-. a-. a-. a (b a) a-. a-. a-. \break
+          | a8-.\< gis-. a-. a-. gis-. a-. d4 (e8) fis g a
+          | b4._\markup{ \italic molto animato}\f a4 (g8-.) fis4 (e8-.) dis4 (e8-.)
+          | \tuplet 4/6 { a8\tenuto\> [g\tenuto fis\tenuto e\tenuto] } \tuplet 4/6 { e\tenuto [d\tenuto cis\tenuto b\tenuto] }
+          | \mark \default a4.\p b4 (d8) fis4. e4 (d8)
         }
       }
     }
