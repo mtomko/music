@@ -146,7 +146,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | b4-. d8-. c-. c-. b-.
           | b4-. d8-. c-. c-. b-.
           | b4-. b,8-. c-. d-. e-. \break
-          | f-. gis-. a-. b-. c-. d-.
+          | f!-. gis-. a-. b-. c-. d-.
           | c4-. e8-. d-. d-. c-.
           | d4-. f8-. e-. e-. d-.
           | \clef treble e4-. g8-. f-. f-. e-.
@@ -203,7 +203,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           <<
             { R2. } \\
             \new CueVoice {
-              \stemUp bes2. \cueClefUnset
+              \stemDown bes2. \cueClefUnset
             }
           >>
           | \mark \default \key ees \major ees,,8\> (g bes ees \clef treble g bes
@@ -560,9 +560,36 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | \mark \default aes,8_\markup { \italic Sul D }\p (bes aes) aes-. aes-. aes-. aes (bes aes) aes-. aes-. aes-.
           | aes8 g aes aes g\< aes aes4 (bes8-.) ces4 (des8-.) \key d \major a8\pp (b a) a-. a-. a-. a (b a) a-. a-. a-. \break
           | a8-.\< gis-. a-. a-. gis-. a-. d4 (e8) fis g a
-          | b4._\markup{ \italic molto animato}\f a4 (g8-.) fis4 (e8-.) dis4 (e8-.)
+          | b4._\markup{ \italic "molto animato" }\f a4 (g8-.) fis4 (e8-.) dis4 (e8-.)
           | \tuplet 4/6 { a8\tenuto\> [g\tenuto fis\tenuto e\tenuto] } \tuplet 4/6 { e\tenuto [d\tenuto cis\tenuto b\tenuto] }
-          | \mark \default a4.\p b4 (d8) fis4. e4 (d8)
+          | \mark \default a4.\p b4 (d8) fis4. e4 (d8) \break
+          | \clef treble cis8\< d e fis g a b4. a4~ a8-.
+          | a4.\!_\markup { \italic "cresc molto" } b4 (d8) f4.\accent e4 (d8)
+          | fis!4.\ff\accent \tuplet 2/3 { e8\<\tenuto d\tenuto } \tuplet 4/6 { cis8\tenuto [b\tenuto a\tenuto_\markup { \italic rit. } g\tenuto] }
+          | \tuplet 4/6 { f8\fz d'4\accent (a8) } f4.~ (f4 e8)\break
+          | \clef bass d1._\markup { \italic meno \dynamic f \italic "e dim." }~
+          | d1.
+          | d,1.~\>^\markup{ \italic "tempo meno" }
+          | d1.~
+          | d4\! a'8_\markup { \italic rall. }^\markup { \italic "Sul D" } (d4) f8 (a4) \clef treble d8_\markup { \italic Flag. } (fis4) a8 (
+          | \mark \default \key g \minor d2.)~_\markup { \italic "molto tranquillo" } d4. r4 r8
+          | r4 r8 \clef bass d,,4.\upbow\p\< fis4. (g4. \break
+          | g4.)\> r4\! r8 r4 c,8\downbow\< ees4 (g8)
+          | bes2.\fz~ bes4 ees,8 (f4 ges8)
+          | ges2.~ ges4 c,8 (d4 e8)
+          | f4. (ges2.)\fz ees4.
+          | f4.~ (f4_\markup { \italic rit. } g!8-.) ees4.~ (ees4 f8-.)\break
+          | \time 2/4 d4\p^\markup { \large "Tempo I." } bes8. (c16)
+          | d2~
+          | \tuplet 3/2 { d8 (g a} \tuplet 3/2 { bes8 a g)}
+          | a4 d,~
+          | d8 c4\< (ees8)
+          | fis8 (g) c\tenuto bes\tenuto
+          | a8\>\tenuto g\tenuto f\tenuto ees\tenuto
+          | d4\! cis~
+          | cis8\< cis (d e)
+          | f8\>\tenuto e\tenuto d4~ \break
+          | d8\< e (f g)\!
         }
       }
     }
