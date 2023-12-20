@@ -589,7 +589,47 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | d4\! cis~
           | cis8\< cis (d e)
           | f8\>\tenuto e\tenuto d4~ \break
-          | d8\< e (f g)\!
+          | d8\< e (f g)
+          | aes8\tenuto\> g\tenuto f4~
+          | f8\< g (a bes)\!
+          | \clef treble c8 e4 d8
+          | c8_\markup { \italic rall. }\downbow (bes) a\upbow (g)
+          | c4\> f,8 (ees)
+          | \mark \default d4\p^\markup { \italic "a tempo" } bes8. (c16)
+          | d2~
+          | \tuplet 3/2 { d8 [g a]} \tuplet 3/2 { bes8 a g }\break
+          | a4 d,
+          | g4\mf ees8. (f16)
+          | g2~
+          | \tuplet 3/2 { g8\< c d } \tuplet 3/2 { ees\> d c\! }
+          | b8 (d g,) g
+          | \mark \default g'2\f~
+          | g8 g8 (f bes,)
+          | ees2\p~
+          | ees8 ees (des ges,)
+          | ces8_\markup { \italic "cresc. poco" } bes aes ges \break
+          | f4._\markup { \italic "a poco" } f8
+          | ges4 des8 (ees)
+          | e8\< (bes'4) bes8\tenuto
+          | \mark \default bes2\ff
+          | b8 (d) g4~
+          | g2
+          | f4 ees8. (d16)
+          | d8 (c_\markup { \italic meno \dynamic f } bes8. f16)
+          | \clef bass g4. (d8)
+          | f4\> (ees)
+          | d4 (c4~\! \break
+          | c4\p) bes
+          | f2~
+          | f8 f (c ees)
+          | f2~
+          | f8_\markup { \italic "morendo ma espressivo" } f' (c' bes)
+          | cis,8 (d g f)
+          | a,8 (bes ees d)
+          | bes8_\markup { \italic rit. } g f d
+          | bes2
+          | <bes' d, bes>4\>^\markup { pizz. }\arpeggio r4
+          | <bes d, bes>4\arpeggio\! r4\fermata \fine
         }
       }
     }
