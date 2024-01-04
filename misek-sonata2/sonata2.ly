@@ -650,22 +650,22 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           \repeat volta 2 {
             g'8\accent\f (fis g4) g,8\accent (fis
             | g4) bes8\accent (a bis4)
-            | d8\accent (cis d4) fis\staccato
-            | g\staccato a\staccato bis\staccato
+            | d8\accent (cis d4) fis-.
+            | g-. a-. bis-.
             | a8\accent (gis a4) d,8\accent (cis
             | d4) e8\accent (d e4)
-            | fis8\accent (e fis4) a\staccato
-            | \clef treble c4\staccato d\staccato e\staccato \break
-            | d8\accent (eis d4) c4\staccato
-            | bes4\staccato a\staccato g\staccato
-            | a8\accent (bes a4) g\staccato
-            | fis4\staccato ees\staccato d\staccato 
-            | g8\accent (a g4) f\staccato
-            | ees8\accent (f ees4) d\staccato
-            | c4\staccato d\staccato ees\staccato
+            | fis8\accent (e fis4) a-.
+            | \clef treble c4-. d-. e-. \break
+            | d8\accent (eis d4) c4-.
+            | bes4-. a-. g-.
+            | a8\accent (bes a4) g-.
+            | fis4-. ees-. d-. 
+            | g8\accent (a g4) f-.
+            | ees8\accent (f ees4) d-.
+            | c4-. d-. ees-.
             \alternative {
               \volta 1 { { \afterGrace d2~(\trill{ cis16 [d] }} d'8) r8 }
-              \volta 2 { f,4\staccato bes,\staccato r }
+              \volta 2 { f,4-. bes,-. r }
             } \break \set Staff.explicitClefVisibility = #end-of-line-invisible
 
           }
@@ -674,9 +674,15 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | bes8 (a g f ees d)
           | c8 (bes a g f ees) 
           | d8 fis a d fis, a
-          | d8 fis a, d \clef treble fis a
-          | c4 a8 (g f ees)
-          \break \unset Staff.explicitClefVisibility
+          | d8 fis a, d fis a
+          | c4 \clef bass a8 (g f ees \break \unset Staff.explicitClefVisibility
+          | d8 c bes a g f)
+          | c8-.\f_\markup { \italic sempre } ees-. ees-. aes-. aes-. c-.
+          | c8-. d (ees) g (aes) c-.
+          | b,,8-. d-. d-. g-. g-. b-.
+          | b8-. cis (d) fis (g) b
+          | c,8 (ees) ees (g) g (a)
+          | cis,8 (e) e (g) g (bes) \break
         }
       }
     }
