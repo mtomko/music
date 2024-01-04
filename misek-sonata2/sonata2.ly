@@ -635,4 +635,51 @@ menoF = \markup { \tiny \italic meno \dynamic f }
     }
   }
 
+  \score {
+    \header {
+      piece = "III. Furiant"
+    }
+    \new Staff {
+      \new Voice {
+        \relative {
+          \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
+          \clef bass
+          \time 3/4
+          \key g \minor
+          \tempo "Allegro energico" 2. = 72
+          \repeat volta 2 {
+            g'8\accent\f (fis g4) g,8\accent (fis
+            | g4) bes8\accent (a bis4)
+            | d8\accent (cis d4) fis\staccato
+            | g\staccato a\staccato bis\staccato
+            | a8\accent (gis a4) d,8\accent (cis
+            | d4) e8\accent (d e4)
+            | fis8\accent (e fis4) a\staccato
+            | \clef treble c4\staccato d\staccato e\staccato \break
+            | d8\accent (eis d4) c4\staccato
+            | bes4\staccato a\staccato g\staccato
+            | a8\accent (bes a4) g\staccato
+            | fis4\staccato ees\staccato d\staccato 
+            | g8\accent (a g4) f\staccato
+            | ees8\accent (f ees4) d\staccato
+            | c4\staccato d\staccato ees\staccato
+            \alternative {
+              \volta 1 { { \afterGrace d2~(\trill{ cis16 [d] }} d'8) r8 }
+              \volta 2 { f,4\staccato bes,\staccato r }
+            } \break \set Staff.explicitClefVisibility = #end-of-line-invisible
+
+          }
+          \bar "||" \mark #30 \clef bass bes,8\f^\markup { \italic rubato } d f bes d, f
+          | bes8 d f, bes d f
+          | bes8 (a g f ees d)
+          | c8 (bes a g f ees) 
+          | d8 fis a d fis, a
+          | d8 fis a, d \clef treble fis a
+          | c4 a8 (g f ees)
+          \break \unset Staff.explicitClefVisibility
+        }
+      }
+    }
+  }
+
 }
