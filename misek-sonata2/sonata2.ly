@@ -643,6 +643,11 @@ menoF = \markup { \tiny \italic meno \dynamic f }
       \new Voice {
         \relative {
           \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
+          %{
+          \set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
+                                                         beam-event tuplet-span-event
+                                                         dynamic-event slur-event)
+          %}
           \clef bass
           \time 3/4
           \key g \minor
@@ -659,20 +664,19 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             | d8\accent (eis d4) c4-.
             | bes4-. a-. g-.
             | a8\accent (bes a4) g-.
-            | fis4-. ees-. d-. 
+            | fis4-. ees-. d-.
             | g8\accent (a g4) f-.
             | ees8\accent (f ees4) d-.
             | c4-. d-. ees-.
             \alternative {
-              \volta 1 { { \afterGrace d2~(\trill{ cis16 [d] }} d'8) r8 }
+              \volta 1 { \afterGrace d2~(\trill{ cis16 [d] } d'8) r8 }
               \volta 2 { f,4-. bes,-. r }
             } \break \set Staff.explicitClefVisibility = #end-of-line-invisible
-
           }
           \bar "||" \mark #30 \clef bass bes,8\f^\markup { \italic rubato } d f bes d, f
           | bes8 d f, bes d f
           | bes8 (a g f ees d)
-          | c8 (bes a g f ees) 
+          | c8 (bes a g f ees)
           | d8 fis a d fis, a
           | d8 fis a, d fis a
           | c4 \clef bass a8 (g f ees \break \unset Staff.explicitClefVisibility
@@ -683,6 +687,65 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | b8-. cis (d) fis (g) b
           | c,8 (ees) ees (g) g (a)
           | cis,8 (e) e (g) g (bes) \break
+          | a4 (d,8\<\downbow) d (ees) ees (
+          | d8) d (e) e (fis) fis-.
+          | \mark \default g8\accent_\markup { \dynamic ffz }\! (fis g4) g,8 (fis
+          | g4) bis8\accent (a bis4)
+          | d8\accent (cis d4) fis-.
+          | \clef treble g4-. a-. bes-.
+          | a8\accent (gis a4) d,8\accent (cis
+          | d4) e8\accent (d e4)
+          | fis8\accent (e fis4) a4-. \break
+          | c4-. d-. ees-.
+          | \mark \default d8\accent (ees d4) c-.
+          | bes4-. a-. g-.
+          | g'8\accent (a g4) f-.
+          | ees4-. d-. c-.
+          | bes4-. a-. g-.
+          | \clef bass bes,4-. a-. g-.
+          | d'8\accent (ees d4) fis-.
+          | <<bes,4 d4 g4-.\downbow>> r4 r \break
+          \repeat volta 2 {
+            \key g \major
+            \tempo "Molto tranquillo"
+            \section
+            \sectionLabel "Trio."
+            |<<
+              {R2.}
+              \\
+              \new CueVoice {
+                \cueClef "treble" \stemUp d8e d4 fis
+              }
+            >>
+            | <<
+              {R2.}
+              \\
+              \new CueVoice {
+                g4 a b
+              }
+            >>
+            | d8\p_\markup{ \italic "dolce ed espress." } (e d4 fis
+            | g4 a b)
+            | \clef treble d,2 (c4
+            | b4 a g)
+            | \afterGrace fis2.~(\trill{ e16 [fis] }
+            | g4 a b)
+            | d2 (c4
+            | b4 d) g~
+            | g4 fis (e~ \break
+            | e4) d (b)
+            | a4 (d c)
+            | fis,2 g4~
+            | g4 fis\tenuto g\tenuto
+            \alternative {
+              \volta 1 { d4 r r }
+              \volta 2 { d4 r r }
+            }
+          }
+          | r4 r ais'4-.\p
+          | b8 (c b4) fis-.
+          | g2 a4-.\pp
+          | bes8 (c bes4) fis-. \break
         }
       }
     }
