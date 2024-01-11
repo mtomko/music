@@ -721,12 +721,12 @@ menoF = \markup { \tiny \italic meno \dynamic f }
               {R2.}
               \\
               \new CueVoice {
-                g4 a b
+                g4 a b \cueClefUnset
               }
             >>
-            | d8\p_\markup{ \italic "dolce ed espress." } (e d4 fis
+            | d,8\p_\markup{ \italic "dolce ed espress." } (e d4 fis
             | g4 a b)
-            | \clef treble d,2 (c4
+            | \clef treble d2 (c4
             | b4 a g)
             | \afterGrace fis2.~(\trill{ e16 [fis] }
             | g4 a b)
@@ -742,10 +742,76 @@ menoF = \markup { \tiny \italic meno \dynamic f }
               \volta 2 { d4 r r }
             }
           }
-          | r4 r ais'4-.\p
-          | b8 (c b4) fis-.
-          | g2 a4-.\pp
-          | bes8 (c bes4) fis-. \break
+          \repeat volta 2 {
+            | r4 r ais'4-.\p
+            | b8 (c b4) fis-.
+            | g2 a4-.\pp
+            | bes8 (c bes4) fis-. \break
+            | g2 dis'4-.\upbow
+            | e8 (fis e4) b-.
+            | c2 d4-.\p
+            | ees8 (f ees4) b-.
+            | c2 g4\f
+            | \clef bass aes8-. bes-. aes-. g-. f-. ees-.
+            | f8-.\> g-. f-. ees-. d-. c-.
+            | d8-.\mf bes-. aes-. c-. bes-. ees-.
+            | d8-. g-. f4.\accent c8-.\break
+            | d8-. bes-. a-. c-. bes-. ees-.
+            | d8-. g-. f4.\accent ees8-.
+            | d4.\< a8-. bes-. c-.
+            | d8-.\f d,-. d'-. d,-. d'-. d,-.
+            | d'4\> d-.~d-.
+            | \mark \default d8\p_\markup {\italic dolce } (e d4 fis)
+            | \clef treble g4 (a b)
+            | d2 (c4)
+            | b (a g) \break
+            | \afterGrace fis2.~ \trill {e16 [fis]}
+            | g4 (a b)
+            | d2 (c4)
+            | b4 (d) g~
+            | g4 f (ees)
+            | d4 (g b,)
+            | d2 (c4)
+            | \afterGrace fis2.~ \trill {e16 [fis]}
+            | g4 (fis g)
+            | a4 (b a)
+            | g r r \pageBreak
+          }
+          | \mark \default \clef bass \compressMMRests  R2.*2
+          | r4 b,,4-.^\markup { \small pizz. } \pp b'-.
+          | a4-. g-. fis-.
+          | e4-. r r
+          | R2.
+          | r4 cis4-. cis'-.
+          | b4-. a-. gis-.
+          | fis4 r r
+          | \compressMMRests R2.*7 \break
+          | \mark \default r4 d8-.\f^\markup { \small arco }_\markup { \italic "cresc. ed allargando "} cis-. d4-.
+          | r4 d8-. cis-. d4-.
+          | r4 d8-.\upbow cis-. d4-.
+          | \repeat volta 2 {
+            \sectionLabel "Tempo I."
+            \key g \minor g8\f\accent (fis g4) g,8 (fis
+            | g4) bes8\accent (a bes4) \break
+            | d8\accent (cis d4) fis4-.
+            | g4-. a-. bes-.
+            | a8\accent (gis a4) d,8\accent (cis
+            | d4) e8\accent (d e4)
+            | \clef treble fis8\accent (e fis4) a4-.
+            | c4-. d-. e-.
+            | d8\accent (e d4) c-.\break
+            | bis4-. a-. g-.
+            | a8\accent (bes a4) g-.
+            | fis4-. ees-. d-.
+            | g8\accent (a g4) f-.
+            | \clef bass e8\accent (f e4) d-.
+            | c4-. d-. e-.
+            \alternative {
+              \volta 1 { \afterGrace d2~(\trill{ cis16 [d] } d8) r8 }
+              \volta 2 { f4-. bes,-. r } 
+            } \break
+          }
+          | \bar "||" \mark \default bes,8 d f bes d, f
         }
       }
     }
