@@ -808,10 +808,50 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             | c4-. d-. e-.
             \alternative {
               \volta 1 { \afterGrace d2~(\trill{ cis16 [d] } d8) r8 }
-              \volta 2 { f4-. bes,-. r } 
+              \volta 2 { f4-. bes,-. r }
             } \break
           }
-          | \bar "||" \mark \default bes,8 d f bes d, f
+          | \bar "||" \mark \default bes,8\f d f bes d, f
+          | bes8 d f, bes d f
+          | bes8 (a g f ees d)
+          | c8 (bes a g f ees)
+          | d8 fis a d fis, a
+          | d8 fis a, d fis a \break
+          | c4 a8 (g f ees
+          | d8 c bes a g f)
+          | c8-.\f_\markup { \italic sempre } ees-. ees-. aes-. aes-. c-.
+          | c8-. d (ees) g (aes) c-.
+          | b,,8-. d-. d-. g-. g-. b-.
+          | b8-. cis (d) fis (g) b-. \break
+          | c,8 (ees) ees (g) g (a)
+          | cis,8 (e) e (g) g (bes)
+          | a4 (d,8)\< d (ees) ees (
+          | d8) d e e (fis) fis
+          | \mark \default g8\accent\ff (fis g4) g,8\accent (fis
+          | g4) bes8\accent (a bes4) \break
+          | d8\accent (cis d4) fis-.
+          | \clef treble g4-. a-. bes-.
+          | a8\accent (gis a4) d,8\accent (cis
+          | d4) e8\accent (d e4)
+          | fis8\accent (e fis4) a-.
+          | c4-. d-. e-.
+          | d8\accent (ees d4) c-.\break
+          | bes4-. a-. g-.
+          | g'8\accent (a g4) f-.
+          | e4-. d-. c-.
+          | d8\accent (ees d4) bes8\accent (c
+          | bes4) g8\accent (a g4)
+          | \clef bass e8\accent (f ees4) c8\accent (d
+          | c4) a8\accent (bes a4) \break
+          | d,4-. \clef treble d''2~
+          | d2\> d,4
+          | \bar "||" \mark \default \key g \major d8\p^\markup { \italic "tempo tranquillo e lentando" } (e d4 fis)
+          | g4 (a b)
+          | d2 (c4)
+          | b (a g)
+          | \afterGrace fis2.~\trill{ e16 [fis] }
+          | g4 (a b)
+          | d2 (c4) \break
         }
       }
     }
