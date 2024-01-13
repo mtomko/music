@@ -811,7 +811,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
               \volta 2 { f4-. bes,-. r }
             } \break
           }
-          | \bar "||" \mark \default bes,8\f d f bes d, f
+          | \bar "||" \mark \default bes,8\f^\markup { \italic rubato } d f bes d, f
           | bes8 d f, bes d f
           | bes8 (a g f ees d)
           | c8 (bes a g f ees)
@@ -852,6 +852,15 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | \afterGrace fis2.~\trill{ e16 [fis] }
           | g4 (a b)
           | d2 (c4) \break
+          | b4 (a g)
+          | b4 (a g)
+          | b4 (a g)
+          | \mark\markup\small {\musicglyph #"scripts.ufermata"} \clef bass d8\accent\f^\markup { \large Presto. } (e d4) d8 (e
+          | d4) d8\accent (e d4)
+          | d8\accent (e d4) fis\fz\marcato
+          | <<
+            b,4 d g\marcato_\markup { \dynamic ffz }
+          >> r r
         }
       }
     }
