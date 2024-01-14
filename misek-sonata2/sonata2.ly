@@ -860,7 +860,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | d8\accent (e d4) fis\fz\marcato
           | <<
             b,4 d g\marcato_\markup { \dynamic ffz }
-          >> r r
+          >> r r \fine
         }
       }
     }
