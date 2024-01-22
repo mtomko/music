@@ -29,8 +29,8 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             | g8 g16. a32 fis8 fis 
             \grace { \bar "" bes8 \bar "|" } bes8. a16 g8 d16. g32
             | bes8 bes16. c32 a8 a 
-            \grace { \bar "" d8 \bar "|" } d8. c16 bes8 g16. d32
-            | g'8 g f f
+            \grace { \bar "" d8 \bar "|" } d8. c16 bes8 g16. d'32
+            | g8 g f f
             | ees8. d16 c8 f \break
             | d16 bes g c bes8 a
             | a4 (bes8)
