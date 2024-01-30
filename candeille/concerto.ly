@@ -37,10 +37,10 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           }
           \repeat volta 2 {
             \partial 8 d,16. bes'32
-            | d8 d16. ees32 c8 c16. d32 \noBreak
+            | d8 d16. ees?32 c8 c16. d32 \noBreak
             | b16. (f'32) f8~f16 aes (g f)
             | ees8 ees16. f32 d8 d16. e32
-            | cis16. (g'32) g8~ g16 bes (a g) \break
+            | cis16. (g'32) g8~ g16 bes? (a g) \break
             | fis16 a8 [d, g] f16
             | f16 (ees d c) bes16. c32 a8
             | \partial 4. a4 (g8) \noBreak
