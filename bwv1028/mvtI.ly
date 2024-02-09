@@ -1,10 +1,10 @@
 \version "2.24.3"
 
 \header {
-  title = "Sonata II in C major"
+  title = "Sonata II in D major"
   opus = "BWV 1028"
   composer = "Johann Sebastian Bach"
-  instrument = "Contrabass"
+  instrument = "Contrabass (solo)"
   tagline = #f
 }
 
@@ -28,14 +28,14 @@
           | c4~ c16 b (c e) d (c b c)
           | \appoggiatura c8 b\trill (a16 g) r4 r4 \break
           | g'4 r8 d e8. (fis32 g)
-          | \appoggiatura c,8 b (a16 g) cis2
+          | \appoggiatura c,8 b\trill (a16 g) cis2
           | d8 a f16 gis b (c!) d (f) e (d)
           | \appoggiatura d8 c\trill (b16 a) dis4 r
           | e4 r8 b c16 (e) dis (e) \break
           | \appoggiatura a,8 g\trill (fis16 e) e'2~
           | e8. (fis32 g) fis16 (e d c) b (c d b)
           | \appoggiatura a8 gis\trill (fis16 e) a4~ a16 f' (e d)
-          | c16 (b) c16 (a) \appoggiatura a8 gis4. (a8) \break
+          | c16 (b) c16 (a) \appoggiatura a8 gis4.\trill (a8) \break
           | \mark \default a4 r r
           | r4 r8 a8 \appoggiatura g8 fis8. (e32 d)
           | b'8\mordent (c16 d)) g,2~
