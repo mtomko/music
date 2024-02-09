@@ -29,7 +29,7 @@
           | \appoggiatura c8 b\trill (a16 g) r4 r4 \break
           | g'4 r8 d e8. (fis32 g)
           | \appoggiatura c,8 b\trill (a16 g) cis2
-          | d8 a f16 gis b (c!) d (f) e (d)
+          | d8 a f'16 gis, b (c!) d (f) e (d)
           | \appoggiatura d8 c\trill (b16 a) dis4 r
           | e4 r8 b c16 (e) dis (e) \break
           | \appoggiatura a,8 g\trill (fis16 e) e'2~
@@ -40,7 +40,7 @@
           | r4 r8 a8 \appoggiatura g8 fis8. (e32 d)
           | b'8\mordent (c16 d)) g,2~
           | g16 g (a bes e,) e (f g f)  e (d c)
-          | a'8\mordent (bis16 c) f,2~ \break
+          | a'8\mordent (bes16 c) f,2~ \break
           | f16 f (g a g) b! (d c b) a (g f16)
           | e16 (a) g\tenuto f\tenuto e4 \appoggiatura e8 d8.\trill (c16)
           | c2.~
