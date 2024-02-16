@@ -20,6 +20,7 @@
     \new Staff {
       \new Voice {
         \relative {
+          \set Score.rehearsalMarkFormatter = #format-mark-alphabet
           \clef bass
           \time 3/4
           \key c \major
@@ -62,6 +63,7 @@
           \clef bass
           \time 2/4
           \key c \major
+          \set Score.rehearsalMarkFormatter = #format-mark-alphabet
           \set Score.currentBarNumber = #24
           \repeat volta 2 {
             c'16 d e4 d16 (c)
@@ -80,14 +82,14 @@
             | d8 d4 c16 (b)
             | c8 b16 (a) g (f) e (d)
             | e16 (f g) e c e f g
-            | \mark B a16 b c8~ c16 b (a g) \break
+            | \mark 2 a16 b c8~ c16 b (a g) \break
             | fis16 (g a) fis d fis g a
             | b16 c d8~ d16 c (b a)
             | g16 (a b) g e g a b
             | c16 (d e16) c a c d e
             | fis,16 (g a) fis d fis a c \break
             | b16 (c d) e \appoggiatura b8 a8.\tenuto (g16\staccato)
-            | \mark C g4 r8 d'8~ (
+            | \mark \default g4 r8 d'8~ (
             | d16 f) e d c8 c~ (
             | c16 a) fis a b,8 b'~ (
             | b16 d) b g e (c') a fis \break
@@ -103,7 +105,7 @@
             | f16 (e d c) d (e f g)
             | a16 (bes c) d c bes a g
             | bes16 (a) g (a) f a c f \break
-            | \mark D d8 f, bes d~ (
+            | \mark \default d8 f, bes d~ (
             | d16 c) bes (a) g (a bes) d
             | cis8 a e e'~
             | e8 a, d16 e f8~ (
@@ -111,7 +113,7 @@
             | e16 d) c b a8 f'8~
             | f16 gis, (a) b e,8 gis
             | a16 b c4 b16 (a)
-            | \mark E g16 (fis e d) e (fis g a)
+            | \mark \default g16 (fis e d) e (fis g a)
             | b16 (c d) e d c b a \break
             | c16 (b) a (b) g4
             | r8 d'16 e f8 r8
@@ -119,7 +121,7 @@
             | c8 e a4~
             | a16 fis (g) e \appoggiatura e8 dis8.\trill (e16)
             | e2 \break
-            | \mark F e16 f g4 f16 (e)
+            | \mark \default e16 f g4 f16 (e)
             | d16 e f4 e16 (d)
             | e8 (c) b\trill (c)
             | d16 (c b) a g f e d
@@ -127,7 +129,7 @@
             | b16 (c) d (c) b d g, b
             | c16 (g) e' (g,) d' (g,) c (g)
             | b16  (c d) c b a g f
-            | \mark G e16 (f g) e c e g bes \break
+            | \mark \default e16 (f g) e c e g bes \break
             | a16 bes c8~ c16 c, (d e)
             | f (g a) f d f a c
             | b16 c d8~ d16 d (e f)
@@ -157,6 +159,7 @@
     \new Staff {
       \new Voice {
         \relative {
+          \set Score.rehearsalMarkFormatter = #format-mark-alphabet
           \clef bass
           \time 12/8
           \key a \minor
@@ -168,7 +171,7 @@
           | \appoggiatura g fis4.\f e4.~ e8 d!16 (cis) d8 cis fis,!\staccato (ais\staccato)
           | b4.~ b16 fis'\p (e d cis b) fis'8 fis, \acciaccatura b ais\trill \appoggiatura { gis ais } b4 r8 \break
           | r2. r4 r8 r4 d8\mf
-          | \mark J g8.\tenuto (b16\tenuto) a8 g g32 (a b16 a8) \appoggiatura { c,16 d} e8.\tenuto (d16\tenuto) c8 \acciaccatura c8 b8\trill b16 (a) b8
+          | \mark 10 g8.\tenuto (b16\tenuto) a8 g g32 (a b16 a8) \appoggiatura { c,16 d} e8.\tenuto (d16\tenuto) c8 \acciaccatura c8 b8\trill b16 (a) b8
           | b16 (a) c (b) e (d) d (c) e (d) c (b) a\> (g) fis (g) a (fis) d4\! r8 \break
           | a'4.\p  g4.~ g8 f16 (e f8) \appoggiatura f e4\trill a8
           | d8.\tenuto (f16\tenuto) e8 d8 d32 (e f16 e8) \appoggiatura { g,16 a } bes8.\tenuto (a16\tenuto) g8 \acciaccatura g f e16 (d) d'8~ \break
@@ -176,18 +179,18 @@
           | \appoggiatura a gis8.\tenuto (f'16\tenuto)_\markup {\italic cresc. } e8 \acciaccatura d c8\trill b16 a \appoggiatura { a b } c8 \appoggiatura c bes8.\trill a16 bes8 a (g16 f)  g\mordent (f32 g) \break
           | a16 bes c8 bes a d16\f (c bes a) g (f) bes (a) g (a) f4 r8
           | r2. r4 r8 r4 g8
-          | \mark K c8.\tenuto (e16\tenuto) d8 d d32 (e f16 d8\staccato) d8.\tenuto (f16\tenuto) e8 d8 d32 (e f16 e8\staccato) \break
+          | \mark \default c8.\tenuto (e16\tenuto) d8 d d32 (e f16 d8\staccato) d8.\tenuto (f16\tenuto) e8 d8 d32 (e f16 e8\staccato) \break
           | e8_\markup { \italic cresc. } e32 (f g16 f8\staccato) f8 f32 (g a16 g8\staccato) \appoggiatura f e8.\tenuto\trill (d16\tenuto) c8 bes\f \appoggiatura bes a4~\trill
           | a8. b32 (cis d16 e) f8 \appoggiatura f e4~ e8. d32 (c b c e16) gis,4 e8\f \break
           | a8.\tenuto (c16\tenuto) b8 a8 a32 (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8 \acciaccatura d8 cis\trill b16 (a) a'8
           | \tuplet 3/2 {f'16 (e d)} d8 \acciaccatura d \afterGrace cis~\trill { b16 cis } d4.\>~d2.~\p
-          | \mark L d8. cis16 (e d) e4.~ e16 cis (d e) f8~ f4.~ \break
+          | \mark \default d8. cis16 (e d) e4.~ e16 cis (d e) f8~ f4.~ \break
           | f16 e32 (d c16 b a gis) e'4.~ e16 g! (f e d cis) d4.~
           | d8 c!16 (b) c8~ c b32 (a gis16) a8~ a16 f' (e) d (e) f gis,! (a b) d (c b) \break
           | c16 (d e8) \afterGrace gis8~ { fis gis } a4.~ (a8 gis) b8~ b16 g (a b) c8
           | bes4. a8. g16 (bes a) g (e f a g f) \appoggiatura f8 e4 d16 (e32 f) \break
           | e8 gis, a d16 (c d f e d) \appoggiatura d8 c8.\tenuto\trill\> (b16\tenuto) c8 b4 e,8\p
-          | \mark M a8.\tenuto (c16\tenuto) b8 a a32 (b c16 b8\staccato) b8.\tenuto (d16\tenuto) c8 b b32 (c d16 c8\staccato) \break
+          | \mark \default a8.\tenuto (c16\tenuto) b8 a a32 (b c16 b8\staccato) b8.\tenuto (d16\tenuto) c8 b b32 (c d16 c8\staccato) \break
           | cis8\< cis32 (d e16 d8\staccato) dis dis32 (e fis16 e8\staccato) \appoggiatura d c8.\trill\tenuto\! (b16\tenuto) a8\> a4.~
           | a1.~
           | a4.\!~a16 gis (b a) b8~ b16 e e,8 \afterGrace gis!8\trill~ {fis gis} \appoggiatura { a,16 c e} a4\fermata \bar "||"
