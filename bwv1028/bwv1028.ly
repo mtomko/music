@@ -65,9 +65,9 @@
           \partial 8 e8
           \autoLineBreaksOff
           | a8.\tenuto (c16\tenuto) b8 a8 a32 (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8  \acciaccatura d8 c \trill b16 (a) a'8~
-          | a8 g16 (fis) g8~ g8 fis32 (e dis16) e8~ e16 c' (b) a (b) c dis, (e fis a g f) \break
+          | a8 g16 (fis) g8~ g8 fis32 (e dis16) e8~ e16 c' (b) a (b) c dis,? (e fis a g fis) \break
           | g16\< (a) b8 \appoggiatura e dis\! e4.~ e8 (dis\tenuto) fis~ fis16 d (e fis) g8
-          | \appoggiatura g fis4.\f e4.~ e8 d!16 (cis) d8 c fis,!\staccato (ais\staccato)
+          | \appoggiatura g fis4.\f e4.~ e8 d!16 (cis) d8 cis fis,!\staccato (ais\staccato)
           | b4.~ b16 fis'\p (e d cis b) fis'8 fis, \acciaccatura b ais\trill \appoggiatura { gis ais } b4 r8 \break
           | r2. r4 r8 r4 d8\mf
           | \mark J g8.\tenuto (b16\tenuto) a8 g g32 (a b16 a8) \appoggiatura { c,16 d} e8.\tenuto (d16\tenuto) c8 \acciaccatura c8 b8\trill b16 (a) b8
@@ -76,7 +76,7 @@
           | d8.\tenuto (f16\tenuto) e8 d8 d32 (e f16 e8) \appoggiatura { g,16 a } bes8.\tenuto (a16\tenuto) g8 \acciaccatura g f e16 (d) d'8~ \break
           | d8 c16 (bes) c8~ c8 bes32 (a g16) a8~ a8 \acciaccatura g f\trill\> (e16 d\!) d4 a'8
           | \appoggiatura a gis8.\tenuto (f'16\tenuto)_\markup {\italic cresc. } e8 \acciaccatura d c8\trill b16 a \appoggiatura { a b } c8 \appoggiatura c bes8.\trill a16 bes8 a (g16 f)  g\mordent (f32 g) \break
-          | a16 bes c8 b a d16\f (c b a) g (f) b (a) g (a) f4 r8
+          | a16 bes c8 bes a d16\f (c bes a) g (f) bes (a) g (a) f4 r8
           | r2. r4 r8 r4 g8
           | \mark K c8.\tenuto (e16\tenuto) d8 d d32 (e f16 d8\staccato) d8.\tenuto (f16\tenuto) e8 d8 d32 (e f16 e8\staccato) \break
           | e8_\markup { \italic cresc. } e32 (f g16 f8\staccato) f8 f32 (g a16 g8\staccato) \appoggiatura f e8.\tenuto\trill (d16\tenuto) c8 bes\f \appoggiatura bes a4~\trill
