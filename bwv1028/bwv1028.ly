@@ -88,7 +88,7 @@
             | g16 (a b) g e g a b
             | c16 (d e16) c a c d e
             | fis,16 (g a) fis d fis a c \break
-            | b16 (c d) e \appoggiatura b8 a8.\tenuto (g16\staccato)
+            | b16 (c d) e \appoggiatura b8 a8.\trill\tenuto (g16\staccato)
             | \mark \default g4 r8 d'8~ (
             | d16 f) e d c8 c~ (
             | c16 a) fis a b,8 b'~ (
@@ -144,7 +144,7 @@
             | ees16 f g4 f16 (ees)
             | d16 ees f4 ees16 (d)
             | f16 (e) d (c) g8 b 
-            | \appoggiatura { c,16 e g } c2 \fine
+            | \appoggiatura { c,16 e g } c2 \fine \pageBreak
           }
         }
       }
