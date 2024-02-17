@@ -4,8 +4,31 @@
   title = "Sonata II in D major"
   opus = "BWV 1028"
   composer = "Johann Sebastian Bach"
-  instrument = "Contrabass (solo)"
+  instrument = "Contrabass"
   tagline = #f
+  meter = \markup {
+    \score {
+      \layout {
+        indent = 0.0
+      }
+      \header {
+        piece = "Tuning"
+        opus = ""
+      }
+      \new Staff \with {
+        \magnifyStaff #4/7
+      } {
+        \new Voice {
+          \relative {
+            \omit Score.TimeSignature
+            \omit Score.BarLine
+            \clef bass
+            <<fis,1 b e a>>
+          }
+        }
+      }
+    }
+  }
 }
 
 \paper {
@@ -14,8 +37,11 @@
 
 \book {
   \score {
+    \layout {
+      top-margin = 0.0
+    }
     \header {
-      piece = "Adagio"
+      piece = "Adagio"      
     }
     \new Staff {
       \new Voice {
@@ -139,11 +165,11 @@
             | c16 (g) e c bes'4~ (
             | bes16 g) e c a'4~ (
             | a16 f) d b g'4~ (
-            | g16 e) c a f'4~ ( \break 
-            | f16 g) b d g (f) ees d 
+            | g16 e) c a f'4~ ( \break
+            | f16 g) b d g (f) ees d
             | ees16 f g4 f16 (ees)
             | d16 ees f4 ees16 (d)
-            | f16 (e) d (c) g8 b 
+            | f16 (e) d (c) g8 b
             | \appoggiatura { c,16 e g } c2 \fine \pageBreak
           }
         }
