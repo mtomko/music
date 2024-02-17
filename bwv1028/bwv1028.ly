@@ -7,6 +7,7 @@
   instrument = "Contrabass"
   tagline = #f
   meter = \markup {
+    \italic \tiny Tuning
     \score {
       \layout {
         indent = 0.0
@@ -29,6 +30,8 @@
       }
     }
   }
+  arranger = \markup { \tiny "(1685 - 1750)" } 
+  copyright = \markup { \small \italic "Engraving by Mark Tomko" }
 }
 
 \paper {
