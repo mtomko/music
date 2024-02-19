@@ -11,17 +11,15 @@
   opus = "BWV 1028"
   composer = "Johann Sebastian Bach"
   instrument = "Contrabass"
-  tagline = #f
   meter = \soloTuning
   arranger = \markup { \tiny "(1685 - 1750)" }
-  copyright = \markup { \small \italic "Engraving by Mark Tomko" }
+  copyright = \markup { \small \italic "Engraving Ⓒ Mark Tomko, 2024" }
+  tagline = #f
 }
 
 \paper {
   #(set-paper-size "letter")
 }
-
-
 
 \book {
   \score {
