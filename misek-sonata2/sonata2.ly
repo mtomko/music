@@ -2,11 +2,14 @@
 
 menoF = \markup { \tiny \italic meno \dynamic f }
 
+\include "bass/solo-tuning.ly"
+
 \header {
   title = "SONATA No. 2, Op. 6"
   composer = "Adolf Míšek"
   instrument = "Contrabass"
   copyright = "Engraving Ⓒ Mark Tomko, 2023"
+  %{meter = \soloTuning %}
   tagline = #f
 }
 
