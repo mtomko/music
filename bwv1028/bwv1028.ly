@@ -179,11 +179,24 @@
               \voiceTwo
               e4. c4.~
               | c4. b4.~
-              | b4. a4.~
+              | b4. a4.~ \break
               | a16 b16 c d b c a b c a b c
             }
-          >>
+          >> \oneVoice
           | fis,16 g a b g a fis g a fis g a
+          | dis,8 cis16 dis b8 b g''16 (fis) e g
+          | cis,8 b16 cis a8 a8 a'16 (g) fis a \break
+          | dis,16 e fis dis e dis e fis \acciaccatura e8 dis8.\trill\tenuto e16-.
+          | \mark \default e4 r8 r fis8 fis, 
+          | b4 r8 r e8 e, 
+          | a4 r8 r b b,
+          | e4 r8 r a8 a, 
+          | d4 r8 r b'8 b'
+          | c4 r8 r a, a' \break
+          | bes4 r8 r gis,8 gis'8
+          | a4 r8 r a8 a,
+          | a,4 r8 r8 d''8 d,
+          | d,4 r8 r8 d''8 d,
         }
       }
     }
