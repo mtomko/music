@@ -99,7 +99,7 @@
           | c16 d e f d e c d e f d e
           | c16 d e d e f d e f d e f
           | e8 f,16 g f8 f8 e'16 (d) c e \break
-          | d8 g,16 a g8 g f'16 (e) d f 
+          | d8 g,16 a g8 g f'16 (e) d f
           | e16 f g a f g e f g a f g
           | e16 f g f g a d, e f e f g
           | c,16 d e d e f b, c e c d e \break
@@ -123,57 +123,67 @@
           | \mark \default d2.~
           | d2.~
           | d2.~
-          | d4.~ d8 g 16 f e d 
+          | d4.~ d8 g 16 f e d
           | c8 g16 a g8 g e'16 (d) c e
           | d8 g,16 a g8 g f'16 (e) d f \break
           | e16 f g a f g e f g a f g
           | e16 f g e f g a, b c a b c
-          | d4.~ d16 e f d e f 
+          | d4.~ d16 e f d e f
           | b,16 c d b c d g,4.~ \break
           | g16 a b g a b e, f g e f g
           | c,4. (c'16) d e c d e
-          | a,16 b c a b c d e f d e f 
+          | a,16 b c a b c d e f d e f
           | b,16 c d b c d e f g e f g \break
-          | c,16 d e c d e  f4.~ 
+          | c,16 d e c d e  f4.~
           | f16 e f g e f d e f g e f
           | \mark \default d8 g,16 a g8 g f'16 (e d f)
           | \appoggiatura f8 e2.~\trill
           | e8 f,16 g f8 f e'16 (d) c e \break
           | \appoggiatura e8 d2.~\trill
-          | d8 e,16 f e8 e d'16 (c) b d 
-          | \appoggiatura d8 c2.~\trill 
-          | c8 d,16 e d8 d c'16 (b) a c 
-          | \appoggiatura c8 b2.\trill 
+          | d8 e,16 f e8 e d'16 (c) b d
+          | \appoggiatura d8 c2.~\trill
+          | c8 d,16 e d8 d c'16 (b) a c
+          | \appoggiatura c8 b2.\trill
           | \mark \default r8 g16 a g8 g e'16 (d) c e \break
-          | d8 g,16 a g8 g f16 (e) d f 
-          | e16 f g a f g e f g a f g 
-          | e16 f g e f g f g a f g a 
-          | d4.~ d16 e f d e f \break 
-          | b,16 c d b c d g,4.~ 
+          | d8 g,16 a g8 g f16 (e) d f
+          | e16 f g a f g e f g a f g
+          | e16 f g e f g f g a f g a
+          | d4.~ d16 e f d e f \break
+          | b,16 c d b c d g,4.~
           | g16 a b g a b e, f g e f g
-          | c,4.~ c16 d e c d e 
+          | c,4.~ c16 d e c d e
           | f16 g a f g a d, e f d e f
-          | g16 a b g a b e, f g e f g \break 
-          | a bes c d bes c  a bes c a bes c 
-          | f,16 g a bes g a f g a f g a 
-          | d,16 e f d e f e8 g c 
-          | b8 d b g b d g2.~ 
+          | g16 a b g a b e, f g e f g \break
+          | a bes c d bes c  a bes c a bes c
+          | f,16 g a bes g a f g a f g a
+          | d,16 e f d e f e8 g c
+          | b8 d b g b d g2.~
           | g8 e c f d b \break
           | e8 c a d b g
           | c8 a f  b16 c d8 g,
           | c16 d \acciaccatura c8 b8.\trill\tenuto (c16-.) c8 e,16 f e8
-          | \mark \default e8 c'16 (b) a c b8 e,16 f e8 
+          | \mark \default e8 c'16 (b) a c b8 e,16 f e8
           | e8 d'16 (c) b d c d e f d e \break
-          | c16 d e f d e c b a g fis e 
-          | fis8 b fis g c g 
+          | c16 d e f d e c b a g fis e
+          | fis8 b fis g c g
           | a8 a'4~ a16 (g\tenuto) fis e f8~
           | f8 e dis e b, <<dis' fis>>
-          %{
-          | <<e4. g>> \tieDown <<g4. c,~(>> 
-          | <<fis4.) c>> <<fis b,~ (>>
-          | <<e4.) b>> <<e4. a,~(>>
-          | << \voiceOne { a16 } \new Voice { \voiceTwo dis8)} >> \oneVoice b16 c d b c a b c a b c  
-          %}
+          | <<
+            \voiceOne {
+              g4. g4. (
+              | fis4.) fis4. (
+              | e4.) e4. (
+              | dis8) s8 s8 s4.
+            }
+            \new Voice {
+              \voiceTwo
+              e4. c4.~
+              | c4. b4.~
+              | b4. a4.~
+              | a16 b16 c d b c a b c a b c
+            }
+          >>
+          | fis,16 g a b g a fis g a fis g a
         }
       }
     }
