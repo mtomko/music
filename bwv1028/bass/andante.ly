@@ -38,5 +38,4 @@ andanteBassNotes =
   | a1.~
   | a4.\!~a16 gis (b a) b8~ b16 e e,8 \afterGrace gis!8\trill~ {fis gis} \appoggiatura { a,16 c e} a4\fermata \bar "||"
   \autoLineBreaksOn
-
 }
