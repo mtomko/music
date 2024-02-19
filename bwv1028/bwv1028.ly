@@ -1,35 +1,18 @@
 \version "2.24.3"
 
+\include "bass/solo-tuning.ly"
+\include "bass/adagio.ly"
+\include "bass/allegro.ly"
+\include "bass/andante.ly"
+\include "bass/allegro2.ly"
+
 \header {
   title = "Sonata II in D major"
   opus = "BWV 1028"
   composer = "Johann Sebastian Bach"
   instrument = "Contrabass"
   tagline = #f
-  meter = \markup {
-    \italic \tiny Tuning
-    \score {
-      \layout {
-        indent = 0.0
-      }
-      \header {
-        piece = "Tuning"
-        opus = ""
-      }
-      \new Staff \with {
-        \magnifyStaff #4/7
-      } {
-        \new Voice {
-          \relative {
-            \omit Score.TimeSignature
-            \omit Score.BarLine
-            \clef bass
-            <<fis,1 b e a>>
-          }
-        }
-      }
-    }
-  }
+  meter = \soloTuning
   arranger = \markup { \tiny "(1685 - 1750)" }
   copyright = \markup { \small \italic "Engraving by Mark Tomko" }
 }
@@ -38,10 +21,7 @@
   #(set-paper-size "letter")
 }
 
-\include "bass/adagio.ly"
-\include "bass/allegro.ly"
-\include "bass/andante.ly"
-\include "bass/allegro2.ly"
+
 
 \book {
   \score {
