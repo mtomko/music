@@ -167,7 +167,7 @@
           | c16 d e f d e c b a g fis e
           | fis8 b fis g c g
           | a8 a'4~ a16 (g\tenuto) fis e f8~
-          | f8 e dis e b, <<dis' fis>>
+          | f8 e dis e b <<dis! fis>>
           | <<
             \voiceOne {
               g4. g4. (
