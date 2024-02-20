@@ -8,7 +8,7 @@ andanteBassNotes =
   \key a \minor
   \partial 8 e8
   \autoLineBreaksOff
-  | a8.\tenuto (c16\tenuto) b8 a8 a32 (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8  \acciaccatura d8 c \trill b16 (a) a'8~
+  | a8.\tenuto (c16\tenuto) b8 a8 a32 (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8  \appoggiatura d8 c \trill b16 (a) a'8~
   | a8 g16 (fis) g8~ g8 fis32 (e dis16) e8~ e16 c' (b) a (b) c dis,? (e fis a g fis) \break
   | g16 (a) b8 \appoggiatura e dis e4.~ e8 (dis\tenuto) fis~ fis16 dis (e fis) g8
   | \appoggiatura g fis4. e4.~ e8 d!16 (cis) d8 cis fis,!\staccato (ais\staccato)
@@ -25,7 +25,7 @@ andanteBassNotes =
   | \mark \default c8.\tenuto (e16\tenuto) d8 d d32 (e f16 d8\staccato) d8.\tenuto (f16\tenuto) e8 d8 d32 (e f16 e8\staccato) \break
   | e8 e32 (f g16 f8\staccato) f8 f32 (g a16 g8\staccato) \appoggiatura f e8.\tenuto\trill (d16\tenuto) c8 bes \appoggiatura bes a4~\trill
   | a8. b32 (cis d16 e) f8 \appoggiatura f e4~ e8. d32 (c b c e16) gis,4 e8 \break
-  | a8.\tenuto (c16\tenuto) b8 a8 a32 (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8 \acciaccatura d8 cis\trill b16 (a) a'8
+  | a8.\tenuto (c16\tenuto) b8 a8 a32 (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8 \appoggiatura d8 cis\trill b16 (a) a'8
   | \tuplet 3/2 {f'16 (e d)} d8 \acciaccatura d \afterGrace cis~\trill { b16 cis } d4.~d2.~
   | \mark \default d8. cis16 (e d) e4.~ e16 cis (d e) f8~ f4.~ \break
   | f16 e32 (d c16 b a gis) e'4.~ e16 g! (f e d cis) d4.~
