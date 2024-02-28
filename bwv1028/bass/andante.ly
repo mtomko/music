@@ -3,6 +3,7 @@
 andanteBassNotes =
 \relative {
   \set Score.rehearsalMarkFormatter = #format-mark-alphabet
+  \set Staff.ottavationMarkups = #ottavation-ordinals
   \clef bass
   \time 12/8
   \key a \minor
@@ -22,7 +23,7 @@ andanteBassNotes =
   | \appoggiatura a gis8.\tenuto (f'16\tenuto) e8 \acciaccatura d c8\trill b16 (a) \appoggiatura { a b } c8 \appoggiatura c bes8.\trill a16 bes8 a (g16 f)  g\mordent (f32 g) \break
   | a16 bes c8 bes a d16\f (c bes a) g (f) bes (a) g (a) f4 r8
   | r2. r4 r8 r4 g8
-  | \mark \default c8.\tenuto (e16\tenuto) d8 d d32 (e f16 d8\staccato) d8.\tenuto (f16\tenuto) e8 d8 d32 (e f16 e8\staccato) \break
+  | \mark \default c8.\tenuto (e16\tenuto) d8 c c32 (d e16 d8\staccato) d8.\tenuto (f16\tenuto) e8 d8 d32 (e f16 e8\staccato) \break
   | e8 e32 (f g16 f8\staccato) f8 f32 (g a16 g8\staccato) \appoggiatura f e8.\tenuto\trill (d16\tenuto) c8 bes \appoggiatura bes a4~\trill
   | a8. b32 (cis d16 e) f8 \appoggiatura f e4~ e8. d32 (c b c e16) gis,4 e8 \break
   | a8.\tenuto (c16\tenuto) b8 a8 a32 (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8 \appoggiatura d8 cis\trill b16 (a) a'8
@@ -30,8 +31,8 @@ andanteBassNotes =
   | \mark \default d8. cis16 (e d) e4.~ e16 cis (d e) f8~ f4.~ \break
   | f16 e32 (d c16 b a gis) e'4.~ e16 g! (f e d cis) d4.~
   | d8 c!16 (b) c8~ c b32 (a gis16) a8~ a16 f' (e) d (e) f gis,! (a b) d (c b) \break
-  | c16 (d e8) \afterGrace gis8~ { fis gis } a4.~ (a8 gis) b8~ b16 g (a b) c8
-  | bes4. a8. g16 (bes a) g (e f a g f) \appoggiatura f8 e4 d16 (e32 f) \break
+  | c16 (d e8) \override Staff.OttavaBracket.font-series = #'italic \set Staff.ottavation = \markup { \smaller { \italic 8 { \super {va}  ad lib } } } \ottava 1 \afterGrace gis8~ { fis gis } a4.~ (a8 gis) b8~ b16 g (a b) c8
+  | bes4. a8. g16 (bes a) g (e f a g f) \appoggiatura f8 e4 \ottava 0 d16 (e32 f) \break
   | e8 gis, a d16 (c d f e d) \appoggiatura d8 c8.\tenuto\trill (b16\tenuto) c8 b4 e,8
   | \mark \default a8.\tenuto (c16\tenuto) b8 a a32 (b c16 b8\staccato) b8.\tenuto (d16\tenuto) c8 b b32 (c d16 c8\staccato) \break
   | cis8 cis32 (d e16 d8\staccato) dis dis32 (e fis16 e8\staccato) \appoggiatura d c8.\trill\tenuto (b16\tenuto) a8 a4.~
