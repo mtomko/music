@@ -869,4 +869,53 @@ menoF = \markup { \tiny \italic meno \dynamic f }
     }
   }
 
+  \score {
+    \header {
+      piece = "IV. Finale"
+    }
+    \new Staff {
+      \new Voice {
+        \relative {
+          \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
+          \clef bass
+          \time 2/2
+          \key d \minor
+          \tempo "Allegro appassionato"
+          \repeat volta 2 {
+            d2\accent\f cis'4.\accent (d8)
+            | a4 (r8 a8-.) f'4.\accent (e8)
+            | d8 (cis d e) f (e f g)
+            | a2 bes4.\accent (a8)
+            | g4.\accent (e8) g4.\accent (f8)
+            | e4.\accent (cis8) e4.\accent (d8) \break
+            | cis4 bes8 (g) g (e) e (bes')
+            | a4 r8 a,\marcato bes4\marcato a\marcato
+            | \mark 39 d2\accent\f cis'4.\accent (d8)
+            | a,4 (r8 a8-.) f'4.\accent (e8)
+            | d8 (cis d e) f (e f g)
+            | \clef treble a'2 d4._\markup { \small \italic piu \dynamic f } (c8)
+            | bes4.\accent (g8) c4.\accent (bes8) \break
+            | a4.\accent (f8) a4.\accent (f8)
+            | a1~\accent
+            | a4. (f8) a4.\accent (b8)
+            | \mark \default b8\ff (c) c (gis) gis (a) a (e)
+            | \clef bass e8\> (f) f (cis) cis (d) d (aes)
+            | g8\! r g (a b a b c) \break
+            | d8\< (cis d e) f (e f fis)
+            | g8\! r c, (d e d e f)
+            | \clef treble g (fis g a) b (c d e)
+            | f4 r r2
+            | R1
+            | \clef bass r4 a,,2 (f'4)
+            | f4 (e d c)
+            | \compressMMRests R1*2 \break
+            | r4 a2 (a'4)
+            | a4 (gis f\< e)
+            | \clef treble e4 ( c' b\! a)
+          }
+        }
+      }
+    }
+  }
+
 }
