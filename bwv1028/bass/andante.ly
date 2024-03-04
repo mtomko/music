@@ -15,7 +15,7 @@ andanteBassNotes =
   | \appoggiatura g fis4. e4.~ e8 d!16 (cis) d8 cis fis,!\staccato (ais\staccato)
   | b4.~ b16 fis' (e d cis b) fis'8 fis, \acciaccatura b ais\trill \appoggiatura { gis ais } b4 r8 \break
   | r2. r4 r8 r4 d8
-  | \mark 10 g8.\tenuto (b16\tenuto) a8 g g32 (a b16 a8) \appoggiatura { c,16 d} e8.\tenuto (d16\tenuto) c8 \acciaccatura c8 b8\trill b16 (a) b8
+  | \mark 10 g8.\tenuto (b16\tenuto) a8 g g32 (a b16 a8) \appoggiatura { c,16 d} e8.\tenuto (d16\tenuto) c8 \acciaccatura c8 b8\trill a16 (g) a8
   | b16 (a) c (b) e (d) d (c) e (d) c (b) a (g) fis (g) a (fis) d4 r8 \break
   | a'4.  g4.~ g8 f16 (e f8) \appoggiatura f e4\trill a8
   | d8.\tenuto (f16\tenuto) e8 d8 d32 (e f16 e8) \appoggiatura { g,16 a } bes8.\tenuto (a16\tenuto) g8 \acciaccatura g f e16 (d) d'8~ \break
