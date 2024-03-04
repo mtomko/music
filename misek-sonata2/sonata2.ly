@@ -904,7 +904,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             | d8\< (cis d e) f (e f fis)
             | g8\! r c, (d e d e f)
             | \clef treble g (fis g a) b (c d e)
-            | f4 r r2
+            | \mark \default f4 r r2
             | R1
             | \clef bass r4 a,,2 (f'4)
             | f4 (e d c)
@@ -912,6 +912,44 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             | r4 a2 (a'4)
             | a4 (gis f\< e)
             | \clef treble e4 ( c' b\! a)
+            | g4\> (b2 a4)
+            | g4\< (c b a)
+            | b4\> (e2 d4)
+            | c8\p (c,) c-. (c-.) c (cis) cis-. (cis-.)
+            | cis8 (d) d-. (d-.) d (dis) dis-. (dis-.) \break
+            | dis8 (e) e-. (e-.) \clef bass e (e,) e-. (e-.)
+            | e8 (f) f-. (f-.) f (f') f-. (f-.)
+            | fis (g) g,-. (a-.) b-. c-. d-. e-.
+            | f8-.\> e-. d-. e-. f-. g-. a-. b-.
+            | c4\p c,,-. cis'-. cis,-.
+            | d'4-._\markup { \italic cresc. molto } d,-. dis'-. dis,-. \break
+            | e'4-. e,2\accent e'4-.\<
+            | f4-. f,-. fis'-. fis,-.
+            | \mark \default \clef treble g'8\f (c e) d-. c-. b-. a-. g-.
+            | \clef bass f8-. e-. d-. c-. b-. a-. g-. f-.
+            | e4-. f8 (e) e2~
+            | e4 f'8 (e) e2~
+            | e4 \clef treble f'8 (e) e4-. f,8 (e) \break
+            | \clef bass e4-. f,8 (e) e4-. e,\accent
+            | a'8\p (c f e) e2
+            | a,8 (c f e) e2
+            | a,8 (c f e) e4 c'8-. b-.
+            | a8-. g-. f-. e-. d-. c-. b-. a-.
+            | g8 (b e d) d2
+            | g,8 (b e d) d2
+            | g,8 (b e d) d4 g,,8-. a-.
+            | b8-. c-. d-. e-. f-. g-. a-. b-.
+            | c8 (e a g) g2
+            | c,8 (e a g) g2
+            | c,8 (e a g) g4 \clef treble  e'8-. d-.
+            | c8-. b-. a-. g-. f-. e-. d-. c-. \break
+            | \clef bass b8 (d f e) e2
+            | b8 (d f e) e2
+            | b8 (d f e) e4 e,8-. fis-.
+            | gis8-.\< a-. b-. c-. d-. e-. fis-. gis-.
+            | \clef treble \mark \default a2\accent\f gis4.\accent (a8)
+            | e4 (r8 e-.) c'4. (b8)
+            | a4 (r8 a-.) d4.\accent (c8) \break
           }
         }
       }
