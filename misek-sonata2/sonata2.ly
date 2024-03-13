@@ -717,7 +717,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
               {R2.}
               \\
               \new CueVoice {
-                \cueClef "treble" \stemUp d8e d4 fis
+                \cueClef "treble" \stemUp d8 e d4 fis
               }
             >>
             | <<
@@ -950,7 +950,89 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             | \clef treble \mark \default a2\accent\f gis4.\accent (a8)
             | e4 (r8 e-.) c'4. (b8)
             | a4 (r8 a-.) d4.\accent (c8) \break
-          }
+            | b4.\accent (a8) g4.\accent (f8)
+            | f8 (e) e (g) g (f) f (e)
+            | \clef bass e (d) d (b) b (gis) gis (e)
+            | a,2\accent_\markup { \italic piu  \dynamic f }  a'2\accent
+            | a,4-. r e'2\accent
+            | f4 r \repeat tremolo 2 g8 \repeat tremolo 2 a8
+            | \repeat tremolo 2 bes8 \repeat tremolo 2 c8 \repeat tremolo 2 d8 \repeat tremolo 2 cis8 \break
+            | \repeat tremolo 2 e8 \repeat tremolo 2 d8 \repeat tremolo 2 c8 \repeat tremolo 2 b8
+            | \repeat tremolo 2 a8 \repeat tremolo 2 g8 \repeat tremolo 2 d8 \repeat tremolo 2 dis8
+            |  e4 e8 (a) a (c) c (e)
+            | \clef treble e8 (gis) gis (b) b (e) e (gis,)
+            | a2 r2
+            |<<
+              \new CueVoice {
+                \cueClef "treble" \stemUp a'2 gis4. (a8)
+              }
+              \\
+              {R1}
+            >>
+            |<<
+              \new CueVoice {
+                \stemUp a,2 gis4. (a8)
+              }
+              \\
+              {R1}
+            >>
+            |<<
+              {R1}
+              \\
+              \new CueVoice {
+                \stemUp a,4 r8 a8 gis4. (a8) 
+              }
+            >>
+          } \pageBreak
+          |<<
+            \new CueVoice {
+             \cueClef bass fis2 \cueClef treble dis'''4 (eis8) 
+            }
+            \\
+            {R1}
+          >>
+          |<<
+            \new CueVoice {
+              fis,2 eis4. (fis8)
+            }
+            \\
+            {R1}
+          >>
+          |<<
+            \new CueVoice {
+              fis,2 eis4. (fis8)
+            }
+            \\
+            {R1}
+          >>
+          |<<
+            \new CueVoice {
+              \clef bass fis4 r8 fis8 eis4\marcato fis\marcato \cueClefUnset
+            }
+            \\
+            {R1}
+          >>
+          \bar "||" \mark \default r4 d2~ d4\tenuto
+          | d4 (g a b)
+          | c4 (b a4. g8)
+          | d1
+          | r4 b2~b4\tenuto \break
+          | b4 (fis' g a)
+          | a4 (g fis4. e8)
+          | \clef treble cis'2.\<~cis4-.\!
+          | d4 \clef bass g,,8\p (a bes c d ees)
+          | f4 (a2) g4
+          | f4 (b a g)
+          | \clef treble a4 (d2 c4) \break
+          | bes4-. (\clef bass bes,4-.) a4.\accent (bes8)
+          | ces2\accent ces4.\accent (c8-.)
+          | des2\accent c4.\accent (d8-.)
+          | ees2\accent \afterGrace f2~\trill\accent { ees16 [f] } 
+          | ges2\accent d4.\accent (ees8)
+          | aes,2\accent des\accent
+          | \mark \default bes2\accent\f a4.\accent (bes8)
+          | bes,1~\accent\>
+          | bes1\! \break
         }
       }
     }
