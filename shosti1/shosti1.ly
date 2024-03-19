@@ -87,8 +87,8 @@
       | f4.
       | des?4.~\accent
       | des8 g4\accent \break
-      | <<des4.~ des'4.~>>
-      | <<des8 des,8\accent>> <<g4 g'4\accent>>
+      | <<des4.\accent~ des'4.~>>
+      | <<des8 des,8>> <<g4 g'4\accent>>
       | r8 r8 c,8
       | <<f4.~ f,4.~>>
       | <<f'4. f,4.>>
