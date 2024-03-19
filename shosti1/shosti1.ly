@@ -29,8 +29,8 @@
       | \mark \default \compressMMRests { R4.*13 }
       | \mark \default \compressMMRests { R4.*9 }
       | \mark \default \compressMMRests { R4.*13 }
-      | \mark \default r8 e16\p (fis g8) \break
-      | des8-. fis-. cis-.
+      | \mark \default r8 e16\p\parenthesize\upbow (fis g8) \break
+      | dis8-. fis-. cis-.
       | e-. dis16 (cis b8-.)
       | fis8-. b-. e-.
       | dis16\accent (cis b a b8-.) \break
@@ -57,10 +57,10 @@
       | c'8) r8\! c8 (
       | \mark \default b8-.) f!4
       | b8_\markup { \italic cresc. } d,4
-      | b'8-. des,4 \break
+      | b'8-. des,!4 \break
       | r8 c16 (des ees8-.)
-      | g4 (a8-.)
-      | r8 a16\mf (aes g8-.)
+      | ges4 (aes8-.)
+      | r8 a16\mf (aes ges8-.)
       | r8 a16 (bes c8-.) \break
       | aes!4 (c,8-.)
       | des'4 (c,8-.)
@@ -73,19 +73,19 @@
       | e4. \break
       | fis8-._\markup { \italic "cresc. poco a poco" }  g-. a-.
       | b8-. c-. d-.
-      | ees!4 fis8
-      | fes8 g,16 (a bes!8) \break
+      | ees!4 f8
+      | fis8 g,16 (a bes!8) \break
       | a8-. bes16 (c des!8-.)
       | b,8-. c16 (d ees8-.)
       | d8-. b-. aes'!-. \pageBreak
       | g16\accent (f ees d ees8-.)
       | c8-. f-. b-.
-      | a16\accent (g f e f8-.)
+      | a16\accent (g f ees f8-.)
       | d8-. g-. c-. \break
       | \mark \default des,!4\accent\ff c8\accent-.
       | f,4.~\accent
       | f4.
-      | des4.~\accent
+      | des?4.~\accent
       | des8 g4\accent \break
       | <<des4.~ des'4.~>>
       | <<des8 des,8\accent>> <<g4 g'4\accent>>
