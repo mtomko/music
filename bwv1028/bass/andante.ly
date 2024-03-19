@@ -31,7 +31,7 @@ andanteBassNotes =
   | \mark \default d8. cis16 (e d) e4.~ e16 cis (d e) f8~ f4.~ \break
   | f16 e32 (d c16 b a gis) e'4.~ e16 g! (f e d cis) d4.~
   | d8 c!16 (b) c8~ c b32 (a gis16) a8~ a16 f' (e) d (e) f gis,! (a b) d (c b) \break
-  | c16 (d e8) \override Staff.OttavaBracket.font-series = #'italic \set Staff.ottavation = \markup { \smaller { \italic 8 { \super {va}  ad lib } } } \ottava 1 \afterGrace gis8~ { fis gis } a4.~ (a8 gis) b8~ b16 g (a b) c8
+  | c16 (d e8) \ottava 1 \afterGrace gis8_\markup {\teeny { \italic { 8\super{"va"} "ad lib" } } }~\trill { fis gis } a4.~ (a8 gis) b8~ b16 g (a b) c8
   | bes4. a8. g16 (bes a) g (e f a g f) \appoggiatura f8 e4 \ottava 0 d16 (e32 f) \break
   | e8 gis, a d16 (c d f e d) \appoggiatura d8 c8.\tenuto\trill (b16\tenuto) c8 b4 e,8
   | \mark \default a8.\tenuto (c16\tenuto) b8 a a32 (b c16 b8\staccato) b8.\tenuto (d16\tenuto) c8 b b32 (c d16 c8\staccato) \break
