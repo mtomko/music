@@ -75,8 +75,7 @@ timpaninotes = {
 \score {
   <<
     \new Staff \with {
-      instrumentName = "Timpani"
-      midiInstrument = "timpani"
+      instrumentName = "Timp."
     } <<
       \clef "bass"
       \new Voice {
@@ -84,8 +83,7 @@ timpaninotes = {
       }
     >>
     \new Staff \with {
-      instrumentName = "Contrabass"
-      midiInstrument = "contrabass"
+      instrumentName = "Cb."
     } <<
       \clef "bass"
       \new Voice {
@@ -93,28 +91,4 @@ timpaninotes = {
       }
     >>
   >>
-}
-
-\score {
-  <<
-    \new Staff \with {
-      instrumentName = "Timpani"
-      midiInstrument = "timpani"
-    } <<
-      \clef "bass"
-      \new Voice {
-        \timpaninotes
-      }
-    >>
-    \new Staff \with {
-      instrumentName = "Contrabass"
-      midiInstrument = "contrabass"
-    } <<
-      \clef "bass"
-      \new Voice {
-        \bassnotes
-      }
-    >>
-  >>
-  \midi { }
 }
