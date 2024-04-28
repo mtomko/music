@@ -983,7 +983,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
                 \stemUp a,4 r8 a8 gis4. (a8)
               }
             >>
-          } \pageBreak
+          } \clef bass \pageBreak
           |<<
             \new CueVoice {
               \cueClef bass fis2 \cueClef treble dis'''4 (eis8)
@@ -1007,7 +1007,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           >>
           |<<
             \new CueVoice {
-              \cueClef bass fis,4 r8 fis8 eis4\marcato fis\marcato \cueClefUnset
+              \cueClef bass fis,4 r8 fis8 eis4\marcato fis\marcato \once \override Staff.Clef.stencil = ##f \cueClefUnset
             }
             \\
             {R1}
