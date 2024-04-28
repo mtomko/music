@@ -980,13 +980,13 @@ menoF = \markup { \tiny \italic meno \dynamic f }
               {R1}
               \\
               \new CueVoice {
-                \stemUp a,4 r8 a8 gis4. (a8) 
+                \stemUp a,4 r8 a8 gis4. (a8)
               }
             >>
           } \pageBreak
           |<<
             \new CueVoice {
-             \cueClef bass fis2 \cueClef treble dis'''4 (eis8) 
+              \cueClef bass fis2 \cueClef treble dis'''4 (eis8)
             }
             \\
             {R1}
@@ -999,40 +999,48 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             {R1}
           >>
           |<<
+            {R1}
+            \\
             \new CueVoice {
               fis,2 eis4. (fis8)
             }
-            \\
-            {R1}
           >>
           |<<
             \new CueVoice {
-              \clef bass fis4 r8 fis8 eis4\marcato fis\marcato \cueClefUnset
+              \cueClef bass fis,4 r8 fis8 eis4\marcato fis\marcato \cueClefUnset
             }
             \\
             {R1}
           >>
-          \bar "||" \mark \default r4 d2~ d4\tenuto
+          \bar "||" \mark \default \clef bass r4 d2~ d4\tenuto
           | d4 (g a b)
           | c4 (b a4. g8)
           | d1
           | r4 b2~b4\tenuto \break
           | b4 (fis' g a)
           | a4 (g fis4. e8)
-          | \clef treble cis'2.\<~cis4-.\!
-          | d4 \clef bass g,,8\p (a bes c d ees)
+          | cis'2.\<~cis4-.\!
+          | d4 \clef bass g,8\p (a bes c d ees)
           | f4 (a2) g4
           | f4 (b a g)
           | \clef treble a4 (d2 c4) \break
           | bes4-. (\clef bass bes,4-.) a4.\accent (bes8)
           | ces2\accent ces4.\accent (c8-.)
           | des2\accent c4.\accent (d8-.)
-          | ees2\accent \afterGrace f2~\trill\accent { ees16 [f] } 
+          | ees2\accent \afterGrace f2~\trill\accent { ees16 [f] }
           | ges2\accent d4.\accent (ees8)
           | aes,2\accent des\accent
           | \mark \default bes2\accent\f a4.\accent (bes8)
           | bes,1~\accent\>
           | bes1\! \break
+          | b2\accent\f ais'4.\accent (b8)
+          | b,1\accent\>~
+          | b1
+          | c2\f b'4.\accent_\markup{ \italic "con affetto" } (c8)
+          | fis,4 (r8 fis8-.) ees'4.\accent (d8)
+          | c8 b c d ees d ees f
+          | g2 \clef treble aes4.\accent (g8)
+          | f4 (r8 f8-.) bes4.\accent (aes8)\break
         }
       }
     }
