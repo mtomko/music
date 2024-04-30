@@ -1041,6 +1041,26 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | c8 b c d ees d ees f
           | g2 \clef treble aes4.\accent (g8)
           | f4 (r8 f8-.) bes4.\accent (aes8)\break
+          | g4 r8 (g8-.) c4. (bes8)
+          | aes4.\accent (g8) f4.\accent ees8
+          | \mark \default d4 r4 b8_\markup { \italic "stretto e furioso" }\< aes b cis
+          | d8 cis d e f e f g
+          | aes8 g aes bis b aes b cis
+          | d cis d e f e f g \break
+          | aes8\!_\markup {\italic secco } r r4 r2
+          | r1^\markup { "G.P." }
+          | \clef bass a,,,2\mf\accent^\markup { \italic "molto meno mosso" } \(gis'4.\accent (a8)\)
+          | a,1~\>
+          | a1~
+          | a1
+          | a2\p\accent \(gis'4.\accent (a8)\)
+          | a,1~\>
+          | a1~
+          | a1
+          |
+          \textMark\markup\small {\musicglyph #"scripts.ufermata"}
+          \mark\default a2\f\accent gis4. (a8) \break
+          | 
         }
       }
     }
