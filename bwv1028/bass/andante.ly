@@ -37,6 +37,6 @@ andanteBassNotes =
   | \mark \default a8.\tenuto (c16\tenuto) b8 a a32 (b c16 b8\staccato) b8.\tenuto (d16\tenuto) c8 b b32 (c d16 c8\staccato) \break
   | cis8 cis32 (d e16 d8\staccato) dis dis32 (e fis16 e8\staccato) \appoggiatura d c8.\trill\tenuto (b16\tenuto) a8 a4.~
   | a1.~
-  | a4.~a16 gis (b a) b8~ b16 e e,8 gis!8\trill \appoggiatura { a,16 c e} a4\fermata \bar "||"
+  | a4.~a16 gis (b a) b8~ b16 e e,8 gis!8\trill \appoggiatura { a,16 c e} a4\fermata \fine
   \autoLineBreaksOn
 }

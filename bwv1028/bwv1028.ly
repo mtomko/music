@@ -12,8 +12,8 @@
   composer = "Johann Sebastian Bach"
   instrument = "Contrabass"
   meter = \soloTuning
-  arranger = \markup { \tiny "(1685 - 1750)" }
-  copyright = \markup { \small \italic "Engraving Ⓒ Mark Tomko, 2024" }
+  arranger = \markup { \small "(1685 - 1750)" }
+  copyright = \markup { \tiny \italic "Engraving Ⓒ Mark Tomko, 2024" }
   tagline = #f
 }
 

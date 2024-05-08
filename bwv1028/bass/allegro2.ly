@@ -140,5 +140,5 @@ allegroIIBassNotes =
   | a8 d, g~ g c, f~
   | f8 b, e~ e a, d~ (
   | d16 c\tenuto) b a g f g a \acciaccatura e8 d8.\trill\tenuto (c16-.)
-  | \appoggiatura { c e g } c2. \fermata
+  | \appoggiatura { c e g } c2. \fermata \fine
 }
