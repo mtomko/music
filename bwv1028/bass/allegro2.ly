@@ -19,8 +19,8 @@ allegroIIBassNotes =
   | c8 \acciaccatura c b8.\trill (a32 b) c16 e, f g a g
   | a16 b a g fis e fis8 g16 a b8
   | a16 g \acciaccatura g8 fis8.\trill\tenuto (g16-.) g8 g'4~\trill
-  | g8 \acciaccatura g8 fis4~\trill fis8 \acciaccatura fis e4~\trill
-  | e8 \acciaccatura e8 d4~\trill d8 \acciaccatura d8 c4~\trill \break
+  | g8 fis4~\trill fis8 e4~\trill
+  | e8 d4~\trill d8 c4~\trill \break
   | c16 a b c d c d e \acciaccatura b8 a8.\trill\tenuto (g16-.)
   | \mark 14 g8 d16 e d8 d b'16 (a) g b
   | a8 d,16 e d8 d c'16 (b) a c
