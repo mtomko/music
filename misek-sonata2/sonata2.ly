@@ -632,7 +632,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | bes8_\markup { \italic rit. } g f d
           | bes2
           | <bes' d, bes>4\>^\markup { pizz. }\arpeggio r4
-          | <bes d, bes>4\arpeggio\! r4\fermata \fine
+          | <bes d, bes>4\arpeggio\! r4\fermata \fine \pageBreak
         }
       }
     }
@@ -863,7 +863,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | d8\accent (e d4) fis\fz\marcato
           | <<
             b,4 d g\marcato_\markup { \dynamic ffz }
-          >> r r \fine
+          >> r r \fine \pageBreak
         }
       }
     }
@@ -882,6 +882,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           \key d \minor
           \tempo "Allegro appassionato"
           \repeat volta 2 {
+            \autoPageBreaksOff
             d2\accent\f cis'4.\accent (d8)
             | a4 (r8 a8-.) f'4.\accent (e8)
             | d8 (cis d e) f (e f g)
@@ -1041,7 +1042,7 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | c8 b c d ees d ees f
           | g2 \clef treble aes4.\accent (g8)
           | f4 (r8 f8-.) bes4.\accent (aes8)\break
-          | g4 r8 (g8-.) c4. (bes8)
+          | g4 (r8 g8-.) c4. (bes8)
           | aes4.\accent (g8) f4.\accent ees8
           | \mark \default d4 r4 b8_\markup { \italic "stretto e furioso" }\< aes b cis
           | d8 cis d e f e f g
@@ -1057,10 +1058,64 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | a,1~\>
           | a1~
           | a1
-          |
-          \textMark\markup\small {\musicglyph #"scripts.ufermata"}
-          \mark\default a2\f\accent gis4. (a8) \break
-          | 
+          | \tweak X-offset 0 \textMark\markup\small {\musicglyph #"scripts.ufermata"} \mark \default a2\f\accent gis'4. (a8) \break
+          | e4 (r8 e8-.) cis'4.\accent (b8)
+          | a4\< (r8 a8-.) e'4.\accent (d8)
+          | cis4 (r8 cis8-.) bes'4.\fz\accent a8
+          | a8\ff r a (g) g (e) e (cis)
+          | cis\> (a) a (g) g (e) e (a,)
+          \bar "||" d2^\markup { \large "Tempo I." }\accent\f cis'4. (d8)\break
+          | a4 (r8 a-.) f'4.\accent (e8)
+          | d8 (cis d e) f (e f g)
+          | a2\accent bis4.\accent (a8)
+          | g4.\accent (e8) g4.\accent (f8)
+          | e4.\accent (cis8) e4.\accent (d8)
+          | cis4 bis8 (g) g (e) e (bis') \break
+          | a4 r8 a, bis4\marcato a\marcato
+          | \mark \default d2\accent\f cis'4.\accent (d8)
+          | a4 (r8 a-.) f'4.\accent (e8)
+          | d8\accent (cis d e) f\accent (e f g)
+          | a2\accent r4 bes,,^\markup{ \small "pizz." }\ff
+          | r4 c r cis
+          | r4 d r a \break
+          | r4 b r gis
+          | r4 a fis'8^\markup{\small arco} (a) a (d)
+          | dis2 d8 (fis) fis (a)
+          | gis4 r gis4. (gis8-.)
+          | \mark \default gis8 (a) a (eis) eis (fis) fis (cis)
+          | cis8 (d) d (ais) ais (b) b (f) \break
+          | e8 r e (fis gis f g a)
+          | b8 (ais b cis) d (cis d dis)
+          | e8 r a, (b cis b cis d)
+          | \clef treble e8 (dis e fis) g (a b cis)
+          | \mark\default d4 r r2
+          | R1 \pageBreak
+          | r4 fis,2\p (d'4)
+          | d4 (cis b a)
+          | \clef bass r4 a,2_\markup { \small \italic "dolciss."}\pp (a4-.)
+          | a4 (d e f)
+          | g4 (f e4.\prall d8)
+          | a'2. (a4-.)\p
+          | \mark \default \clef treble a2._\markup { \italic "molto espressivo" } a4
+          | a4 c2 (bes4) \break
+          | a4 b,8 (c d e f g)
+          | a4 c2 (bes4)
+          | a4 d2_\markup{ \italic "cresc." } (c4)
+          | b4\< e2 (d4)
+          | c4\f g'2 (f4)
+          | e4\tenuto d\tenuto c\tenuto b\tenuto
+          | b (a c) b\tenuto \break
+          | a4\tenuto\> g\tenuto e\tenuto c\tenuto
+          | \clef bass f8\p (f,) f (f-.) f (fis) fis (fis-.)
+          | fis8 (g) g-. (g-.) g (gis) gis-. (gis-.)
+          | gis8 (a) a-. (a-.) a (a,) a-. (a-.)
+          | a (bes) bes-. (bes-.) bes (b) b-. (b-.) \break 
+          | \mark \default c (d) e-. (f-.) g-.\< a-. bes-.  c-.
+          | \clef treble d8-. e-. f-. g-. a-. b-. c-. b-. 
+          | a4\f bes8 (a) a2~ 
+          | a4 \clef bass bes,8 (a) a2~
+          | a4 bes8 (a) a,4-. bes'8 (a)
+          | a4 bes'8 (a) a4-. a,,\marcato \break
         }
       }
     }
