@@ -2,6 +2,8 @@
 
 menoF = \markup { \tiny \italic meno \dynamic f }
 
+piuF = \markup { \tiny \italic piu \dynamic f }
+
 \include "bass/solo-tuning.ly"
 
 \header {
@@ -1109,13 +1111,62 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           | \clef bass f8\p (f,) f (f-.) f (fis) fis (fis-.)
           | fis8 (g) g-. (g-.) g (gis) gis-. (gis-.)
           | gis8 (a) a-. (a-.) a (a,) a-. (a-.)
-          | a (bes) bes-. (bes-.) bes (b) b-. (b-.) \break 
+          | a (bes) bes-. (bes-.) bes (b) b-. (b-.) \break
           | \mark \default c (d) e-. (f-.) g-.\< a-. bes-.  c-.
-          | \clef treble d8-. e-. f-. g-. a-. b-. c-. b-. 
-          | a4\f bes8 (a) a2~ 
+          | \clef treble d8-. e-. f-. g-. a-. b-. c-. b-.
+          | a4\f bes8 (a) a2~
           | a4 \clef bass bes,8 (a) a2~
           | a4 bes8 (a) a,4-. bes'8 (a)
           | a4 bes'8 (a) a4-. a,,\marcato \break
+          | d'2.\p f8 (e)
+          | d2. f8 (e)
+          | \clef treble d4. (cis8-.)\< d4. (e8-.)
+          | f4. (g8-.) a4. (b8-.)\mf
+          | c2. (e8 d)
+          | c2. \clef bass c,,8-. d-.
+          | e8-.\< f-. g-. a-. b-. c-. d-. e-. \break
+          | f2.\p a8 (g)
+          | f2. a8 (g)
+          | f2 e4. (f8)
+          | \clef treble a4.\< (bes8-.) d4. (gis,8-.)\mf
+          | a2. c8 (bes)
+          | a2. c8 (bes)
+          | a2. a,8-. b-.
+          | cis-.\< d-. e-. f-. g-. a-. b-. cis-. \break
+          | \mark \default d2\accent\f cis4.\accent (d8)
+          | a4 (r8 a-.) f'4.\accent (e8)
+          | d4 (r8 d-.) g4.\accent (f8)
+          | e4.\accent (d8) c4.\accent (bes8)
+          | bes8 (a) a (c) c (bes) bes (a)
+          | a8 (g) g (e) \clef bass e (cis) cis (a) \break
+          | d,2_\piuF\accent d'\accent
+          | d,4-. r a'2\accent
+          | bes4 r \repeat tremolo 2 c,8 \repeat tremolo 2 d8
+          | \repeat tremolo 2 ees8 \repeat tremolo 2 f8 \repeat tremolo 2 g8 \repeat tremolo 2 gis8
+          | \repeat tremolo 2 a8 \repeat tremolo 2 g8 \repeat tremolo 2 f8 \repeat tremolo 2 e8 
+          | \repeat tremolo 2 d8 \repeat tremolo 2 c8 \repeat tremolo 2 bes8 \repeat tremolo 2 gis8 
+          | \mark \default a8_\markup{ \small \italic "più stretto e cresc" }\p r \repeat tremolo 2 a8 \repeat tremolo 2 bes8 \repeat tremolo 2 a8 \break
+          | \repeat tremolo 2 d8 \repeat tremolo 2 cis8 \repeat tremolo 2 f8 \repeat tremolo 2 e8 
+          | \repeat tremolo 2 bes'8 \repeat tremolo 2 a8  \repeat tremolo 2 d8 \repeat tremolo 2 cis8 
+          | \repeat tremolo 2 f8\< \repeat tremolo 2 e8 \repeat tremolo 2 bes'8 \repeat tremolo 2 a8
+          | \clef treble \repeat tremolo 2 bes8\ff \repeat tremolo 2 a8 \repeat tremolo 2 bes8 \repeat tremolo 2 a
+          | \tuplet 3/2 { bes4 a bes } \tuplet 3/2 { bes a bes }
+          | d2 r
+          | a4\ff (r8 a-.) f'4.\accent (e8) \break
+          | d4 r r2 
+          | \clef bass a,4\f (r8 a-.) f4.\accent (e8)
+          | \mark \default \clef treble d'2\f\accent cis4.\accent (d8)
+          | d2\accent cis'4. (d8)
+          | d2\accent cis,4._\markup{ \small \italic "dim." }\accent (d8)
+          | \clef bass d2\accent cis,4.\accent (d8)
+          | d4 r d8\p cis d e \break
+          | f8 e f g a gis a cis 
+          | d8_\markup { \small \italic "cresc." } cis d e f e f g 
+          | \clef treble a\< gis a cis d cis d e
+          | f4_\markup { \small \italic "secco" }\f r r2
+          | \clef bass <<d,,2_\markup{ \italic "pesante" }\ff d'2\accent>> <<d, f'\accent>>
+          | <<d,1~ d'1\accent~>>
+          | <<d,4 d'4>> r r2 \fine
         }
       }
     }
