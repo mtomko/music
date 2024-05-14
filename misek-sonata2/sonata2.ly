@@ -1143,25 +1143,25 @@ piuF = \markup { \tiny \italic piu \dynamic f }
           | d,4-. r a'2\accent
           | bes4 r \repeat tremolo 2 c,8 \repeat tremolo 2 d8
           | \repeat tremolo 2 ees8 \repeat tremolo 2 f8 \repeat tremolo 2 g8 \repeat tremolo 2 gis8
-          | \repeat tremolo 2 a8 \repeat tremolo 2 g8 \repeat tremolo 2 f8 \repeat tremolo 2 e8 
-          | \repeat tremolo 2 d8 \repeat tremolo 2 c8 \repeat tremolo 2 bes8 \repeat tremolo 2 gis8 
+          | \repeat tremolo 2 a8 \repeat tremolo 2 g8 \repeat tremolo 2 f8 \repeat tremolo 2 e8
+          | \repeat tremolo 2 d8 \repeat tremolo 2 c8 \repeat tremolo 2 bes8 \repeat tremolo 2 gis8
           | \mark \default a8_\markup{ \small \italic "più stretto e cresc" }\p r \repeat tremolo 2 a8 \repeat tremolo 2 bes8 \repeat tremolo 2 a8 \break
-          | \repeat tremolo 2 d8 \repeat tremolo 2 cis8 \repeat tremolo 2 f8 \repeat tremolo 2 e8 
-          | \repeat tremolo 2 bes'8 \repeat tremolo 2 a8  \repeat tremolo 2 d8 \repeat tremolo 2 cis8 
+          | \repeat tremolo 2 d8 \repeat tremolo 2 cis8 \repeat tremolo 2 f8 \repeat tremolo 2 e8
+          | \repeat tremolo 2 bes'8 \repeat tremolo 2 a8  \repeat tremolo 2 d8 \repeat tremolo 2 cis8
           | \repeat tremolo 2 f8\< \repeat tremolo 2 e8 \repeat tremolo 2 bes'8 \repeat tremolo 2 a8
           | \clef treble \repeat tremolo 2 bes8\ff \repeat tremolo 2 a8 \repeat tremolo 2 bes8 \repeat tremolo 2 a
           | \tuplet 3/2 { bes4 a bes } \tuplet 3/2 { bes a bes }
           | d2 r
           | a4\ff (r8 a-.) f'4.\accent (e8) \break
-          | d4 r r2 
+          | d4 r r2
           | \clef bass a,4\f (r8 a-.) f4.\accent (e8)
           | \mark \default \clef treble d'2\f\accent cis4.\accent (d8)
           | d2\accent cis'4. (d8)
           | d2\accent cis,4._\markup{ \small \italic "dim." }\accent (d8)
           | \clef bass d2\accent cis,4.\accent (d8)
           | d4 r d8\p cis d e \break
-          | f8 e f g a gis a cis 
-          | d8_\markup { \small \italic "cresc." } cis d e f e f g 
+          | f8 e f g a gis a cis
+          | d8_\markup { \small \italic "cresc." } cis d e f e f g
           | \clef treble a\< gis a cis d cis d e
           | f4_\markup { \small \italic "secco" }\f r r2
           | \clef bass <<d,,2_\markup{ \italic "pesante" }\ff d'2\accent>> <<d, f'\accent>>
