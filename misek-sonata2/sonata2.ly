@@ -10,7 +10,7 @@ piuF = \markup { \tiny \italic piu \dynamic f }
   title = "SONATA No. 2, Op. 6"
   composer = "Adolf Míšek"
   instrument = "Contrabass"
-  copyright = "Engraving Ⓒ Mark Tomko, 2023"
+  copyright = "Engraving Ⓒ Mark Tomko, 2024"
   %{meter = \soloTuning %}
   tagline = #f
 }
