@@ -20,12 +20,12 @@ notes = \relative {
   \set stringNumberOrientations = #'(down)
   %{ starts page 1 %}
   \compressMMRests R1*9^\markup { "Non allegro" }
-  | \mark \default r4 a8\ff\downbow r g\downbow r e\downbow r
+  | \mark \default r4 aes8\ff\downbow r g\downbow r ees\downbow r
   | f8 \downbow r des\downbow ees\upbow aes,\downbow r d\downbow r 
   | r4 des8\downbow r c\downbow r aes\downbow r \break
-  | bes8\downbow r ges\downbow aes\upbow des\downbow r g\downbow r 
+  | bes8\downbow r ges\downbow aes\upbow des\downbow r g,\downbow r 
   | r2 a8\sff\downbow r r4 
-  | r4 aes8 r8 r4 r8 g16\ff\downbow ees 
+  | r4 aes?8 r8 r4 r8 g'16\ff\downbow ees 
   | c2.~c8 g'16\downbow ees
   | c2.~c8 g'16\downbow ees\break
   |\mark \default c2.~c8 g'16\downbow ees 
@@ -38,13 +38,13 @@ notes = \relative {
   | \repeat percent 2 { f8\mf\downbow r8 r4 f8\downbow r c\upbow r }
   | f8 r r4 r8 a8_\markup { \italic \small "cresc." }-.\downbow a4\tenuto\upbow \break
   | fis8-. d-. d4\tenuto\downbow f\tenuto\upbow g,8\downbow r 
-  | \repeat percent 2 { c8\ff\downbow r r4 f\downbow r ees\downbow r }
+  | \repeat percent 2 { c8\ff\downbow r r4 f8\downbow r ees\downbow r }
   | \repeat percent 2 { c8 r r4 f8\downbow r_\markup { \small \italic "dim." } ees8\upbow r }
   | \mark \default c8\p r r4 c4^\markup { \small \italic "pizz." } g'
   | c,4 r c_\markup { \small \italic "dim" } g' \break
   | c,4 r c r
   | c4\pp r r2
-  | r2 r4 r8 ees16\f\downbow^\markup { \tiny \italic "bass soli" } c16
+  | r2 r4^\markup{ \small \italic "arco" } r8 ees16\f\downbow^\markup { \tiny \italic "bass soli" } c16
   | \repeat percent 2 {aes2~\accent\downbow aes8 bes16\upbow d f8-.\accent\upbow ees16 c}
   | aes8-.\accent bes16\upbow d f8-.\accent g16\downbow ees c8-.\accent des16\upbow f aes8-.\accent g16^\markup { \tiny \italic "celli" }\downbow ees16 \break
   | \mark \default \repeat percent 2 {  c2~\accent c8 des16\upbow g bes8-.\accent g16\downbow ees }
