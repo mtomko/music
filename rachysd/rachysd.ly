@@ -21,23 +21,23 @@ notes = \relative {
   %{ starts page 1 %}
   \compressMMRests R1*9^\markup { "Non allegro" }
   | \mark \default r4 aes8\ff\downbow r g\downbow r ees\downbow r
-  | f8 \downbow r des\downbow ees\upbow aes,\downbow r d\downbow r 
+  | f8 \downbow r des\downbow ees\upbow aes,\downbow r d\downbow r
   | r4 des8\downbow r c\downbow r aes\downbow r \break
-  | bes8\downbow r ges\downbow aes\upbow des\downbow r g,\downbow r 
-  | r2 a8\sff\downbow r r4 
-  | r4 aes?8 r8 r4 r8 g'16\ff\downbow ees 
+  | bes8\downbow r ges\downbow aes\upbow des\downbow r g,\downbow r
+  | r2 a8\sff\downbow r r4
+  | r4 aes?8 r8 r4 r8 g'16\ff\downbow ees
   | c2.~c8 g'16\downbow ees
   | c2.~c8 g'16\downbow ees\break
-  |\mark \default c2.~c8 g'16\downbow ees 
-  | c2.~c8 r 
+  |\mark \default c2.~c8 g'16\downbow ees
+  | c2.~c8 r
   | \repeat percent 4 { c8\downbow r r4 c8\downbow r ees\downbow r }
   | c8\downbow r ees\downbow r r4 f8_\markup { \italic \small "dim."}\upbow r \break
   | \repeat percent 2 { g8\mf\downbow r r4 g8\downbow r8 d8\upbow r  }
-  | \mark \default g8 r r4 r2 
-  | R1 
+  | \mark \default g8 r r4 r2
+  | R1
   | \repeat percent 2 { f8\mf\downbow r8 r4 f8\downbow r c\upbow r }
   | f8 r r4 r8 a8_\markup { \italic \small "cresc." }-.\downbow a4\tenuto\upbow \break
-  | fis8-. d-. d4\tenuto\downbow f\tenuto\upbow g,8\downbow r 
+  | fis8-. d-. d4\tenuto\downbow f\tenuto\upbow g,8\downbow r
   | \repeat percent 2 { c8\ff\downbow r r4 f8\downbow r ees\downbow r }
   | \repeat percent 2 { c8 r r4 f8\downbow r_\markup { \small \italic "dim." } ees8\upbow r }
   | \mark \default c8\p r r4 c4^\markup { \small \italic "pizz." } g'
@@ -80,44 +80,44 @@ notes = \relative {
   | \mark \default c,8\sff\downbow r r4 f8\downbow r ees\downbow r
   | c8\downbow r r4 f8\downbow r ees\downbow r
   | c8\downbow r r4 r2 \break
-  | c4^\markup { \small \italic "pizz." }\p r r2 
-  | c4 r r2 
-  | c4 r f_\markup { \small \italic "dim." } ees 
-  | c4 r f ees 
+  | c4^\markup { \small \italic "pizz." }\p r r2
+  | c4 r r2
+  | c4 r f_\markup { \small \italic "dim." } ees
+  | c4 r f ees
   | \mark \default c4 r c g
-  | c4 r c g 
+  | c4 r c g
   | c4 r c r \break
-  | c4 r r2 
-  | R1 
+  | c4 r r2
+  | R1
   | \compressMMRests R1*2^\markup { \small \italic "poco a poco rall." }
   \bar "||" \key e \major \compressMMRests R1 * 5
   \bar "||" \compressMMRests R1*4^\markup { Lento }
   | \mark \default \compressMMRests R1*3 \break
   | \compressMMRests R1*4
-  | \mark \default 
+  | \mark \default
   | \compressMMRests R1*5
   | \time 2/4 R2
   | \time 4/4 \compressMMRests R1*2
   | \mark \default \compressMMRests R1*4
   | \time 3/4 \compressMMRests R2.*3 \break
   | \time 2/4 R2
-  | \time 3/4 R2. 
-  | \time 2/4 R2 
+  | \time 3/4 R2.
+  | \time 2/4 R2
   | \time 3/4 R2.
   | \mark \default \time 4/4 \compressMMRests R1*3
   | <<
     \new CueVoice {
-      \cueClef "tenor" \stemUp dis'8^"Cello"\tenuto b\tenuto gis2\tenuto \cueClefUnset r4 
+      \cueClef "tenor" \stemUp dis'8^"Cello"\tenuto b\tenuto gis2\tenuto \cueClefUnset r4
     } \\
     { r2 r4 f^\markup{ \tiny "2 bassi" }^\markup{ \tiny \italic "pizz." }\pp }
-    >>
-  | e4 r d r \break 
-  | c4 r r2 
-  | \compressMMRests R1*2 
+  >>
+  | e4 r d r \break
+  | c4 r r2
+  | \compressMMRests R1*2
   | r2^\markup { \tiny "2 bassi" } r4 b'4\p
-  | \mark \default a4 r g_\markup { \small "dim." } r  
-  | fis\pp r r2 
-  | \compressMMRests R1*2 
+  | \mark \default a4 r g_\markup { \small "dim." } r
+  | fis\pp r r2
+  | \compressMMRests R1*2
   | \time 2/4 R2 \pageBreak
   | \time 4/4 \compressMMRests R1*2
 }
@@ -136,7 +136,7 @@ notes = \relative {
   }
 }
 
-\book { 
+\book {
   \bookOutputSuffix "no-fingerings"
   \score {
     \layout {
