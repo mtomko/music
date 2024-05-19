@@ -32,7 +32,6 @@ piuF = \markup { \tiny \italic piu \dynamic f }
           \time 3/4
           \key d \minor
           \tempo "Con fuoco."
-
           | d'2.~ \f\>
           | d4 a4_\menoF\! (f'4)
           | f4. e8 d8 cis8
