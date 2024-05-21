@@ -26,9 +26,9 @@ menoF = \markup { \tiny \italic meno \dynamic f }
           \set Score.currentBarNumber = #38
           \repeat volta 2  {
             \partial 8 d8
-            | g8 g16. a32 fis8 fis 
+            | g8 g16. a32 fis8 fis
             \grace { \bar "" bes8 \bar "|" } bes8. a16 g8 d16. g32
-            | bes8 bes16. c32 a8 a 
+            | bes8 bes16. c32 a8 a
             \grace { \bar "" d8 \bar "|" } d8. c16 bes8 g16. d'32
             | g8 g f f
             | ees8. d16 c8 f \break
@@ -45,11 +45,11 @@ menoF = \markup { \tiny \italic meno \dynamic f }
             | f16 (ees d c) bes16. c32 a8
             | \partial 4. a4 (g8) \noBreak
           }
-          | \partial 8 r8 
+          | \partial 8 r8
           | \sectionLabel Majeur \key g \major g8_\markup { \italic Pizzicato } r d r
           | r16 g e cis d8 r
           | r8 r16 e'16 c,8 r
-          | r8 d'8 d,8 r 
+          | r8 d'8 d,8 r
         }
       }
     }
