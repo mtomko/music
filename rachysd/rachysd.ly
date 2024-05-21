@@ -197,10 +197,10 @@ notes = \relative {
   | c8 r r4 aes'^\markup { \small \italic "pizz." } aes \break
   | c,2^\markup{ \small \italic "arco"}\downbow~ c8 r^\markup { \small \italic "pizz." } aes'4\accent
   | \mark \default c,1:32^\markup { \small \italic "arco" }\pp\accent
-  | c1:^\markup { \small \italic "arco" }\accent
-  | c1:^\markup { \small \italic "arco" }\accent
-  | c1:^\markup { \small \italic "arco" }
-  | c1:^\markup { \small \italic "arco" }
+  | c1:\accent
+  | c1:\accent
+  | c1:
+  | c1:
   \bar "||" \key c \major c8\pp r r4 r2
   | r2 a'2\p\upbow
   | g1 \break
@@ -252,6 +252,9 @@ notes = \relative {
 \book {
   \bookOutputSuffix "no-fingerings"
   \score {
+    \header {
+      piece = "Bass"
+    }
     \layout {
       \context {
         \Score
