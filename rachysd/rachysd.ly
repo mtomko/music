@@ -134,8 +134,8 @@ notes = \relative {
   | cis1\tenuto~
   | cis4 cis2_\markup { \small \italic "cresc." } cis4~
   | cis4 cis\tenuto\upbow cis\f\tenuto cis\accent \break
-  | \key c \major \time 3/4 fis4^\markup { "Tempo I"}\mf bes d,
-  | a4 cis_\markup{ \small \italic "cresc." } fis
+  | \key c \major \time 3/4 fis4\tweak X-offset -2 ^\markup { "Tempo I"}\mf\downbow bes d,
+  | a'4 cis,_\markup{ \small \italic "cresc." } fis
   | c4 e aes
   | ees4 g b,
   | \time 4/4 ees1\ff~
@@ -150,19 +150,19 @@ notes = \relative {
   | \mark \default des,2.^\markup { \small \italic "arco" }\tenuto\accent\mf\>\downbow aes4\upbow
   | f'2.\tenuto\accent\mf\downbow\> c4\upbow\!\break
   | aes4_\markup { \small \italic cresc. } f8\accent\upbow r bes4\downbow fis8\accent\upbow r
-  | b8-.\downbow c4\tenuto\upbow gis\tenuto d'\tenuto bes8~
-  | \mark \default bes8\f e-. e,4\tenuto~ e8 fis-.\upbow e4\tenuto~
+  | b!8-.\downbow c4\tenuto\upbow gis\tenuto d'\tenuto bes8~
+  | \mark \default bes8\f e-.\upbow e,4\tenuto~ e8 fis-.\upbow e4\tenuto~
   | \time 3/4 e8 [fis-.] e fis e4\tenuto~
-  | \time 4/4 e8 e'\accent\upbow e,4\accent~ e8 f-.\upbow e4\accent~\break
-  | e8 [f-.] e-. f-. e4. f'8_\markup { \small \italic "cresc."}\accent\upbow
-  | f,4.\downbow g'8\accent g,4.\accent f'8\accent
+  | \time 4/4 e8 e'\accent\upbow e,4\accent~ e8 f!-.\upbow e4\accent~\break
+  | e8 [f-.] e-. f-. e4.\tenuto f'8_\markup { \small \italic "cresc."}\accent\upbow
+  | f,4.\accent\downbow g'8\accent g,4.\accent f'8\accent
   | f,8-.\ff [f-.] f-. a!-. f-. [a] f r
   | \mark \default r4 des'^\markup{ \small \italic "pizz."}\f r des
   | r4 des r des
   | \compressMMRests R1*4 \break
   | \key ees \major R1
   | \time 2/4 R2
-  | \time 4/4 r8^\markup {\small \italic "arco" } a'8_\markup{ \small \italic "molto marcato" }-.\downbow g-.\downbow ges-.\downbow f-.\downbow e!-.\downbow ees-.\downbow aes,-.\downbow
+  | \time 4/4 r8^\markup {\small \italic "arco" } aes'!8_\markup{ \small \italic "molto marcato" }-.\downbow g-.\downbow ges-.\downbow f-.\downbow e!-.\downbow ees-.\downbow aes,-.\downbow
   | d8-.\downbow r r4 des8-.\downbow r g,-.\downbow r
   | r2 a8-.\sff\downbow r r4 \break
   | r4 a8-.\downbow aes-.\upbow r4 r8 g'16\ff\downbow ees
