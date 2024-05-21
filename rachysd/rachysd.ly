@@ -71,9 +71,9 @@ notes = \relative {
   | \time 3/4 R2.
   | \mark \default \time 4/4 r8 des8\p-.\upbow bes4~ bes8 e16\downbow des? bes8-. f-.\break
   | bes8-. ges'16-.\downbow d-. bes4~\f\accent\> bes8\! r r4
-  | r8 d-.\p\upbow b4. f'16_\markup { \small \italic "cresc." }\downbow d bes8 fis'
+  | r8 d-.\p\upbow b4. f'16_\markup { \small \italic "cresc." }\downbow d b8 fis'
   | b,8 g'16\downbow dis b4~\f\accent\> b8\! r r4
-  | r8 fis'8-._\markup { \small \italic "marcato" }\downbow bes,-.\upbow d16\downbow b fis2\accent~
+  | r8 fis'8-._\markup { \small \italic "marcato" }\downbow bes,?-.\upbow d16\downbow b fis2\accent~
   | fis8 aes'-.\upbow c,-.\downbow e16\downbow cis gis2~\accent \break
   | gis8 d'-.\mf\upbow d4\tenuto ees8-._\markup{ \small \italic "cresc." }\upbow e-.\upbow e4\tenuto
   | f8-.\upbow g-.\upbow g4\tenuto\downbow a8\upbow r g\downbow r8
@@ -120,6 +120,55 @@ notes = \relative {
   | \compressMMRests R1*2
   | \time 2/4 R2 \pageBreak
   | \time 4/4 \compressMMRests R1*2
+  | \mark \default \compressMMRests R1*6
+  | \time 2/4 R2
+  | \mark \default \time 4/4 r4^\markup { \small \italic "arco" } cis2.^\markup{ \small \italic "tutti"}\pp\downbow~
+  | cis1~
+  | \time 3/4 cis2.\upbow
+  \bar "||" \time 4/4 cis1^\markup{ \small \italic "a tempo piu mosso" }\pp~
+  | cis1~ \break
+  | cis8 r r4 r2
+  | \compressMMRests R1*3
+  | cis1^\markup { \small \italic "poco a poco accel." }\tenuto
+  | cis1\tenuto
+  | cis1\tenuto~
+  | cis4 cis2_\markup { \small \italic "cresc." } cis4~
+  | cis4 cis\tenuto\upbow cis\f\tenuto cis\accent \break
+  | \key c \major \time 3/4 fis4^\markup { "Tempo I"}\mf bes d,
+  | a4 cis_\markup{ \small \italic "cresc." } fis
+  | c4 e aes
+  | ees4 g b,
+  | \time 4/4 ees1\ff~
+  | ees2.~ees8_\markup { \small \italic "dim." } \tweak X-offset -3 \upbow  r
+  | \mark \default \time 3/4 ees'4^\markup { \small \italic "pizz." }\p r r
+  | R2. \break
+  | ees4 r r
+  | R2.
+  | \time 4/4 ees4 r r2
+  | ees4 r r2
+  | \compressMMRests R1*2
+  | \mark \default des,2.^\markup { \small \italic "arco" }\tenuto\accent\mf\>\downbow aes4\upbow
+  | f'2.\tenuto\accent\mf\downbow\> c4\upbow\!\break
+  | aes4_\markup { \small \italic cresc. } f8\accent\upbow r bes4\downbow fis8\accent\upbow r
+  | b8-.\downbow c4\tenuto\upbow gis\tenuto d'\tenuto bes8~
+  | \mark \default bes8\f e-. e,4\tenuto~ e8 fis-.\upbow e4\tenuto~
+  | \time 3/4 e8 [fis-.] e fis e4\tenuto~
+  | \time 4/4 e8 e'\accent\upbow e,4\accent~ e8 f-.\upbow e4\accent~\break
+  | e8 [f-.] e-. f-. e4. f'8_\markup { \small \italic "cresc."}\accent\upbow
+  | f,4.\downbow g'8\accent g,4.\accent f'8\accent
+  | f,8-.\ff [f-.] f-. a!-. f-. [a] f r
+  | \mark \default r4 des'^\markup{ \small \italic "pizz."}\f r des
+  | r4 des r des
+  | \compressMMRests R1*4 \break
+  | \key ees \major R1
+  | \time 2/4 R2
+  | \time 4/4 r8^\markup {\small \italic "arco" } a'8_\markup{ \small \italic "molto marcato" }-.\downbow g-.\downbow ges-.\downbow f-.\downbow e!-.\downbow ees-.\downbow aes,-.\downbow
+  | d8-.\downbow r r4 des8-.\downbow r g,-.\downbow r
+  | r2 a8-.\sff\downbow r r4 \break
+  | r4 a8-.\downbow aes-.\upbow r4 r8 g'16\ff\downbow ees
+  | \mark \default \repeat percent 3 { c2.\accent~ c8 g'16\downbow ees }
+  | c2.~ c8 r
+  | \repeat percent 2 { c8\downbow r r4 c8\downbow r ees r } \pageBreak
 }
 
 \book {
