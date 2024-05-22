@@ -8,7 +8,7 @@
 }
 
 \paper {
-  #(set-paper-size "arch a")
+  #(set-default-paper-size '(cons (* 13 in) (* 10 in)))
 }
 
 notes = \relative {
@@ -64,11 +64,11 @@ notes = \relative {
   | \time 3/4 ees8-.-1 a16\upbow-2 f-4 d8-.-0 aes'16\downbow-1 e-2 des8-.-4 g16\upbow-0 e?-1
   | \mark \default \time 4/4 c8-.\upbow-2 r r4 r2
   | R1
-  | c4\p r r2
+  | c4^\markup { \small \italic "pizz." }\p r r2
   | R1 \break
   | \time 3/4 R2.
   | \time 4/4 R1
-  | \time 3/4 e8\sf\downbow r r4 r4
+  | \time 3/4 e8^\markup { \small \italic "arco" }\sf\downbow r r4 r4
   | \time 4/4 R1
   | \time 3/4 R2.
   | \mark \default \time 4/4 r8 des8\p-.\upbow bes4~ bes8 e16\downbow des? bes8-. f'-.\break
@@ -111,7 +111,7 @@ notes = \relative {
     \new CueVoice {
       \cueClef "tenor" \stemUp dis'8^"Cello"\tenuto b\tenuto gis2\tenuto \cueClefUnset r4
     } \\
-    { r2 r4 f^\markup{ \tiny "2 bassi" }^\markup{ \tiny \italic "pizz." }\pp }
+    { r2 r4 fis^\markup{ \tiny "2 bassi" }^\markup{ \tiny \italic "pizz." }\pp }
   >>
   | e4 r d r \break
   | cis4 r r2
@@ -170,7 +170,7 @@ notes = \relative {
   | r4 a8-.\downbow aes-.\upbow r4 r8 g'16\ff\downbow ees
   | \mark \default \repeat percent 3 { c2.\accent~ c8 g'16\downbow ees }
   | c2.~ c8 r
-  | \repeat percent 2 { c8\downbow r r4 c8\downbow r ees r } \pageBreak
+  | \repeat percent 2 { c8\downbow r r4 c8\downbow r ees\downbow r } \pageBreak
   | \repeat percent 2 { c8 r r4 c8\downbow r ees8\downbow r }
   | c8\downbow r ees8\downbow r r4 f8_\markup { \small \italic "dim."}\upbow r
   | \mark \default g8\mf r r4 g8\downbow r d r
@@ -204,7 +204,7 @@ notes = \relative {
   \bar "||" \key c \major c8\pp r r4 r2
   | r2 a'2\p\upbow
   | g1 \break
-  | f2.\upbow e4\upbow
+  | f2.\upbow e?4\upbow
   | \mark \default d1~
   | d2 e2\upbow
   | f1~
@@ -214,13 +214,9 @@ notes = \relative {
   | d2 des2\upbow
   | g,1
   | \mark \default c8 r r4 r2 \break
-  | c4^\markup { \small \italic "pizz." }\pp r r2
-  | c4 r r2
-  | c4 r r2
-  | c4 r r2
-  | c4 r r2
-  | c4 r r2
-  | c4 r r2
+  | \startMeasureCount c4^\markup { \small \italic "pizz." }\pp r r2
+  | \repeat unfold 5 { c4 r r2 }
+  | c4 r r2 \stopMeasureCount
   | \mark \default c4 r r2 \break
   | <<
     { r2 g4 r | c4 r r2 | r2 g4 r | c4 r r2 | c1^\markup { \small \italic arco }\pp\upbow | \once \override Script.script-priority = -100 c1\fermata\downbow }
@@ -239,6 +235,10 @@ notes = \relative {
       piece = "Bass"
     }
     \layout {
+      \context {
+        \Score
+        \consists Measure_counter_engraver
+      }
       top-margin = 0.0
     }
     \new PianoStaff {
@@ -260,6 +260,7 @@ notes = \relative {
         \Score
         \omit Fingering
         \omit StringNumber
+        \consists Measure_counter_engraver
       }
       top-margin = 0.0
     }
