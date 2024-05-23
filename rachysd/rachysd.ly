@@ -1,8 +1,13 @@
 \version "2.24.3"
 
+pizz = \markup { \small \italic pizz. }
+arco = \markup { \small \italic arco }
+dim = \markup { \small \italic dim. }
+cresc = \markup { \small \italic cresc. }
+
 \header {
   title = "SYMPHONIC DANCES"
-  instrument = "I"
+  instrument = "Bass"
   %{copyright = \markup { \small \italic "Engraving Ⓒ Mark Tomko, 2024" }%}
   tagline = #f
 }
@@ -11,17 +16,18 @@
   #(set-default-paper-size '(cons (* 13 in) (* 10 in)))
 }
 
-notes = \relative {
+mvtinotes = \relative {
   \set restNumberThreshold = 0
   \override MultiMeasureRest.expand-limit = 2
   \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
   \time 4/4
   \clef bass
   \key ees \major
+  \tempo "Non allegro"
   \romanStringNumbers
   \set stringNumberOrientations = #'(down)
   %{ starts page 1 %}
-  \compressMMRests R1*9^\markup { "Non allegro" }
+  \compressMMRests R1*9
   | \mark \default r4 aes8\ff\downbow r g\downbow r ees\downbow r
   | f8 \downbow r des\downbow ees\upbow aes,\downbow r d\downbow r
   | r4 des8\downbow r c\downbow r aes\downbow r \break
@@ -229,10 +235,132 @@ notes = \relative {
   \bar "||" \pageBreak
 }
 
+mvtiinotes = \relative {
+  \set restNumberThreshold = 0
+  \override MultiMeasureRest.expand-limit = 2
+  \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
+  \clef bass
+  \key g \minor
+  \time 6/8
+  \tempo "Andante con moto (Tempo di Valse)"
+  \compressMMRests R2.*3^\markup { "Tempo rubato, a tempo"}
+  aes,4\tweak X-offset -7 _\pizz\sf r8 aes4 r8
+  | aes4_\dim r8 d4 r8
+  | aes4\p r8 d4_\dim r8
+  | \time 9/8 c4_\cresc  r8 bes4 r8 a4\f r8 \break
+  | \time 6/8 R2.^\markup { \small Tempo }
+  | \mark 30 \compressMMRests R2.*3^\markup { \small rubato }
+  | aes4^\markup { \small \italic "a tempo" }\sfz r8 aes4 r8
+  | aes4_\dim r8 d4 r8
+  | aes4\p r8 d4 r8
+  | \time 9/8 c4_\cresc  r8 bes4 r8 a4\f r8 \break
+  | \time 6/8 \compressMMRests R2.*3^\markup { \small "Tempo rubato" }
+  | \mark \default \repeat percent 2 { d4^\markup { \small \italic "a tempo" }\f r8 aes4 aes'8 }
+  | d,4_\dim r8 d4 r8
+  | d4\p r8 r4 r8
+  | R2.
+  | a4\p r8 r4 r8 \break
+  | R2.
+  | a'4 r8 r4 r8
+  | R2.
+  | a,4 r8 r4 r8
+  | aes4 r8 r4 r8
+  | \compressMMRests R2.*2
+  | \mark \default g4 \pp r8 d'4 r8 \break
+  | f4 r8 c4 r8
+  | a4 r8 d4 r8
+  | ees4 r8 e4 r8
+  | fis4 r8 f4_\markup { \small \italic "poco cresc." } r8
+  | ees4 r8 aes4 r8
+  | d4\mf r8 r4 r8
+  | R2. \break
+  | \time 9/8 \mark \default R4.*3
+  | \time 6/8 \compressMMRests R2.*2
+  | r4 r8\p a,4 r8
+  | d4 r8 c4 r8
+  | bes4 r8 a4 r8
+  | g4 r8 d'4 r8
+  | f4 r8 c4 r8 \break
+  | a4 r8 d4 r8
+  | ees4 r8 e4 r8
+  | \mark \default fis8_\markup { \small \italic "poco cresc." } g fis f4 r8
+  | ees4 r8 aes,4 r8
+  | d4 r8 r4 r8
+  | R2.
+  | \time 9/8 g,4\f r8 bes4 r8 ees4 r8 \break
+  | \time 6/8 d4\mf r8 bes4 r8
+  | f'4\f r8 d4 r8
+  | aes4 r8 a8_\dim r d
+  | g4\p r8 c,4 r8
+  | bes4 r8 a?4_\dim r8
+  | aes4 r8 g4 r8
+  | \mark \default r4 r8\pp f4 r8 \pageBreak
+  | r4 r8 e4 r8
+  | b'4.^\arco bes4._\cresc
+  | aes4.\f g8 r r
+  | r4 r8\p a4^\pizz r8
+  | r4 r8 aes4 r8
+  | ees'4.^\arco\p d4._\cresc
+  | c4. bes4\upbow d8\downbow \break
+  | \mark \default fis,4.\f\upbow gis4.\>\downbow
+  | a4\!\upbow r8 aes4^\pizz\p r8
+  | a4 r8 b4.\f^\arco\downbow\>
+  | c4\! r8 b4\p^\pizz r8
+  | c4 r8 d4\mf r8
+  | g4\p r8 a4 r8
+  | bes4 r8 bes,4 r8 \break
+  | ees4 r8 f4 r8
+  | fis4 r8 fis,4 r8
+  | b4\p r8 ees4 r8 fis4 r8 aes4 r8
+  | \mark \default \compressMMRests R2.*2
+  | r4 r8\f c,4^\arco\upbow r8
+  | b4 r8 bes4_\dim r8 \break
+  | \tempo "L'istesso tempo" aes4\p^\pizz r8 ees'4 r8
+  | fis4 r8 cis4 r8
+  | bes4 r8 ees4 r8
+  | R2.
+  | \mark \default \compressMMRests R2.*4
+  | \mark \default \time 9/8 aes,4\f r8 ces4 r8 fes4_\dim r8 \break
+  | \time 6/8 ees4 r8 ces4 r8
+  | ges'4 r8 ees4_\dim r8
+  | a,4 r8 bes [r ees]
+  | aes,4\p r8 r4 r8
+  | R2.
+  \bar "||" \compressMMRests R2.*3^\markup { \small \italic "a tempo meno mosso" }
+  | R2._\markup { \small \italic "poco accel." } \break
+  | \key c \major \tempo "Tempo precedente" e'4\p r8 r4 r8
+  | e4 r8 r4 r8
+  | e4_\cresc c4 r8 r8
+  | \time 3/8 f4 g8_\dim
+  | \time 6/8 e4\p r8 r4 c8
+  | \mark \default f4 r8 r4 r8
+  | f4 r8 r4 r8
+  | f4_\cresc des4 r8 r
+  | \time 3/8 fis4 aes8
+  | \time 6/8 des,4\f r8 ees4\mf r8
+  | des4 r8 c4 r8
+  | bes4_\dim r8 aes4 r8
+  | ges4\p r8 r4 r8
+  | \mark \default bes4\pp r8 r4 r8 \break
+  | bes4 r8 r4 r8
+  | g4 r8 r4 r8
+  | g4 r8 r4 bes8
+  \bar "||" \repeat percent 2 { ees4^\markup { \small \italic "a tempo poco meno mosso"} r8 r4 r8 }
+  | ees4 r8 r4 r8
+  | R2. \pageBreak
+  | \mark \default \repeat percent 2 { des4 r8 r4 r8 }
+  | des4 r8 r4 r8 
+  | \compressMMRests R2.*6 
+  \bar "||" \tempo "Tempo primo" r4 r8 b4 r8 
+  | e4.^\arco\>\downbow~ e8\! r8 r8
+  | r4 r8 b4\f^\pizz r8 \break
+}
+
 \book {
   \score {
     \header {
-      piece = "Bass"
+      piece = "I"
+
     }
     \layout {
       \context {
@@ -243,7 +371,24 @@ notes = \relative {
     }
     \new PianoStaff {
       \new Voice {
-        \notes
+        \mvtinotes
+      }
+    }
+  }
+  \score {
+    \header {
+      piece = "II"
+    }
+    \layout {
+      \context {
+        \Score
+        \consists Measure_counter_engraver
+      }
+      top-margin = 0.0
+    }
+    \new PianoStaff {
+      \new Voice {
+        \mvtiinotes
       }
     }
   }
@@ -253,7 +398,7 @@ notes = \relative {
   \bookOutputSuffix "no-fingerings"
   \score {
     \header {
-      piece = "Bass"
+      piece = "I"
     }
     \layout {
       \context {
@@ -266,7 +411,26 @@ notes = \relative {
     }
     \new PianoStaff {
       \new Voice {
-        \notes
+        \mvtinotes
+      }
+    }
+  }
+  \score {
+    \header {
+      piece = "II"
+    }
+    \layout {
+      \context {
+        \Score
+        \omit Fingering
+        \omit StringNumber
+        \consists Measure_counter_engraver
+      }
+      top-margin = 0.0
+    }
+    \new PianoStaff {
+      \new Voice {
+        \mvtiinotes
       }
     }
   }
