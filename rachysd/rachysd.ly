@@ -1,5 +1,6 @@
 \version "2.24.3"
 
+rit = \markup { \small \italic rit. }
 pizz = \markup { \small \italic pizz. }
 arco = \markup { \small \italic arco }
 dim = \markup { \small \italic dim. }
@@ -349,11 +350,109 @@ mvtiinotes = \relative {
   | ees4 r8 r4 r8
   | R2. \pageBreak
   | \mark \default \repeat percent 2 { des4 r8 r4 r8 }
-  | des4 r8 r4 r8 
-  | \compressMMRests R2.*6 
-  \bar "||" \tempo "Tempo primo" r4 r8 b4 r8 
+  | des4 r8 r4 r8
+  | \compressMMRests R2.*6
+  \bar "||" \tempo "Tempo primo" r4 r8 b4 r8
   | e4.^\arco\>\downbow~ e8\! r8 r8
   | r4 r8 b4\f^\pizz r8 \break
+  | e4.^\arco~\> e8\! r8 r8
+  | R2.
+  | \mark \default cis4.\f\downbow~ cis8 r8 r8
+  | R2.
+  | cis4.\downbow~ cis8 r8 r8
+  | cis2.\mf\downbow~\>
+  | cis8\p r8 r8 r4 r8 \break
+  | \compressMMRests R2.*2
+  | \mark \default \compressMMRests \time 9/8 R4.*6
+  | \time 6/8 \compressMMRests R2.*2
+  | r4 r8\f b4^\pizz r8
+  | \mark \default e4.^\arco\>~ e8 r8 r8
+  | r4 r8\f b8^\pizz b8 r8
+  | \time 9/8 e4.^\arco\< r4\! r8 r4 r8 \break
+  | \time 6/8 R2.
+  | a,4^\pizz\f r8 d4 r8
+  | a4_\dim r8 d4 r8
+  | d4\p r8 r4 r8
+  | \compressMMRests R2.*2
+  | \mark \default aes4\f r8 d4 r8
+  | aes4_\dim r8 d4 r8 \break
+  | d4\p r8 r4 r8
+  | \compressMMRests R2.*2
+  \bar "||" \key g \minor d4\f r8 aes4 r8
+  | d4 r8_\dim aes4 r8
+  | d4 r8 d4 r8
+  | d4\p r8 r4 r8
+  | \compressMMRests R2.*2 \break
+  | \compressMMRests R2.*2^\markup { \small \italic rit. }
+  \bar "||" \tempo "a tempo come prima" g,8^\arco-.\pp r r d'-. r r
+  | f8-. r r c-. r r
+  | a8-. r r d-. r r
+  | ees8-. r r e-. r r
+  | fis8-. r r f-. r r \break
+  | ees8-. r r aes-. r r
+  | d,-. r r c-. r r
+  | bes8-. r r a-. r r
+  | \mark \default \time 9/8 g8-. r r bes-. r r c-. [r a-.]
+  | \time 6/8 d8-. r r ees-. r r \break
+  | \time 9/8 bes8-. r r des-. r r ees8-. [r c-.]
+  | \time 6/8 f8-. r r cis4.\f\upbow
+  | fis,4. gis
+  | a4. b
+  | c4. d
+  | \time 9/8 ees4^\rit r8 r4 r8 r4 r8 \pageBreak
+  | \time 6/8 g,4.\ff a4.
+  | bes8 r r \bar ";" r a4
+  | bes4. c
+  | cis8 r r r c4\upbow
+  | cis4. ees
+  | \mark \default aes,4.\f bes
+  | b4. d
+  | e4. fis \break
+  | g4. bes,\>
+  | c4.\mf ees8 r r
+  | fis,8^\pizz_\dim r r aes r r
+  | d8\p r r d' r r
+  | \override TextSpanner.bound-details.left.text = #"poco a poco accel."
+  \override TextSpanner.after-line-breaking = #ly:spanner::kill-zero-spanned-time
+  \repeat percent 3 { d,8 \startTextSpan r r d' r r } \break
+  | \mark \default \repeat percent 4 { d,4\pp r8 r4 r8 }
+  | g,8\sf r a\mf r bes r
+  | b8_\dim r c r d r
+  | \repeat percent 2 { f4\p r8 r4 r8 \stopTextSpan }
+  \bar "||" \tempo Vivo \repeat percent 2 { f4 r8 r4 r8 } \break
+  | \repeat percent 2 { f4_\cresc r8 r4 r8 }
+  | bes,8\f r c r des r
+  | d8_\dim r ees r f\p r
+  | \mark \default \repeat percent 4 { d4\mf r8 r d'4 }
+  | R2. \break
+  | r4^\arco bes8\downbow r a r
+  | g8 r fis r f r
+  | e8 r ees r4 r8
+  | \mark \default \time 9/8 d8\f\downbow r r r4 r8 d\accent\downbow d r
+  | aes8 r r r4 r8 aes8\accent\downbow aes r \break
+  | \time 6/8 des8 r bes\downbow r d\upbow r
+  | bes8 des r bes\upbow r d16\downbow d
+  | \mark \default d8\sf r r r^\pizz g,8\f r
+  | a8 r bes r bes b
+  | c8 r d r ees r \break
+  | ees8 f fis r aes r
+  | a!8_\dim [r a] bes c r
+  | d8 r ees r4 r8
+  | \mark \default g,,8-.^\arco\pp r r bes-.\upbow r r
+  | b8-. r r d-. r r
+  | g8 -. r r f-. r  r \break
+  | ees8-. (r bes-.) d-. r r
+  | g4^\pizz r8 r4 r8
+  | R2.
+  \bar "||" \mark \default g,8^\arco^\markup { \small \italic "a tempo poco meno mosso" }-.\pp r r ees'-. r r
+  | fis,8-. r r a-.\upbow [r d-.\upbow]
+  | g,8 r r ees' r r \break
+  | fis8 r r a,\upbow [r d\upbow]
+  | \mark \default g,8 r r g4^\pizz r8
+  | g4_\cresc r8 g4 r8
+  | \time 9/8 g4 r8 g4 r8 g4 r8
+  | g4\ff g4_\dim g4 g4 r8
+  | g4\p r8 g16^\arco-.\pp \downbow g-.\upbow g8-.\downbow r g8^\pizz\accent g-. r \fine
 }
 
 \book {
