@@ -100,7 +100,7 @@ mvtinotes = \relative {
   | R1
   | \compressMMRests R1*2^\markup { \small \italic "poco a poco rall." }
   \bar "||" \key e \major \compressMMRests R1 * 5
-  \bar "||" \compressMMRests R1*4^\markup { Lento }
+  \bar "||" \textMark \markup { \magnify #0.9 "Lento" } \compressMMRests R1*4
   | \mark \default \compressMMRests R1*3 \break
   | \compressMMRests R1*4
   | \mark \default
@@ -452,49 +452,171 @@ mvtiinotes = \relative {
   | g4_\cresc r8 g4 r8
   | \time 9/8 g4 r8 g4 r8 g4 r8
   | g4\ff g4_\dim g4 g4 r8
-  | g4\p r8 g16^\arco-.\pp \downbow g-.\upbow g8-.\downbow r g8^\pizz\accent g-. r \fine
+  | g4\p r8 g16^\arco-.\pp \downbow g-.\upbow g8-.\downbow r g8^\pizz\accent g-. r \fine \pageBreak
+}
+
+mvtiiinotes = \relative {
+  \set restNumberThreshold = 0
+  \override MultiMeasureRest.expand-limit = 2
+  \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
+  \clef bass
+  \key d \major
+  \time 6/8
+  \tempo "Lento assai"
+  d8\sf\downbow r r r4 r8
+  | \compressMMRests R2.*2
+  | \time 9/8 \tweak X-offset 18 \textMark \markup \fermata \compressMMRests R4.*6
+  | \time 6/8 \compressMMRests R2.*5
+  | r4\fermata r8 r4 r8 \break
+  | \mark 56 \time 9/8 \tempo "Allegro vivace" d8^\pizz\p r r r4 r8 r4 r8
+  | \time 6/8 R2.
+  | r4^\arco r8 ees8\sff\downbow r r
+  | R2.
+  | r4 r8 g,_\cresc (bes) e,-.
+  | a\tenuto\f (c) fis,-. r4 r8 \break
+  | a8-. cis-. r b\sff\downbow r r
+  | r4 r8 ees4\ff\downbow r8
+  | ees4 r8 ees4\downbow r8
+  | ees4 r8 ees4 r8
+  | \mark \default \compressMMRests R2.*6
+  | d8\sff\downbow r r d-.\ff\downbow d-.\upbow r \break
+  | d8-. d-. r d-. d-. r
+  | \mark \default \time 9/8 d8 r r r4 r8 r4 r8
+  | R4.*3
+  | d8\sfz\downbow r r r4 r8 r4 r8
+  | \compressMMRests R4.*9
+  | c4._\markup { \small \italic "sempre" }\accent b8-.\f\upbow c-8\upbow b\tenuto\downbow (bes\>) a\upbow aes\! \break
+  | \mark \default \time 6/8 g8-. r r r4 r8
+  | R2.
+  | \time 9/8 f4.\accent\downbow e'8\upbow f\upbow e\tenuto (ees) d-. des-.
+  | \time 6/8 c8\f r r r4 r8
+  | R2.
+  | \time 9/8 bes8\sf\downbow r8 r8 r4 r8 r4 r8 \break
+  | bes8\f\downbow r r bes\downbow r r bes\downbow r r
+  | R4.*3
+  | \mark \default a8\sf\downbow r r r4 r8 r4 r8
+  | \compressMMRests R4.*6
+  | g8^\pizz\sf r r r4 r8 r4 r8
+  | b8\p r r r4 r8 r4 r8 \break
+  | ees8 r r r4 r8 r4 r8
+  | \compressMMRests R4.*6
+  | \mark \default \time 6/8 f4\sf r8 r4 r8
+  | \compressMMRests R2.*3
+  | \time 9/8 \compressMMRests R4.*9
+  | \mark \default \time 6/8 e4\sf r8 r4 r8
+  | \compressMMRests R2.*3 \break
+  | \time 9/8 R4.*3
+  |  c8^\arco\f r r r4 r8 r4 r8
+  | c8\f r r r4 r8 r4 r8
+  | r8 f-.\p\downbow g-. e-. f-._\cresc d-. e-. c-. d-.
+  | \mark \default \repeat percent 2 { b8-.\f r r r4 r8 r4 r8 }
+  | r8\p e-.\downbow f-. d-. e-. c-. d-._\dim b-. c-.
+  | a8\pp r r r4 r8 r4 r8
+  | a8^\pizz\p r r r4 r8 r4 r8
+  | R4.*3
+  | \mark\default \repeat percent 2 { g8\p r r r4 r8 r4 r8 } \break
+  | \compressMMRests R4.* 12
+  | \time 6/8 \compressMMRests R2.*2
+  | \mark \default \time 9/8 R4.*3
+  | \time 6/8 R2.
+  | \time 9/8 R4.*3
+  | \time 6/8 \compressMMRests R2.*2
+  | \time 9/8 R4.*3
+  | \time 6/8 R2. \pageBreak
+  | \mark \default \time 9/8 b'8^\arco-.\accent\mf\upbow a16 g f8\tenuto~ f g e\tenuto~ e f-. d-.
+  | g-.\accent\upbow f16_\cresc e d8\tenuto~ d e c\tenuto~c d-. b-.
+  | e8-.\f d-. c-. b-._\dim a-. g-. f-. e-. d-.
+  | e8-. r r r4 r8 r4 r8 \break
+  | e'4^\pizz\p r8 \bar ";" r e4 \bar ";" r8 e4
+  | e4 r8 r e4 r8 e4
+  | \time 6/8 e4 r8_\dim b8 e4
+  | \mark \default \time 9/8 e4\p r8 r e4 r8 e4
+  | e4 r8 r8^\arco b8-.\mf\downbow c-. d-. c-. b-.
+  | a8-.\upbow b-. c-. e-. d-. c-. b-. c16 b a8
+  | g8-.\upbow a-. b-. d-. c-. b-. c-. b16 a g8
+  | \time 6/8 a-._\dim g-. f-. r4 r8
+  | r4 r8 b-.\mf\upbow c-. b-.
+  | \mark \default \time 9/8 a8-._\dim g-. d'-. r4 r8 r4 r8 \break
+  | d8-._\cresc g-. d-. e-. a-. e-. fis-. b-. fis-.
+  | g8-.\f a,-. b-. c-. d-. e-. b4.\accent
+  | e8\upbow r r r4 r8 r4 r8
+  | e8-.\f\downbow d-. c-. b-. a-. g-. fis-. e-.\upbow d'-.\upbow
+  | e2.\mf\downbow~ e4. \break
+  | e2.\mf\upbow~ e4.
+  | \mark \default \time 6/8 e4._\dim\downbow b8-.\downbow e4\tenuto \upbow
+  | \time 9/8 e2.\mf\downbow~ e4.
+  | e2.~ e4.
+  | \time 6/8 a,4\tenuto\downbow b8\tenuto\upbow~ b c des
+  | \time 9/8 aes4\tenuto a8\tenuto~a8 b-._\dim c-. b-. e4\tenuto\upbow \break
+  | \time 6/8 e4.\f\downbow~ e8 bes'4\tenuto\upbow
+  | e,4.~ e8 bes'4\tenuto
+  | e,4.~ e8 bes4\tenuto
+  | e4.~ e8 bes4\tenuto
+  | \mark \default e8-.\downbow des4\accent\upbow e8-.\downbow bes'4\accent\upbow
+  | e,8-. des4\accent e8-. bes4\accent \break
+  | e8-.\downbow des-. d\tenuto~ d des-. e\tenuto~
+  | e8 d-. ces-. c-. b-. bes-.
+  | e8-. r r r4 r8
+  | r4\fermata r8 r4 r8
+  \bar "||" \tempo "Lento assai. Come prima" R2.
+  | \time 9/8 R4.*3
+  | r2. r4\fermata r8 \break
+  | \time 6/8 \compressMMRests R2.*6
+  \bar "||" \time 9/8 \tempo "L'istesso tempo" e4\p r8 r4 r8 r4 r8
+  | \repeat unfold 2 { e4 r8 r4 r8 r4 r8 }
+  | e4\sf r8 r4 r8 r4 r8
+  | \mark \default e4\p r8 r4 r8 r4 r8 \break
+  | \repeat unfold 2 { e4 r8 r4 r8 r4 r8 }
+  | e4\sf r8 r4 r8 r4 r8
+  | \time 6/8 e4\p r8 r4 r8
+  | \repeat unfold 2 { e4 r8 r4 r8 } \break
+  | e2.\mf^\arco\downbow
+  | e2.
+  | e2.~
+  | \mark \default e8 r r r4 r8
+  | \compressMMRests R2.*3
+  | \once \set restNumberThreshold = 2 R2.\fermata
+  \bar "||" \time 9/8 \key c \major \textMark \markup { \small "Celli" } \compressMMRests R4.*12 \pageBreak
+  | \mark \default \tweak X-offset -0.0 \textMark \markup { \tiny "Bass" } cis4.:32^\markup { \small tremolo. }\pp c2.:
+  | c4.:32\< ces4.: bes4.:\mp
+  | bes4.:32\> a4.:\! aes4.:
+  | aes2.:32 aes8 r r
+  | r4 r8 aes4^\pizz\p r8 r4 r8
+  | \tuplet 2/3 { aes8 aes8 } r4 r8 r4 r8 \break
+  | \key des \major \compressMMRests R4.*6
+  | \time 6/8 \compressMMRests R2.*6
+  | <<
+    \new CueVoice {
+      \cueClef "treble" \stemUp r8^\markup { \tiny "1st Vlns."} r des''8 d4 (des8) \cueClefUnset
+    } \\
+    R2.
+  >>
+  | f,,,2.\f\downbow
+  | \mark \default \time 9/8 fis2._\dim (aes4.)
+  | des2.\p~ des8 r r \break
+  | \time 6/8 \compressMMRests R2.*5
+  | \mark \default \time 9/8 gis,2.\f\downbow g4.\upbow
+  | a2. b4._\dim\downbow
+  | e2._\cresc\upbow~ e4.
+  | \repeat percent 3 { des?2.\f\downbow~ des4._\> <>\! } \break
+  | des4._\dim~ des8 r r r4 r8 
+  | \mark \default des2.\f~ des4. 
+  | \repeat unfold 2 { des2.~ des4. }
+  | des2.\>~ des4.\!~
+  | \time 6/8 des4.\pp r4 r8 \break 
+  | <<
+    { r4^\pizz r8 a'4\f r8 | aes!4\mf r8 r4 r8 | r4 r8 a4\f r8 | \time 9/8 a8\p r r r4 r8 r4 r8 | R4.*3 }
+    \new Staff {
+      \key des \major
+      \once \omit Staff.TimeSignature
+      \clef bass r4^\pizz r8 d,4\f r8 | des!4\mf r8 r4 r8 | r4 r8 d4\f r8 | des8\p r r r4 r8 r4 r8 | R4.*3
+    }
+  >> \break 
+  | \textMark \markup { \tiny unis } d2.\p^\arco_\cresc~ d8 r r
+
 }
 
 \book {
-  \score {
-    \header {
-      piece = "I"
-
-    }
-    \layout {
-      \context {
-        \Score
-        \consists Measure_counter_engraver
-      }
-      top-margin = 0.0
-    }
-    \new PianoStaff {
-      \new Voice {
-        \mvtinotes
-      }
-    }
-  }
-  \score {
-    \header {
-      piece = "II"
-    }
-    \layout {
-      \context {
-        \Score
-        \consists Measure_counter_engraver
-      }
-      top-margin = 0.0
-    }
-    \new PianoStaff {
-      \new Voice {
-        \mvtiinotes
-      }
-    }
-  }
-}
-
-\book {
-  \bookOutputSuffix "no-fingerings"
   \score {
     \header {
       piece = "I"
@@ -530,6 +652,25 @@ mvtiinotes = \relative {
     \new PianoStaff {
       \new Voice {
         \mvtiinotes
+      }
+    }
+  }
+  \score {
+    \header {
+      piece = "III"
+    }
+    \layout {
+      \context {
+        \Score
+        \omit Fingering
+        \omit StringNumber
+        \consists Measure_counter_engraver
+      }
+      top-margin = 0.0
+    }
+    \new PianoStaff {
+      \new Voice {
+        \mvtiiinotes
       }
     }
   }
