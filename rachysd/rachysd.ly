@@ -771,13 +771,35 @@ mvtiiinotes = \relative {
   | \time 9/8 d8\f r r d [r d] \bar ";" r d r \break
   | d8 d r d r r f [r e]
   | \time 6/8 r d r c f4
-  | \mark \default \time 9/8 c8\f r r c r c \bar ";" r bes r
+  | \mark \default \time 9/8 c8\f r r c [r c] \bar ";" r bes r
   | c8 c r d r r bes8\accent c4\accent \break
   | a8 r r a [r a] \bar ";" r bes r
   | \time 6/8 r8\ff \tweak direction #DOWN \textMark \markup { \small \italic "molto sfortz."} g4 g g8
   | r8 g4 a8_\dim d4
   | \mark \default \time 9/8 c8^\arco-. d-. c\tenuto\accent~ 8\< a-.\upbow (c-.\upbow)\! f4\accent\>\downbow c8\tenuto~
-  | c8\< d-.\upbow g\tenuto\accent~\! g d-.\>\upbow (f-.\!\upbow) a,-.\accent\! d\tenuto\accent \break
+  | c8\< d-.\upbow g\tenuto\accent~\! g d-.\>\upbow (f-.\!\upbow) a,-.\accent\! d4\tenuto\accent \break
+  | f8-. g-. f\tenuto\accent 8\< d-.\upbow (f-.\upbow\!) bes4\tenuto\accent\> f8~
+  | \time 6/8 f8\< d-. f-.\! a4\accent\> d,8~
+  | d\!_\cresc d-.\downbow e-. f-. g-. a\tenuto\downbow~
+  | a8 g4\accent a8 bes4
+  | \mark \default \time 9/8 g,4\f\accent ges8\accent~ 8 f-. g-. a-. d4\tenuto \break
+  | \compressMMRests R4.*6
+  | \time 6/8 g8-.^\markup { \small \italic "marcato" }\f\downbow f e\tenuto\downbow~ 8 g-.\upbow f\tenuto~
+  | \time 9/8 f8 f-.\upbow g-. gis-.\upbow a-. bes-. a,-.\accent\downbow d4\tenuto\accent\upbow
+  \bar "||" \time 6/8 d4.^\markup { \small \italic "a tempo" }\ff\downbow~ 8 a4\tenuto\upbow
+  | d4.~ 8 aes4\tenuto
+  | d4.~ 8 a4\tenuto \break
+  | d4.~ 8 aes4\tenuto
+  | \repeat unfold 2 { d8-. a4\accent d8-. aes4\accent }
+  | \mark \default d8-. ees-. d-. fis,-. g-. aes-.
+  | d8-. fis,-. g-. aes-. g-. fis-.
+  | d'8-.\sff r r d4.:16 \break
+  | d2.:
+  | d2.:
+  | \compressMMRests R2.*4
+  | d8\sff\downbow r r d\downbow r r
+  | r4 r8 d-.\downbow d-.\downbow r
+  | r4 r8 d8\downbow\sff r r \fine
 }
 
 \book {
