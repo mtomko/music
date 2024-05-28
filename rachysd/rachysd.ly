@@ -5,6 +5,10 @@ pizz = \markup { \small \italic pizz. }
 arco = \markup { \small \italic arco }
 dim = \markup { \small \italic dim. }
 cresc = \markup { \small \italic cresc. }
+pococresc = #(make-music 'CrescendoEvent
+                         'span-direction START
+                         'span-type 'text
+                         'span-text "poco cresc." )
 
 \header {
   title = "SYMPHONIC DANCES"
@@ -599,21 +603,181 @@ mvtiiinotes = \relative {
   | a2. b4._\dim\downbow
   | e2._\cresc\upbow~ e4.
   | \repeat percent 3 { des?2.\f\downbow~ des4._\> <>\! } \break
-  | des4._\dim~ des8 r r r4 r8 
-  | \mark \default des2.\f~ des4. 
+  | des4._\dim~ des8 r r r4 r8
+  | \mark \default des2.\f~ des4.
   | \repeat unfold 2 { des2.~ des4. }
   | des2.\>~ des4.\!~
-  | \time 6/8 des4.\pp r4 r8 \break 
+  | \time 6/8 des4.\pp r4 r8 \break
   | <<
-    { r4^\pizz r8 a'4\f r8 | aes!4\mf r8 r4 r8 | r4 r8 a4\f r8 | \time 9/8 a8\p r r r4 r8 r4 r8 | R4.*3 }
+    { r4^\pizz r8 a'4\f r8 | aes!4\mf r8 r4 r8 | r4 r8 a4\f r8 | \mark \default \time 9/8 a8\p r r r4 r8 r4 r8 | R4.*3 }
     \new Staff {
       \key des \major
       \once \omit Staff.TimeSignature
       \clef bass r4^\pizz r8 d,4\f r8 | des!4\mf r8 r4 r8 | r4 r8 d4\f r8 | des8\p r r r4 r8 r4 r8 | R4.*3
     }
-  >> \break 
+  >> \break
   | \textMark \markup { \tiny unis } d2.\p^\arco_\cresc~ d8 r r
-
+  | fis,4.\f\downbow~ fis4 f8\upbow fis4.\downbow
+  | bes4\upbow a8\downbow~ a8_\dim bes\upbow (b) d4.\downbow
+  | ges8\p r r r4 r8 r4 r8
+  | \mark \default \time 6/8 ges2.\p\<\upbow~
+  | ges4.\! g4.\>\downbow \break
+  | <<
+    { ges2.\<~ | ges4.\! g4.\> | ges2.\p\<~ | ges4.\f g4.\> | ges2.\p\<~ | ges4.\! g4.\> | \mark \default des8\sf r r r4 r8 }
+    \new Staff {
+      \key des \major
+      \once \omit Staff.TimeSignature
+      \once \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
+      \clef bass
+      ges2.\<~ | ges4.\! g4.\> | ges,2.\p\< | ges4.\f g4.\> | ges2.\p\<~ | ges4.\! g4.\> | des'8\sf r r r4 r8
+    }
+  >> \pageBreak
+  | r4^\markup {\small unis. } r8^\pizz g4\f r8
+  | des4 r8 r4 r8
+  | r4 r8 e4 r8
+  | bes4 r8 r4 r8
+  | r4 r8 des4_\dim r8
+  | \time 9/8 R4.*3 \break
+  | \mark \default \time 6/8 des2.^\arco\p \tweak X-offset -5.9 \tweak direction #DOWN \textMark \markup { \small \italic "poco cresc" }
+  | des2.\!
+  | des2.\mf
+  | des2._\dim
+  | des2.\pp\downbow~
+  | des2.\upbow
+  | des2._\markup { \small \italic "poco cresc." }~
+  | des4. aes4._\dim\upbow \break
+  | des2.\pp
+  | des2.\tenuto
+  | des2._\dim\tenuto~ (
+  | des4. aes4.)
+  | \mark \default des2.\p\upbow
+  | des2.
+  | des2._\markup { \small \italic "poco a poco dim." }
+  | des2. \break
+  | des4.~ des8 r r
+  | des4.\downbow~ des8 r r
+  | des2.\upbow
+  | des2.\downbow~
+  | \key c \major \time 9/8 \tempo "Allegro vivace" des8 r r r4 r8 r4 r8
+  | \compressMMRests R4.*12
+  | \time 6/8 R2.\break
+  | \mark \default \time 9/8 \compressMMRests R4.*6
+  | \time 6/8
+  <<
+    \new CueVoice {
+      \time 6/8 \stemUp <<bes'8^\markup { \tiny "Bsns." } f8>> <<a des,>> <<aes' e>> <<g c,>> <<ges' ees>> <<g e>>
+    } \\
+    R2.
+  >>
+  | \time 9/8 r4^\markup { \tiny "Bassi" } r8 e8-.\pp\upbow r ees-. r des-. r
+  | a8\accent r r r4 r8 r4 r8
+  | R4.*3
+  | a8\accent\f\downbow r r r4 r8 r4 r8 \break
+  | R4.*3
+  | \mark \default \time 6/8 gis8-.\accent\f gis-. r gis-.\accent gis-. r
+  | \time 9/8 gis8-. gis-. r r4 r8 gis\accent\downbow [r gis\accent]
+  | \time 6/8 r8 d'-._\dim\downbow r f-. r e-.
+  | \time 9/8 c8\pp r r r4 r8 cis4^\pizz r8 \break
+  | c4 r8 r4 r8 des4 r8
+  | c4 r8 r4 r8 des4 r8
+  | \time 6/8 e4_\cresc e e
+  | \mark \default \time 9/8 f4 r8 r4 r8 fis4\mf r8
+  | f4 r8 r4 r8 ees4 r8
+  | \time 6/8 f4 r8 r4 r8 \break
+  | \compressMMRests R2.*3
+  | \time 9/8 R4.*3
+  | \time 6/8 R2.
+  | \mark \default \time 9/8 R4.*3
+  | \time 6/8 R2.
+  | f8^\arco\f r r r4 r8
+  | R2. \break
+  | \time 9/8 e8 r r r2.
+  | \time 6/8 f8\accent\downbow r r r4 r8
+  | R2.
+  | d8\accent r r r4 r8
+  | \mark \default \time 9/8 b?8\sff r r r4 r8 r4 r8
+  | \compressMMRests R4.*6 \pageBreak
+  | \time 6/8 \compressMMRests R2.*2
+  | \time 9/8 aes4^\pizz\mf r8 aes4 r8 a4 r8
+  | aes4 r8 aes4 r8 ges4 r8
+  | aes4_\dim r8 aes4 r8 r4 r8
+  | \time 6/8 c4\sf r8 r4 r8
+  | R2. \break
+  | \mark \default \time 9/8 aes'4\p r8 d,4 r8 r4 r8
+  | aes'4 r8 f4 r8 r4 r8
+  | fis4 r8 d4 r8 r4 r8
+  | aes2.\mf~ aes4.~
+  | aes4. bes8 r r r4 r8 \break
+  | a4^\pizz r8 r4 r8 r4 r8
+  | \time 6/8 R2.
+  | \time 9/8 a4 r8 r4 r8 r4 r8
+  | \time 6/8 R2.
+  | \mark \default \time 9/8 \repeat percent 2 { a4\mp r8 a4 r8 r4 r8 } \break
+  | a8\mf a r a a r r4 r8
+  | a8\f a r a a r r4 r8
+  | a4\p^\arco\downbow a8\upbow~a4 a8\downbow~a4 a8\upbow~
+  | a4 8\downbow~4 8\upbow~4 8\upbow~
+  | \time 6/8 a4_\cresc 8\upbow~ 4 8\upbow~ \break
+  | a4 8\upbow~ 4 8\upbow
+  | \mark \default \time 9/8 a8\accent\f\downbow r r a4.\accent\downbow~ 8 4\tenuto\upbow
+  | \time 6/8 a4.\accent\downbow~ 8 4\tenuto\upbow
+  | \time 9/8 a8\downbow r r a4.\accent\downbow~ 8 4\tenuto\upbow
+  | a4.\accent\downbow~ 8 4\tenuto\upbow 4\accent\downbow 8\upbow \break
+  | a8\sf r r r4 r8 r4 r8
+  | a8\accent\downbow r r r4 r8 r4 r8
+  | \time 6/8 bes8\accent\downbow r r r4 r8
+  | R2.
+  | \mark \default \time 9/8 b8\sf r r r4 r8 r4 r8
+  | \compressMMRests R4.*12 \break
+  | \mark \default f'8^\pizz\f f r f f r ges ges r
+  | g8 g r g g r aes aes r
+  | \time 6/8 a8 r a, r bes r
+  | bes' r bes, r b r
+  | c8 r r fis16\f^\arco 16 16 16 8 \break
+  | cis8\accent r r g'16 16 16 16 8
+  | \mark \default \time 9/8 d-.\ff a-. d\tenuto~ d4.~ d8 r r
+  | a8-. d-. a\tenuto~ a d4~d8 r r
+  | \time 6/8 a8-. d-. g,-. a-.\upbow d4\downbow~
+  | \time 9/8 d8 r r r4 r8 r4 r8 \break
+  | e8-.\ff\downbow b-. e\tenuto~ 4.~8 r r
+  | b8-.\downbow e-. b\tenuto~b e4\tenuto~e8 r r
+  | \time 6/8 b8-.\downbow e-. a,-. b-.\upbow e4\tenuto~
+  | \time 9/8 e8 r r r4 r8 r4 r8
+  | \mark \default fis8-.\ff [r g] fis4.\tenuto~ 4 g8-. \break
+  | fis8-. g-. fis\tenuto\downbow~ 4 g8\downbow fis4.\tenuto
+  | \repeat percent 2 { d4.\downbow d4\upbow d8\downbow~ 8 4 }
+  | c4. 4\upbow 8\downbow~ 8 4\upbow
+  | bes4. 4 8~ 8 4
+  | \mark \default a8 ees'-. a16\downbow 16 16 16 8-. ees8-. a16 16 8-. ees\tenuto\upbow ~ \pageBreak
+  | ees8 a-.\downbow ees-.\upbow a16 16 8-. ees-. a4.\downbow
+  | d8\sf\downbow r r r2.
+  | R4.*3
+  | \time 6/8 \tuplet 2/3 { ees,8\f^\pizz bes' } r4 r8
+  | \time 9/8 r4r 8 r4 r8 ees,8 r r
+  \bar "||" d8^arco\sf r r r4 r8 r4 r8
+  | R4.*3
+  | \mark \default \time 6/8 \tuplet 2/3 { g8^\pizz\f d' } r4 r8
+  | \time 9/8 r4 r8 r4 r8 g,8 r r
+  | \time 6/8 f2.\f^\arco
+  | ees2.\< \break
+  | \time 9/8 \key d \minor d8\ff r r r4 r8 r4 r8
+  | R4.*3
+  | f8-.\upbow e-. d-. c-. bes-. a-. g-. f-. e-.
+  \bar "||" \mark \default \tempo "Poco meno mosso" d8 r r r4 r8 r4 r8
+  | R4.*3 \break
+  | d'8\f^\pizz r r d [r d] \bar ";" r d r
+  | d8 d r d r r d [r d]
+  | \time 6/8 r8 d r a d4
+  | \time 9/8 d8\f r r d [r d] \bar ";" r d r \break
+  | d8 d r d r r f [r e]
+  | \time 6/8 r d r c f4
+  | \mark \default \time 9/8 c8\f r r c r c \bar ";" r bes r
+  | c8 c r d r r bes8\accent c4\accent \break
+  | a8 r r a [r a] \bar ";" r bes r
+  | \time 6/8 r8\ff \tweak direction #DOWN \textMark \markup { \small \italic "molto sfortz."} g4 g g8
+  | r8 g4 a8_\dim d4
+  | \mark \default \time 9/8 c8^\arco-. d-. c\tenuto\accent~ 8\< a-.\upbow (c-.\upbow)\! f4\accent\>\downbow c8\tenuto~
+  | c8\< d-.\upbow g\tenuto\accent~\! g d-.\>\upbow (f-.\!\upbow) a,-.\accent\! d\tenuto\accent \break
 }
 
 \book {
