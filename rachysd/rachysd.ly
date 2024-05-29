@@ -85,7 +85,7 @@ mvtinotes = \relative {
   | r8 fis'8-._\markup { \small \italic "marcato" }\downbow bes,?-.\upbow d16\downbow b fis2\accent~
   | fis8 aes'-.\upbow c,-.\downbow e16\downbow cis gis2~\accent \break
   | gis8 d'-.\mf\upbow d4\tenuto ees8-._\markup{ \small \italic "cresc." }\upbow e-.\upbow e4\tenuto
-  | f8-.\upbow g-.\upbow g4\tenuto\downbow a8\tenuto\upbow r g\downbow r8
+  | f8-.\upbow g-.\upbow g4\tenuto\downbow aes8\tenuto\upbow r g\downbow r8
   | \mark \default c,8\sff\downbow r r4 f8\downbow r ees\downbow r
   | c8\downbow r r4 f8\downbow r ees\downbow r
   | c8\downbow r r4 r2 \break
@@ -302,7 +302,7 @@ mvtiinotes = \relative {
   | r4 r8\p a4^\pizz r8
   | r4 r8 aes4 r8
   | ees'4.^\arco\p d4._\cresc
-  | c4. bes4\upbow d8\downbow \break
+  | c4. b4\upbow d8\downbow \break
   | \mark \default fis,4.\f\upbow gis4.\>\downbow
   | a4\!\upbow r8 aes4^\pizz\p r8
   | a!4 r8 b4.\f^\arco\downbow\>
@@ -552,7 +552,7 @@ mvtiiinotes = \relative {
   | e,4.~ e8 bes'4\tenuto
   | e,4.~ e8 bes4\tenuto
   | e4.~ e8 bes4\tenuto
-  | \mark \default e8-.\downbow des4\accent\upbow e8-.\downbow bes'4\accent\upbow
+  | \mark \default e8-.\downbow dis4\accent\upbow e8-.\downbow bes'4\accent\upbow
   | e,8-. dis4\accent e8-. bes4\accent \break
   | e8-.\downbow dis-. d\tenuto~ d dis-. e\tenuto~
   | e8 d!-. cis-. c-. b-. bes-.
@@ -562,7 +562,7 @@ mvtiiinotes = \relative {
   | \time 9/8 R4.*3
   | r2. r4\fermata r8 \break
   | \time 6/8 \compressMMRests R2.*6
-  \bar "||" \time 9/8 \tempo "L'istesso tempo" e4\p r8 r4 r8 r4 r8
+  \bar "||" \time 9/8 \tempo "L'istesso tempo" e4^\pizz\p r8 r4 r8 r4 r8
   | \repeat unfold 2 { e4 r8 r4 r8 r4 r8 }
   | e4\sf r8 r4 r8 r4 r8
   | \mark \default e4\p r8 r4 r8 r4 r8 \break
