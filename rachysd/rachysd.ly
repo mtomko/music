@@ -28,8 +28,13 @@ mvtinotes = \relative {
   \romanStringNumbers
   \set stringNumberOrientations = #'(down)
   %{ starts page 1 %}
-  \compressMMRests R1*9
-  | \mark \default r4 aes8\ff\downbow r g\downbow r ees\downbow r
+  <<
+    \new CueVoice {
+      \cueClef "treble" \stemUp r4 c''8-.\pp~ 8-. r4 c8-.~8-. \cueClefUnset
+    } \\ R1
+  >>
+  | \compressMMRests R1*8
+  | \mark \default r4 aes,8\ff\downbow r g\downbow r ees\downbow r
   | f8 \downbow r des\downbow ees\upbow aes,\downbow r d\downbow r
   | r4 des8\downbow r c\downbow r aes\downbow r \break
   | bes8\downbow r ges\downbow aes\upbow des\downbow r g,\downbow r
@@ -113,10 +118,15 @@ mvtinotes = \relative {
   | \time 3/4 R2.
   | \time 2/4 R2
   | \time 3/4 R2.
-  | \mark \default \time 4/4 \compressMMRests R1*3
+  | \time 4/4 <<
+    \new CueVoice {
+      \cueClef "tenor" \stemUp r2^"Cello" r4 cis'8 (e)
+    } \\ R1
+  >>
+  | \mark \default \compressMMRests R1*2
   | <<
     \new CueVoice {
-      \cueClef "tenor" \stemUp dis'8^"Cello"\tenuto b\tenuto gis2\tenuto \cueClefUnset r4
+      dis8\tenuto b\tenuto gis2\tenuto \cueClefUnset s4
     } \\
     { r2 r4 fis^\markup{ \tiny "2 bassi" }^\markup{ \tiny \italic "pizz." }\pp }
   >>
