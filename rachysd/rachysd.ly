@@ -35,7 +35,7 @@ mvtinotes = \relative {
   >>
   | \compressMMRests R1*8
   | \mark \default r4 aes,8\ff\downbow r g\downbow r ees\downbow r
-  | f8 \downbow r des\downbow ees\upbow aes,\downbow r d\downbow r
+  | f8 \downbow r des\downbow ees\upbow aes,!\downbow r d\downbow r
   | r4 des8\downbow r c\downbow r aes\downbow r \break
   | bes8\downbow r ges\downbow aes\upbow des\downbow r g,\downbow r
   | r2 a8\sff\downbow r r4
@@ -87,7 +87,7 @@ mvtinotes = \relative {
   | bes,8-. ges'16-.\downbow d-. bes4~\f\accent\> bes8\! r r4
   | r8 d-.\p\upbow b4.\tenuto f'16_\markup { \small \italic "cresc." }\downbow d b8 fis'
   | b,8 g'16\downbow dis b!4~\f\accent\> b8\! r r4
-  | r8 fis'8-._\markup { \small \italic "marcato" }\downbow bes,?-.\upbow d16\downbow b fis2\accent~
+  | r8 fis'8-._\markup { \small \italic "marcato" }\downbow bes,!-.\upbow d16\downbow b fis2\accent~
   | fis8 aes'-.\upbow c,-.\downbow e16\downbow cis gis2~\accent \break
   | gis8 d'-.\mf\upbow d4\tenuto ees8-._\markup{ \small \italic "cresc." }\upbow e-.\upbow e4\tenuto
   | f8-.\upbow g-.\upbow g4\tenuto\downbow aes8\tenuto\upbow r g\downbow r8
@@ -118,12 +118,12 @@ mvtinotes = \relative {
   | \time 3/4 R2.
   | \time 2/4 R2
   | \time 3/4 R2.
-  | \time 4/4 <<
+  | \mark \default \time 4/4 <<
     \new CueVoice {
-      \cueClef "tenor" \stemUp r2^"Cello" r4 cis'8 (e)
+      \stemUp r2^"Cello" r4 \cueClef "tenor" cis'8 (e)
     } \\ R1
   >>
-  | \mark \default \compressMMRests R1*2
+  | \compressMMRests R1*2
   | <<
     \new CueVoice {
       dis8\tenuto b\tenuto gis2\tenuto \cueClefUnset s4
@@ -424,7 +424,7 @@ mvtiinotes = \relative {
   | d8\p r r d' r r
   | \override TextSpanner.bound-details.left.text = #"poco a poco accel."
   \override TextSpanner.after-line-breaking = #ly:spanner::kill-zero-spanned-time
-  \repeat percent 3 { d,8 \startTextSpan r r d' r r } \break
+  \repeat percent 3 { d,8\startTextSpan r r d' r r } \break
   | \mark \default \repeat percent 4 { d,4\pp r8 r4 r8 }
   | g,8\sf r a\mf r bes r
   | b8_\dim r c r d r
