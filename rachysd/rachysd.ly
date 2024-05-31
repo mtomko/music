@@ -90,7 +90,7 @@ mvtinotes = \relative {
   | r8 fis'8-._\markup { \small \italic "marcato" }\downbow bes,!-.\upbow d16\downbow b fis2\accent~
   | fis8 aes'-.\upbow c,-.\downbow e16\downbow cis gis2~\accent \break
   | gis8 d'-.\mf\upbow d4\tenuto ees8-._\markup{ \small \italic "cresc." }\upbow e-.\upbow e4\tenuto
-  | f8-.\upbow g-.\upbow g4\tenuto\downbow aes8\tenuto\upbow r g\downbow r8
+  | f8-.\upbow g-.\upbow g4\tenuto\downbow aes?8\tenuto\upbow r g\downbow r8
   | \mark \default c,8\sff\downbow r r4 f8\downbow r ees\downbow r
   | c8\downbow r r4 f8\downbow r ees\downbow r
   | c8\downbow r r4 r2 \break
@@ -153,7 +153,7 @@ mvtinotes = \relative {
   | cis1\tenuto~
   | cis4_\markup { \small \italic "cresc." } cis2 cis4~
   | cis4 cis\tenuto\upbow cis\f\tenuto cis\accent \break
-  | \key c \major \time 3/4 fis4\tweak X-offset -2 ^\markup { "Tempo I"}\mf\downbow bes d,
+  \bar "||" \key c \major \time 3/4 fis4\tweak X-offset -2 ^\markup { "Tempo I"}\mf\downbow bes d,
   | a'4 cis,_\markup{ \small \italic "cresc." } f
   | c!4 e aes
   | ees4 g b,
@@ -179,7 +179,7 @@ mvtinotes = \relative {
   | \mark \default r4 des'^\markup{ \small \italic "pizz."}\f r des
   | r4 des r des
   | \compressMMRests R1*4 \break
-  | \key ees \major R1
+  \bar "||" \key ees \major R1
   | \time 2/4 R2
   | \time 4/4 r8^\markup {\small \italic "arco" }_\markup{ \small \italic "molto marcato" } aes'!8-.\downbow g-.\downbow ges-.\downbow f-.\downbow [e!]-.\downbow ees-.\downbow aes,-.\downbow
   | d8-.\downbow r r4 des8-.\downbow r g,-.\downbow r
@@ -190,8 +190,7 @@ mvtinotes = \relative {
   | \repeat percent 2 { c8\downbow r r4 c8\downbow r ees\downbow r } \pageBreak
   | \repeat percent 2 { c8 r r4 c8\downbow r ees8\downbow r }
   | c8\downbow r ees8\downbow r r4 f8_\markup { \small \italic "dim."}\upbow r
-  | \mark \default g8\mf r r4 g8\downbow r d r
-  | g8 r r4 g8\downbow r d\upbow r
+  | \mark \default g8\mf r r4 g8\downbow r d\upbow r
   | g8 r r4 g8\downbow r d\upbow r
   | g8 r r4 r2 \break
   | R1
@@ -339,7 +338,7 @@ mvtiinotes = \relative {
   | R2.
   \bar "||" \compressMMRests R2.*3^\markup { \small \italic "a tempo meno mosso" }
   | R2._\markup { \small \italic "poco accel." } \break
-  | \key c \major \tempo "Tempo precedente" e'?4\p r8 r4 r8
+  \bar "||" \key c \major \tempo "Tempo precedente" e'?4\p r8 r4 r8
   | e4 r8 r4 r8
   | e4_\cresc c4 r8 r8
   | \time 3/8 f4 g8_\dim
@@ -409,7 +408,7 @@ mvtiinotes = \relative {
   | fis,4. gis
   | a4. b
   | c4. d
-  | \time 9/8 ees4^\rit r8 r4 r8 r4 r8 \pageBreak
+  | \time 9/8 ees4^\markup { \small \italic "rit. _ _ _ _ _ _ _ _ _"} r8 r4 r8 r4 r8 \pageBreak
   | \time 6/8 g,4.^\markup { \small \italic "a tempo" }\ff a4.
   | bes8 r r \bar ";" r a4
   | bes4. c
@@ -593,7 +592,7 @@ mvtiiinotes = \relative {
   | aes2.:32 aes8 r r
   | r4 r8 aes4^\pizz\p r8 r4 r8
   | \tuplet 2/3 { aes8 aes8 } r4 r8 r4 r8 \break
-  | \key des \major \tempo "L'istesso tempo, ma agitato" \compressMMRests R4.*6
+  \bar "||" \key des \major \tempo "L'istesso tempo, ma agitato" \compressMMRests R4.*6
   | \time 6/8 \compressMMRests R2.*6
   | <<
     \new CueVoice {
@@ -602,10 +601,10 @@ mvtiiinotes = \relative {
     R2.
   >>
   | f,,,2.\f\downbow
-  | \mark \default \time 9/8 fis2._\dim (aes4.)
+  | \mark \default \time 9/8 fis2._\dim (aes?4.)
   | des!2.\p~ des8 r r \break
   | \time 6/8 \compressMMRests R2.*5
-  | \mark \default \time 9/8 gis,2.\f\downbow g4.\upbow
+  | \mark \default \time 9/8 gis,2.\f\downbow gis4.\upbow
   | a2. b4._\dim\downbow
   | e2._\cresc\upbow~ e4.
   | \repeat percent 3 { des?2.\f\downbow~ des4._\> <>\! } \break
@@ -630,13 +629,13 @@ mvtiiinotes = \relative {
   | \mark \default \time 6/8 ges2.\p\<\upbow~
   | ges4.\! g4.\>\downbow \break
   | <<
-    { ges!2.\<~ | ges4.\! g4.\> | ges!2.\p\<~ | ges4.\f g4.\> | ges!2.\p\<~ | ges4.\! g4.\> | \mark \default des?8\sf r r r4 r8 }
+    { ges!2.\<~ | ges4.\! g4.\> | ges!2.\p\<~ | ges4.\f g4.\> | ges!2.\p\<~ | ges4.\! g4.\>\upbow | \mark \default des?8\sf\downbow r r r4 r8 }
     \new Staff {
       \key des \major
       \once \omit Staff.TimeSignature
       \once \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
       \clef bass
-      ges!2.\<~ | ges4.\! g4.\> | ges,!2.\p\< | ges4.\f g4.\> | ges!2.\p\<~ | ges4.\! g4.\> | des'?8\sf r r r4 r8
+      ges!2.\<~ | ges4.\! g4.\> | ges,!2.\p\< | ges4.\f g4.\> | ges!2.\p\<~ | ges4.\! g4.\>\upbow | des'?8\sf\downbow r r r4 r8
     }
   >> \pageBreak
   | r4^\markup {\small unis. } r8^\pizz g4\f r8
@@ -665,7 +664,7 @@ mvtiiinotes = \relative {
   | des4.\downbow~ des8 r r
   | des2.\upbow
   | \tieUp des2.\downbow~
-  | \key c \major \time 9/8 \tempo "Allegro vivace" des!8 \tieNeutral r r r4 r8 r4 r8
+  \bar "||" \key c \major \time 9/8 \tempo "Allegro vivace" des!8 \tieNeutral r r r4 r8 r4 r8
   | \compressMMRests R4.*12
   | \time 6/8 R2.\break
   | \mark \default \time 9/8 \compressMMRests R4.*6
@@ -682,8 +681,8 @@ mvtiiinotes = \relative {
   | a8\accent\f\downbow r r r4 r8 r4 r8 \break
   | R4.*3
   | \mark \default \time 6/8 gis8-.\accent\f gis-. r gis-.\accent gis-. r
-  | \time 9/8 gis8-. gis-. r r4 r8 gis\accent\downbow [r gis\accent]
-  | \time 6/8 r8 d'-._\dim\downbow r f-. r e-.
+  | \time 9/8 gis8-. gis-. r r4 r8 gis\accent\downbow [r a\accent]
+  | \time 6/8 r8 d-._\dim\downbow r f-. r e-.
   | \time 9/8 c8\pp r r r4 r8 cis4^\pizz r8 \break
   | c4 r8 r4 r8 des4 r8
   | c4 r8 r4 r8 des4 r8
@@ -712,8 +711,8 @@ mvtiiinotes = \relative {
   | R2. \break
   | \mark \default \time 9/8 aes'4\p r8 d,4 r8 r4 r8
   | aes'4 r8 f4 r8 r4 r8
-  | fis4 r8 d4 r8 r4 r8
-  | aes2.\mf~ aes4.~
+  | fis4 r8 d4 r8 r4 r8^\arco
+  | aes2.\mf\downbow~ aes4.~
   | aes4. bes8 r r r4 r8 \break
   | a4^\pizz r8 r4 r8 r4 r8
   | \time 6/8 R2.
@@ -723,8 +722,8 @@ mvtiiinotes = \relative {
   | a8\mf a r a a r r4 r8
   | a8\f a r a a r r4 r8
   | a4\p^\arco\downbow a8\upbow~a4 a8\downbow~a4 a8\upbow~
-  | a4 8\downbow~4 8\upbow~4 8\upbow~
-  | \time 6/8 a4_\cresc 8\upbow~ 4 8\upbow~ \break
+  | a4 8\downbow~4 8\upbow~4 8\downbow~
+  | \time 6/8 a4_\cresc 8\upbow~ 4 8\downbow~ \break
   | a4 8\upbow~ 4 8\upbow
   | \mark \default \time 9/8 a8\accent\f\downbow r r a4.\accent\downbow~ 8 4\tenuto\upbow
   | \time 6/8 a4.\accent\downbow~ 8 4\tenuto\upbow
@@ -767,7 +766,7 @@ mvtiiinotes = \relative {
   | \time 9/8 r4 r8 r4 r8 g,8 r r
   | \time 6/8 f2.\f^\arco
   | ees2.\< \break
-  | \time 9/8 \key d \minor d8\ff r r r4 r8 r4 r8
+  \bar "||" \time 9/8 \key d \minor d8\ff r r r4 r8 r4 r8
   | R4.*3
   | f8-.\upbow e-. d-. c-. bes-. a-. g-. f-. e-.
   \bar "||" \mark \default \tempo "Poco meno mosso" d8 r r r4 r8 r4 r8
@@ -785,7 +784,7 @@ mvtiiinotes = \relative {
   | r8 g4 a8_\dim d4
   | \mark \default \time 9/8 c8^\arco-. d-. c\tenuto\accent~ 8\< a-.\upbow (c-.\upbow)\! f4\accent\>\downbow c8\tenuto~
   | c8\< d-.\upbow g\tenuto\accent~\! g d-.\>\upbow (f-.\!\upbow) a,-.\accent\! d4\tenuto\accent \break
-  | f8-. g-. f\tenuto\accent 8\< d-.\upbow (f-.\upbow\!) bes4\tenuto\accent\> f8~
+  | f8-. g-. f\tenuto\accent~ 8\< d-.\upbow (f-.\upbow\!) bes4\tenuto\accent\> f8~
   | \time 6/8 f8\< d-.\upbow f-.\!\upbow a4\accent\> d,8~
   | d\!_\cresc d-.\downbow e-. f-. g-. a\tenuto\downbow~
   | a8 g4\accent a8 bes4
