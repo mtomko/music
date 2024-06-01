@@ -64,7 +64,7 @@ solonotes = \relative {
   | \textMark \markup { \small "(solo) cadenza"} \tuplet 3/2 { aes8^\markup { \small \italic "molto accel...."}\< g f } \repeat unfold 3 { \tuplet 3/2 { aes8 g f} }
   | \tuplet 3/2 { aes8 g f } e'2.\f~
   | e16 f e d dis cis a e g \clef bass ees bes g b aes ees c \break
-  | aes1
+  | aes1 \fermata
   | <<
     R1 | s1 \\
     \new CueVoice {
@@ -119,6 +119,7 @@ tuttinotes = \relative {
 }
 
 \book {
+  \bookOutputSuffix "score"
   \score {
     \new StaffGroup {
       <<
@@ -126,5 +127,12 @@ tuttinotes = \relative {
         \new Staff \tuttinotes
       >>
     }
+  }
+}
+
+\book {
+  \bookOutputSuffix "solo"
+  \score {
+    \new Staff { \solonotes \pageBreak S1 }
   }
 }
