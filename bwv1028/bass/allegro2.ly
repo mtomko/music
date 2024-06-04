@@ -10,7 +10,7 @@ allegroIIBassNotes =
   | g,8 d' e f4 r8
   | c16 d e f d e c d e f d e
   | c16 d e d e f d e f d e f \break
-  | e8 f,16 g f8 f8 e'16 (d) c e
+  | e8 g,16 a g8 g8 e'16 (d) c e
   | d8 g,16 a g8 g f'16 (e) d f
   | e16 f g a f g e f g a f g \break
   | e16 f g f g a d, e f e f g
