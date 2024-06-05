@@ -71,8 +71,8 @@ mvtinotes = \relative {
   | \time 4/4 e4\f r r2
   | \time 2/4 r4^\markup { \small \italic "arco" } r8 ees?16\p\downbow-1 c-4
   | \time 4/4 aes4.\tenuto-4 des8-.\accent\downbow-4 a-.-0 c-.\accent\downbow-2 aes8-.\upbow-4 gis'16\f\downbow-1 e-2
-  | \time 3/4 ces8.\accent-2 (ees16-1) c8.\accent-4 (e16-2) b8\accent\downbow-2 f'16\downbow-4 d-0 \pageBreak
-  | \time 4/4 bes4.\p  ees8-.\accent\downbow b-. d-.\accent bes8-.\upbow bes'16\f\downbow-2 ges-4
+  | \time 3/4 cis8.\accent-2 (ees16-1) c8.\accent-4 (e16-2) b8\accent\downbow-2 f'16\downbow-4 d-0 \pageBreak
+  | \time 4/4 bes!4.\p  ees8-.\accent\downbow b-. d-.\accent bes8-.\upbow bes'16\f\downbow-2 ges-4
   | \time 3/4 ees8-.-1 a16\upbow-2 f-4 d8-.-0 aes'16\downbow-1 e-2 des8-.-4 g16\upbow-0 e?-1
   | \mark \default \time 4/4 c8-.\upbow-2 r r4 r2
   | R1
@@ -532,9 +532,9 @@ mvtiiinotes = \relative {
   | \time 6/8 \compressMMRests R2.*2
   | \time 9/8 R4.*3
   | \time 6/8 R2. \pageBreak
-  | \mark \default \time 9/8 b'8^\arco-.\accent\mf\upbow a16 g f8\tenuto~ f g e\tenuto~ e f-. d-.
-  | g-.\accent\upbow f16_\cresc e d8\tenuto~ d e c\tenuto~c d-. b-.
-  | e8-.\f d-. c-. b-._\dim a-. g-. f-. e-. d-.
+  | \mark \default \time 9/8 b'8^\arco-.\accent\mf\upbow a16 g fis8\tenuto~ fis g e\tenuto~ e fis-. d-.
+  | g-.\accent\upbow fis16_\cresc e d8\tenuto~ d e c\tenuto~c d-. b-.
+  | e8-.\f d-. c-. b-._\dim a-. g-. fis-. e-. d-.
   | e8-. r r r4 r8 r4 r8 \break
   | e'4^\pizz\p r8 \bar ";" r e4 \bar ";" r8 e4
   | e4 r8 r e4 r8 e4
@@ -561,9 +561,9 @@ mvtiiinotes = \relative {
   | e,4.~ e8 bes'4\tenuto
   | e,4.~ e8 bes4\tenuto
   | e4.~ e8 bes4\tenuto
-  | \mark \default e8-.\downbow dis4\accent\upbow e8-.\downbow bes'4\accent\upbow
-  | e,8-. dis4\accent e8-. bes4\accent \break
-  | e8-.\downbow dis-. d\tenuto~ d dis-. e\tenuto~
+  | \mark \default e8-.\upbow dis4\accent\downbow e8-.\upbow bes'4\accent\downbow
+  | e,8-.\upbow dis4\accent\downbow e8-. bes4\accent \break
+  | e8-.\upbow dis-.\upbow d\tenuto~ d dis-. e\tenuto~
   | e8 d!-. cis-. c-. b-. bes-.
   | e8-. r r r4 r8
   | r4\fermata r8 r4 r8
@@ -622,7 +622,7 @@ mvtiiinotes = \relative {
       \clef bass r4^\pizz r8 d,4\f r8 | des!4\mf r8 r4 r8 | r4 r8 d4\f r8 | des8\p r r r4 r8 r4 r8 | R4.*3
     }
   >> \break
-  | \textMark \markup { \tiny unis } d2.\p^\arco_\cresc~ d8 r r
+  | \textMark \markup { \tiny unis } d2.\p^\arco_\cresc\upbow~ d8 r r
   | fis,4.\f\downbow~ fis4 f8\upbow fis4.\downbow
   | bes?4\upbow a8\downbow~ a8_\dim bes\upbow (b) d4.\downbow
   | ges?8\p r r r4 r8 r4 r8
@@ -799,10 +799,10 @@ mvtiiinotes = \relative {
   \bar "||" \time 6/8 d4.^\markup { \small \italic "a tempo" }\ff\downbow~ 8 a4\tenuto\upbow
   | d4.~ 8 aes4\tenuto
   | d4.~ 8 a!4\tenuto \break
-  | d4.~ 8 aes4\tenuto
-  | \repeat unfold 2 { d8-. a!4\accent d8-. aes4\accent }
-  | \mark \default d8-. ees-. d-. fis,-. g-. aes-.
-  | d8-. fis,-. g-. aes-. g-. fis-.
+  | d4.~ 8 aes4\tenuto\upbow
+  | \repeat unfold 2 { d8-.\upbow a!4\accent\downbow d8-.\upbow aes4\accent\downbow }
+  | \mark \default d8-.\upbow ees-.\upbow d-. fis,-.\upbow g-. aes-.
+  | d8-.\downbow fis,-. g-. aes-. g-. fis-.
   | d'8-.\sff r r d4.:16 \break
   | d2.:
   | d2.:
