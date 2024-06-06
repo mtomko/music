@@ -800,8 +800,8 @@ mvtiiinotes = \relative {
   | d4.~ 8 aes4\tenuto
   | d4.~ 8 a!4\tenuto \break
   | d4.~ 8 aes4\tenuto\upbow
-  | \repeat unfold 2 { d8-.\upbow a!4\accent\downbow d8-.\upbow aes4\accent\downbow }
-  | \mark \default d8-.\upbow ees-.\upbow d-. fis,-.\upbow g-. aes-.
+  | \repeat unfold 2 { d8-.\upbow a!4\accent\downbow d8-.\downbow aes4\accent\upbow }
+  | \mark \default d8-.\downbow ees-.\upbow d-. fis,-. g-. aes-.
   | d8-.\downbow fis,-. g-. aes-. g-. fis-.
   | d'8-.\sff r r d4.:16 \break
   | d2.:
