@@ -18,6 +18,7 @@ rabbathnotes = \relative c'' {
   \time 4/4
   \key c \major
   \tempo Presto
+  \omit BarNumber
   \tuplet 6/4 { g16 (aes g aes bes aes}  \tuplet 6/4 { g16 aes g aes bes aes }) \tuplet 6/4 { g (a g a bes a} \tuplet 6/4 {g a g a bes a})
   | \tuplet 6/4 { g (a g a c a} \tuplet 6/4 { g a g a c a}) \tuplet 6/4 { g (b g b c b} \tuplet 6/4 { g b g b c b}) \break
   % line 2
@@ -45,6 +46,7 @@ petracchiscalenotes = \relative c {
   \key c \major
   \romanStringNumbers
   \set stringNumberOrientations = #'(down)
+  \omit BarNumber
   % line 1
   \repeat volta 2 {
     \once \override Staff.TimeSignature.stencil = ##f
@@ -66,6 +68,11 @@ petracchiscalenotes = \relative c {
   \repeat volta 2 {
     | bes-3 d-1 f-4 aes-1 bes-4 d\flageolet \clef treble f-3 aes-1 bes-1 d\thumb f-3 aes-1 
     | bes-2 aes-1 f\thumb d\flageolet-1\2 bes-3\1 aes-1 \clef bass f-3\2 d\flageolet bes-4 aes-1 f-4\3 d\flageolet\2 \break
+  }
+  % line 5
+  \repeat volta 2 {
+    | <<\parenthesize ees,-\parenthesize-0 ees'-1>> g,-4 bes-1 des-1 ees-4 g-2 bes-4 des-1 ees-4 \clef treble g\flageolet bes_\markup { \small \italic cr }-3 des_\markup { \small \italic cr }-1
+    | ees-3\1 des bes-3\2 g\flageolet\1 ees-4 des-1 \clef bass bes-4 g-3 ees-4 des-1 bes-4 g-1 \break
   }
 }
 
