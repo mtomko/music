@@ -3,7 +3,6 @@
 %{\include "bass/solo-tuning.ly"%}
 
 \header {
-  tagline = #f
   title = "Elegia in re"
   composer = "Giovanni Bottesini"
   %{meter = \soloTuning%}
