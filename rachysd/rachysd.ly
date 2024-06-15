@@ -555,8 +555,8 @@ mvtiiinotes = \relative {
   | \mark \default \time 6/8 e4._\dim\downbow b8-.\downbow e4\tenuto \upbow
   | \time 9/8 e2.\mf\downbow~ e4.
   | e2.~ e4.
-  | \time 6/8 a,4\tenuto\downbow b8\tenuto\upbow~ b c des
-  | \time 9/8 aes4\tenuto a8\tenuto~a8 b-._\dim c-. b-. e4\tenuto\upbow \break
+  | \time 6/8 a,4\tenuto\downbow b8\tenuto\downbow~ b c\upbow des\upbow
+  | \time 9/8 aes4\tenuto\downbow a8\tenuto\upbow~ a8 b-._\dim c-. b-. e4\tenuto\upbow \break
   | \time 6/8 e4.\f\downbow~ e8 bes'4\tenuto\upbow
   | e,4.~ e8 bes'4\tenuto
   | e,4.~ e8 bes4\tenuto
@@ -809,7 +809,7 @@ mvtiiinotes = \relative {
   | d2.:
   | \compressMMRests R2.*4
   | d8\sff\downbow r r d\downbow r r
-  | r4 r8 d-.\downbow d-.\downbow r
+  | r4 r8 d-.\downbow d-.\upbow r
   | r4 r8 d8\downbow\sff r r \fine
 }
 
