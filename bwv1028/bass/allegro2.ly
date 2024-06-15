@@ -29,7 +29,7 @@ allegroIIBassNotes =
   | e,8 a b c4 r8
   | e,8 b' c d4 r8
   | a16 b c d b c a b c d b c
-  | a8 e' b' \acciaccatura g8 fis4~\trill fis16 (e32 fis) \break
+  | a8 e' a \acciaccatura g8 fis4~\trill fis16 (e32 fis) \break
   | g4.~ g8 g16 (a) bes8
   | a8. g16 f e f g \acciaccatura f8 e8.\trill\tenuto (d16-.)
   | \mark \default d2.~
