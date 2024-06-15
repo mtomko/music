@@ -43,7 +43,6 @@ rabbathnotes = \relative c'' {
 }
 
 petracchiscalenotes = \relative c {
-  \autoBreaksOff
   \clef bass
   \time 4/4
   \key c \major
@@ -102,7 +101,7 @@ petracchiscalenotes = \relative c {
   % line 9 b
   \repeat volta 2 {
     | b-2 des-1\2 fis-4 a-1\2_"_______" b-4 dis\thumb_\cr \clef treble fis-3 a-1 b\thumb_\scr dis-3 fis\thumb\startTextSpan a-1
-    | b-2 a-1 fis\thumb\stopTextSpan dis-3_\scr b\thumb a\flageolet\2 \clef bass fis-4\1 dis-1 b-2      \2 a-1 fis-4\3 dis-1 \break \pageBreak
+    | b-2 a-1 fis\thumb\stopTextSpan dis-3_\scr b\thumb a\flageolet\2 \clef bass fis-4\1 dis-1 b-2      \2 a-1 fis-4\3 dis-1 \break
   }
   % line 10 e
   \repeat volta 2 {
@@ -123,11 +122,43 @@ petracchiscalenotes = \relative c {
   \bar "|." \textMark \markup { \small (iii) } g8-.\tenuto_\markup { staccato alla punta } b-.\tenuto d-.\tenuto f-.\tenuto g-.\tenuto b-.\tenuto \clef treble d-.\tenuto f-.\tenuto g-.\tenuto b-.\tenuto d-.\tenuto f-.\tenuto
   \bar "||" \textMark \markup { \small (iv) } \clef bass g,,,-._\markup { alla punta } b (d) f-. g (b) \clef treble d-. f (g) b-. d (f)
   \bar "||" \textMark \markup { \small (v) } \clef bass g,,,-. b-. (d-.) f-. g-. (b-.) \clef treble d-. f-. (g-.) b-. d-. (f-.)
-  \bar "||" \pageBreak
+  \bar "||"
 }
 
+doublestops = \relative c {
+  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  \time 3/4
+  \key c \major
+  \clef bass
+  <<
+    {
+      \bar ".|:-|"
+      \repeat volta 2 { e'8 (e d d dis dis) }
+      | \repeat volta 2 {  dis (dis cis cis cisis cisis) }
+      | \repeat volta 2 {  d (d c c cis cis) } \break
+      | \repeat volta 2 {  cis (cis b b c c) }
+      | \repeat volta 2 {  c (c bes bes b b) }
+      | \repeat volta 2 {  b (b a a ais ais) } \break
+      | \repeat volta 2 {  bes (bes aes aes a a) }
+      | bes2.
+      | a\fermata
+    }
+    {
+      a8 bis bis b b a
+      | gis a a ais ais gis
+      | g aes aes a a g
+      | fis g g gis gis fis
+      | f ges ges g g f
+      | e f f fis fis e
+      | ees fes fes f f ees
+      | ees2.
+      | d \fine
+    }
+  >>
+}
 
 glowingtones = \relative c {
+  \override Score.BarNumber.break-visibility = ##(#f #f #f)
   \time 3/4
   \key c \major
   <<
@@ -138,7 +169,7 @@ glowingtones = \relative c {
         \bar ".|:-|" <<\parenthesize g'2. \parenthesize d'>>
       }
       \repeat volta 2 {
-      | \clef bass \parenthesize a,
+        | \clef bass \parenthesize a,
       }
       \repeat volta 2 {
         \clef treble <<\parenthesize e'' \parenthesize a>>
@@ -151,7 +182,7 @@ glowingtones = \relative c {
       }
       \repeat volta 2 {
         \parenthesize g'
-      } \break
+      }
       \repeat volta 2 {
         \clef bass \parenthesize d,
       }
@@ -161,21 +192,57 @@ glowingtones = \relative c {
       \repeat volta 2 {
         \parenthesize g
       }
+      \repeat volta 2 {
+        \clef bass \parenthesize e,,
+      }
+      \repeat volta 2 {
+        \clef treble \parenthesize cis''
+      }
+      \repeat volta 2 {
+        \clef bass \parenthesize g,
+      }
+      \repeat volta 2 {
+        \clef treble \parenthesize d''
+      }
+      \repeat volta 2 {
+        \parenthesize a,
+      }
+      \repeat volta 2 {
+        \parenthesize b
+      }
+      \repeat volta 2 {
+        \parenthesize d
+      }
+      \repeat volta 2 {
+        \parenthesize e
+      }
+      \repeat volta 2 {
+        \parenthesize a
+      }
     }
-    \new Staff { 
-      \clef bass 
+    \new Staff {
+      \clef bass
       \romanStringNumbers
       \set stringNumberOrientations = #'(down)
-      g,,,4 r r 
+      g,,4 r r
       | a-2\4 r r
       | a\flageolet\3 r r
       | bes r r
       | b r r
-      | c r r
+      | c r r \break
       | d-2\3 r r
       | d\flageolet r r
       | ees r r
-      }
+      | e r r
+      | fis r r
+      | g-2\2 r r \break
+      | g\flageolet r r
+      | a r r
+      | b r r
+      | d r r
+      | e r r
+      | \clef treble a r r\fermata_\markup { \small "Center" }
+    }
   >>
 }
 
@@ -202,13 +269,22 @@ glowingtones = \relative c {
   }
   \score {
     \header {
+      piece = "Double Stops"
+    }
+    \new Staff {
+      \doublestops
+    }
+  }
+  \score {
+    \header {
       piece = "Glowing Tones"
     }
+    %{
     \layout {
       \context {
         \Score
       }
-    }
+    }%}
     \new PianoStaff {
       \new Voice {
         \glowingtones
