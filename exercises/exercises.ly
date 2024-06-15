@@ -16,6 +16,17 @@
 cr = \markup { \small \italic "cr" }
 scr = \markup { \small \italic "s.cr" }
 
+bradetichthirdsfourths = \relative c'' {
+  \clef treble
+  \time 3/2
+  \key g \major
+  \repeat volta 2 { g8\thumb (b-2-3) b-2-3 (g\thumb) g\thumb (b-2-3) b-2-3 (g\thumb) g\thumb (b-2-3) g\thumb (b-2-3) }
+  | g8\thumb (c-3) c-3 (g\thumb) g\thumb (c-3) c-3 (g\thumb) g\thumb (c-3) g\thumb (c-3)
+  | \repeat volta 2 { gis\thumb c-2-3 c-2-3 gis\thumb gis c c gis gis c gis c }
+  | gis\thumb cis-3 cis-3 gis\thumb gis cis cis gis gis cis gis cis\tweak direction #DOWN \textEndMark \markup { \small "etc" }
+  \bar "||"
+}
+
 rabbathnotes = \relative c'' {
   \clef treble
   \time 4/4
@@ -247,6 +258,16 @@ glowingtones = \relative c {
 }
 
 \book {
+  \score {
+    \header {
+      composer = "Jeff Bradetich"
+      subtitle = "Thumb Position Exercises"
+      piece = "I. 3rd/4ths"
+    }
+    \new Staff {
+      \bradetichthirdsfourths 
+    }
+  }
   \score {
     \header {
       composer = "François Rabbath"
