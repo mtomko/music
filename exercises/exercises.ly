@@ -75,11 +75,11 @@ petracchiscalenotes = \relative c {
   % line 3 f
   \repeat volta 2 {
     |f-1 a-0 c-4\4 ees-1 f-4 a-2 \clef tenor c-4 ees-1 g \clef treble a_\cr\thumb c-3 ees-1
-    |f-3 ees c-3\2 a\flageolet f-3\2 ees-1 \clef bass c-3 a\flageolet f-4 ees-1 c-4\4 a-1 \break
+    |f-3 ees c-3\2 a\flageolet f-3\2 ees-1 \clef bass c-3\3 a\flageolet f-4 ees-1 c-4\4 a-1 \break
   }
   % line 4 bes
   \repeat volta 2 {
-    | bes-2 d-1 f-4 aes-1 bes-4 d\flageolet \clef treble f-3 aes-1 bes-1 d\thumb f-3 aes-1
+    | bes-2 d-1 f-4 aes-1 bes-4 d\flageolet \clef treble f-3 aes-1 bes d\thumb f-3 aes-1
     | bes-2 aes-1 f\thumb d\flageolet-1\2 bes-3\1 aes-1 \clef bass f-3\2 d\flageolet bes-4 aes-1 f-4\3 d\flageolet\2 \break
   }
   % line 5 ees
@@ -101,32 +101,32 @@ petracchiscalenotes = \relative c {
     \override TextSpanner.bound-details.left.text = \markup { \draw-line #'(0 . -1) }
     \override TextSpanner.bound-details.right.text = \markup { \draw-line #'(0 . -1) }
     \override TextSpanner.direction = #UP
-    <<\parenthesize des,\parenthesize-0 des'-2>> f,-1 aes-4 ces-1\2 d-4 f-4 aes-1 ces-1\2 des-4 \clef treble f-2\1 aes\thumb\startTextSpan ces-1
+    <<\parenthesize des,\parenthesize-0 des'-2>> f,-1 aes-4 ces-1\2 des-4 f-4 aes-1 ces-1\2 des-4 \clef treble f-2\1 aes\thumb\startTextSpan ces-1
     | des-3\1 ces-1 aes\thumb\stopTextSpan f-2_\cr des-4\2_"___________" ces-1 \clef bass aes-1 f-4\3 des-4 ces-1 aes-4\4 f-1 \break
   }
   % line 8 fis
   \repeat volta 2 {
-    | fis-2 ais-1\3 cis-4 e-1\2 fis-4 ais-4 \clef treble cis-1 e-1 fis ais\thumb_\cr cis-3 e-1
+    | fis-2 ais-1\3 cis-4 e!-1\2 fis-4 ais-4 \clef treble cis-1 e-1 fis ais\thumb_\cr cis-3 e-1
     | fis-3 e cis\thumb_\cr ais-2 fis-3 e-1 \clef bass cis-3\3_"___________"_\cr ais\thumb fis-4 e-1 cis\4 ais-1 \break
   }
   % line 9 b
   \repeat volta 2 {
-    | b-2 des-1\2 fis-4 a-1\2_"_______" b-4 dis\thumb_\cr \clef treble fis-3 a-1 b\thumb_\scr dis-3 fis\thumb\startTextSpan a-1
+    | b-2 dis-1\2 fis-4 a!-1\2_"_______" b-4 dis\thumb_\cr \clef treble fis-3 a-1 b\thumb_\scr dis-3 fis\thumb\startTextSpan a-1
     | b-2 a-1 fis\thumb\stopTextSpan dis-3_\scr b\thumb a\flageolet\2 \clef bass fis-4\1 dis-1 b-2      \2 a-1 fis-4\3 dis-1 \break
   }
   % line 10 e
   \repeat volta 2 {
-    | <<\parenthesize e,\parenthesize-0 e'-2>> gis,-4 b d-1 e-4\3 gis-2\2 b-4 d-1 e \clef treble gis\thumb_\cr b-3 d-1
+    | <<\parenthesize e,\parenthesize-0 e'-2>> gis,-4 b d!-1 e-4\3 gis-2\2 b-4 d-1 e \clef treble gis\thumb_\cr b-3 d-1
     | e-3 d b-3 gis\thumb e-1 d\flageolet \clef bass b-1\2 gis-4\3 e-4 d-1 b-4 gis-1 \break
   }
   % line 11 a
   \repeat volta 2 {
-    | a-2 cis-1 e-4\3 g-1\2 a-4 cis-4 \clef treble e-1 g\flageolet a\flageolet-1_cr cis\thumb e-3 g-1
+    | a-2 cis-1 e-4\3 g!-1\2 a-4 cis-4 \clef treble e-1 g\flageolet a\flageolet-1_cr cis\thumb e-3 g-1
     | a-2 g-1 e-3_\cr  cis\thumb a\flageolet g\flageolet \clef bass e-1 cis-4 a-4 g-1 e-4 cis-1 \break
   }
   % line 12 d
   \repeat volta 2 {
-    | d-2 fis,-2 a-4 c-1 d-4 fis-4 a-1 c-4 d\flageolet\2 \clef treble fis-2_\cr a\thumb c-1
+    | d-2 fis,-2 a-4 c!-1 d-4 fis-4 a-1 c-4 d\flageolet\2 \clef treble fis-2_\cr a\thumb c-1
     | d-3 c a\thumb\1 fis-2\2_\cr d\flageolet\thumb c-1\1 \clef bass a-4 fis-2 d-4 c-1 a-4 fis-1
   }
   | g1.-2 \break
@@ -134,6 +134,37 @@ petracchiscalenotes = \relative c {
   \bar "||" \textMark \markup { \small (iv) } \clef bass g,,,-._\markup { alla punta } b (d) f-. g (b) \clef treble d-. f (g) b-. d (f)
   \bar "||" \textMark \markup { \small (v) } \clef bass g,,,-. b-. (d-.) f-. g-. (b-.) \clef treble d-. f-. (g-.) b-. d-. (f-.)
   \bar "||"
+}
+
+digitup = \relative c {
+  \time 4/4
+  \key c \major
+  \clef bass
+  \tempo 4=124
+  \repeat unfold 2 { c16\downbow 16 16 r r4 }
+  | \repeat unfold 2 { d16\upbow 16 16 r r4 }
+  | \repeat unfold 2 { e16\downbow 16 16 r r4 } \break
+  | \repeat unfold 2 { f16\upbow 16 16 r r4 }
+  | \repeat unfold 2 { g16\downbow 16 16 r r4 }
+  | \repeat unfold 2 { a16\upbow 16 16 r r4 } \break
+  | \repeat unfold 2 { b16\downbow 16 16 r r4 }
+  | c16\downbow 16 16 r r4 c16\upbow 16 16 r r4
+  | b16\downbow 16 16 r r4 b16\upbow 16 16 r r4 \break
+  | a16\upbow 16 16 r r4 a16\downbow 16 16 r r4
+  | g16\upbow 16 16 r r4 g16\downbow 16 16 r r4
+  | f16\upbow 16 16 r r4 f16\downbow 16 16 r r4 \break
+  | e16\downbow 16 16 r r4 e16\upbow 16 16 r r4
+  | d16\upbow 16 16 r r4 d16\downbow 16 16 r r4
+  | c16\downbow 16 16 r r4 c16\downbow 16 16 r r4 \break 
+  \bar "||" \repeat unfold 2 { c16\downbow 16 16 r } \repeat unfold 2 { d16\upbow 16 16 r }
+  | \repeat unfold 2 { e16\downbow 16 16 r } \repeat unfold 2 { f16\upbow 16 16 r } \break
+  | \repeat unfold 2 { g16\downbow 16 16 r } \repeat unfold 2 { a16\upbow 16 16 r } 
+  | \repeat unfold 2 { b16\downbow 16 16 r } c16\downbow 16 16 r c16\upbow 16 16 r \break
+  | b16\downbow 16 16 r b16\upbow 16 16 r a16\upbow 16 16 r a16\downbow 16 16 r 
+  | g16\upbow 16 16 r g16\downbow 16 16 r f16\upbow 16 16 r f16\downbow 16 16 r \break
+  | e16\downbow 16 16 r e16\upbow 16 16 r d16\upbow 16 16 r d16\downbow 16 16 r 
+  | c16\downbow 16 16 r c16\downbow 16 16 r b16\upbow 16 16 r b16\upbow 16 16 r 
+  | c1%{\downbow%}\fermata_\markup { \small "Center" }\fine \pageBreak
 }
 
 doublestops = \relative c {
@@ -265,7 +296,7 @@ glowingtones = \relative c {
       piece = "I. 3rd/4ths"
     }
     \new Staff {
-      \bradetichthirdsfourths 
+      \bradetichthirdsfourths
     }
   }
   \score {
@@ -286,6 +317,14 @@ glowingtones = \relative c {
     }
     \new Staff {
       \petracchiscalenotes
+    }
+  }
+  \score {
+    \header {
+      piece = "Dig It Up"
+    }
+    \new Staff {
+      \digitup
     }
   }
   \score {
