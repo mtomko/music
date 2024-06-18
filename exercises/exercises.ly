@@ -74,7 +74,7 @@ petracchiscalenotes = \relative c {
   }
   % line 3 f
   \repeat volta 2 {
-    |f-1 a-0 c-4\4 ees-1 f-4 a-2 \clef tenor c-4 ees-1 g \clef treble a_\cr\thumb c-3 ees-1
+    |f-1 a-0 c-4\4 ees-1 f-4 a-2 \clef tenor c-4 ees-1 f \clef treble a_\cr\thumb c-3 ees-1
     |f-3 ees c-3\2 a\flageolet f-3\2 ees-1 \clef bass c-3\3 a\flageolet f-4 ees-1 c-4\4 a-1 \break
   }
   % line 4 bes
@@ -101,7 +101,7 @@ petracchiscalenotes = \relative c {
     \override TextSpanner.bound-details.left.text = \markup { \draw-line #'(0 . -1) }
     \override TextSpanner.bound-details.right.text = \markup { \draw-line #'(0 . -1) }
     \override TextSpanner.direction = #UP
-    <<\parenthesize des,\parenthesize-0 des'-2>> f,-1 aes-4 ces-1\2 des-4 f-4 aes-1 ces-1\2 des-4 \clef treble f-2\1 aes\thumb\startTextSpan ces-1
+    <<\parenthesize des,\parenthesize-0 des'-2>> f,-1 aes-4 ces-1\3 des-4 f-4 aes-1 ces-1\2 des-4 \clef treble f-2\1 aes\thumb\startTextSpan ces-1
     | des-3\1 ces-1 aes\thumb\stopTextSpan f-2_\cr des-4\2_"___________" ces-1 \clef bass aes-1 f-4\3 des-4 ces-1 aes-4\4 f-1 \break
   }
   % line 8 fis
