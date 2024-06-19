@@ -20,10 +20,10 @@ bradetichthirdsfourths = \relative c'' {
   \clef treble
   \time 3/2
   \key g \major
-  \repeat volta 2 { g8\thumb (b-2-3) b-2-3 (g\thumb) g\thumb (b-2-3) b-2-3 (g\thumb) g\thumb (b-2-3) g\thumb (b-2-3) }
-  | g8\thumb (c-3) c-3 (g\thumb) g\thumb (c-3) c-3 (g\thumb) g\thumb (c-3) g\thumb (c-3)
-  | \repeat volta 2 { gis\thumb c-2-3 c-2-3 gis\thumb gis c c gis gis c gis c }
-  | gis\thumb cis-3 cis-3 gis\thumb gis cis cis gis gis cis gis cis\tweak direction #DOWN \textEndMark \markup { \small "etc" }
+  \repeat volta 2 { g8-+ (b-2-3) b-2-3 (g-+) g-+ (b-2-3) b-2-3 (g-+) g-+ (b-2-3) g-+ (b-2-3) }
+  | g8-+ (c-3) c-3 (g-+) g-+ (c-3) c-3 (g-+) g-+ (c-3) g-+ (c-3)
+  | \repeat volta 2 { gis-+ c-2-3 c-2-3 gis-+ gis c c gis gis c gis c }
+  | gis-+ cis-3 cis-3 gis-+ gis cis cis gis gis cis gis cis\tweak direction #DOWN \textEndMark \markup { \small "etc" }
   \bar "||"
 }
 
@@ -33,15 +33,15 @@ rabbathnotes = \relative c'' {
   \key c \major
   \tempo Presto
   \override Score.BarNumber.break-visibility = ##(#f #f #f)
-  \tuplet 6/4 { g16\thumb (aes-1 g aes bes-3 aes}  \tuplet 6/4 { g16 aes g aes bes aes }) \tuplet 6/4 { g\thumb (a-2 g a bes-3 a} \tuplet 6/4 {g a g a bes a})
+  \tuplet 6/4 { g16-+ (aes-1 g aes bes-3 aes}  \tuplet 6/4 { g16 aes g aes bes aes }) \tuplet 6/4 { g-+ (a-2 g a bes-3 a} \tuplet 6/4 {g a g a bes a})
   | \tuplet 6/4 { g (a g a c a} \tuplet 6/4 { g a g a c a}) \tuplet 6/4 { g (b g b c b} \tuplet 6/4 { g b g b c b}) \break
   % line 2
   \omit TupletNumber {
     | \tuplet 6/4 { g (bes g bes cis bes } \tuplet 6/4 { g bes g bes cis bes }) \tuplet 6/4 { g (bis g bis cis bis } \tuplet 6/4 { g bis g bis cis bis })
     | \tuplet 6/4 { g (b g b d b } \tuplet 6/4 { g b g b d b }) \tuplet 6/4 { g (cis g cis d cis } \tuplet 6/4 { g cis g cis d cis }) \break
     % line 3
-    \bar "||" \tuplet 6/4 { g\thumb (aes-1 g\thumb aes-1 a-2 aes-1 } \tuplet 6/4 { g aes g aes a aes }) \tuplet 6/4 { g\thumb (a-2 g\thumb a-2 bes-3 a-2 } \tuplet 6/4 { g a g a bes a })
-    | \tuplet 6/4 { g\thumb (a-1 g\thumb a-1 bes-2 a-1 } \tuplet 6/4 { g a g a bes a }) \tuplet 6/4 { g\thumb (bes-2 g\thumb bes-2 b-3 bes-2 } \tuplet 6/4 { g bes g bes b bes }) \break
+    \bar "||" \tuplet 6/4 { g-+ (aes-1 g-+ aes-1 a-2 aes-1 } \tuplet 6/4 { g aes g aes a aes }) \tuplet 6/4 { g-+ (a-2 g-+ a-2 bes-3 a-2 } \tuplet 6/4 { g a g a bes a })
+    | \tuplet 6/4 { g-+ (a-1 g-+ a-1 bes-2 a-1 } \tuplet 6/4 { g a g a bes a }) \tuplet 6/4 { g-+ (bes-2 g-+ bes-2 b-3 bes-2 } \tuplet 6/4 { g bes g bes b bes }) \break
     % line 4
     | \tuplet 6/4 { g (bes g bes b bes } \tuplet 6/4 { g bes g bes b bes }) \tuplet 6/4 { g (b g b c b } \tuplet 6/4 { g b g b c b })
     | \tuplet 6/4 { g (b g b c b } \tuplet 6/4 { g b g b c b }) \tuplet 6/4 { g (c g c des c } \tuplet 6/4 { g c g c des c }) \break
@@ -64,7 +64,7 @@ petracchiscalenotes = \relative c {
   \repeat volta 2 {
     \once \override Staff.TimeSignature.stencil = ##f
     \time 12/8
-    \bar ".|:" g8-1\4 (b-4 d-1\3  f-1 g-4 b-2) \clef treble d_\scr\thumb (f-2 g b-3 d\flageolet f-1)
+    \bar ".|:" g8-1\4 (b-4 d-1\3  f-1 g-4 b-2) \clef treble d_\scr-+ (f-2 g b-3 d\flageolet f-1)
     | g-3 (f d\flageolet  b-3_\scr g\flageolet f-2) \clef bass d\flageolet (b-2 g-4 f-1 d\4-4 b-1 ) \break
   }
   % line 2 c
@@ -74,13 +74,13 @@ petracchiscalenotes = \relative c {
   }
   % line 3 f
   \repeat volta 2 {
-    |f-1 a-0 c-4\4 ees-1 f-4 a-2 \clef tenor c-4 ees-1 f \clef treble a_\cr\thumb c-3 ees-1
+    |f-1 a-0 c-4\4 ees-1 f-4 a-2 \clef tenor c-4 ees-1 f \clef treble a_\cr c-3 ees-1
     |f-3 ees c-3\2 a\flageolet f-3\2 ees-1 \clef bass c-3\3 a\flageolet f-4 ees-1 c-4\4 a-1 \break
   }
   % line 4 bes
   \repeat volta 2 {
-    | bes-2 d-1 f-4 aes-1 bes-4 d\flageolet \clef treble f-3 aes-1 bes d\thumb f-3 aes-1
-    | bes-2 aes-1 f\thumb d\flageolet-1\2 bes-3\1 aes-1 \clef bass f-3\2 d\flageolet bes-4 aes-1 f-4\3 d\flageolet\2 \break
+    | bes-2 d-1 f-4 aes-1 bes-4 d\flageolet \clef treble f-3 aes-1 bes d-+ f-3 aes-1
+    | bes-2 aes-1 f-+ d\flageolet-1\2 bes-3\1 aes-1 \clef bass f-3\2 d\flageolet bes-4 aes-1 f-4\3 d\flageolet\2 \break
   }
   % line 5 ees
   \repeat volta 2 {
@@ -89,11 +89,11 @@ petracchiscalenotes = \relative c {
   }
   % line 6 aes
   \repeat volta 2 {
-    | aes-. c-4 ees-1 ges-1\3 aes-4 c-2\2 \clef treble ees_\scr\thumb ges-2 aes\thumb c-3 ees_\scr\thumb ges-1
+    | aes-. c-4 ees-1 ges-1\3 aes-4 c-2\2 \clef treble ees_\scr-+ ges-2 aes-+ c-3 ees_\scr-+ ges-1
     \override TextSpanner.style = #'line
     \override TextSpanner.bound-details.left.text = #"s.cr"
     \override TextSpanner.direction = #DOWN
-    | aes-3 ges ees\thumb c-2\1\startTextSpan aes\thumb ges-2 \clef bass ees\thumb\2 c-2 \stopTextSpan aes-4 ges-1 ees-4\4 c-1 \break
+    | aes-3 ges ees-+ c-2\1\startTextSpan aes-+ ges-2 \clef bass ees-+\2 c-2 \stopTextSpan aes-4 ges-1 ees-4\4 c-1 \break
   }
   % line 7 des
   \repeat volta 2 {
@@ -101,33 +101,33 @@ petracchiscalenotes = \relative c {
     \override TextSpanner.bound-details.left.text = \markup { \draw-line #'(0 . -1) }
     \override TextSpanner.bound-details.right.text = \markup { \draw-line #'(0 . -1) }
     \override TextSpanner.direction = #UP
-    <<\parenthesize des,\parenthesize-0 des'-2>> f,-1 aes-4 ces-1\3 des-4 f-4 aes-1 ces-1\2 des-4 \clef treble f-2\1 aes\thumb\startTextSpan ces-1
-    | des-3\1 ces-1 aes\thumb\stopTextSpan f-2_\cr des-4\2_"___________" ces-1 \clef bass aes-1 f-4\3 des-4 ces-1 aes-4\4 f-1 \break
+    <<\parenthesize des,\parenthesize-0 des'-2>> f,-1 aes-4 ces-1\3 des-4 f-4 aes-1 ces-1\2 des-4 \clef treble f-2\1 aes-+\startTextSpan ces-1
+    | des-3\1 ces-1 aes-+\stopTextSpan f-2_\cr des-4\2_"___________" ces-1 \clef bass aes-1 f-4\3 des-4 ces-1 aes-4\4 f-1 \break
   }
   % line 8 fis
   \repeat volta 2 {
-    | fis-2 ais-1\3 cis-4 e!-1\2 fis-4 ais-4 \clef treble cis-1 e-1 fis ais\thumb_\cr cis-3 e-1
-    | fis-3 e cis\thumb_\cr ais-2 fis-3 e-1 \clef bass cis-3\3_"___________"_\cr ais\thumb fis-4 e-1 cis\4 ais-1 \break
+    | fis-2 ais-1\3 cis-4 e!-1\2 fis-4 ais-4 \clef treble cis-1 e-1 fis ais-+_\cr cis-3 e-1
+    | fis-3 e cis-+_\cr ais-2 fis-3 e-1 \clef bass cis-3\3_"___________"_\cr ais-+ fis-4 e-1 cis\4 ais-1 \break
   }
   % line 9 b
   \repeat volta 2 {
-    | b-2 dis-1\2 fis-4 a!-1\2_"_______" b-4 dis\thumb_\cr \clef treble fis-3 a-1 b\thumb_\scr dis-3 fis\thumb\startTextSpan a-1
-    | b-2 a-1 fis\thumb\stopTextSpan dis-3_\scr b\thumb a\flageolet\2 \clef bass fis-4\1 dis-1 b-2      \2 a-1 fis-4\3 dis-1 \break
+    | b-2 dis-1\2 fis-4 a!-1\2_"_______" b-4 dis-+_\cr \clef treble fis-3 a-1 b-+_\scr dis-3 fis-+\startTextSpan a-1
+    | b-2 a-1 fis-+\stopTextSpan dis-3_\scr b-+ a\flageolet\2 \clef bass fis-4\1 dis-1 b-2      \2 a-1 fis-4\3 dis-1 \break
   }
   % line 10 e
   \repeat volta 2 {
-    | <<\parenthesize e,\parenthesize-0 e'-2>> gis,-4 b d!-1 e-4\3 gis-2\2 b-4 d-1 e \clef treble gis\thumb_\cr b-3 d-1
-    | e-3 d b-3 gis\thumb e-1 d\flageolet \clef bass b-1\2 gis-4\3 e-4 d-1 b-4 gis-1 \break
+    | <<\parenthesize e,\parenthesize-0 e'-2>> gis,-4 b d!-1 e-4\3 gis-2\2 b-4 d-1 e \clef treble gis-+_\cr b-3 d-1
+    | e-3 d b-3 gis-+ e-1 d\flageolet \clef bass b-1\2 gis-4\3 e-4 d-1 b-4 gis-1 \break
   }
   % line 11 a
   \repeat volta 2 {
-    | a-2 cis-1 e-4\3 g!-1\2 a-4 cis-4 \clef treble e-1 g\flageolet a\flageolet-1_cr cis\thumb e-3 g-1
-    | a-2 g-1 e-3_\cr  cis\thumb a\flageolet g\flageolet \clef bass e-1 cis-4 a-4 g-1 e-4 cis-1 \break
+    | a-2 cis-1 e-4\3 g!-1\2 a-4 cis-4 \clef treble e-1 g\flageolet a\flageolet-1_cr cis-+ e-3 g-1
+    | a-2 g-1 e-3_\cr  cis-+ a\flageolet g\flageolet \clef bass e-1 cis-4 a-4 g-1 e-4 cis-1 \break
   }
   % line 12 d
   \repeat volta 2 {
-    | d-2 fis,-2 a-4 c!-1 d-4 fis-4 a-1 c-4 d\flageolet\2 \clef treble fis-2_\cr a\thumb c-1
-    | d-3 c a\thumb\1 fis-2\2_\cr d\flageolet\thumb c-1\1 \clef bass a-4 fis-2 d-4 c-1 a-4 fis-1
+    | d-2 fis,-1 a-4 c!-1 d-4 fis-4 a-1 c-4 d\flageolet\2 \clef treble fis-2_\cr a-+ c-1
+    | d-3 c a-+\1 fis-2\2_\cr d\flageolet-+ c-1\1 \clef bass a-4 fis-2 d-4 c-1 a-4 fis-1
   }
   | g1.-2 \break
   \bar "|." \textMark \markup { \small (iii) } g8-.\tenuto_\markup { staccato alla punta } b-.\tenuto d-.\tenuto f-.\tenuto g-.\tenuto b-.\tenuto \clef treble d-.\tenuto f-.\tenuto g-.\tenuto b-.\tenuto d-.\tenuto f-.\tenuto
