@@ -89,7 +89,7 @@ petracchiscalenotes = \relative c {
   }
   % line 6 aes
   \repeat volta 2 {
-    | aes-. c-4 ees-1 ges-1\3 aes-4 c-2\2 \clef treble ees_\scr-+ ges-2 aes-+ c-3 ees_\scr-+ ges-1
+    | aes-2 c-4 ees-1 ges-1\3 aes-4 c-2\2 \clef treble ees_\scr-+ ges-2 aes-+ c-3 ees_\scr-+ ges-1
     \override TextSpanner.style = #'line
     \override TextSpanner.bound-details.left.text = #"s.cr"
     \override TextSpanner.direction = #DOWN
