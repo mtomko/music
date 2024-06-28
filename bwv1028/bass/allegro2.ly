@@ -78,8 +78,8 @@ allegroIIBassNotes =
   | e8 d'16 (c) b d c d e f d e
   | c16 d e f d e c b a g fis e \break
   | fis8 b fis g c g
-  | a8 a'4~ a16 (g\tenuto) fis e f8~
-  | f8 e dis e b <<dis! fis>>
+  | a8 a'4~ (a16 g\tenuto) fis e fis8~
+  | fis8 e dis e b <<dis! fis>>
   | <<
     \voiceOne {
       g4. g4. (
