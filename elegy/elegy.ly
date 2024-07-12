@@ -51,10 +51,10 @@ solonotes = \relative {
   | g8^\flageolet\thumb r16 \ottava #1 g16^\flageolet\downbow\< fis^\flageolet g^\flageolet e'4.^\flageolet\thumb-2\2~ 8 \ottava #0 r16\f e,,-. dis-. e-. c'4 c8\upbow
   | \stemDown d8\downbow~ (16 c) a-.-3\upbow f-.\thumb\upbow \stemNeutral c-. b-. c-. b-. c-. d-. e8-1 (b'-3) a-. g16-.\> f (a,8 b) \! \break
   | c4 r8 r4 r8 r2.
-  | \clef bass d4.\p~ (8 e f) a,4 (c8) b4 (d8)
-  | c4 (g8) e'2.\sf\accent\< e4. \!
+  | \clef bass d4.\p~ (8 e f) a,4\2 (c8) b4 (d8)
+  | c4\2\glissando (g8) e'2.\sf\accent\< e4. \!
   | \clef treble d4.~ (8 b' a-.) g16-.\upbow (fis-. f-.\> e-. d-. c-.) \clef bass b-.\downbow (a-. g-. f-. d-. g-.) \! \break
-  | c,4.\upbow~ 8\p f (aes) \clef treble c (e g\thumb) \slurDown aes-1 [(\grace { \stemDown bes32 \(a\) } \stemUp g8-1 \stemNeutral f\thumb]) \slurNeutral
+  | c,4.\upbow~ 8\p f (aes) \clef treble c (e g\thumb) \slurDown aes-1 [(\grace { \stemDown bes32 \(aes\) } \stemUp g8-1 \stemNeutral f\thumb]) \slurNeutral
   | \afterGrace c'1.\startTrillSpan {b32 ([c])\stopTrillSpan }
   | g'2. (\clef bass g,8) e (c a g e)
   | c2.~ 8 r r r4 r8 \fine
