@@ -22,6 +22,7 @@
 }
 
 \book {
+  \bookOutputSuffix "edited"
   \score {
     \layout {
       top-margin = 0.0
@@ -31,6 +32,8 @@
     }
     \new Staff {
       \new Voice {
+        \romanStringNumbers
+        \set stringNumberOrientations = #'(down)
         \adagioBassNotes
       }
     }
@@ -43,6 +46,8 @@
     }
     \new Staff {
       \new Voice {
+        \romanStringNumbers
+        \set stringNumberOrientations = #'(down)
         \allegroBassNotes
       }
     }
@@ -55,6 +60,8 @@
     }
     \new Staff {
       \new Voice {
+        \romanStringNumbers
+        \set stringNumberOrientations = #'(down)
         \andanteBassNotes
       }
     }
@@ -67,6 +74,78 @@
     }
     \new Staff {
       \new Voice {
+        \romanStringNumbers
+        \set stringNumberOrientations = #'(down)
+        \allegroIIBassNotes
+      }
+    }
+  }
+}
+
+\book {
+  \score {
+    \layout {
+      top-margin = 0.0
+    }
+    \header {
+      piece = "Adagio"
+    }
+    \new Staff {
+      \new Voice {
+        \omit Voice.StringNumber
+        \omit Staff.Fingering
+        \set scriptDefinitions = #(cons*
+                                   `(upbow . ,(acons 'stencil #f (assoc-get 'upbow default-script-alist)))
+                                   `(downbow . ,(acons 'stencil #f (assoc-get 'downbow default-script-alist)))
+                                   default-script-alist)
+        \adagioBassNotes
+      }
+    }
+  }
+
+  \score {
+    \header {
+      piece = "Allegro"
+      opus = ""
+    }
+    \new Staff {
+      \new Voice {
+        \set scriptDefinitions = #(cons*
+                                   `(upbow . ,(acons 'stencil #f (assoc-get 'upbow default-script-alist)))
+                                   `(downbow . ,(acons 'stencil #f (assoc-get 'downbow default-script-alist)))
+                                   default-script-alist)
+        \allegroBassNotes
+      }
+    }
+  }
+
+  \score {
+    \header {
+      piece = "Andante"
+      opus = ""
+    }
+    \new Staff {
+      \new Voice {
+        \set scriptDefinitions = #(cons*
+                                   `(upbow . ,(acons 'stencil #f (assoc-get 'upbow default-script-alist)))
+                                   `(downbow . ,(acons 'stencil #f (assoc-get 'downbow default-script-alist)))
+                                   default-script-alist)
+        \andanteBassNotes
+      }
+    }
+  }
+
+  \score {
+    \header {
+      piece = "Allegro"
+      opus = ""
+    }
+    \new Staff {
+      \new Voice {
+        \set scriptDefinitions = #(cons*
+                                   `(upbow . ,(acons 'stencil #f (assoc-get 'upbow default-script-alist)))
+                                   `(downbow . ,(acons 'stencil #f (assoc-get 'downbow default-script-alist)))
+                                   default-script-alist)
         \allegroIIBassNotes
       }
     }

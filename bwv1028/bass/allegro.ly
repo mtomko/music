@@ -16,8 +16,8 @@ allegroBassNotes =
     | d16 e f4 e16 (d) \break
     | e8 (c) b\trill (c)
     | d16 (c b)  a g f e d
-    | c8 c'16 b c4~ (
-    | c16 bes\tenuto) a c f c a f
+    | c8 c'16\2\upbow b c4~ (
+    | c16 bes\tenuto) a c f-4\1 c-1 a-4\2 f-1
     | a8 d16 cis d4~ (
     | d16 c\tenuto) b d g d b d \break
     | e8 e4 d16 (cis)
@@ -46,24 +46,24 @@ allegroBassNotes =
     g16 a bes4 a16 (g)
     | f16 (e d c) d (e f g)
     | a16 (bes c) d c bes a g
-    | bes16 (a) g (a) f a c f \break
-    | \mark \default d8 f, bes d~ (
+    | bes16 (a) g (a) f-2\2 a-4 c-1\1 f-4 \break
+    | \mark \default d8 f,\upbow bes\upbow d~ (
     | d16 c) bes (a) g (a bes) d
-    | cis8 a e e'~
+    | cis8 a\upbow e\upbow e'~
     | e8 a, d16 e f8~ (
     | f16 e) d c b8 e~ (\break
     | e16 d) c b a8 f'8~
-    | f16 gis, (a) b e,8 gis
+    | f16 gis,\upbow (a) b\upbow e,8 gis
     | a16 b c4 b16 (a)
     | \mark \default g16 (fis e d) e (fis g a)
     | b16 (c d) e d c b a \break
     | c16 (b) a (b) g4
-    | r8 d'16 e f8 r8
-    | r8 e16 f e (d) c b
-    | c8 e a4~
-    | a16 fis (g) e \appoggiatura e8 dis8.\trill (e16)
+    | r8 d'16\upbow e f8 r8
+    | r8 e16\downbow f e (d) c b
+    | c8\upbow e\upbow a4-3~
+    | a16 fis\thumb (g-1) e-2 \appoggiatura e8 dis8.\trill (e16)
     | e2 \break
-    | \mark \default e16 f g4 f16 (e)
+    | \mark \default e16-2 f-4 g4\flageolet f16 (e)
     | d16 e f4 e16 (d)
     | e8 (c) b\trill (c)
     | d16 (c b) a g f e d

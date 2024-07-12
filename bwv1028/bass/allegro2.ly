@@ -6,8 +6,8 @@ allegroIIBassNotes =
   \time 6/8
   \key c \major
   \set Score.rehearsalMarkFormatter = #format-mark-alphabet
-  g8 c d e4 r8
-  | g,8 d' e f4 r8
+  g8 c\upbow d\upbow e4 r8
+  | g,8 d'\upbow e\upbow f4 r8
   | c16 d e f d e c d e f d e
   | c16 d e d e f d e f d e f \break
   | e8 g,16 a g8 g8 e'16 (d) c e
