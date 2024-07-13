@@ -1,5 +1,7 @@
 \version "2.24.3"
 
+plus = \finger \markup \fontsize #6 "+"
+
 allegroIIBassNotes =
 \relative {
   \clef bass

@@ -1,5 +1,7 @@
 \version "2.24.3"
 
+plus = \finger \markup \fontsize #6 "+"
+
 allegroBassNotes =
 \relative {
   \clef bass
@@ -61,7 +63,7 @@ allegroBassNotes =
     | r8 d'16\upbow e f8 r8
     | r8 e16\downbow f e (d) c b
     | c8\upbow e\upbow a4-3~
-    | a16 fis\thumb (g-1) e-2 \appoggiatura e8 dis8.\trill (e16)
+    | a16 fis-\plus (g-1) e-2 \appoggiatura e8 dis8.\trill (e16)
     | e2 \break
     | \mark \default e16-2 f-4 g4\flageolet f16 (e)
     | d16 e f4 e16 (d)
