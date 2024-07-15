@@ -20,14 +20,12 @@ solonotes = \relative {
   \clef bass
   \time 12/8
   \key c \major
-  \romanStringNumbers
-  \set stringNumberOrientations = #'(down)
   \textMark \markup { \small Andante }
   \compressMMRests R4.*8
   \clef "treble" g'2.\p_\markup { \tiny \italic "espressivo" }\upbow~ g8 g-.\downbow~ 8-.\downbow g\upbow (f e)
   | d2.~ 4 r8 d4-1 (dis8-1)\<
   | e4-2 (f32 e des e) d'4\accent-3 (c8-3)\! b4\accent (a8-2) g4\accent-1 (f8-4) \break
-  | e4 (g,8-0) a-1\< (b-1 c-2)\! d4. g,32 (gis a ais b-1\> c cis d-1 dis e f-1 fis) \!
+  | e4 (g,8-0) a-1\< (b-1 c-2)\! d4. g,32\downbow (gis a ais b-1\> c cis d-1 dis e f-1 fis) \!
   | g2.-3~ 8 g-.\downbow~ g-.\downbow g (f e)
   | d2.~ 4 r8 d4-.\<~ 8 \break
   | d8-1 e-1 fis-4 g-\plus a-1 b-3\! c-\plus ees-1 g-3 fis-2\> b8.-2 (a16-2) \!
@@ -50,21 +48,39 @@ solonotes = \relative {
   | \ottava #1 g4.\upbow)\ottava #0 c,,,8\upbow d e f4\accent\downbow (aes,8) g8.\upbow \stemDown g'32 ([b] \stemNeutral d [g b d]
   | g,8-3\upbow) r16 c,,-.\downbow b-. bes-. a8\upbow\< (b16)\! e-. dis-. d-. c8\< (d16)\! g-. fis-. f-. e8\< (g16)\! d'-. c-. b-. \break
   | a8.\upbow a16\downbow gis a e'4.\upbow~ 8.\< d16\downbow cis d b'4\accent\upbow-2 (a8) \!
-  | g8^\flageolet-\plus r16 \ottava #1 g16^\flageolet\downbow\< fis^\flageolet g^\flageolet e'4.^\flageolet-\plus-2\2~ 8 \ottava #0 r16\f e,,-. dis-. e-. c'4 c8\upbow
+  | g8^\flageolet-\plus r16 \ottava #1 g16^\flageolet\downbow\< fis^\flageolet g^\flageolet e'4.^\flageolet-\plus-2\2~ 8 \ottava #0 r16\f e,,-.\2 dis-. e-. c'4 c8\upbow
   | \stemDown d8\downbow~ (16 c) a-.-3\upbow f-.-\plus\upbow \stemNeutral c-. b-. c-. b-. c-. d-. e8-1 (b'-3) a-. g16-.\> f (a,8 b) \! \break
   | c4 r8 r4 r8 r2.
   | \clef bass d4.\p~ (8 e f) a,4\2 (c8) b4 (d8)
   | c4\2\glissando (g8) e'2.\sf\accent\< e4. \!
   | \clef treble d4.~ (8 b' a-.) g16-.\upbow (fis-. f-.\> e-. d-. c-.) \clef bass b-.\downbow (a-. g-. f-. d-. g-.) \! \break
-  | c,4.\upbow~ 8\p f (aes) \clef treble c (e g-\plus) \slurDown aes-1 [(\grace { \stemDown bes32 \(aes\) } \stemUp g8-1 \stemNeutral f-\plus]) \slurNeutral
+  | c,4.\upbow~ 8\p f\3 (aes\2) \clef treble c (e g-\plus) \slurDown aes-1 [(\grace { \stemDown bes32 \(aes\) } \stemUp g8-1 \stemNeutral f-\plus]) \slurNeutral
   | \afterGrace c'1.\startTrillSpan {b32 ([c])\stopTrillSpan }
   | g'2. (\clef bass g,8) e (c a g e)
   | c2.~ 8 r r r4 r8 \fine
 }
 
 \book {
-  \bookOutputSuffix "solo"
   \score {
-    \new Staff { \solonotes }
+    \new Staff {
+      \romanStringNumbers
+      \set stringNumberOrientations = #'(down)
+      \solonotes
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "unedited"
+  \score {
+    \new Staff {
+      \omit Fingering
+      \override Voice.StringNumber.stencil = ##f
+      \set scriptDefinitions = #(cons*
+                                 `(upbow . ,(acons 'stencil #f (assoc-get 'upbow default-script-alist)))
+                                 `(downbow . ,(acons 'stencil #f (assoc-get 'downbow default-script-alist)))
+                                 default-script-alist)
+      \solonotes
+    }
   }
 }
