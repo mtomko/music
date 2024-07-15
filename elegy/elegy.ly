@@ -1,11 +1,11 @@
 \version "2.24.3"
 
-%{\include "bass/solo-tuning.ly"%}
+%\include "bass/solo-tuning.ly"
 
 \header {
   title = "Elegia in re"
   composer = "Giovanni Bottesini"
-  %{meter = \soloTuning%}
+  %meter = \soloTuning
   tagline = #f
 }
 
@@ -17,10 +17,10 @@ plus = \finger \markup \fontsize #6 "+"
 
 solonotes = \relative {
   \autoBreaksOff
-  \clef bass
+  \tempo Andante
   \time 12/8
+  \clef bass
   \key c \major
-  \textMark \markup { \small Andante }
   \compressMMRests R4.*8
   \clef "treble" g'2.\p_\markup { \tiny \italic "espressivo" }\upbow~ g8 g-.\downbow~ 8-.\downbow g\upbow (f e)
   | d2.~ 4 r8 d4-1 (dis8-1)\<
