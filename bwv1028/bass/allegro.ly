@@ -80,12 +80,12 @@ allegroBassNotes =
     | g8 g4 f16 (e)
     | f8 f4 e16 (d) \break
     | e8 d16 (c) e (d) c (b)
-    | c16 (g) e c bes'4~ (
-    | bes16 g) e c a'4~ (
-    | a16 f) d b g'4~ (
-    | g16 e) c a f'4~ ( \break
-    | f16 g) b d g (f) ees d
-    | ees16 f g4 f16 (ees)
+    | c16 (g) e c bes'4\upbow~ (
+    | bes16 g) e c a'4\downbow~ (
+    | a16 f) d b g'4\upbow~ (
+    | g16 e) c a f'4\downbow~ ( \break
+    | f16 g) b d g (f) ees-2 d-1
+    | ees16-1 f g4 f16 (ees)
     | d16 ees f4 ees16 (d)
     | f16 (e) d (c) g8 b
     | \appoggiatura { c,16 e g } c2 \fine \pageBreak
