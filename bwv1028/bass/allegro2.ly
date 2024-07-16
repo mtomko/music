@@ -4,34 +4,35 @@ plus = \finger \markup \fontsize #6 "+"
 
 allegroIIBassNotes =
 \relative {
+  \autoBreaksOff
   \clef bass
   \time 6/8
   \key c \major
   \set Score.rehearsalMarkFormatter = #format-mark-alphabet
-  g8 c\upbow d\upbow e4 r8
+  g8\f c\upbow d\upbow e4 r8
   | g,8 d'\upbow e\upbow f4 r8
-  | c16 d e f d e c d e f d e
+  | c16-2\2 d-\plus\1 e-1 f-2 d e c d e f d e
   | c16 d e d e f d e f d e f \break
   | e8 g,16 a g8 g8 e'16 (d) c e
   | d8 g,16 a g8 g f'16 (e) d f
-  | e16 f g a f g e f g a f g \break
-  | e16 f g f g a d, e f e f g
-  | c,16 d e d e f b, c d c d e
-  | a,16 b c b c d b8 a16 (g) c8~ \break
+  | e16-2 f-4 g-1 a-3 f-\plus g-1 e-3 f-\plus g-1 a-3 f-\plus g-1 \break
+  | e16-3\2 f-\plus g-1 f-\plus g-1 a-3 d,-1\2 e-3 f-\plus e-3 f-\plus g-1
+  | c,16-2\2 d-\plus\1 e-1 d-\plus e-1 f-3 b,-1 c-2 d-\plus c-2 d-\plus e-1
+  | a,16-1\2 b-2 c-4 b-2 c-4 d-3\flageolet b8 a16 (g) c8~ \break
   | c8 \acciaccatura c b8.\trill (a32 b) c16 e, f g a g
   | a16 b a g fis e fis8 g16 a b8
-  | a16 g \acciaccatura g8 fis8.\trill\tenuto (g16-.) g8 g'4~\trill
+  | a16 g \acciaccatura g8 fis8.\trill\tenuto (g16-.) g8 g'4~\trill\downbow
   | g8 fis4~\trill fis8 e4~\trill
   | e8 d4~\trill d8 c4~\trill \break
-  | c16 a b c d c d e \acciaccatura b8 a8.\trill\tenuto (g16-.)
-  | \mark 14 g8 d16 e d8 d b'16 (a) g b
-  | a8 d,16 e d8 d c'16 (b) a c
+  | c16 a b c d c d e \acciaccatura b8 a8.\trill\tenuto\downbow (g16-.\upbow)
+  | \mark 14 g8\p\downbow d16\upbow e d8 d b'16 (a) g b
+  | a8 d,16 e d8 d c'16\upbow (b) a c
   | b16 c d e c d b c d e c d \break
   | b16 c d b c d c4 r8
   | e,8 a b c4 r8
   | e,8 b' c d4 r8
   | a16 b c d b c a b c d b c
-  | a8 e' a \acciaccatura g8 fis4~\trill fis16 (e32 fis) \break
+  | a8 e'\upbow a\upbow \acciaccatura g8-2 fis4~\trill-1 fis16 (e32 fis) \break
   | g4.~ g8 g16 (a) bes8
   | a8. g16 f e f g \acciaccatura f8 e8.\trill\tenuto (d16-.)
   | \mark \default d2.~
@@ -41,12 +42,12 @@ allegroIIBassNotes =
   | c8 g16 a g8 g e'16 (d) c e
   | d8 g,16 a g8 g f'16 (e) d f
   | e16 f g a f g e f g a f g \break
-  | e16 f g e f g a, b c a b c
+  | e16-\plus f-1 g-3 e f g a, b c a b c
   | d4.~ d16 e f d e f
   | b,16 c d b c d g,4.~
   | g16 a b g a b e, f g e f g \break
   | c,4. (c'16) d e c d e
-  | a,16 b c a b c d e f d e f
+  | a,16 b c a b c d e f d\cresc e f\!
   | b,16 c d b c d e f g e f g
   | c,16 d e c d e  f4.~ \break
   | f16 e f g e f d e f g e f
@@ -58,10 +59,10 @@ allegroIIBassNotes =
   | \appoggiatura d8 c2.~\trill
   | c8 d,16 e d8 d c'16 (b) a c
   | \appoggiatura c8 b2.\trill
-  | \mark \default r8 g16 a g8 g e'16 (d) c e \break
+  | \mark \default r8 g16\f a g8 g e'16 (d) c e \break
   | d8 g,16 a g8 g f16 (e) d f
   | e16 f g a f g e f g a f g
-  | e16 f g e f g f g a f g a \break
+  | e16 f g e f g f g a f g a \pageBreak
   | d4.~ d16 e f d e f
   | b,16 c d b c d g,4.~
   | g16 a b g a b e, f g e f g
@@ -80,18 +81,18 @@ allegroIIBassNotes =
   | e8 d'16 (c) b d c d e f d e
   | c16 d e f d e c b a g fis e \break
   | fis8 b fis g c g
-  | a8 a'4~ (a16 g\tenuto) fis e fis8~
-  | fis8 e dis e b <<dis! fis>>
+  | a8\downbow a'4\upbow~ (a16 g\tenuto) fis\downbow e\upbow fis8\downbow~
+  | fis8 e\upbow dis\upbow e\downbow b <<dis!-1\downbow fis-3>>
   | <<
     \voiceOne {
-      g4. g4. (
+      g4.-1 g4. (
       | fis4.) fis4. (
       | e4.) e4. (
       | dis8) s8 s8 s4.
     }
     \new Voice {
       \voiceTwo
-      e4. c4.~
+      e4.-3 c4.~-\plus
       | c4. b4.~
       | b4. a4.~ \break
       | a16 b16 c d b c a b c a b c
@@ -126,7 +127,7 @@ allegroIIBassNotes =
   | b,16 a' (b d) gis, (a) e f32 (e d16 c b) d
   | c16 a32 (b c16 d e f) g (a bes) g e g \break
   | a16 a32 (bes c16) a e f bes bes32 (c d16) g,32 (a b16) g
-  | e'16 bes32 (c d16) g,32 (a bes16) g f' bes,32 ( c d16) g,32 (a bes16) g \break
+  | e'16 bes32 (c d16) g,32 (a bes16) g f' bes,32 ( c d16) g,32 (a bes16) g \pageBreak
   | g'16 g32 (f e16) e32 (d c16) c32 (bes a16) a32 (bes c16) f, c e
   | \mark \default f,8 f' g\trill a4 r8
   | c,8 g' a\trill bes4 r8
