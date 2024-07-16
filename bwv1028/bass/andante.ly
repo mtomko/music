@@ -33,7 +33,7 @@ andanteBassNotes =
   | \tuplet 3/2 {f'16\downbow (e d)} d8\upbow \acciaccatura d\downbow\> cis\trill d4.~d2.-\parenthesize\downbow ~
   | \mark \default d8.\p cis16 (e d) e4.~ e16\< cis (d e) f8~ f4.~\! \break
   | f16 e32\upbow (d c16 b a gis) e'4.~ e16 g! (f e d cis) d4.~
-  | d8 c!16 (b) c8~ c b32 (a gis16) a8~ a16 f' (e) d (e) f gis,! (a b) d (c b) \break
+  | d8 c!16 (b) c8~ c b32 (a gis16) a8~ a16 f'\upbow (e) d (e) f gis,! (a b) d (c b) \break
   | c16 (d e8) \ottava 1 gis8_\markup {\teeny { \italic { 8\super{"va"} "ad lib" } } }\mordent a4.~\> (a8 gis\p) b8~ b16 gis? (a b) c8
   | bes4. a8. g16 (bes a) g (e f a g f) \appoggiatura f8 e4 \ottava 0 d16 (e32 f) \break
   | e8 gis, a d16 (c d f e d) \appoggiatura d8\> c8.\tenuto\trill (b16\tenuto) c8 b4 e,8\p
