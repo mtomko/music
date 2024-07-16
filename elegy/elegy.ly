@@ -48,7 +48,7 @@ solonotes = \relative {
   | \ottava #1 g4.\upbow)\ottava #0 c,,,8\upbow d e f4\accent\downbow (aes,8) g8.\upbow \stemDown g'32 ([b] \stemNeutral d [g b d]
   | g,8-3\upbow) r16 c,,-.\downbow b-. bes-. a8\upbow\< (b16)\! e-. dis-. d-. c8\< (d16)\! g-. fis-. f-. e8\< (g16)\! d'-. c-. b-. \break
   | a8.\upbow a16\downbow gis a e'4.\upbow~ 8.\< d16\downbow cis d b'4\accent\upbow-2 (a8) \!
-  | g8^\flageolet-\plus r16 \ottava #1 g16^\flageolet\downbow\< fis^\flageolet g^\flageolet e'4.^\flageolet-\plus-2\2~ 8 \ottava #0 r16\f e,,-.\2 dis-. e-. c'4 c8\upbow
+  | g8^\flageolet-\plus r16 \ottava #1 g16^\flageolet\upbow\< fis^\flageolet g^\flageolet e'4.^\flageolet-\plus-2\2~ 8 \ottava #0 r16\f e,,-.\2 dis-. e-. c'4 c8\upbow
   | \stemDown d8\downbow~ (16 c) a-.-3\upbow f-.-\plus\upbow \stemNeutral c-. b-. c-. b-. c-. d-. e8-1 (b'-3) a-. g16-.\> f (a,8 b) \! \break
   | c4 r8 r4 r8 r2.
   | \clef bass d4.\p~ (8 e f) a,4\2 (c8) b4 (d8)
