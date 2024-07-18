@@ -4,7 +4,7 @@
 
 \header {
   title = "Elegia no. 1 in re"
-  subtitle = "Per contrabbasso e pianoforto"
+  subtitle = "Per contrabbasso e pianoforte"
   composer = "Giovanni Bottesini (1821-1889)"
   arranger = "ed. Mark Tomko"
   meter = \soloTuning
