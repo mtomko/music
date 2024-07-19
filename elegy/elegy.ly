@@ -25,14 +25,14 @@ solonotes = \relative {
   \key c \major
   \compressMMRests R4.*8
   % line 1
-  g'2.\p^\markup { \tiny \italic "espressivo" }\upbow~ g8 g-.\downbow 8-.\downbow g (f e)
+  g'2.\p^\markup { \tiny \italic "espressivo" }\upbow~ g8 g\tenuto\downbow 8\tenuto\downbow g (f e)
   | d2.~ 4 r8 d4-1\< (dis8-1) \break
   % line 2
   | e4-2 (f32 e des e) d'4\accent-3 (c8-3)\! b4\accent (a8-2) g4\accent-1 (f8-4)
   | e4 (g,8-0) a-1\< (b-1 c-2)\! d4. g,32\downbow (gis a ais b-1\> c cis d-1 dis e f-1 fis) \! \break
   % line 3
-  | g2.-3~ 8 g-.g-. g (f e)
-  | d2.~ 4 r8 d4\<~ 8-.
+  | g2.-3~ 8 g\tenuto g\tenuto g (f e)
+  | d2.~ 4 r8 d4~\< 8\tenuto
   | d8-1 e-1 fis-4 g-\plus a-1 b-3\! c-\plus ees-1 g-3\parenthesize \flageolet fis-2\> b8.-2 (a16-2) \! \break
   % line 4
   | g2.\< a,4.\accent\! \clef bass a,4~ \(a16.-. a32-.\)
