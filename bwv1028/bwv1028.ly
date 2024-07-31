@@ -120,7 +120,7 @@ allegroBassNotes =
     | f16 g) b d g\> (f) ees-2 d-1
     | ees16-1\p f g4 f16 (ees)
     | d16 ees f4 ees16\f (d)
-    | f16 (e) d (c) g8 b
+    | f16 (e!) d (c) g8 b
     | \appoggiatura { c,16 e g } c2 \fine \pageBreak
   }
 }
