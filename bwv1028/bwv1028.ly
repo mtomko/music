@@ -208,7 +208,7 @@ allegroIIBassNotes =
   | c8 g16 a g8 g e'16 (d) c e
   | d8 g,16 a g8 g f'16 (e) d f
   | e16 f g a f g e f g a f g \break
-  | e16-\plus f-1 g-3 e f g a, b c a b c
+  | e16 f g e f g a, b c a b c
   | d4.~ d16 e f d e f
   | b,16 c d b c d g,4.~
   | g16 a b g a b e, f g e f g \break
@@ -283,32 +283,32 @@ allegroIIBassNotes =
   | bes8 bes' ees cis d d,
   | \mark \default g8 d16 e d8 d b'16 (a) g b
   | a8 d,16 e d8 d c16 (b) a c \break
-  | b'16 d (b g f) e (f) d' (b g f) e (
-  | f16) g g b b d d (f32 e f16) d b g
-  | e'16 g (e c bes) a (bes) g' (e c bes) a ( \break
-  | bes16) c c e e g g (bes32 a bes16) g f c
-  | d16 e (cis a g) f (g) e' (cis a g) f (
-  | g16) a a cis cis e e (g32 f g16) e cis a \break
-  | d,16 a' (d f) gis, (a) c, a' (c e) gis, (a)
-  | b,16 a' (b d) gis, (a) e f32 (e d16 c b) d
+  | b'16-1 d-4 (b-1 g-0 f) e (f) d' (b g f) e (
+  | f16) g g b-4 b d-1 d (f32 e f16) d-1 b-4 g-0
+  | e'16-1 g-3\flageolet (e-2 c-4 bes-2) a-1 (bes-2) g' (e c bes) a ( \break
+  | bes16) c c e e g g (bes32 a bes16) g e-2 c-4
+  | d16-1\flageolet e-4 (cis-1 a-2 g-4) f-1 (g) e' (cis a g) f-1 (
+  | g16-4) a-2 a cis-1 cis e-1 e (g32-3 f-2 g16-3) e-1 cis-4 a-1 \break
+  | d,16-0 a'-1 (d-1 f-4) gis,-2 (a-4) c,-1 a'-4 (c-1 e-4) gis,-2 (a-4)
+  | b,16 a'-1 (b-4 d-2) gis,-1 (a-2) e f32 (e d16 c b) d
   | c16 a32 (b c16 d e f) g (a bes) g e g \break
   | a16 a32 (bes c16) a e f bes bes32 (c d16) g,32 (a b16) g
   | e'16 bes32 (c d16) g,32 (a bes16) g f' bes,32 ( c d16) g,32 (a bes16) g \pageBreak
-  | g'16 g32 (f e16) e32 (d c16) c32 (bes a16) a32 (bes c16) f, c e
+  | g'16\flageolet g32 (f-4 e16) e32 (d c16) c32 (bes a16) a32 (bes c16) f, c e
   | \mark \default f,8 f' g\trill a4 r8
   | c,8 g' a\trill bes4 r8
   | f16 g a bes g a f g a bes g a \break
   | f16 g a g f e d8 r8 r8
   | r8 g16 a g8 g8 e'16 (d) c e
   | d8 g,16 a g8 g f'16 (e) d f
-  | e16 f g a f g e f g a f g \break
-  | e16 f g f g a d, e f e f g
+  | e16 f g-1 a-3 f-\plus g e-3\2 f-\plus g a f g \break
+  | e16-3 f-\plus g-1 f g a d,-1\flageolet e-1 f-2 e f-2 g-3
   | c,16 d e d e f b, c d c d e
   | a,16 b c b c d b8 a16 (g) c8~ \break
   | c8 \acciaccatura c8 b8.\trill (a32 b) c8 e a~
   | a8 d, g~ g c, f~
   | f8 b, e~ e a, d~ (
-  | d16 c\tenuto) b a g f g a \acciaccatura e8 d8.\trill\tenuto (c16-.)
+  | d16 c\tenuto) b a g f g-1 a-4 \acciaccatura e8 d8.\trill\tenuto-1 (c16-.)
   | \appoggiatura { c e g } c2. \fermata \fine
 }
 
