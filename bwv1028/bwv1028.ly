@@ -10,6 +10,7 @@ adagioBassNotes =
   \clef bass
   \time 3/4
   \key c \major
+  % quarter = 43
   | c'4\p\upbow r8 g\downbow a8.\trill (b32 c)
   | \appoggiatura f,8 e8\trill (d16 c) c'2\upbow~
   | c4~ c16 b\< (c e\!) d (c\> b c)
@@ -42,6 +43,7 @@ allegroBassNotes =
   \key c \major
   \set Score.rehearsalMarkFormatter = #format-mark-alphabet
   \set Score.currentBarNumber = #24
+  % half = 37
   \repeat volta 2 {
     c'16\mf d e4 d16 (c)
     | b16 c d4 c16 (b)
@@ -136,6 +138,7 @@ andanteBassNotes =
   \key a \minor
   \partial 8 e8\p\upbow
   \autoLineBreaksOff
+  % dotted quarter = 34, eighth = 94
   | a8.\tenuto (c16\tenuto) b8 a8 a32 (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8  \appoggiatura d8 c \trill b16 (a) a'8~
   | a8 g16 (fis) g8~ g8 fis32 (e dis16) e8~ e16 c' (b) a (b) c dis,? (e fis a\upbow g fis) \break
   | g16 (a) b8 \appoggiatura e dis e4.~ e8 (dis\tenuto\downbow) fis~ fis16 dis? (e fis) g8
@@ -153,7 +156,7 @@ andanteBassNotes =
   | \mark \default c8.\tenuto (e16\tenuto) d8 c c32 (d e16 d8\staccato) d8.\tenuto-1 (f16\tenuto-2) e8-1 d8-\plus d32 (e-1 f16-2 e8\staccato-\plus) \break
   | e8\cresc-\plus e32 (f-1 g16-3 f8\staccato-\plus) f8-\plus f32 (g-1 a16-3 g8\staccato-1) \appoggiatura f-2 e8.-1\tenuto\trill (d16\tenuto) c8 bes\f \appoggiatura bes\upbow a4~\trill
   | a8. b32 (cis d16 e) f8\upbow \appoggiatura f\downbow e4~ e8. d32\upbow-4 (c-2 b-1 c-2 d16-4) gis,4 e8 \break
-  | a8.\tenuto (c16\tenuto) b8 a8 a32\upbow (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8 \appoggiatura d8\downbow cis\trill \(b16 (a\upbow)\) a'8
+  | a8.\tenuto (c16\tenuto) b8 a8 a32\upbow (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8 \appoggiatura d8\downbow cis\trill \(b16 (a)\) a'8\upbow
   | \tuplet 3/2 {f'16\downbow (e d)} d8\upbow \acciaccatura d\downbow\> cis\trill d4.~d2.-\parenthesize\downbow ~
   | \mark \default d8.\p cis16 (e d) e4.~ e16\< cis (d e) f8~ f4.~\! \break
   | f16 e32\upbow (d c16 b a gis) e'4.~ e16 g! (f e d cis) d4.~
@@ -175,6 +178,7 @@ allegroIIBassNotes =
   \time 6/8
   \key c \major
   \set Score.rehearsalMarkFormatter = #format-mark-alphabet
+  % dotted quarter = 49
   g8\f c\upbow d\upbow e4 r8
   | g,8 d'\upbow e\upbow f4 r8
   | c16-2\2 d-\plus\1 e-1 f-2 d e c d e f d e
@@ -202,13 +206,13 @@ allegroIIBassNotes =
   | g4.~ g8 g16 (a) bes8
   | a8. g16 f e f g \acciaccatura f8 e8.\trill\tenuto (d16-.)
   | \mark \default d2.~
+  | d2.~\tweak X-offset 5 \downbow
   | d2.~
-  | d2.~
-  | d4.~ d8 g 16 f e d \break
+  | d4.~\upbow d8 g 16 f e d \break
   | c8 g16 a g8 g e'16 (d) c e
   | d8 g,16 a g8 g f'16 (e) d f
   | e16 f g a f g e f g a f g \break
-  | e16 f g e f g a, b c a b c
+  | e16-\plus f-1 g-3 e f g a,-1\2 b c a b c
   | d4.~ d16 e f d e f
   | b,16 c d b c d g,4.~
   | g16 a b g a b e, f g e f g \break
