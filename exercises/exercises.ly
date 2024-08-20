@@ -188,7 +188,7 @@ doublestops = \relative c {
       | a\fermata
     }
     {
-      a8 bis bis b b a
+      a8 ais ais b b a
       | gis a a ais ais gis
       | g aes aes a a g
       | fis g g gis gis fis
