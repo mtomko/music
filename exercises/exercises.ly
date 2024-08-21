@@ -157,15 +157,15 @@ digitup = \relative c {
   | f16\upbow 16 16 r r4 f16\downbow 16 16 r r4 \break
   | e16\downbow 16 16 r r4 e16\upbow 16 16 r r4
   | d16\upbow 16 16 r r4 d16\downbow 16 16 r r4
-  | c16\downbow 16 16 r r4 c16\downbow 16 16 r r4 \break 
+  | c16\downbow 16 16 r r4 c16\downbow 16 16 r r4 \break
   \bar "||" \repeat unfold 2 { c16\downbow 16 16 r } \repeat unfold 2 { d16\upbow 16 16 r }
   | \repeat unfold 2 { e16\downbow 16 16 r } \repeat unfold 2 { f16\upbow 16 16 r } \break
-  | \repeat unfold 2 { g16\downbow 16 16 r } \repeat unfold 2 { a16\upbow 16 16 r } 
+  | \repeat unfold 2 { g16\downbow 16 16 r } \repeat unfold 2 { a16\upbow 16 16 r }
   | \repeat unfold 2 { b16\downbow 16 16 r } c16\downbow 16 16 r c16\upbow 16 16 r \break
-  | b16\downbow 16 16 r b16\upbow 16 16 r a16\upbow 16 16 r a16\downbow 16 16 r 
+  | b16\downbow 16 16 r b16\upbow 16 16 r a16\upbow 16 16 r a16\downbow 16 16 r
   | g16\upbow 16 16 r g16\downbow 16 16 r f16\upbow 16 16 r f16\downbow 16 16 r \break
-  | e16\downbow 16 16 r e16\upbow 16 16 r d16\upbow 16 16 r d16\downbow 16 16 r 
-  | c16\downbow 16 16 r c16\downbow 16 16 r b16\upbow 16 16 r b16\upbow 16 16 r 
+  | e16\downbow 16 16 r e16\upbow 16 16 r d16\upbow 16 16 r d16\downbow 16 16 r
+  | c16\downbow 16 16 r c16\downbow 16 16 r b16\upbow 16 16 r b16\upbow 16 16 r
   | c1%{\downbow%}\fermata_\markup { \small "Center" }\fine \pageBreak
 }
 
@@ -290,6 +290,50 @@ glowingtones = \relative c {
   >>
 }
 
+grodner = \relative c' {
+  \override Score.BarNumber.break-visibility = ##(#f #f #f)
+  \romanStringNumbers
+  \time 6/8
+  \key c \major
+  \clef bass
+  \repeat volta 2 {
+    b8-4 (bes-2 a-1) f-2 (fis-4 e-1)
+    | b-1 (cis-4 c-2) f-2 (e-1 fis-4)
+  }
+  \repeat volta 2 {
+    | b-4 (bes-2 a-1) fis-4 (e-1 f-2)
+    | c'-4 (b-2 bes-1) g-4 (f-1 fis-2) \break
+    | cis'-4 (c-2 b-1) g-2 (gis-4 fis-1)
+    | cis-1 (dis-4 d-2) g-2 (fis-1 gis-4)
+  }
+  \repeat volta 2 {
+    | cis-4\1 (c-2 b-1) gis-4\2 (fis-1 g-2)
+    | d'-4\1 (cis-2 c-1) a-4\2 (g-1 gis-2) \break
+    | dis'-4 (d-2 cis-1) a-2 (ais-4 gis-1)
+    | dis-1\3 (f-4 e-2) a-2\2 (gis-1 ais-4)
+  }
+  \repeat volta 2 {
+    | dis-4\1 (d-2 cis-1) ais-4 (gis-1 a-2)
+    | e'-4 (dis-2 d-1) b-4 (a-1 ais-2) \break
+    | dis-4 (d-2 cis-1) a-2 (ais-4 gis-1)
+    | dis-1 (f-4 e-2) a-2 (gis-1 ais-4)
+  }
+  \repeat volta 2 {
+    | dis-4 (d-2 cis-1) ais-4 (gis-1 a-2)
+    | d-4 (cis-2 c-1) a-4 (g-1 gis-2) \break
+    | cis-4 (c-2 b-1) g-2 (gis-4 fis-1)
+    | cis-1 (dis-4 d-2) g-2 (fis-1 gis-4)
+  }
+  \repeat volta 2 {
+    | cis-4 (c-2 b-1) gis-4 (fis-1 g-2) 
+    | c-4 (b-2 bes-1) g-4 (f-1 fis-2) \break
+    | b-4 (bes-2 a-1) f-2 (fis-4 e-1)
+    | b-1 (cis-4 c-2) f-2 (e-1 fis-4)
+  }
+  | b-4 (bes-2 a-1) c,-2 (cis-4 b-1)
+  | gis (a4~a4.) \fine
+}
+
 \book {
   \score {
     \header {
@@ -323,7 +367,8 @@ glowingtones = \relative c {
   }
   \score {
     \header {
-      piece = "Dig It Up"
+      subtitle = "Dig It Up"
+      composer = "Dennis Whitaker"
     }
     \new Staff {
       \digitup
@@ -331,7 +376,8 @@ glowingtones = \relative c {
   }
   \score {
     \header {
-      piece = "Double Stops"
+      subtitle = "Double Stops"
+      composer = "Dennis Whitaker"
     }
     \new Staff {
       \doublestops
@@ -339,18 +385,21 @@ glowingtones = \relative c {
   }
   \score {
     \header {
-      piece = "Glowing Tones"
+      subtitle = "Glowing Tones"
     }
-    %{
-    \layout {
-      \context {
-        \Score
-      }
-    }%}
     \new PianoStaff {
       \new Voice {
-        \glowingtones
+        \glowingtones \pageBreak
       }
+    }
+  }
+  \score {
+    \header {
+      composer = "Murray Grodner"
+      subtitle = "Serial Control"
+    }
+    \new Staff {
+      \grodner
     }
   }
 }
