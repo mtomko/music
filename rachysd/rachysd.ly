@@ -9,6 +9,7 @@ cresc = \markup { \small \italic cresc. }
 \header {
   title = "SYMPHONIC DANCES"
   instrument = "Bass"
+  composer = "Sergei Rachmaninoff"
   %{copyright = \markup { \small \italic "Engraving Ⓒ Mark Tomko, 2024" }%}
   tagline = #f
 }
