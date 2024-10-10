@@ -291,13 +291,13 @@ allegroIIBassNotes =
   | f16) g g b-4 b d-1 d (f32 e f16) d-1 b-4 g-0
   | e'16-1 g-3\flageolet (e-2 c-4 bes-2) a-1 (bes-2) g' (e c bes) a ( \break
   | bes16) c c e e g g (bes32 a bes16) g e-2 c-4
-  | d16-1\flageolet e-4 (cis-1 a-2 g-4) f-1 (g) e' (cis a g) f-1 (
+  | a'16-1\flageolet e-4 (cis-1 a-2 g-4) f-1 (g) e' (cis a g) f-1 (
   | g16-4) a-2 a cis-1 cis e-1 e (g32-3 f-2 g16-3) e-1 cis-4 a-1 \break
   | d,16-0 a'-1 (d-1 f-4) gis,-2 (a-4) c,-1 a'-4 (c-1 e-4) gis,-2 (a-4)
   | b,16 a'-1 (b-4 d-2) gis,-1 (a-2) e f32 (e d16 c b) d
   | c16 a32 (b c16 d e f) g (a bes) g e g \break
-  | a16 a32 (bes c16) a e f bes bes32 (c d16) g,32 (a b16) g
-  | e'16 bes32 (c d16) g,32 (a bes16) g f' bes,32 ( c d16) g,32 (a bes16) g \pageBreak
+  | a16 a32 (bes c16) a e f bes bes32 (c d16) g,32 (a bes16) g
+  | e'16 bes32 (c des16) g,32 (a bes16) g f' bes,32 ( c des16) g,32 (a bes16) g \pageBreak
   | g'16\flageolet g32 (f-4 e16) e32 (d c16) c32 (bes a16) a32 (bes c16) f, c e
   | \mark \default f,8 f' g\trill a4 r8
   | c,8 g' a\trill bes4 r8
@@ -306,9 +306,9 @@ allegroIIBassNotes =
   | r8 g16 a g8 g8 e'16 (d) c e
   | d8 g,16 a g8 g f'16 (e) d f
   | e16 f g-1 a-3 f-\plus g e-3\2 f-\plus g a f g \break
-  | e16-3 f-\plus g-1 f g a d,-1\flageolet e-1 f-2 e f-2 g-3
-  | c,16 d e d e f b, c d c d e
-  | a,16 b c b c d b8 a16 (g) c8~ \break
+  | e16-3\2 f-\plus\1 g-1 f-\plus g-1 a-3 d,-1\2 e-3 f-\plus\1 e-3 f-\plus g-1
+  | c,16-2\2 d-\plus\1 e-1 d-\plus e-1 f-3 b,-1\2 c-2 d-\plus\1 c-2\2 d-\plus e-1
+  | a,16-1\2 b-2 c-4 b-2 c-4 d-3\flageolet b8 a16 (g) c8~ \break
   | c8 \acciaccatura c8 b8.\trill (a32 b) c8 e a~
   | a8 d, g~ g c, f~
   | f8 b, e~ e a, d~ (
