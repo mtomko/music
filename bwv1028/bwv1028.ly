@@ -155,7 +155,7 @@ andanteBassNotes =
   | r2. r4 r8 r4 g8\mf
   | \mark \default c8.\tenuto (e16\tenuto) d8 c c32 (d e16 d8\staccato) d8.\tenuto-1 (f16\tenuto-2) e8-1 d8-\plus d32 (e-1 f16-2 e8\staccato-\plus) \break
   | e8\cresc-\plus e32 (f-1 g16-3 f8\staccato-\plus) f8-\plus f32 (g-1 a16-3 g8\staccato-1) \appoggiatura f-2 e8.-1\tenuto\trill (d16\tenuto) c8 bes\f \appoggiatura bes\upbow a4~\trill
-  | a8. b32 (cis d16 e) f8\upbow \appoggiatura f\downbow e4~ e8. d32\upbow-4 (c-2 b-1 c-2 d16-4) gis,4 e8 \break
+  | a8~a16 b32 (cis d16 e) f8\upbow \appoggiatura f\downbow e4~ e8~e16 d32\upbow-4 (c-2 b-1 c-2 d16-4) gis,4 e8 \break
   | a8.\tenuto (c16\tenuto) b8 a8 a32\upbow (b c16 b8) \appoggiatura { d,16 e } f8.\tenuto (e16\tenuto) d8 \appoggiatura d8\downbow cis\trill \(b16 (a)\) a'8\upbow
   | \tuplet 3/2 {f'16\downbow (e d)} d8\upbow \acciaccatura d\downbow\> cis\trill d4.~d2.-\parenthesize\downbow ~
   | \mark \default d8.\p cis16 (e d) e4.~ e16\< cis (d e) f8~ f4.~\! \break
