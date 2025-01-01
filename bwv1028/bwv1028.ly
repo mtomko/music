@@ -324,7 +324,7 @@ allegroIIBassNotes =
   instrument = "Contrabass"
   meter = \soloTuning
   arranger = \markup { \small "(1685 - 1750)" }
-  copyright = \markup { \tiny \italic "Engraving Ⓒ Mark Tomko, 2024" }
+  copyright = \markup { \tiny \italic "Engraving Ⓒ Mark Tomko, 2025" }
   tagline = #f
 }
 
