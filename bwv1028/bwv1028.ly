@@ -255,14 +255,14 @@ allegroIIBassNotes =
   | fis8 e\upbow dis\upbow e\downbow b <<dis!-1\downbow fis-3>>
   | <<
     \voiceOne {
-      g4.-1 g4. (
-      | fis4.) fis4. (
-      | e4.) e4. (
-      | dis8) s8 s8 s4.
+      g4.-1-3 g4.-\plus-1 (
+      | fis4.-\plus-1) fis4.-1-3 (
+      | e4.-1-2) e4.-1-4 (
+      | dis8-1-2) s8 s8 s4.
     }
     \new Voice {
       \voiceTwo
-      e4.-3 c4.~-\plus
+      e4. c4.~
       | c4. b4.~
       | b4. a4.~ \break
       | a16 b16 c d b c a b c a b c
