@@ -256,8 +256,8 @@ allegroIIBassNotes =
   | <<
     \voiceOne {
       g4.-1-3 g4.-\plus-1 (
-      | fis4.-\plus-1) fis4.-1-3 (
-      | e4.-1-2) e4.-1-4 (
+      | fis4.-\plus-1) fis4.-\plus-2 (
+      | e4.-\plus-1) e4.-1-4 (
       | dis8-1-2) s8 s8 s4.
     }
     \new Voice {
