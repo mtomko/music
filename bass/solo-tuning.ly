@@ -7,12 +7,8 @@ soloTuning =
     \layout {
       indent = 0.0
     }
-    \header {
-      piece = "Tuning"
-      opus = ""
-    }
     \new Staff \with {
-      \magnifyStaff #4/7
+      \magnifyStaff #1/2
     } {
       \new Voice {
         \relative {
