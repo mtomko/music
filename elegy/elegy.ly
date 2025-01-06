@@ -5,7 +5,6 @@
 \header {
   title = "Elegia no. 1 in re"
   composer = "Giovanni Bottesini (1821-1889)"
-  %meter = \soloTuning
   instrument = \soloTuning
   tagline = #f
 }
