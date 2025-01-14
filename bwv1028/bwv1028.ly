@@ -316,7 +316,6 @@ allegroIIBassNotes =
   | \appoggiatura { c e g } c2. \fermata \fine
 }
 
-
 \header {
   title = "Sonata no. 2 in D major"
   opus = "BWV 1028"
@@ -328,11 +327,78 @@ allegroIIBassNotes =
 }
 
 \paper {
-  #(set-paper-size "a4")
+  #(set-default-paper-size "letter")
 }
 
 \book {
-  \bookOutputSuffix "edited"
+  \paper {
+    #(set-paper-size "a4")
+  }
+  \bookOutputSuffix "edited-a4"
+  \score {
+    \layout {
+      top-margin = 0.0
+    }
+    \header {
+      piece = "Adagio"
+    }
+    \new Staff {
+      \new Voice {
+        \romanStringNumbers
+        \set stringNumberOrientations = #'(down)
+        \adagioBassNotes
+      }
+    }
+  }
+
+  \score {
+    \header {
+      piece = "Allegro"
+      opus = ""
+    }
+    \new Staff {
+      \new Voice {
+        \romanStringNumbers
+        \set stringNumberOrientations = #'(down)
+        \allegroBassNotes
+      }
+    }
+  }
+
+  \score {
+    \header {
+      piece = "Andante"
+      opus = ""
+    }
+    \new Staff {
+      \new Voice {
+        \romanStringNumbers
+        \set stringNumberOrientations = #'(down)
+        \andanteBassNotes
+      }
+    }
+  }
+
+  \score {
+    \header {
+      piece = "Allegro"
+      opus = ""
+    }
+    \new Staff {
+      \new Voice {
+        \romanStringNumbers
+        \set stringNumberOrientations = #'(down)
+        \allegroIIBassNotes
+      }
+    }
+  }
+}
+
+\book {
+  \paper {
+    #(set-paper-size "letter")
+  }
+  \bookOutputSuffix "edited-letter"
   \score {
     \layout {
       top-margin = 0.0
