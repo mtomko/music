@@ -318,10 +318,9 @@ allegroIIBassNotes =
 
 
 \header {
-  title = "Sonata II in D major"
+  title = "Sonata no. 2 in D major"
   opus = "BWV 1028"
   composer = "Johann Sebastian Bach"
-  instrument = "Contrabass"
   meter = \soloTuning
   arranger = \markup { \small "(1685 - 1750)" }
   copyright = \markup { \tiny \italic "Engraving Ⓒ Mark Tomko, 2025" }
@@ -329,7 +328,7 @@ allegroIIBassNotes =
 }
 
 \paper {
-  #(set-paper-size "letter")
+  #(set-paper-size "a4")
 }
 
 \book {
