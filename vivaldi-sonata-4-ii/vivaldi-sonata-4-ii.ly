@@ -58,6 +58,9 @@ celloii = \relative {
 
 \book {
   \score {
+    \header {
+      piece = "III"
+    }
     \new StaffGroup {
       <<
         \new Staff \celloi
