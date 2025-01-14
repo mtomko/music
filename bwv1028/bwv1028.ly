@@ -203,8 +203,8 @@ allegroIIBassNotes =
   | e,8 b' c d4 r8
   | a16 b c d b c a b c d b c
   | a8 e'\upbow a\upbow \acciaccatura g8-2 fis4~\trill-1 fis16 (e32 fis) \break
-  | g4.~ g8 g16 (a) bes8
-  | a8. g16-3 f-1 e-1 f-1 g-3 \acciaccatura f8-4 e8.\trill\tenuto-2 (d16-.-1)
+  | g4.~-2 g8 g16_\markup{ \tiny \italic r.f. }-\plus (a-1) bes8-2
+  | a8. g16-3 f-2 e-1 f-1 g-3 \acciaccatura f8-4 e8.\trill\tenuto-2 (d16-.-1)
   | \mark \default d2.~
   | d2.~\tweak X-offset 5 \downbow
   | d2.~
@@ -299,8 +299,8 @@ allegroIIBassNotes =
   | a16 a32 (bes c16) a e f bes bes32 (c d16) g,32 (a bes16) g
   | e'16 bes32 (c des16) g,32 (a bes16) g f' bes,32 ( c des16) g,32 (a bes16) g \pageBreak
   | g'16\flageolet g32 (f-4 e16) e32 (d c16) c32 (bes a16) a32 (bes c16) f, c e
-  | \mark \default f,8 f' g\trill a4 r8
-  | c,8 g' a\trill bes4 r8
+  | \mark \default f,8 f' g\mordent a4 r8
+  | c,8 g' a\mordent bes4 r8
   | f16 g a bes g a f g a bes g a \break
   | f16 g a g f e d8 r8 r8
   | r8 g16 a g8 g8 e'16 (d) c e
