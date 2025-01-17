@@ -252,19 +252,19 @@ allegroIIBassNotes =
   | c16 d e f d e c b a g fis e \break
   | fis8 b fis g c g
   | a8\downbow a'4\upbow~ (a16 g\tenuto) fis\downbow e\upbow fis8\downbow~
-  | fis8 e\upbow dis\upbow e\downbow b <<dis!-1\downbow fis-3>>
+  | fis8 e dis e b <<dis!-1 fis-3>>
   | <<
     \voiceOne {
-      g4.-1-3 g4.-\plus-1 (
-      | fis4.-\plus-1) fis4.-\plus-2 (
-      | e4.-\plus-1) e4.-1-4 (
-      | dis8-1-2) s8 s8 s4.
+      g4.-1-3 g4.-\plus-1 
+      | fis4.-\plus-1 fis4.-\plus-2 
+      | e4.-\plus-1 e4.-1-4 
+      | dis8-1-2 s8 s8 s4.
     }
     \new Voice {
       \voiceTwo
-      e4. c4.~
-      | c4. b4.~
-      | b4. a4.~ \break
+      e4. c4.
+      | c4. b4.
+      | b4. a4. \break
       | a16 b16 c d b c a b c a b c
     }
   >> \oneVoice
@@ -272,7 +272,7 @@ allegroIIBassNotes =
   | dis,8 cis16 dis b8 b g'16 (fis) e g
   | cis,8 b16 cis a8 a8 a'16 (g) fis a \break
   | dis,16 e fis dis e dis e fis \acciaccatura e8 dis8.\trill\tenuto e16-.
-  | \mark \default e4 r8 r fis8 fis,
+  | \mark \default e4 r8_\markup { \small \italic pizz. } r fis8 fis,
   | b4 r8 r e8 e,
   | a4 r8 r b' b,
   | e4 r8 r a8 a,
@@ -282,7 +282,7 @@ allegroIIBassNotes =
   | a4 r8 r a8 a,
   | a4 r8 r8 d'8 d,
   | a4 r8 r8 d'8 d,
-  | d4 r8 r8 d'8 d, \break
+  | d4 r8_\markup { \small \italic arco } r8 d'8\downbow d, \break
   | d8 d' d, fis, fis' fis,
   | bes8 bes' ees cis d d,
   | \mark \default g8 d16 e d8 d b'16 (a) g b
