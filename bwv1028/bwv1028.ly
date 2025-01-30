@@ -183,8 +183,8 @@ allegroIIBassNotes =
   | g,8 d'\upbow e\upbow f4 r8
   | c16-2\2 d-\plus\1 e-1 f-2 d e c d e f d e
   | c16 d e d e f d e f d e f \break
-  | e8 g,16 a g8 g8 e'16 (d) c e
-  | d8 g,16 a g8 g f'16 (e) d f
+  | e8 g,16 a g8 g8 e'16 d c e
+  | d8 g,16 a g8 g f'16 e d f
   | e16-2 f-4 g-1 a-3 f-\plus g-1 e-3 f-\plus g-1 a-3 f-\plus g-1 \break
   | e16-3\2 f-\plus g-1 f-\plus g-1 a-3 d,-1\2 e-3 f-\plus e-3 f-\plus g-1
   | c,16-2\2 d-\plus\1 e-1 d-\plus e-1 f-3 b,-1 c-2 d-\plus c-2 d-\plus e-1
@@ -209,8 +209,8 @@ allegroIIBassNotes =
   | d2.~\tweak X-offset 5 \downbow
   | d2.~
   | d4.~\upbow d8 g 16 f e d \break
-  | c8 g16 a g8 g e'16 (d) c e
-  | d8 g,16 a g8 g f'16 (e) d f
+  | c8 g16 a g8 g e'16 d c e
+  | d8 g,16 a g8 g f'16 e d f
   | e16 f g a f g e f g a f g \break
   | e16-\plus f-1 g-3 e f g a,-1\2 b c a b c
   | d4.~ d16 e f d e f
@@ -221,19 +221,19 @@ allegroIIBassNotes =
   | b,16 c d b c d e f g e f g
   | c,16 d e c d e  f4.~ \break
   | f16 e f g e f d e f g e f
-  | \mark \default d8 g,16 a g8 g f'16 (e d f)
+  | \mark \default d8 g,16 a g8 g f'16 e d f
   | \appoggiatura f8 e2.~\trill
-  | e8 f,16 g f8 f e'16 (d) c e
+  | e8 f,16 g f8 f e'16 d c e
   | \appoggiatura e8 d2.~\trill \break
-  | d8 e,16 f e8 e d'16 (c) b d
+  | d8 e,16 f e8 e d'16 c b d
   | \appoggiatura d8 c2.~\trill
-  | c8 d,16 e d8 d c'16 (b) a c
+  | c8 d,16 e d8 d c'16 b a c
   | \appoggiatura c8 b2.\trill
-  | \mark \default r8 g16\f a g8 g e'16 (d) c e \break
-  | d8 g,16 a g8 g f16 (e) d f
+  | \mark \default r8 g16\f a g8 g e'16 d c e \break
+  | d8 g,16 a g8 g f'16 e d f
   | e16 f g a f g e f g a f g
   | e16 f g e f g f g a f g a \pageBreak
-  | d4.~ d16 e f d e f
+  | d,4.~ d16 e f d e f
   | b,16 c d b c d g,4.~
   | g16 a b g a b e, f g e f g
   | c,4.~ c16 d e c d e \break
@@ -247,30 +247,30 @@ allegroIIBassNotes =
   | e8 c a d b g
   | c8 a\upbow f\upbow b16 c d8 g, \break
   | c16 d \acciaccatura c8 b8.\trill\tenuto (c16-.\upbow) c8\downbow e,16 f e8
-  | \mark \default e8\downbow c'16 (b) a c b8 e,16\upbow f e8
-  | e8\downbow d'16 (c) b d c d e f d e
+  | \mark \default e8\downbow c'16 b a c b8 e,16 f e8
+  | e8\downbow d'16 c b d c d e f d e
   | c16 d e f d e c b a g fis e \break
   | fis8 b fis g c g
-  | a8\downbow a'4\upbow~ (a16 g\tenuto) fis\downbow e\upbow fis8\downbow~
-  | fis8 e dis e b <<dis!-1 fis-3>>
+  | a8\downbow a'4\upbow~ a16 g\tenuto fis e fis8~
+  | fis8 e\upbow dis\upbow e b <<dis!-1\downbow fis-3>>
   | <<
     \voiceOne {
-      g4.-1-3 g4.-\plus-1 
-      | fis4.-\plus-1 fis4.-\plus-2 
-      | e4.-\plus-1 e4.-1-4 
+      g4.-1-3-. g4.-\plus-1\tenuto
+      | fis4.-.-\plus-1 fis4.\tenuto-\plus-2 
+      | e4.-.-\plus-1 e4.\tenuto-1-4 
       | dis8-1-2 s8 s8 s4.
     }
     \new Voice {
       \voiceTwo
-      e4. c4.
-      | c4. b4.
-      | b4. a4. \break
+      e4.-. c4.\tenuto
+      | c4.-. b4.\tenuto
+      | b4.-. a4.\tenuto \break
       | a16 b16 c d b c a b c a b c
     }
   >> \oneVoice
   | fis,16 g a b g a fis g a fis g a
-  | dis,8 cis16 dis b8 b g'16 (fis) e g
-  | cis,8 b16 cis a8 a8 a'16 (g) fis a \break
+  | dis,8 cis16 dis b8 b g'16 fis e g
+  | cis,8 b16 cis a8 a8 a'16 g fis a \break
   | dis,16 e fis dis e dis e fis \acciaccatura e8 dis8.\trill\tenuto e16-.
   | \mark \default e4 r8_\markup { \small \italic pizz. } r fis8 fis,
   | b4 r8 r e8 e,
@@ -285,8 +285,8 @@ allegroIIBassNotes =
   | d4 r8_\markup { \small \italic arco } r8 d'8\downbow d, \break
   | d8 d' d, fis, fis' fis,
   | bes8 bes' ees cis d d,
-  | \mark \default g8 d16 e d8 d b'16 (a) g b
-  | a8 d,16 e d8 d c16 (b) a c \break
+  | \mark \default g8 d16 e d8 d b'16 a g b
+  | a8 d,16 e d8 d c16 b a c \break
   | b'16-1 d-4 (b-1 g-0 f) e (f) d' (b g f) e (
   | f16) g g b-4 b d-1 d (f32 e f16) d-1 b-4 g-0
   | e'16-1 g-3\flageolet (e-2 c-4 bes-2) a-1 (bes-2) g' (e c bes) a ( \break
@@ -303,8 +303,8 @@ allegroIIBassNotes =
   | c,8 g' a\mordent bes4 r8
   | f16 g a bes g a f g a bes g a \break
   | f16 g a g f e d8 r8 r8
-  | r8 g16 a g8 g8 e'16 (d) c e
-  | d8 g,16 a g8 g f'16 (e) d f
+  | r8 g16 a g8 g8 e'16 d c e
+  | d8 g,16 a g8 g f'16 e d f
   | e16 f g-1 a-3 f-\plus g e-3\2 f-\plus g a f g \break
   | e16-3\2 f-\plus\1 g-1 f-\plus g-1 a-3 d,-1\2 e-3 f-\plus\1 e-3 f-\plus g-1
   | c,16-2\2 d-\plus\1 e-1 d-\plus e-1 f-3 b,-1\2 c-2 d-\plus\1 c-2\2 d-\plus e-1
