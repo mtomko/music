@@ -194,18 +194,18 @@ allegroIIBassNotes =
   | a16 g \acciaccatura g8 fis8.\trill\tenuto (g16-.) g8 g'4~\trill\downbow
   | g8 fis4~\trill fis8 e4~\trill
   | e8 d4~\trill d8 c4~\trill \break
-  | c16 a b c d c d e \acciaccatura b8 a8.\trill\tenuto\downbow (g16-.\upbow)
-  | \mark 14 g8\p\downbow d16 e d8 d b'16 a g b
+  | c16 a b c d c d e \acciaccatura b8\downbow a8.\trill\tenuto (g16-.)
+  | \mark 14 g8\p\upbow d16 e d8 d b'16 a g b
   | a8 d,16 e d8 d c'16\downbow b a c
   | b16 c d e c d b c d e c d \break
   | b16 c d b c d c4 r8
   | e,8 a b c4 r8
   | e,8 b' c d4 r8
   | a16 b c d b c a b c d b c
-  | a8 e'\upbow a\upbow \acciaccatura g8-2 fis4~\trill-1 fis16 e32 (fis) \break
-  | g4.~-2 g8 g16_\markup{ \tiny \italic r.f. }-\plus a-1 bes8-2
-  | a8. g16-3 f-2 e-1 f-1 g-3 \acciaccatura f8-4 e8.\trill\tenuto-2 (d16-.-1)
-  | \mark \default d2.~
+  | a8 e'\upbow a\upbow \acciaccatura g8-2 fis4~\trill-1 fis16 e32\upbow (fis) \break
+  | g4.~-2 g8 g16_\markup{ \tiny \italic r.f. }-\plus\upbow a-1 bes8-2
+  | a8. g16-3 f-2 e-1 f-1 g-3 \acciaccatura f8-4\downbow e8.\trill\tenuto-2 (d16-.-1)
+  | \mark \default d2.~\upbow
   | d2.~\tweak X-offset 5 \downbow
   | d2.~
   | d4.~\upbow d8 g 16 f e d \break
@@ -222,18 +222,18 @@ allegroIIBassNotes =
   | c,16 d e c d e  f4.~ \break
   | f16 e f g e f d e f g e f
   | \mark \default d8 g,16 a g8 g f'16 e d f
-  | \appoggiatura f8 e2.~\trill
+  | \appoggiatura f8\upbow e2.~\trill
   | e8 f,16 g f8 f e'16 d c e
-  | \appoggiatura e8 d2.~\trill \break
+  | \appoggiatura e8\downbow d2.~\trill \break
   | d8 e,16 f e8 e d'16 c b d
-  | \appoggiatura d8 c2.~\trill
+  | \appoggiatura d8\downbow c2.~\trill
   | c8 d,16 e d8 d c'16 b a c
-  | \appoggiatura c8 b2.\trill
+  | \appoggiatura c8\upbow b2.\trill
   | \mark \default r8 g16\f a g8 g e'16 d c e \break
   | d8 g,16 a g8 g f'16\downbow e d f
   | e16-2 f-4 g-1 a-3 f-\plus g-1 e-3 f-\plus g-1 a-3 f-\plus g-1
-  | e16-3 f-\plus g-1 e f g f-\plus g-1 a-3 f g a \pageBreak
-  | d,4.~ d16 e f d e f
+  | e16-3 f-\plus g-1 e-3 f-\plus g-1 f-\plus g-1 a-3 f-\plus g-1 a-3 \pageBreak
+  | d,4.~-2\flageolet\2 d16 e\1 f d e f
   | b,16 c d b c d g,4.~
   | g16 a b g a b e, f g e f g
   | c,4.~ c16 d e c d e \break
@@ -246,9 +246,9 @@ allegroIIBassNotes =
   | g8 e c f d b
   | e8 c a d b g
   | c8 a\upbow f\upbow b16 c d8 g, \break
-  | c16 d \acciaccatura c8 b8.\trill\tenuto (c16-.\upbow) c8\downbow e,16 f e8
-  | \mark \default e8 c'16 b a c b8 e,16 f e8
-  | e8 d'16 c b d c d e f d e
+  | c16 d \acciaccatura c8 b8.\trill\tenuto (c16-.) c8 e,16 f e8
+  | \mark \default e8\upbow c'16 b a c b8 e,16 f e8
+  | e8 d'16\downbow c b d c d e f d e
   | c16 d e f d e c b a g fis e \break
   | fis8 b fis g c g
   | a8\downbow a'4\upbow~ a16 g\tenuto fis e fis8~
@@ -271,8 +271,8 @@ allegroIIBassNotes =
   | fis,16 g a b g a fis g a fis g a
   | dis,8 cis16 dis b8 b g'16 fis e g
   | cis,8 b16 cis a8 a8 a'16 g fis a \break
-  | dis,16 e fis dis e dis e fis \acciaccatura e8 dis8.\trill\tenuto e16-.
-  | \mark \default e4 r8_\markup { \small \italic pizz. } r fis8 fis,
+  | dis,16 e fis dis e dis e fis \acciaccatura e8 dis8.\trill\tenuto (e16)-.
+  | \mark \default e4\upbow r8_\markup { \small \italic pizz. } r fis8 fis,
   | b4 r8 r e8 e,
   | a4 r8 r b' b,
   | e4 r8 r a8 a,
@@ -298,7 +298,7 @@ allegroIIBassNotes =
   | c16 a32 (b c16 d e f) g (a bes) g e g \break
   | a16 a32 (bes c16) a e f bes bes32 (c d16) g,32 (a bes16) g
   | e'16 bes32 (c des16) g,32 (a bes16) g f' bes,32 ( c des16) g,32 (a bes16) g \pageBreak
-  | g'16\flageolet g32 (f-4 e16) e32 (d c16) c32 (bes a16) a32 (bes c16) f, c e
+  | g'16\flageolet-3 g32 (f-4 e16-1) e32-4 (d-1 c16-1) c32-4 (bes-2 a16-1) a32 (bes c16) f, c e
   | \mark \default f,8 f' g\mordent a4 r8
   | c,8 g' a\mordent bes4 r8
   | f16 g a bes g a f g a bes g a \break
