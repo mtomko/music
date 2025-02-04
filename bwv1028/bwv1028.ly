@@ -90,7 +90,7 @@ allegroBassNotes =
     | e8 a, d16\f e f8~ (
     | f16 e) d c b8 e~ (\break
     | e16 d) c b a8 f'8~
-    | f16 gis,\upbow (a) b\upbow e,8 gis
+    | f16 gis, (a) b e,8\upbow gis\upbow
     | a16\fp b c4 b16 (a)
     | \mark \default g16 (fis e d) e (fis g a)
     | b16 (c d) e d c b a \break
@@ -203,7 +203,7 @@ allegroIIBassNotes =
   | e,8 b' c d4 r8
   | a16 b c d b c a b c d b c
   | a8 e'\upbow a\upbow \acciaccatura g8-2 fis4~\trill-1 fis16 e32\upbow (fis) \break
-  | g4.~-2 g8 g16_\markup{ \tiny \italic r.f. }-\plus\upbow a-1 bes8-2
+  | g4.~-2 g8 g16_\markup{ \tiny \italic r.f. }-\plus a-1 bes8-2
   | a8. g16-3 f-2 e-1 f-1 g-3 \acciaccatura f8-4\downbow e8.\trill\tenuto-2 (d16-.-1)
   | \mark \default d2.~\upbow
   | d2.~\tweak X-offset 5 \downbow
@@ -255,7 +255,7 @@ allegroIIBassNotes =
   | fis8 e\upbow dis\upbow e b <<dis!-1\downbow fis-3>>
   | <<
     \voiceOne {
-      g4.-1-3 g4.-\plus-1\accent
+      g4.-1-3\upbow g4.-\plus-1\accent
       | fis4.-\plus-1 fis4.-\plus-2\accent
       | e4.-\plus-1 e4.-1-4\accent (
       | dis8-1-2) s8 s8 s4.
