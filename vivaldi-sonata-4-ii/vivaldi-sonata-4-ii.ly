@@ -1,7 +1,5 @@
 \version "2.24.3"
 
-menoF = \markup { \tiny \italic meno \dynamic f }
-
 \header {
   title = "Sonata in e minor"
   composer = "Antonio Vivaldi"
@@ -45,10 +43,10 @@ celloii = \relative {
   \clef bass
   \repeat volta 2 {
     b,8_\markup { \italic \small pizz. } e g b, e g e g b e, g b
-    | dis, fis b dis, fis b e, g b dis,? fis b
+    | dis, fis b dis, fis b e, g c dis,? fis b
     | b,8 e g b, e g c, e a c, e a
-    | c, d a' c, d a' c, d a' b, d g
-    | b, d g c, e g g,2.
+    | c, fis a c, d a' c, d g b, d g
+    | b, d g c, e a g,2.
   }
   \repeat volta 2 {
     b8 e gis b, e gis a, c e a, c e
@@ -56,6 +54,26 @@ celloii = \relative {
     | c, e a b, d g a, c fis g, b e
     | b dis fis b, dis fis b, dis fis b, dis b'
     | e, g b b, e g e,2. \fermata
+  }
+}
+
+celloii_ii = \relative {
+  \time 12/8
+  \key e \minor
+  \clef bass
+  \repeat volta 2 {
+    e8 g b e, g b g b e g, b e
+    | b dis fis a, b dis g, b e dis, fis b
+    | e, g b e, g b a c e a, c e
+    | fis, a d fis, a d g, c d g, b d
+    | g, d b c d a' g,2.
+  }
+  \repeat volta 2 {
+    gis8 b e gis, e' b' a, e' c' a, e' c'
+    | fis,, d' a' fis, d' a' g, d' b' g, d' b'
+    | c, e a b, d g a, c fis g, b e
+    | b dis b' b, dis b' b, dis fis b, dis b'
+    | e, g b b, e fis e,2. \fermata
   }
 }
 
@@ -87,7 +105,7 @@ celloiii = \relative {
     \new StaffGroup {
       <<
         \new Staff \celloi
-        \new Staff \celloii
+        \new Staff \celloii_ii
         \new Staff \celloiii
       >>
     }
