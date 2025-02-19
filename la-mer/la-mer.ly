@@ -70,7 +70,7 @@ piupp = \markup { \small \italic più \dynamic pp }
           | \compressMMRests R1*2
           | b'4:32\pp\> a:32 b:32 a:32 \! \break
           | \mark \default \tempo \markup {
-            "Animez peu a peu jusqu'a l'entrée du"
+            "Animez peu a peu jusqu'à l'entrée du"
             \hspace #0
             \column {
               6 8
