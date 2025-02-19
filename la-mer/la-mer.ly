@@ -23,7 +23,7 @@ piupp = \markup { \small \italic più \dynamic pp }
 \book {
   \score {
     \header {
-      piece = \markup { \large "No. 1._ De l'aube à midi sur la mer" }
+      piece = \markup { \large "No 1._ De l'aube à midi sur la mer" }
     }
     \layout {
       \context {
