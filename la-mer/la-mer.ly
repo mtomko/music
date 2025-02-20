@@ -32,9 +32,10 @@ piupp = \markup { \small \italic più \dynamic pp }
       }
       top-margin = 0.0
     }
-    \new PianoStaff {
+    \new StaffGroup {
       \new Voice {
         \relative {
+          \set countPercentRepeats = ##t
           \set restNumberThreshold = 1
           \override MultiMeasureRest.expand-limit = 2
           \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
@@ -42,19 +43,19 @@ piupp = \markup { \small \italic più \dynamic pp }
           \time 6/4
           \clef bass
           \key b \minor
-          \tempo "Très lent"
+          \tempo \markup { \small "Très lent" }
           <<
             { R1. | \repeat unfold 4 { b,4-. r r b4-. r r } }
-            \new Staff {              
+            \new Staff {
               \time 6/4
               \clef bass
               \key b \minor
               \clef bass
               b1.\pp~
-              | \repeat unfold 4 { b1.~ }
+              | \repeat unfold 4 { b1.~ } \time 4/4
             }
           >> \break
-          \bar "||" \time 4/4 <<R1 b1~\pp>>
+          \bar "||" << R1 b1~\pp>>
           | <<R1 b1>>
           | <<R1 b1~\tenuto>>
           | <<R1 b1>>
@@ -70,16 +71,11 @@ piupp = \markup { \small \italic più \dynamic pp }
           | \compressMMRests R1*2
           | b'4:32\pp\> a:32 b:32 a:32 \! \break
           | \mark \default \tempo \markup {
-            "Animez peu a peu jusqu'à l'entrée du"
-            \hspace #0
-            \column {
-              6 8
-            }
-          } b:32 a:32 b:32 a:32
-          | \repeat unfold 5 { b:32 a:32 b:32 a:32 }
+            \small { "Animez peu a peu jusqu'à l'entrée du 6/8" }
+          } \repeat percent 6 { b:32 a:32 b:32 a:32 }
           | b:32\pp\< a:32 b:32 a:32
           | b:32 a:32 b:32 a:32 \!
-          \bar "||" \tempo \markup { "Modéré, sans lenteur" \small "(dans un rythme très souple)" } \time 6/8 \key des \major \compressMMRests R2.*4
+          \bar "||" \tempo \markup { \small "Modéré, sans lenteur" \small "(dans un rythme très souple)" } \time 6/8 \key des \major \compressMMRests R2.*4
           | \mark \default \compressMMRests R2.*6
           | \new CueVoice {
             \override TupletBracket.bracket-visibility = ##f
@@ -91,18 +87,18 @@ piupp = \markup { \small \italic più \dynamic pp }
           | bes4\p aes8~8\< aeses ges
           | ces4\p r8 ces4 r8
           | \compressMMRests R2.*4
-          | \tempo "Un peu animé" g2.\p\<^\markup { arco }\upbow
+          | \tempo \markup { \small "Un peu animé" } g2.\p\<^\markup { arco }\upbow
           | e2.\p \< \downbow \break
-          | \tempo \markup { "au Mouvt" } \mark \default \repeat percent 3 { r16\pp^\markup { pizz. } f [r aes r ces] r f, [r aes r ces] }
+          | \tempo \markup { \small "au Mouvt" } \mark \default \repeat percent 3 { r16\pp^\markup { pizz. } f [r aes r ces] r f, [r aes r ces] }
           | r16 f, [r aes r ces] r f, [r aes] r8
           | fes2._\piupp^\markup { arco } (
           | f!4.\> g) \break
-          | \tempo "Cédez un peu "\mark \default aes2.\pp
+          | \tempo \markup { \small "Cédez un peu " } \mark \default aes2.\pp
           | ces4^\markup { pizz. } r8 r4 r8
           | aes2.\pp^\markup { arco } \downbow
           | aes4\p\< \upbow (b8 aes4 e8) \!
           | r4 r8 r4 bes'8-.\tenuto\p^\markup { pizz }
-          | \tempo "au Mouvt" \mark \default \compressMMRests R2.*3 \pageBreak
+          | \tempo \markup { \small "au Mouvt" } \mark \default \compressMMRests R2.*3 \pageBreak
           \bar "||" \time 9/8 s2.
         }
       }
