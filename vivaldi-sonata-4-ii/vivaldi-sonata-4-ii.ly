@@ -63,16 +63,16 @@ celloii_ii = \relative {
   \clef bass
   \repeat volta 2 {
     e8 g b e, g b g b e g, b e
-    | b dis fis a, b dis g, b e dis, fis b
+    | b dis fis a, b dis? g, b e dis,? fis b
     | e, g b e, g b a c e a, c e
-    | fis, a d fis, a d g, c d g, b d
+    | fis, a d fis, a c g c b g b d
     | g, d b c d a' g,2.
   }
   \repeat volta 2 {
     gis8 b e gis, e' b' a, e' c' a, e' c'
     | fis,, d' a' fis, d' a' g, d' b' g, d' b'
     | c, e a b, d g a, c fis g, b e
-    | b dis b' b, dis b' b, dis fis b, dis b'
+    | b dis b' b, dis? b' b, dis? fis b, dis? b'
     | e, g b b, e fis e,2. \fermata
   }
 }
