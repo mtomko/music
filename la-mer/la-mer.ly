@@ -45,17 +45,19 @@ piupp = \markup { \small \italic più \dynamic pp }
           \key b \minor
           \tempo \markup { \small "Très lent" }
           <<
-            { R1. | \repeat unfold 4 { b,4-. r r b4-. r r } }
+            { R1. | \repeat unfold 4 { b,4-. r r b4-. r r } s1 }
             \new Staff {
               \time 6/4
               \clef bass
               \key b \minor
               \clef bass
               b1.\pp~
-              | \repeat unfold 4 { b1.~ } \time 4/4
+              | \repeat unfold 3 { b1.~ }
+              | b1. \time 4/4 
+              \bar "||" s1 \bar ""
             }
           >> \break
-          \bar "||" << R1 b1~\pp>>
+          << R1 b1~\pp>>
           | <<R1 b1>>
           | <<R1 b1~\tenuto>>
           | <<R1 b1>>
