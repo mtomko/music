@@ -1,0 +1,177 @@
+\version "2.24.3"
+
+\header {
+  title = "44 Duos for 2 Violins"
+  composer = "Béla Bartók"
+  %opus = ""
+  tagline = #f
+}
+
+\paper {
+  #(set-paper-size "letter")
+}
+
+mfp = \markup { \dynamic mf - \dynamic p }
+piup = \markup { \small \italic più \dynamic p }
+
+vi = \relative {
+  \time 2/4
+  \key b \minor
+  \clef treble
+  \tempo Adagio 4 = 66
+  \romanStringNumbers
+  \set stringNumberOrientations = #'(down)
+  \autoLineBreaksOff
+  <<a'2~\f e'2~>>
+  | <<a,2 e'2>>
+  | <<a,2 f'2>>
+  | <<
+    \voiceOne {
+      f8\accent ( e4.~
+      | e2)
+      | fis4 (e8 fis)
+      | g8 (fis g4) \break
+      % line 2
+      | e4 (a4
+      | e4. fis8)
+      | g4 (a8 g)
+      | fis8 (e a4
+      | e4. fis8)
+      | g4 (e8 a,)
+      | \override TextSpanner.bound-details.left.text = \markup { \upright "poco allarg." } e'8\startTextSpan (d b4 
+      | d4 b~
+      | b8) d4 (b8) \oneVoice \break
+      % line 3
+      | \stemDown d2~\> (
+      | d4 cis8\staccato) r8\stopTextSpan\!
+      | \stemNeutral a4\accent (b8 cis
+      | d4 e)
+      | e8 ([d cis b])
+      | \stemUp a4\accent (b8 cis)\slurUp
+      | d4 (e)
+      | e8 (d cis4)
+      | b2\break
+      % line 4
+      | d4\accent d8 (cis
+      | d4) a4
+      | a8 ([d cis b])
+      | d4\accent d8 (cis
+      | d4) a
+      | a8 (d cis4)
+      | <<g2~ g,2>>
+      | <<g'2~ g,2>>
+      | <<g'2 g,2>>\break
+      | \oneVoice a'4\p ( b8 cis
+      | d4 e)
+      | \time 3/4 e8 ([d cis b]) r4
+      | R2
+      | d4\tenuto_\piup d8 (cis
+      | d4 a)
+      | <<b2~\> d,2~>>
+      | <<b'2~ d,2~>>
+      | <<b'2\! d,2>> \fine
+
+    }
+    \new Voice {
+      \stemDown a'2~
+      | a2
+      | a2
+      | a2
+      % line 2
+      | a2~
+      | a2
+      | a2
+      | a2~
+      | a2
+      | a4 s4
+      | d,2~
+      | d2~
+      | d8 d4.
+      | s2
+      | s2
+      | s2
+      | s2
+      | s2
+      | d2
+      | d2 
+      | d2 
+      | d2\<    
+      % line 4
+      | d4\! d4~
+      | d4 d
+      | d2\<
+      | d4\! d4~
+      | d4 d4
+      | d2\<
+      | s2\f
+      | s2
+      | s2
+    }
+  >> \oneVoice
+}
+
+vii = \relative {
+  \time 2/4
+  \key b \minor
+  \clef treble
+  \once \override TextScript.X-offset = 2 a'4\accent\f_\markup { \italic \tiny "molto espressivo" } ( b8 cis
+  | d4 e)
+  | e8 ([d cis b])
+  | a4\accent (b8 cis)
+  | d4 (e)
+  | e8 (d cis4)
+  | b2
+  % line 2
+  | d4\tenuto\accent d8 (cis
+  | d4 a)
+  | a8 ([d cis b])
+  | d4\tenuto\accent d8 (cis
+  | d4 a)
+  | a8\< (d cis4) \!
+  | <<g2~ g,2~>>
+  | <<g'2~ g,2~>>
+  | <<g'2 g,2>>
+  | R2
+  | R2
+  | r4 cis4
+  | b4 (g8 a)
+  | b4 (cis)
+  | d4 (g,8 a)
+  | b4 (a8 b)
+  | cis4 (b8 cis)
+  | d4 (d8 e)
+  % line 4
+  | f2~
+  | f4 ees4~
+  | ees4 d8 (g)
+  | f8 (g aes4~
+  | aes8) g (f ees)
+  | d4\< (e8 fis!)
+  | <<g,2~ d'2~\f>>
+  | <<g,2~ d'2~\f>>
+  | <<g,2 d'2\f>>
+  % line 5
+  | r4 a4\p (
+  | b cis)
+  | \time 3/4 d4 g, r
+  | \time 2/4 d'\tenuto\upbow_\piup d8 (cis
+  | d4 a)
+  | a8 (d cis4)
+  | g2~\>
+  | g2~
+  | g2\!
+}
+
+\book {
+  \score {
+    \header {
+      piece = "13. Lakodalmas"
+    }
+    \new StaffGroup {
+      <<
+        \new Staff \vi
+        \new Staff \vii
+      >>
+    }
+  }
+}
