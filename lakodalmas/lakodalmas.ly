@@ -11,8 +11,9 @@
   #(set-paper-size "letter")
 }
 
-mfp = \markup { \dynamic mf - \dynamic p }
-piup = \markup { \small \italic più \dynamic p }
+menof = \markup { \small \italic meno \dynamic f }
+menofma = \markup { \small \italic "meno" \dynamic f, \small \italic "ma espr." }
+piup = \markup { \small \italic "più" \dynamic p }
 
 vi = \relative {
   \time 2/4
@@ -38,42 +39,12 @@ vi = \relative {
       | fis8 (e a4
       | e4. fis8)
       | g4 (e8 a,)
-      | \override TextSpanner.bound-details.left.text = \markup { \upright "poco allarg." } e'8\startTextSpan (d b4 
+      | \override TextSpanner.bound-details.left.text = \markup { \upright \bold "poco allarg." } e'8\startTextSpan (d b4 
       | d4 b~
       | b8) d4 (b8) \oneVoice \break
-      % line 3
-      | \stemDown d2~\> (
-      | d4 cis8\staccato) r8\stopTextSpan\!
-      | \stemNeutral a4\accent (b8 cis
-      | d4 e)
-      | e8 ([d cis b])
-      | \stemUp a4\accent (b8 cis)\slurUp
-      | d4 (e)
-      | e8 (d cis4)
-      | b2\break
-      % line 4
-      | d4\accent d8 (cis
-      | d4) a4
-      | a8 ([d cis b])
-      | d4\accent d8 (cis
-      | d4) a
-      | a8 (d cis4)
-      | <<g2~ g,2>>
-      | <<g'2~ g,2>>
-      | <<g'2 g,2>>\break
-      | \oneVoice a'4\p ( b8 cis
-      | d4 e)
-      | \time 3/4 e8 ([d cis b]) r4
-      | R2
-      | d4\tenuto_\piup d8 (cis
-      | d4 a)
-      | <<b2~\> d,2~>>
-      | <<b'2~ d,2~>>
-      | <<b'2\! d,2>> \fine
-
     }
     \new Voice {
-      \stemDown a'2~
+      \stemDown a2~
       | a2
       | a2
       | a2
@@ -87,27 +58,52 @@ vi = \relative {
       | d,2~
       | d2~
       | d8 d4.
-      | s2
-      | s2
-      | s2
-      | s2
-      | s2
-      | d2
-      | d2 
-      | d2 
-      | d2\<    
-      % line 4
-      | d4\! d4~
-      | d4 d
-      | d2\<
-      | d4\! d4~
-      | d4 d4
-      | d2\<
-      | s2\f
-      | s2
-      | s2
     }
   >> \oneVoice
+        % line 3
+      | \stemDown d'2~\> (
+      | d4 \once \override TextScript.X-offset = 6 cis8\staccato_\menofma) r8\stopTextSpan\!
+      | \stemNeutral a4\accent^\markup { \bold \small "a tempo" } (b8 cis
+      | d4 e)
+      | e8 ([d cis b])
+      | <<\voiceOne {
+        a4\accent (b8 cis)
+      | d4 (e)
+      | e8 (d cis4)
+      | b2\break
+      % line 4
+      | d4\accent d8 (cis
+      | d4) a4
+      | a8 ([d cis b])
+      | d4\accent\startTextSpan d8 (cis
+      | d4) a
+      | a8\< (d cis4)
+      | <<g2~\f g,2>>
+      | <<g'2~ g,2>>
+      | <<g'2\stopTextSpan g,2>>\break
+      } 
+      \new Voice {
+        \stemDown d'2
+        | d2
+        | d2
+        | d2\<
+        | d4\! d4~
+        | d4 d4 
+        | d2\<
+        | d4\! d4~
+        | d4 d4
+        | d2
+      }>> \oneVoice
+      % line 5
+      | a'4\p^\markup { \small \bold "a tempo (tranquillo)" } ( b8 cis
+      | d4 e)
+      | \time 3/4 e8 ([d cis b]) r4
+      | R2
+      | d4\tenuto_\piup d8 (cis
+      | \override TextSpanner.bound-details.left.text = \markup { \upright \bold "rall." } d4\startTextSpan a)
+      | <<b2~\> d,2~>>
+      | <<b'2~ d,2~>>
+      | <<b'2\!\stopTextSpan d,2>> \fine
 }
 
 vii = \relative {
@@ -133,7 +129,7 @@ vii = \relative {
   | <<g'2 g,2>>
   | R2
   | R2
-  | r4 cis4
+  | r4 cis4_\menof
   | b4 (g8 a)
   | b4 (cis)
   | d4 (g,8 a)
@@ -159,7 +155,7 @@ vii = \relative {
   | a8 (d cis4)
   | g2~\>
   | g2~
-  | g2\!
+  | g2\! \fine
 }
 
 \book {
