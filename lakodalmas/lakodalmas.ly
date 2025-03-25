@@ -9,6 +9,7 @@
 
 \paper {
   #(set-paper-size "letter")
+  system-system-spacing.basic-distance = #16
 }
 
 menof = \markup { \small \italic meno \dynamic f }
@@ -103,7 +104,7 @@ vi = \relative {
       | \override TextSpanner.bound-details.left.text = \markup { \upright \bold "rall." } d4\startTextSpan a)
       | <<b2~\> d,2~>>
       | <<b'2~ d,2~>>
-      | <<b'2\!\stopTextSpan d,2>> \fine
+      | <<b'2\!\stopTextSpan d,2>> \fine \pageBreak
 }
 
 vii = \relative {
@@ -155,7 +156,7 @@ vii = \relative {
   | a8 (d cis4)
   | g2~\>
   | g2~
-  | g2\! \fine
+  | g2\! \fine \pageBreak
 }
 
 \book {
