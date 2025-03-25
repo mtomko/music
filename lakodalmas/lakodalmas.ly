@@ -9,6 +9,7 @@
 
 \paper {
   #(set-paper-size "letter")
+  % see https://lilypond.org/doc/v2.24/Documentation/notation/flexible-vertical-spacing-paper-variables
   system-system-spacing.basic-distance = #16
 }
 
