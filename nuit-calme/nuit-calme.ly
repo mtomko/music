@@ -1,9 +1,12 @@
 \version "2.24.3"
 
+\include "bass/solo-tuning.ly"
+
 \header {
   title = "NUIT CALME"
   instrument = "Contrabass"
-  composer = \markup { \bold "Henriette Bosmans" }
+  meter = \soloTuning
+  composer = \markup { \bold "Henriëtte Bosmans" }
   arranger = \markup { \tiny "Mark Tomko" }
   tagline = #f
 }
@@ -19,7 +22,7 @@ semprep = \markup { \small \italic sempre \dynamic p }
 
 semprepp = \markup { \small \italic sempre \dynamic pp }
 
-notes = {
+notes = \relative {
   \clef bass
   \key fis \major
   \tempo \markup { \small "Très lent" }
@@ -91,7 +94,7 @@ notes = {
   | ees4 a8\< (bes g4)
   | c2.\! \break
   % line 2
-  | c,2 (c'4)
+  | c,2 %{ maybe keep this down the octave %} (c4)
   | ees4.\ff^\markup { \tiny \italic "molto espr."} d8 (e [d])
   | des2_\sempref c4~
   | c4. b8 (c [b])
@@ -109,12 +112,12 @@ notes = {
   | aes2.~\!
   | aes2_\semprep bes4
   | b2.~\tenuto
-  | b2 c4\tenuto 
+  | b2 c4\tenuto
   | des2.~\tenuto^\markup { \tiny \italic rit. }
   | des2 des4\ppp^\markup { \tiny \italic "très doux" } \break
   % line 5
-  | ees4 (f g) 
-  | f (g ees) 
+  | ees4 (f g)
+  | f (g ees)
   | des2_\semprepp des4~
   | des2 des4
   | ees4 (f g)
@@ -126,22 +129,22 @@ notes = {
   | \once \override TextScript.X-offset = 2 \once \override TextScript.Y-offset = -6 b4.\p\<_\markup { \tiny \italic "espr." } a8 (b [a])
   | g2. \!
   | g4. f8 (g [f])
-  | e2. \break
+  | e2. %{ to maybe here %} \break
   % line 7
-  | d2\< (cis!4)\!
+  | d'2\< (cis!4)\!
   | \clef bass b2 a4~\>
-  | a4 g^\markup { \tiny \italic "rit." }\! (e) 
+  | a4 g^\markup { \tiny \italic "rit." }\! (e)
   | c2.\>
-  | c4\! r r 
+  | c4\! r r
   | fis,2\pp^\markup { \tiny \italic "molto tranquilo" } (gis4)
   | a2 (b4) \break
   % line 8
   | bis4 (cis dis)
   | e4\< (fis gis)\!
-  | a2. 
+  | a2.
   | gis4\tenuto (a\tenuto gis)
-  | fis2. 
-  | e2. 
+  | fis2.
+  | e2.
   | cis2.
   | b4\tenuto (cis\tenuto b\tenuto) \break
   % line 9
@@ -167,16 +170,14 @@ notes = {
     }
     \new StaffGroup {
       \new Voice {
-        \relative {
-          \set countPercentRepeats = ##t
-          \set restNumberThreshold = 1
-          \override MultiMeasureRest.expand-limit = 2
-          \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
-          \numericTimeSignature
-          \time 3/4
-          %\transpose fis fis {
-            \notes
-          %}
+        \set countPercentRepeats = ##t
+        \set restNumberThreshold = 1
+        \override MultiMeasureRest.expand-limit = 2
+        \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
+        \numericTimeSignature
+        \time 3/4
+        \transpose fis e' {
+          \notes
         }
       }
     }
