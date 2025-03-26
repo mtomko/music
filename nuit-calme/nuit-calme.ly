@@ -131,11 +131,11 @@ notes = \relative {
   | g4. f8 (g [f])
   | e2. %{ to maybe here %} \break
   % line 7
-  | \ottava 0 d2\< (cis!4)\!
+  | d2\< (cis!4)\!
   | \clef bass b2 a4~\>
   | a4 g^\markup { \tiny \italic "rit." }\! (e)
   | c2.\>
-  | c4\! r r
+  | c4\! \ottava 0 r r
   | fis,2\pp^\markup { \tiny \italic "molto tranquilo" } (gis4)
   | a2 (b4) \break
   % line 8
