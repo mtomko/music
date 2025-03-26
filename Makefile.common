@@ -2,12 +2,14 @@
 LY := $(TITLE).ly 
 PDF := $(TITLE).pdf
 
+default: $(PDF)
+
 .PHONY: dist
 dist: $(LY)
 	lilypond -dno-point-and-click $<
 
 $(PDF): $(LY)
-	lilypond -dno-point-and-click $<
+	lilypond $<
 
 .PHONY: clean
 clean:
