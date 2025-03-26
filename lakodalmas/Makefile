@@ -1,10 +1,4 @@
-.PHONY: dist
-dist: lakodalmas.ly
-	lilypond -dno-point-and-click $<
+TITLE := lakodalmas
 
-lakodalmas.pdf: lakodalmas.ly
-	lilypond -dno-point-and-click $<
+include ../Makefile.common
 
-.PHONY: clean
-clean:
-	rm -f *.pdf

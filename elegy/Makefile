@@ -1,6 +1,4 @@
-elegy-solo.pdf: elegy.ly
-	lilypond -dno-point-and-click $<
+TITLE := elegy
 
-.PHONY: clean
-clean:
-	rm -f *.pdf
+include ../Makefile.common
+

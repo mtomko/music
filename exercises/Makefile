@@ -1,6 +1,4 @@
-exercises.pdf: exercises.ly
-	lilypond -dno-point-and-click $<
+TITLE := exercises
 
-.PHONY: clean
-clean:
-	rm -f *.pdf
+include ../Makefile.common
+

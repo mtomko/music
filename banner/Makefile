@@ -1,6 +1,4 @@
-banner.pdf: banner.ly
-	lilypond -dno-point-and-click $<
+TITLE := banner
 
-.PHONY: clean
-clean:
-	rm -f *.pdf
+include ../Makefile.common
+

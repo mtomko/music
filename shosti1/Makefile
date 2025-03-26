@@ -1,4 +1,4 @@
-TITLE := bwv1028
+TITLE := shosti1
 
 include ../Makefile.common
 

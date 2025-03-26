@@ -1,10 +1,4 @@
-.PHONY: dist
-dist: vivaldi-sonata-4-ii.ly
-	lilypond -dno-point-and-click $<
+TITLE := vivaldi-sonata-4-ii
 
-vivaldi-sonata-4-ii.pdf: vivaldi-sonata-4-ii.ly
-	lilypond -dno-point-and-click $<
+include ../Makefile.common
 
-.PHONY: clean
-clean:
-	rm -f *.pdf

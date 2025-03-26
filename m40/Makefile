@@ -1,11 +1,4 @@
-all: dev
+TITLE := m40
 
-dist: m40.ly
-	lilypond -dno-point-and-click $<
+include ../Makefile.common
 
-dev: m40.ly
-	lilypond $<
-
-.PHONY: clean
-clean:
-	rm -f *.pdf

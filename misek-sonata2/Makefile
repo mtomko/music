@@ -1,4 +1,4 @@
-TITLE := bwv1028
+TITLE := misek-sonata2
 
 include ../Makefile.common
 

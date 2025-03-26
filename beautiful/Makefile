@@ -1,6 +1,4 @@
-beautiful.pdf: beautiful.ly
-	lilypond -dno-point-and-click $<
+TITLE := beautiful
 
-.PHONY: clean
-clean:
-	rm -f *.pdf
+include ../Makefile.common
+

@@ -1,4 +1,4 @@
-TITLE := bwv1028
+TITLE := adamsh
 
 include ../Makefile.common
 
