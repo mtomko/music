@@ -58,7 +58,7 @@ notes = \relative {
   | f2 des4
   | c2.\> \break
   | \compressMMRests R2.*6 \!
-  | r4 \once \override TextScript.X-offset = 3 \once \override TextScript.Y-offset = -4 f4\pp_\markup { \tiny \italic "espr." } (c')
+  | \clef treble r4 \once \override TextScript.X-offset = 3 \once \override TextScript.Y-offset = -4 f4\pp_\markup { \tiny \italic "espr." } (c')
   | \clef treble ees2\< ges4
   | f4.\> f,8\mp\< (a [c])
   | ees2 ges4~\!
@@ -78,7 +78,7 @@ notes = \relative {
   | d2.~
   | d4 e\< d
   | a2.\> \break
-  | \clef bass r4\! r a\upbow
+  | %{\clef bass %} r4\! r a\upbow
   | g2 (c4)
   | d2 (a4)
   | c4 bes8 (a g4~)
@@ -94,7 +94,7 @@ notes = \relative {
   | ees4 a8\< (bes g4)
   | c2.\! \break
   % line 2
-  | c,2 %{ maybe keep this down the octave %} (c4)
+  | c,2 %{ maybe keep this down the octave %} (\ottava 1 c'4)_\markup { \tiny \italic "8va ad lib" }
   | ees4.\ff^\markup { \tiny \italic "molto espr."} d8 (e [d])
   | des2_\sempref c4~
   | c4. b8 (c [b])
@@ -131,7 +131,7 @@ notes = \relative {
   | g4. f8 (g [f])
   | e2. %{ to maybe here %} \break
   % line 7
-  | d'2\< (cis!4)\!
+  | \ottava 0 d2\< (cis!4)\!
   | \clef bass b2 a4~\>
   | a4 g^\markup { \tiny \italic "rit." }\! (e)
   | c2.\>
@@ -174,6 +174,7 @@ notes = \relative {
         \set restNumberThreshold = 1
         \override MultiMeasureRest.expand-limit = 2
         \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
+        \set Staff.ottavationMarkups = #ottavation-ordinals
         \numericTimeSignature
         \time 3/4
         \transpose fis e' {
