@@ -1,4 +1,4 @@
-TITLE := concerto.ly
+TITLE := concerto
 
 include ../Makefile.common
 
