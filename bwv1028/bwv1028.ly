@@ -245,7 +245,7 @@ allegroIIBassNotes =
   | b8 d b g b d g2.~
   | g8 e c f d b
   | e8 c a d b g
-  | c8 a\upbow f\upbow b16 c d8 g, \break
+  | c8 a\upbow f!\upbow b16 c d8 g, \break
   | c16 d \acciaccatura c8 b8.\trill\tenuto (c16-.) c8 e,16 f e8
   | \mark \default e8\upbow c'16 b a c b8 e,16 f e8
   | e8 d'16\downbow c b d c d e f d e
