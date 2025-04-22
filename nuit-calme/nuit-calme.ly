@@ -7,7 +7,7 @@
   instrument = "Contrabass"
   meter = \soloTuning
   composer = \markup { \bold "Henriëtte Bosmans" }
-  arranger = \markup { \tiny "Mark Tomko" }
+  arranger = \markup { \tiny "Transcribed by Mark Tomko" }
   tagline = #f
 }
 
