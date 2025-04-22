@@ -232,25 +232,25 @@ allegroIIBassNotes =
   | \mark \default r8 g16\f\downbow a g8 g e'16 d c e \break
   | d8 g,16 a g8 g f'16\downbow e d f
   | e16-2 f-4 g-1 a-3 f-\plus g-1 e-3 f-\plus g-1 a-3 f-\plus g-1
-  | e16-3 f-\plus g-1 e-3 f-\plus g-1 f-\plus g-1 a-3 f-\plus g-1 a-3 \pageBreak
-  | d,4.~-1 d16 e f d e f
+  | e16-3 f-\plus g-1 e-3 f-\plus g-1 f-\plus g-1 a-3 f-\plus g-1 a-3
+  | d,4.~-1 d16 e f d e f \pageBreak
   | b,16-1 c-1 d-4 b c d g,4.~
   | g16 a b g a b e, f g e f g
-  | c,4.~ c16 d e c d e \break
-  | f16 g a f g a d, e f d e f
+  | c,4.~ c16 d e c d e 
+  | f16 g a f g a d, e f d e f \break
   | g16 a b g a b e, f g e f g
   | a bes c d bes c  a bes c a bes c
-  | f,16 g a bes g a f g a f g a \break
-  | d,16 e f d e f e8 g\upbow c\upbow
+  | f,16 g a bes g a f g a f g a
+  | d,16 e f d e f e8 g\upbow c\upbow \break
   | b8 d b g b d g2.~
   | g8 e c f d b
   | e8 c a d b g
-  | c8 a\upbow f!\upbow b16 c d8 g, \break
-  | c16 d \acciaccatura c8 b8.\trill\tenuto (c16-.) c8 e,16 f e8
+  | c8 a\upbow f!\upbow b16 c d8 g, 
+  | c16 d \acciaccatura c8 b8.\trill\tenuto (c16-.) c8 e,16 f e8 \break
   | \mark \default e8\upbow c'16 b a c b8 e,16 f e8
   | e8 d'16\downbow c b d c d e f d e
-  | c16 d e f d e c b a g fis e \break
-  | fis8 b fis g c g
+  | c16 d e f d e c b a g fis e 
+  | fis8 b fis g c g \break
   | a8\downbow a'4\upbow~ a16 g\tenuto fis e fis8~
   | fis8 e\upbow dis\upbow e b <<dis!-1\downbow fis-3>>
   | <<
@@ -264,52 +264,52 @@ allegroIIBassNotes =
       \voiceTwo
       e4. c4.
       | c4. b4.
-      | b4. a4.~ \break
-      | a16 b16 c d b c a b c a b c
+      | b4. a4.~ 
+      | a16 b16 c d b c a b c a b c \break
     }
   >> \oneVoice
-  | fis,16 g a b g a fis g a fis g a
+  | fis,16 g a b g a fis g a fis g a 
   | dis,8 cis16 dis b8 b g'16 fis e g
-  | cis,8 b16 cis a8 a8 a'16 g fis a \break
-  | dis,16 e fis dis e dis e fis \acciaccatura e8 dis8.\trill\tenuto (e16)-.
+  | cis,8 b16 cis a8 a8 a'16 g fis a
+  | dis,16 e fis dis e dis e fis \acciaccatura e8 dis8.\trill\tenuto (e16)-.  \break
   | \mark \default e4\upbow r8_\markup { \small \italic pizz. } r fis8 fis,
   | b4 r8 r e8 e,
   | a4 r8 r b' b,
   | e4 r8 r a8 a,
-  | d4 r8 r b8 b' \break
-  | c4 r8 r a, a'
+  | d4 r8 r b8 b' 
+  | c4 r8 r a, a' \break
   | bes4 r8 r gis,8 gis'8
   | a4 r8 r a8 a,
   | a4 r8 r8 d'8 d,
   | a4 r8 r8 d'8 d,
-  | d4 r8_\markup { \small \italic arco } r8 d'8\downbow d, \break
-  | d8 d' d, fis, fis' fis,
+  | d4 r8_\markup { \small \italic arco } r8 d'8\downbow d, \break 
+  | d8 d' d, fis, fis' fis, 
   | bes8 bes' ees cis d d,
   | \mark \default g8 d16 e d8 d b'16 a g b
-  | a8 d,16 e d8 d c16\downbow b a c \break
-  | b'16-1_\markup { \tiny M } d-4 (b-1 g-0 f) e (f) d' (b g f) e (
+  | a8 d,16 e d8 d c16\downbow b a c  \break
+  | b'16-1_\markup { \tiny M } d-4 (b-1 g-0 f) e (f) d' (b g f) e ( 
   | f16) g g b-4 b d-1 d (f32 e f16) d-1 b-4 g-0
   | e'16-1 g-3\flageolet (e-2 c-4 bes-2) a-1 (bes-2) g' (e c bes) a ( \break
-  | bes16) c c e e g g (bes32 a bes16) g e-2 c-4
+  | bes16) c c e e g g (bes32 a bes16) g e-2 c-4 
   | a'16-1\flageolet e-4 (cis-1 a-2 g-4) f-1 (g) e' (cis a g) f-1 (
   | g16-4) a-2 a cis-1 cis e-1 e (g32-3 f-2 g16-3) e-1 cis-4 a-1 \break
-  | d,16-0 a'-1 (d-1 f-4) gis,-2 (a-4) c,-1 a'-4 (c-1 e-4) gis,-2 (a-4)
+  | d,16-0 a'-1 (d-1 f-4) gis,-2 (a-4) c,-1 a'-4 (c-1 e-4) gis,-2 (a-4) 
   | b,16 a'-1 (b-4 d-2) gis,-1 (a-2) e f32 (e d16 c b) d
   | c16 a32 (b c16 d e f) g (a bes) g e g \break
-  | a16 a32 (bes c16) a e f bes bes32 (c d16) g,32 (a bes16) g
-  | e'16 bes32 (c des16) g,32 (a bes16) g f' bes,32 ( c des16) g,32 (a bes16) g \pageBreak
+  | a16 a32 (bes c16) a e f bes bes32 (c d16) g,32 (a bes16) g 
+  | e'16 bes32 (c des16) g,32 (a bes16) g f' bes,32 ( c des16) g,32 (a bes16) g 
   | g'16\flageolet-3 g32 (f-4 e16-2) e32-4 (d-1 c16-1) c32-4 (bes-2 a16-1) a32 (bes c16) f, c e \pageBreak
-  | \mark \default f,8 f' g\mordent a4 r8
+  | \mark \default f,8 f' g\mordent a4 r8 
   | c,8 g' a\mordent bes4 r8
-  | f16 g a bes g a f g a bes g a \break
-  | f16 g a g f e d8 r8 r8
-  | r8 g16 a g8 g8 e'16 d c e
+  | f16 g a bes g a f g a bes g a 
+  | f16 g a g f e d8 r8 r8 
+  | r8 g16 a g8 g8 e'16 d c e \break
   | d8 g,16 a g8 g f'16 e d f
-  | e16 f g-1 a-3 f-\plus g e-3\2 f-\plus g a f g \break
-  | e16-3\2 f-\plus\1 g-1 f-\plus g-1 a-3 d,-1\2 e-3 f-\plus\1 e-3 f-\plus g-1
+  | e16 f g-1 a-3 f-\plus g e-3\2 f-\plus g a f g 
+  | e16-3\2 f-\plus\1 g-1 f-\plus g-1 a-3 d,-1\2 e-3 f-\plus\1 e-3 f-\plus g-1 \break
   | c,16-2\2 d-\plus\1 e-1 d-\plus e-1 f-3 b,-1\2 c-2 d-\plus\1 c-2\2 d-\plus e-1
-  | a,16-1\2 b-2 c-4 b-2 c-4 d-3\flageolet b8 a16 (g) c8~ \break
-  | c8 \acciaccatura c8 b8.\trill (a32 b) c8 e a~
+  | a,16-1\2 b-2 c-4 b-2 c-4 d-3\flageolet b8 a16 (g) c8~ 
+  | c8 \acciaccatura c8 b8.\trill (a32 b) c8 e a~ \break
   | a8 d, g~ g c, f~
   | f8 b, e~ e a, d~ (
   | d16 c\tenuto) b a g f g-1 a-4 \acciaccatura e8 d8.\trill\tenuto-1 (c16-.)
@@ -330,6 +330,7 @@ allegroIIBassNotes =
   #(set-default-paper-size "letter")
 }
 
+%{
 \book {
   \paper {
     #(set-paper-size "a4")
@@ -394,6 +395,8 @@ allegroIIBassNotes =
   }
 }
 
+%}
+
 \book {
   \paper {
     #(set-paper-size "letter")
@@ -457,6 +460,8 @@ allegroIIBassNotes =
     }
   }
 }
+
+%{
 
 \book {
   \score {
@@ -527,3 +532,5 @@ allegroIIBassNotes =
     }
   }
 }
+
+%}
