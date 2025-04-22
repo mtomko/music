@@ -298,7 +298,7 @@ allegroIIBassNotes =
   | c16 a32 (b c16 d e f) g (a bes) g e g \break
   | a16 a32 (bes c16) a e f bes bes32 (c d16) g,32 (a bes16) g
   | e'16 bes32 (c des16) g,32 (a bes16) g f' bes,32 ( c des16) g,32 (a bes16) g \pageBreak
-  | g'16\flageolet-3 g32 (f-4 e16-1) e32-4 (d-1 c16-1) c32-4 (bes-2 a16-1) a32 (bes c16) f, c e
+  | g'16\flageolet-3 g32 (f-4 e16-2) e32-4 (d-1 c16-1) c32-4 (bes-2 a16-1) a32 (bes c16) f, c e \pageBreak
   | \mark \default f,8 f' g\mordent a4 r8
   | c,8 g' a\mordent bes4 r8
   | f16 g a bes g a f g a bes g a \break
