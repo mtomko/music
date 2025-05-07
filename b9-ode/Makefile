@@ -1,4 +1,4 @@
-TITLE := b9
+TITLE := b9-ode
 
 include ../Makefile.common
 
