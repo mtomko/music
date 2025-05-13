@@ -45,15 +45,15 @@ excerptII = \relative {
   \override Fingering.avoid-slur = #'outside
   \set Score.currentBarNumber = 709
   \mark 16
-  b,8-1\ff (fis gis ais b cis) d (cis b cis d e)
+  b,8\ff (fis gis ais b cis) d (cis b cis d e)
   | fis8 (g fis e fis e) d (e d cis d cis)
   | cis8 (fis, gis ais b cis) dis (b cis dis e cis) \break
   | fis8 (gis fis dis e dis) cis (dis cis b cis b)
-  | fis'8 (b,\3 cis dis e fis) gis (b,-\plus\4 fis'\3 gis a! fis)
-  | a8 (b a gis a gis) fis (gis fis e fis e)
-  | b'8 (e, gis a b e,) e' (fis e d e d)
-  | cis8 (e d cis d cis) b (fis b a cis b)
-  | b8 (a b a) a,4 r2.
+  | fis'8 (b,\3 cis dis-2 e-4 fis-1) gis-3 (b,-\plus\4 fis'-1 gis-3 a!-\plus\flageolet fis-1)
+  | a8-\plus\flageolet (b-1 a-\plus\flageolet gis-2\4 a-3 gis-2) fis-1 (gis-3 fis-1 e-\plus\flageolet fis-1 e-\plus\flageolet)
+  | b'8-1\3 (e,-\plus\flageolet\4 gis-3 a-\plus\flageolet\3 b-1 e,-\plus\flageolet\4) e'-1\2 (fis-3 e-1 d-\plus\flageolet e-1 d-\plus\flageolet)
+  | cis8-\plus (e-3 d-1 cis-\plus d-1 cis-\plus) b-1 (cis-3 b-1 a-\plus cis-3 b-1)
+  | b8-1 (a-\plus b-1 a-\plus) a,4-0 r2.
   \bar "||"
 }
 
