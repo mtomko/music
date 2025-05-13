@@ -20,11 +20,7 @@ luftpause = { \tweak Y-offset 4 \tweak X-offset 3 \breathe }
 \book {
   \score {
     \layout {
-      \context {
-        \Score
-        \omit BarNumber
-      }
-      top-margin = 0.0
+      %top-margin = 0.0
       indent = 0.0
     }
     \relative {
@@ -36,7 +32,12 @@ luftpause = { \tweak Y-offset 4 \tweak X-offset 3 \breathe }
       \time 4/4
       \clef bass
       \key a \minor
-      d'4\1-1\downbow (e-2) f8-4 (e-2 d4-1) \luftpause
+      \once \override TextScript.X-offset = 2
+      \new CueVoice {
+        \textMark \markup { \tiny \italic "pauken" }
+        \repeat unfold 2 { d4 a d a }
+      }
+      | d'4-1\p\downbow_\markup { \tiny \italic "mit dämpfer" } (e-2) f8-4 (e-2 d4-1) \luftpause
       | d4 (e) f8 (e d4) \luftpause
 
       | f4-4 (g-\plus) a2-1 \luftpause
@@ -48,7 +49,7 @@ luftpause = { \tweak Y-offset 4 \tweak X-offset 3 \breathe }
       | a'8.\1-\mi ([bes16-2 a8-1 g8-\plus]) f\2-2 (e-1 d4-\mi) \luftpause
 
       | a'4\1-3 (a,\2-1) d2-\mi\flageolet \luftpause
-      | a'4\1-3 (a,\2-1) d2-\mi \luftpause
+      | a'4\1-3 (a,\2-1) d2\1-1 
 
       \bar "||"
     }
