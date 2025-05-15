@@ -27,7 +27,7 @@ mvtI = \relative {
   \compressMMRests R1*9
 
   g2\2-1\mf\downbow a4. (bes8)
-  | g2~ g8 (a\1 bes c)
+  | g2~ g8 a\1 (bes c)
   | d4. (g,8\flageolet) ees'4. (g,8)
   | d'2-2 \clef treble r8 d8\upbow (g ees-4) \break 
   
@@ -37,13 +37,13 @@ mvtI = \relative {
   | c4-4\downbow_\markup { \tiny \italic "non dim." } (bes) r8 bes (d-\plus\flageolet g)
   | bes8-3\< aes-1\upbow g2-\mi fis4-\plus
   | d'4.\> bes8-2\upbow (g-\plus) \clef bass d\2-3\downbow (bes-\mi) g-4\upbow (
-  | c,4\pp) \clef treble ees'2.-2~\downbow \break
+  | c,4\4-1\pp) \clef treble ees'2.-2~\downbow \break
 
   % line 3
 
   | ees2~\< ees8 aes-\plus (c-3 aes)
-  | ees'2~\fp\> ees8 c-1 (aes-\plus ees-4)
-  | d2\!\turn^\markup { \tiny \sharp } bes'4.-2 (a8-1)
+  | ees'2-3~\fp\> ees8 c-1 (aes-\plus ees-4)
+  | d2\! \tweak Y-offset -0.5 \tweak X-offset 4 \turn \tweak Y-offset -3.5 \tweak X-offset -2.5 \textMark \markup { \tiny \sharp } bes'4.-2 (a8-1)
   | g4-\plus\flageolet d8-2 (ees) ees (d) fis-\plus (a-3)
   | a8 (g) d-1 (f!-4) f (ees) c-1-. (a-4-.) \break
   
@@ -88,14 +88,20 @@ mvtI = \relative {
 
   % line 2
   
-  | d16-.) f'-1\downbow\p (g-3 f) f,\3\plus-.\upbow f' (g f) d\2-\plus (f g f) d-3\flageolet-. f (g f)
+  | d16-.\parenthesize\upbow) f'-1\downbow\p (g-3 f) f,\3\plus-.\upbow f' (g f) d\2-\plus (f g f) d-3\flageolet-. f (g f)
   | ees16-2\upbow (d-1 f-4 ees-1 g-3_\markup { \tiny \italic "cresc." } f-1 ees-2 d-1) c-1\downbow (d ees c a) f\upbow (g ees
   | d16-.) f'-1\downbow\p (g-3 f) f,\plus-.\upbow f' (g f) d-\plus (f g f) d-3\flageolet-. f (g f) \break
 
   % line 3
+  
   | g,16\upbow (fis g a) bes_\markup { \tiny \italic "cresc." } (a bes d) \clef treble ees-2\upbow (d ees-1 fis-4 g-\plus a-1 bes-2 c-1)
   | des2.-2\f\> c8-3 (bes-1)
-  | b2\p
+  | b2\p \once \slurDown \afterGrace a2-1~ ( \trill { g16 a }
+  | bes8) bes,-1\< (c-4 d-1) f-4\> (ees-2) \tuplet 3/2 { d8 (ees c) } \! \break
+
+  % line 4
+
+  | bes2~bes4\turn d8 (c)
 
 }
 
