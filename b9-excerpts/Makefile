@@ -1,4 +1,4 @@
-TITLE := b9-excerpts
+TITLE := $(notdir $(shell pwd))
 
 include ../Makefile.common
 
