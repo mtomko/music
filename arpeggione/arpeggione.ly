@@ -158,8 +158,8 @@ mvtI = \relative {
 
   % line 2
 
-  | r8 f, c [ees] r f, aes [d]
-  | r8 g,16\f (b\3 d-2 g\2-2 b\1-1 d-4) \clef treble g2~\upbow\>
+  | r8 f, c' [ees] r f, aes [d]
+  | r8 g,,16\f (b\3 d-2 g\2-2 b\1-1 d-4) \clef treble g2~\upbow\>
   | g1\p~ (
   | g4 f8-1 ees-4) des-1\upbow (f g aes)
   | c,4~ c4\turn^\markup { \tiny \natural } ees4.\upbow (d!8) \break
