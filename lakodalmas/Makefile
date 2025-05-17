@@ -1,4 +1,1 @@
-TITLE := lakodalmas
-
-include ../Makefile.common
-
+../Makefile.common

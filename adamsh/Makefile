@@ -1,4 +1,1 @@
-TITLE := adamsh
-
-include ../Makefile.common
-
+../Makefile.common

@@ -1,4 +1,1 @@
-TITLE := banner
-
-include ../Makefile.common
-
+../Makefile.common

@@ -1,4 +1,1 @@
-TITLE := rachysd
-
-include ../Makefile.common
-
+../Makefile.common

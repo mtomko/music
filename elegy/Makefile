@@ -1,4 +1,1 @@
-TITLE := elegy
-
-include ../Makefile.common
-
+../Makefile.common

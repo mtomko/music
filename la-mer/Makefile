@@ -1,4 +1,1 @@
-TITLE := la-mer
-
-include ../Makefile.common
-
+../Makefile.common

@@ -1,4 +1,1 @@
-TITLE := beautiful
-
-include ../Makefile.common
-
+../Makefile.common

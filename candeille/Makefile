@@ -1,4 +1,1 @@
-TITLE := concerto
-
-include ../Makefile.common
-
+../Makefile.common
