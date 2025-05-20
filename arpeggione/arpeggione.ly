@@ -287,19 +287,19 @@ mvtI = \relative {
   | aes16\p (g bes aes c bes d c) ees4-3\upbow g,-\plus\flageolet (
   | fis8\2-2) d'-3\flageolet (bes-1) g-3 (f-2) d'-3\flageolet (bes) g (
   | fis8) d' (b_\markup {\italic "decresc."}) gis-3 (e) c' (a) fis (
-  | d-\plus\flageolet)^\markup { "ritard." } b' (g!) e-1 (cis-\plus) a'-3\upbow (fis-\plus d-1\flageolet) \break 
+  | d-\plus\flageolet)^\markup { "ritard." } b' (g!) e-1 (cis-\plus) a'-3\upbow (fis-\plus d-1\flageolet) \break
 
   % line 4
 
   | g16\1-1\pp\downbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 3 { g (fis a g) }
   | e8-3 (e'16-3) r e4\accent e,8-1\flageolet (e'16-3) r e4\accent
-  | fis,16\1-1 (eis-\plus g-2 fis) \repeat unfold 3 { fis (eis g fis) } \break 
+  | fis,16\1-1 (eis-\plus g-2 fis) \repeat unfold 3 { fis (eis g fis) } \break
 
-  % line 5 
+  % line 5
 
-  | d8-2\flageolet d'16-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent 
-  | c16-1\downbow (b-\plus d-3 c-1 e-3 d-1 c-2 b-1) a-\plus\upbow (b-1 c-2 a fis-2 d-\plus e-1 c\3-2) 
-  | \stemDown b16-.\p d'-1 (e d) d,-. d' (e d) \stemNeutral g,-.-\plus d' (e d) b-.-\plus d (e d) \break 
+  | d8-2\flageolet d'16-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
+  | c16-1\downbow (b-\plus d-3 c-1 e-3 d-1 c-2 b-1) a-\plus\upbow (b-1 c-2 a fis-2 d-\plus e-1 c\3-2)
+  | \stemDown b16-.\p d'-1 (e d) d,-. d' (e d) \stemNeutral g,-.-\plus d' (e d) b-.-\plus d (e d) \break
 
   % line 6
 
@@ -311,15 +311,70 @@ mvtI = \relative {
   | \clef bass e,,16\3-1\downbow_\markup { \italic "cresc." } (fis-2 g-4\< fis g b\2 c b) c\upbow (dis\1 e dis \clef treble e-1 fis-4 g-\plus a-1)
   | bes2.-2\f\> a8-3 (g)\!
   | g2 \afterGrace fis2-1\trill ( { e16-\plus \(fis\) }
-  | g8)\< \clef bass g, (a b-3 d\flageolet) c\upbow\> (\tuplet 3/2 { b8 c a}) \! \break 
+  | g8)\< \clef bass g, (a b-3 d\flageolet) c\upbow\> (\tuplet 3/2 { b8 c a}) \! \break
 
   % line 8
 
   | \afterGrace g2. ( { a16 g fis g)} b8. (a16)
   | g16\2-2\p (fis-1) a-.-4 g-. \repeat unfold 3  { g (fis) a-. g }
-  | c,8 (e'16) r e4\accent e,8 (g'16) r g4\accent \pageBreak 
+  | c,8 (e'16) r e4\accent e,8 (g'16) r g4\accent \pageBreak
 
   % page 6 line 1
+
+  | \repeat unfold 4 { fis,16 (eis) g-. fis-. }
+  | b,8 (d') d4\accent d,8 (fis') fis4\accent\downbow
+  | \clef treble c8\f\2-2 (c'16) r c4~\accent c16 b\upbow a\downbow g\upbow fis\2-3 e-1 d-\plus c\3-2 \break
+
+  % line 2
+
+  | b8-1\downbow b'16-3\upbow r b4~\accent\downbow 16 a-1\upbow g-\plus\downbow fis-4\upbow g-1 d c b
+  | \clef bass a16 g fis e d c b a g8 g' e cis
+  | d16-.\p g,-. g-. b-. b-. d-. d-.\accent e-. d-. g-.-2 g-. b\1-1-. \clef treble b-. d-.-1 d-.\accent e-. \break
+
+  % line 3
+
+  | d16\cresc g-\plus\flageolet g b-3 b d-1 d e-3 g4-1 bes-3
+  | d,,8-\plus\flageolet\f e16 (fis) g a b c d4.-3 (f,8)
+  | g4-2 bes!2\> a8-2\p (g-1)
+  | g2 \afterGrace fis2-1\trill ({ e16-\plus \(fis\) }
+  | g4)\< a8 (b d-3\flageolet)\> c8-3 (\tuplet 3/2 { b8-2 c a}) \! \break
+
+  %line 4
+
+  | \afterGrace g2. ( { a16 g fis g)} b8.-3\upbow (a16)
+  | g4-\plus\flageolet\fp\downbow \clef bass bes,2\2-2\> a8-4\upbow (g-1)\!
+  | g2 \afterGrace fis2-2\trill ({ e16 \(fis\)}
+  | g4)\< a8\downbow (b e\>) c\upbow (b a)\!
+  | e4~\downbow (16 fis g a) \afterGrace g4 ({ a16 g fis g)} b8.\downbow (a16) \break
+
+  % line 5
+
+  | g4 r r \clef treble d'8.-2\p\upbow (ees16)
+  | ees4 (d) r fis8.-1\upbow (a16-3)
+  | a4 (g) r d8.-1\upbow\< (f!16-4)
+  | f2~\> 8 (ees-1 c-1 a\2-4) \!
+  | g2 r4 d'16-1\pp\upbow (ees d ees) \break
+
+  % line 6
+
+  | ees4 (d) r \clef bass fis,16-1\upbow (g fis a) a4-4 (g) r d16\flageolet\upbow\< (ees d f!)
+  | f2~\> 8 ees (c a) \!
+  | g2 r2
+  | R1
+  | r2 a4_\markup{ \italic "dim." }\upbow (d8-3\flageolet) r \break
+
+  % line 7
+
+  | bes4 (d8) r a4 (d8) r
+  | g,2~-1\f\>\downbow \tuplet 3/2 { 8 \once \override Fingering.extra-offset = #'(0.0 . 1.8) bes-2 (d-1} \tuplet 3/2 { g-1 bes-2 d-1) } \!
+  | \clef treble g2-3\flageolet\downbow_\markup { \italic "decresc." } bes4-2\upbow (d-\plus\flageolet) \break
+
+  % line 8
+
+  | g1~-3\p\flageolet
+  | g1~_\markup { \italic "decresc." }
+  | g4 r \clef bass <<a,, d fis\ff>> r
+  | <<g, bes d g>> r r2 \fine
 
 }
 
