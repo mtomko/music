@@ -276,9 +276,9 @@ mvtI = \relative {
 
   % page 5 line 1
 
-  | r4 e'8-4\accent\downbow (a-1\flageolet_\markup { \italic "cresc." }) f-4\accent\upbow (a-1\flageolet) e\accent (a)
+  | r4 e'8-4\accent\downbow (a-1\flageolet_\crescM) f-4\accent\upbow (a-1\flageolet) e\accent (a)
   | f8\accent (a) r <<a,, cis' e\downbow>> r <<d f\downbow>> r <<a,, cis' e\downbow>>
-  | r8 <<d f>> \clef treble a,-\plus\flageolet_\markup { \italic "dim." } ([a'-2\flageolet]) a, (a') a-.\pp\upbow~ a-.\upbow
+  | r8 <<d f>> \clef treble a,-\plus\flageolet_\dimM ([a'-2\flageolet]) a, (a') a-.\pp\upbow~ a-.\upbow
   | d1~-2\flageolet
   | d4 r r \clef bass d,-1\downbow\f \break
 
@@ -291,8 +291,8 @@ mvtI = \relative {
   % line 3
 
   | aes16\p (g bes aes c bes d c) ees4-3\upbow g,-\plus\flageolet (
-  | fis8\2-2) d'-3\flageolet (bes-1) g-3 (f-2) d'-3\flageolet (bes) g (
-  | fis8) d' (b_\markup {\italic "decresc."}) gis-3 (e) c' (a) fis (
+  | fis8\2-2) d'-3\flageolet (bes-1) g-3 (fis-2) d'-3\flageolet (bes) g (
+  | fis8) d' (b_\decrescM) gis-3 (e) c' (a) fis! (
   | d-\plus\flageolet)^\markup { "ritard." } b' (g!) e-1 (cis-\plus) a'-3\upbow (fis-\plus d-1\flageolet) \break
 
   % line 4
@@ -309,12 +309,12 @@ mvtI = \relative {
 
   % line 6
 
-  | c16\downbow_\markup { \italic "cresc." } (b d c e d c b) a\upbow (b c a fis d e c)
+  | c16\downbow_\crescM (b d c e d c b) a\upbow (b c a fis d e c)
   | \stemDown b16-.\p d' (e d) d,-. d' (e d) \stemNeutral g,-. d' (e d) b-. d (e d) \break
 
   % line 7
 
-  | \clef bass e,,16\3-1\downbow_\markup { \italic "cresc." } (fis-2 g-4\< fis g b\2 c b) c\upbow (dis\1 e dis \clef treble e-1 fis-4 g-\plus a-1)
+  | \clef bass e,,16\3-1\downbow_\crescM (fis-2 g-4\< fis g b\2 c b) c\upbow (dis\1 e dis \clef treble e-1 fis-4 g-\plus a-1)
   | bes2.-2\f\> a8-3 (g)\!
   | g2 \afterGrace fis2-1\trill ( { e16-\plus \(fis\) }
   | g8)\< \clef bass g, (a b-3 d\flageolet) c\upbow\> (\tuplet 3/2 { b8 c a}) \! \break
@@ -333,7 +333,7 @@ mvtI = \relative {
 
   % line 2
 
-  | b8-1\downbow b'16-3\upbow r b4~\accent\downbow 16 a-1\upbow g-\plus\downbow fis-4\upbow g-1 d c b
+  | b8-1\downbow b'16-3\upbow r b4~\accent\downbow 16 a-1\upbow g-\plus\downbow fis-4\upbow e-1 d c b
   | \clef bass a16 g fis e d c b a g8 g' e cis
   | d16-.\p g,-. g-. b-. b-. d-. d-.\accent e-. d-. g-.-2 g-. b\1-1-. \clef treble b-. d-.-1 d-.\accent e-. \break
 
@@ -355,8 +355,8 @@ mvtI = \relative {
 
   % line 5
 
-  | g4 r r \clef treble d'8.-2\p\upbow (ees16)
-  | ees4 (d) r fis8.-1\upbow (a16-3)
+  | g4 r r \clef treble d''8.-2\p\upbow (ees!16)
+  | ees4 (d) r fis,8.-1\upbow (a16-3)
   | a4 (g) r d8.-1\upbow\< (f!16-4)
   | f2~\> 8 (ees-1 c-1 a\2-4) \!
   | g2 r4 d'16-1\pp\upbow (ees d ees) \break
@@ -367,18 +367,18 @@ mvtI = \relative {
   | f2~\> 8 ees (c a) \!
   | g2 r2
   | R1
-  | r2 a4_\markup{ \italic "dim." }\upbow (d8-3\flageolet) r \break
+  | r2 a'4_\dimM\upbow (d8-3\flageolet) r \break
 
   % line 7
 
   | bes4 (d8) r a4 (d8) r
-  | g,2~-1\f\>\downbow \tuplet 3/2 { 8 \once \override Fingering.extra-offset = #'(0.0 . 1.8) bes-2 (d-1} \tuplet 3/2 { g-1 bes-2 d-1) } \!
-  | \clef treble g2-3\flageolet\downbow_\markup { \italic "decresc." } bes4-2\upbow (d-\plus\flageolet) \break
+  | g,,2~-1\f\>\downbow \tuplet 3/2 { 8 \once \override Fingering.extra-offset = #'(0.0 . 1.8) bes-2 (d-1} \tuplet 3/2 { g-1 bes-2 d-1) } \!
+  | \clef treble g2-3\flageolet\downbow_\decrescM bes4-2\upbow (d-\plus\flageolet) \break
 
   % line 8
 
   | g1~-3\p\flageolet
-  | g1~_\markup { \italic "decresc." }
+  | g1~_\decrescM
   | g4 r \clef bass <<a,, d fis\ff>> r
   | <<g, bes d g>> r r2 \fine
 
