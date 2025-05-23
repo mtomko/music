@@ -13,7 +13,7 @@ miv = \finger "-4"
 
 \header {
   title = "Arpeggione Sonata"
-  subtitle = \markup { \small "in A minor, D. 821" }
+  subtitle = \markup { \small "in a minor, D. 821" }
   composer = "Franz Schubert"
   tagline = #f
 }
@@ -128,7 +128,7 @@ mvtI = \relative {
     % line 7
 
 
-    | f16-. \once \set Staff.ottavation = \markup { \concat { \small "8" \super "va" } \small "ad lib" } \ottava 1 bes-. bes-. d-. d-. ees-. ees-. g-. bes4 des \ottava 0
+    | f16-. \ottava 1 \set Staff.ottavation = \markup { \concat { \small "8" \super "va" } \small "ad lib" } bes-. bes-. d-. d-. ees-. ees-. g-. bes4 des \ottava 0
     | f,,8\2-2-.\f g16-\plus-. (a-1-.) bes-2-. c-. d!-. ees-. f4.\accent (a,8)
     | bes4\upbow des,2-2\p\downbow c8-4 (bes-1)
     | bes2 \acciaccatura bes16 \afterGrace a2~ ( \trill { g16 a }
@@ -182,13 +182,13 @@ mvtI = \relative {
   % line 4
 
   | \clef bass c16\p (g) aes-. g-. \repeat unfold 3 { g (fis) aes-. g-. }
-  | g8 (g'16) r g,8\flageolet (f'16-4) r g,8 (ees'16) r g,8 (d'16-4) r \break
+  | g8 (g'16) r g,8\flageolet (f'16) r g,8 (ees'16) r g,8 (d'16) r \break
 
   % line 5
 
-  | \clef treble c16-1 (g'-\mii) aes-3-. g-1-. \repeat unfold 3 { g (fis) a-. g-. }
+  | \clef treble c16-1_\plus\2 (g'-\mii) aes-3-. g-1-. \repeat unfold 3 { g (fis) a-. g-. }
   | g8 (g,16) r f'!8 (g,16) r ees'8 (g,16) r d'8 (g,16) r
-  | c16 (b) d-. c-. c16 (b) d-. c-. aes'2\accent \break
+  | c16\mf (b) d-. c-. c16 (b) d-. c-. aes'2\accent \break
 
   % line 6
 
@@ -207,23 +207,23 @@ mvtI = \relative {
   % line 8
 
   | aes8-2\downbow (g aes bes d\accent\flageolet) c-4\accent (aes-1 f\3-4)
-  | ees16-1 (bes'\2-2) c-4-. bes-. bes (a!) c-. bes-. bes (a) c-. bes-. bes (a) c-. bes-.
-  | \clef treble bes8-\plus\mf (bes'16) r bes,8 (aes'16-3) r bes,8 (g'16-3\flageolet) r bes,8-1 (f'16-4) r \pageBreak
+  | ees16-1\mf (bes'\2-2) c-4-. bes-. bes (a!) c-. bes-. bes (a) c-. bes-. bes (a) c-. bes-.
+  | \clef treble bes8-\plus\mf (bes'16-3) r bes,8-\plus (aes'16-3) r bes,8-\plus (g'16-3\flageolet) r bes,8-1 (f'16-4) r \pageBreak
 
   | % page 4 line 1
 
   | ees16-2\pp (bes) ces-. bes-. \repeat unfold 3 { bes (a) ces-. bes-. }
-  | bes8 (bes'16) r bes,8 (aes'16) r bes,8 (ges'16) r bes,8 (f'16) r
-  | ges1\2-3~
+  | bes8 (bes'16) r bes,8 (aes'16) r bes,8-1 (ges'16-4) r bes,8 (f'16) r
+  | ges1~
   | ges1\upbow (
-  | g1~\downbow_\crescM) \break
+  | g!1~\downbow_\crescM) \break
 
   % line 2
 
   | g1\!\upbow
   | \afterGrace a2-1\downbow ( { bes16 a g a) } bes4-2\upbow (g-\plus\flageolet)
   | d'2.-2\f ees8.-3 (d16)
-  | d2. c16-1 (bes-\plus a\2-2 g-1)
+  | d2. c16-1 (bes-\plus a\2-3 g-1)
   | d'2.\ff ees8. (d16)
   | d2. c16 (bes a g) \break
 
@@ -239,7 +239,7 @@ mvtI = \relative {
 
   % line 4
 
-  | \tuplet 3/2 { d8 fis,-.\tweak Y-offset 4.5 \downbow (a-. } \tuplet 3/2 { c-.) ees-. (fis-3 } \tuplet 3/2 { a-.) c-.\upbow (d-.\upbow) } ees4~-2\fp\downbow
+  | \tuplet 3/2 { d8 fis,-.\tweak Y-offset 4.5 \downbow (a-. } \tuplet 3/2 { c-.) ees!-. (fis-3 } \tuplet 3/2 { a-.) c-.\upbow (d-.\upbow) } ees4~-2\fp\downbow
   | ees1~
   | ees4 d-. cis8-. c\2-.\upbow^\markup { \small "rit." } (bes-. a-.)
   | g2-1\downbow^\markup { \small "a tempo" } a4.-2\upbow (bes8)
@@ -271,7 +271,7 @@ mvtI = \relative {
 
   % line 8
 
-  | e8\accent (d) \clef bass a (c) c\accent (bes) g (e)
+  | e8\accent (d) \clef bass a ([c]) c\accent (bes) g (e)
   | d4 r r2
   | R1 \pageBreak
 
@@ -281,61 +281,61 @@ mvtI = \relative {
   | f8\accent (a) r <<a,, cis' e\downbow>> r <<d f\downbow>> r <<a,, cis' e\downbow>>
   | r8 <<d f>> \clef treble a,-\plus\flageolet_\dimM ([a'-2\flageolet]) a, (a') a-.\pp\upbow~ a-.\upbow
   | d1~-2\flageolet
-  | d4 r r \clef bass d,-1\downbow\f \break
+  | d4 r r \clef bass d,-1\upbow\f \break
 
   % line 2
 
-  | ees2~\upbow\> ees16\! ees\upbow fis\downbow ees\upbow c-1 a\2-4 fis-1 ees\3-4
-  | d4-2 r r fis8.\downbow (e32\trill fis)
-  | g2~g16 \clef treble bes-2\<\upbow d-1\downbow bes\upbow g'-\plus d bes'-2 g\flageolet d'2.-3\> c8-3 (bes-1) \break
+  | ees2~\downbow\> ees16\! ees (fis ees) c-1 a\2-4 fis-1 ees\3-4
+  | d4-2 r r fis8.\upbow (e32\trill fis)
+  | g2~g16 \clef treble bes-2\< (d-1 bes) g'-\plus d bes'-2 g\flageolet d'2.-3\> c8-3 (bes-1) \break
 
   % line 3
 
   | aes16\p (g bes aes c bes d c) ees4-3\upbow g,-\plus\flageolet (
   | fis8\2-2) d'-3\flageolet (bes-1) g-3 (fis-2) d'-3\flageolet (bes) g (
   | fis8) d' (b_\decrescM) gis-3 (e) c' (a) fis! (
-  | d-\plus\flageolet)^\markup { "ritard." } b' (g!) e-1 (cis-\plus) a'-3\upbow (fis-\plus d-1\flageolet) \break
+  | d-\plus\flageolet)^\markup { "ritard." } b' (g!) e-1 (cis-\plus) a'-3\upbow (fis-\plus) d-1\flageolet\downbow \break
 
   % line 4
 
-  | g16\1-1\pp\downbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 3 { g (fis a g) }
-  | e8-3 (e'16-3) r e4\accent e,8-1\flageolet (e'16-3) r e4\accent
+  | g16\1-1\pp\upbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 3 { g (fis a g) }
+  | e8-3 (e'16-3) r e4\accent\downbow e,8-1\flageolet (e'16-3) r e4\accent
   | fis,16\1-1 (eis-\plus g-2 fis) \repeat unfold 3 { fis (eis g fis) } \break
 
   % line 5
 
-  | d8-2\flageolet d'16-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
+  | d8-2\flageolet (d'16)-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
   | c16-1\downbow (b-\plus d-3 c-1 e-3 d-1 c-2 b-1) a-\plus\upbow (b-1 c-2 a fis-2 d-\plus e-1 c\3-2)
   | \stemDown b16-.\p d'-1 (e d) d,-. d' (e d) \stemNeutral g,-.-\plus d' (e d) b-.-\plus d (e d) \break
 
   % line 6
 
   | c16\downbow_\crescM (b d c e d c b) a\upbow (b c a fis d e c)
-  | \stemDown b16-.\p d' (e d) d,-. d' (e d) \stemNeutral g,-. d' (e d) b-. d (e d) \break
+  | \stemDown b16-.\p\upbow d' (e d)\downbow d,-. d' (e d) \stemNeutral g,-. d' (e d) b-. d (e d) \break
 
   % line 7
 
-  | \clef bass e,,16\3-1\downbow_\crescM (fis-2 g-4\< fis g b\2 c b) c\upbow (dis\1 e dis \clef treble e-1 fis-4 g-\plus a-1)
+  | \clef bass e,,16\3-1\upbow_\crescM (fis-2 g-4\< fis g b\2 c b) c\downbow (dis\1 e dis \clef treble e-1 fis-4 g-\plus a-1)
   | bes2.-2\f\> a8-3 (g)\!
   | g2 \afterGrace fis2-1\trill ( { e16-\plus \(fis\) }
-  | g8)\< \clef bass g, (a b-3 d\flageolet) c\upbow\> (\tuplet 3/2 { b8 c a}) \! \break
+  | g8)\< \clef bass g, (a b-3 d\flageolet) c\downbow\> (\tuplet 3/2 { b8 c a}) \! \break
 
   % line 8
 
   | \afterGrace g2. ( { a16 g fis g)} b8. (a16)
-  | g16\2-2\p (fis-1) a-.-4 g-. \repeat unfold 3  { g (fis) a-. g }
+  | g16\2-2\p\upbow (fis-1) a-.-4 g-. \repeat unfold 3  { g (fis) a-. g }
   | c,8 (e'16) r e4\accent e,8 (g'16) r g4\accent \pageBreak
 
   % page 6 line 1
 
   | \repeat unfold 4 { fis,16 (eis) g-. fis-. }
   | b,8 (d') d4\accent d,8 (fis') fis4\accent\downbow
-  | \clef treble c8\f\2-2 (c'16) r c4~\accent c16 b\upbow a\downbow g\upbow fis\2-3 e-1 d-\plus c\3-2 \break
+  | \clef treble c8\f\2-2 (c'16) r c4~\accent c16 b (a g fis\2-3 e-1 d-\plus c\3-2) \break
 
   % line 2
 
-  | b8-1\downbow b'16-3\upbow r b4~\accent\downbow 16 a-1\upbow g-\plus\downbow fis-4\upbow e-1 d c b
-  | \clef bass a16 g fis e d c b a g8 g' e cis
+  | b8-1\downbow b'16-3\upbow r b4~\accent\downbow 16 a-1\upbow (g-\plus\downbow fis-4\upbow e-1 d c b)
+  | \clef bass a16 (g fis e d c b a) g8 g' e cis
   | d16-.\p g,-. g-. b-. b-. d-. d-.\accent e-. d-. g-.-2 g-. b\1-1-. \clef treble b-. d-.-1 d-.\accent e-. \break
 
   % line 3
