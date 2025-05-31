@@ -506,7 +506,7 @@ mvtIII = \relative {
   | d4.\accent (b8)
   | e4.\accent (cis8)
   | d4.\accent (b8)
-  | a8 (g a \acciaccatura c8 b)
+  | a8 [(g a \acciaccatura c8 b)]
   | a4. (d,8)
   | g4.\accent (a8) \break
 
@@ -522,7 +522,7 @@ mvtIII = \relative {
   \repeat volta 2 {
     | f4. (gis,8)
     | f4.\< a,16 (c
-    | e8\> d bes g) \! \break
+    | e8\> [d bes g]) \! \break
 
     % line 5
     | a2
@@ -573,6 +573,62 @@ mvtIII = \relative {
   | r4 r8 g,8
   \bar "||" \key c \minor c16\mf (g) c-. ees-. c16 (g) c-. ees-.
   | c16 (g) c-. ees-. c16 (g) c-. ees-.
+  | d16 (g,) d' (g) g-. g-. g-. g-.
+  | g4.\accent ees8
+  | c16 (g) c-. ees-. c16 (g) c-. ees-. \break 
+
+  % line 2
+
+  | c16 (g) c-. ees-. c16 (g) c-. ees-.
+  | \clef treble ees16 (d) d-. d-. d-. d-. fis-. a-.
+  | g4. d'8 ( \>
+  | cis16 d c d bes c a bes) \!
+  | g4 (g'8) d\pp (
+  | cis16) d-. c-. d-. bes-. c-. a-. bes-. \break
+
+  % line 3
+
+  | g4.\< \clef bass g,8\>
+  | c16\mf (g) c-. ees-. c16 (g) c-. ees-.
+  | c16 (g) c-. ees-. c16 (g) c-. ees-.
+  | d16 (g,) d' (g) g-. g-. g-. g-.
+  | g4.\accent ees8
+  | c16 (g) c-. ees-. c16 (g) c-. ees-. \break  
+
+  % line 4
+
+  | c16 (g) c-. ees-. c16 (g) c-. ees-. 
+  | ees8\p [(bes\<) g bes] 
+  | \clef treble ees8\> [(g) c8. (bes16)] \!
+  | aes8 [(f) c d]
+  | ees4. (bes8) 
+  | a16 (bes) d-. f-. aes (bes) c-. bes 
+  | bes4. g8 \break 
+
+  % line 5
+
+  | aes!16 (f) d-. bes-. \clef bass a (bes) f-. aes-.
+  | g4. bes8 
+  | \clef treble a16 (bes) d-. f-. aes (bes) c-. bes-.
+  | bes4. g8
+  | aes!16 (f) d-. bes-. \clef bass a (bes) f-. g-. 
+  | ees4. g8 (
+  | f'4.\accent) g,8 ( \break
+  
+  % line 6
+  
+  | ees'4.\accent) g,8 (
+  | d'8) \clef treble g16 (aes g8) g-.
+  | d'8\accent [(g,) g-. g-.] 
+  | f4.\accent g,8 (
+  | ees'4.) g,8 (
+  | d'8) \clef bass g,16 ([aes] g8) g-.
+  | d8\accent (g) g-. g-. 
+  | g16 (d) g_\crescM-. a-. b (g) b-. c-. \break 
+
+  % line 7
+
+  |
 
 }
 
