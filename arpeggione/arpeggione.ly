@@ -5,11 +5,16 @@ crescM = \markup { \small \italic "cresc." }
 dimM = \markup { \small \italic "dim." }
 decrescM = \markup { \small \italic "decresc." }
 
+rit = \markup { \small \italic "rit." }
+
 % fingerings
 plus = \finger \markup \fontsize #4 "+"
 mi = \finger "-1"
 mii = \finger "-2"
 miv = \finger "-4"
+
+% other
+
 
 \header {
   title = "Arpeggione Sonata"
@@ -23,14 +28,14 @@ miv = \finger "-4"
 }
 
 mvtI = \relative {
+  \numericTimeSignature
   \time 4/4
   \key g \minor
   \clef bass
-  \tempo "Allegro moderato"
+  %\tempo "Allegro moderato"
   \romanStringNumbers
   \set stringNumberOrientations = #'(down)
   \override Fingering.avoid-slur = #'outside
-  \clef bass
 
   \repeat volta 2 {
     \compressMMRests R1*9
@@ -45,7 +50,7 @@ mvtI = \relative {
     | c4-4\downbow_\markup { \small \italic "non dim." } (bes) r8 bes (d-\plus\flageolet [g])
     | bes8-3\< aes-1\upbow g2-\mi fis4-\plus
     | d'4.\> bes8-2\upbow (g-\plus) \clef bass d\2-3\downbow (bes-\mi) g-4\upbow (
-    | c,4\4-1\pp) \clef treble ees'2.-2~\downbow \break
+    | c,4\4-1\pp) \clef treble ees'2.-1~\downbow \break
 
     % line 3
 
@@ -128,7 +133,7 @@ mvtI = \relative {
     % line 7
 
 
-    | f16-. \ottava 1 \set Staff.ottavation = \markup { \concat { \small "8" \super "va" } \small "ad lib" } bes-. bes-. d-. d-. ees-. ees-. g-. bes4 des \ottava 0
+    | f16-. bes-. bes-. d-. d-. ees-. ees-. g-. bes4 des
     | f,,8\2-2-.\f g16-\plus-. (a-1-.) bes-2-. c-. d!-. ees-. f4.\accent (a,8)
     | bes4\upbow des,2-2\p\downbow c8-4 (bes-1)
     | bes2 \acciaccatura bes16 \afterGrace a2~ ( \trill { g16 a }
@@ -231,7 +236,7 @@ mvtI = \relative {
 
   | d'4 c16 (bes a g) d'4 c16 (bes a g)
   | d'1~-2\flageolet\fz\>
-  | d1~ \tweak X-offset 4 \upbow 
+  | d1~ \tweak X-offset 4 \upbow
   | d2_\dimM\! \once \set fingeringOrientations = #'(left) <\parenthesize a' a,\harmonic-3 d,\harmonic\2-\plus>2\downbow
   | d,2\1-3\flageolet\upbow a2\2\flageolet
   | d,2\flageolet\upbow \clef bass a4.\downbow fis8
@@ -340,7 +345,7 @@ mvtI = \relative {
 
   % line 3
 
-  | d16\cresc g-\plus\flageolet g b-3 b d-1 d e-3 g4-1 bes-3
+  | d16_\crescM g-\plus\flageolet g b-3 b d-1 d e-3 g4-1 bes-3
   | d,,8-\plus\flageolet\f e16 (fis) g a b c d4.-3 (f,8)
   | g4-2 bes!2\> a8-2\p (g-1)
   | g2 \afterGrace fis2-1\trill ({ e16-\plus \(fis\) }
@@ -385,10 +390,214 @@ mvtI = \relative {
 
 }
 
+mvtII = \relative {
+  \numericTimeSignature
+  \time 3/4
+  \key d \major
+  \clef treble
+  \romanStringNumbers
+  \set stringNumberOrientations = #'(down)
+  \override Fingering.avoid-slur = #'outside
+  \compressMMRests R2.*3
+  | a4\p d e
+  | fis2.
+  | a4 fis (d)
+  | e2 ( \grace { d16 cis b )} a4
+  | a4 d e
+  | fis2.\< \break
 
+  % line 2
+
+  | ais4\> (b8) g (fis e) \!
+  | d2.
+  | e4-. e4-. e4-.
+  | \tuplet 3/2 { e8 (f g) } f2
+  | g4\< (a) c8\> (bes) \!
+  | a2.
+  | e4-.\pp (e4-. e4-.)
+  | \tuplet 3/2 { e8 (f g) } f2 \break
+
+  % line 3
+
+  | f8 (bes) f4 g
+  | a4. g8 ( \tuplet 3/2 { e) cis (b) }
+  | a4\mf d e
+  | f2.
+  | a4 f (d)
+  | e2 ( \grace { d16 cis b )} a4
+  | a4\p (d\tenuto e\tenuto)
+  | fis2._\crescM \break
+  | fis2.
+  | fis4.\f\> gis8 (ais b) \!
+  | ais8 ( \once \override TupletBracket.bracket-visibility = ##f \tuplet 3/2 { gis16 e cis) } b4\p (cis)
+  | d2.
+  | fis2.
+  | fis2\< a8 (d)
+  | cis16\> (b g e) a4. (cis,8) \!
+  | d2. \break
+
+  % line 4
+
+  | \clef bass f,4\p (g a)
+  | bes4..\accent (a16 g4_\crescM)
+  | bes4..\accent (a16 g4)
+  | b2.~\fp\>
+  | b4 \! a (gis
+  | a8) d, (fis a) \tuplet 3/2 { d\> (e fis) } \!
+  | fis8.\> (e16) \! d4 (cis)
+  | d2. \break
+
+  % line 5
+
+  | f,4\p (g a)
+  | g4.._\crescM (a16 bes4)
+  | a4.. (g16 f4)
+  | d'2.~\fp\>
+  | d4 e-. (f-.) \!
+  | a,,8\< (d) fis! (a) \clef treble \tuplet 3/2 { d fis! (a)}
+  | a8.\> (g16) \afterGrace fis4 ( { g32 fis e fis) } g8. (e16) \! \break
+
+  % line 6
+
+  | d2.~
+  | d2.
+  | ees2.
+  | bes'2.~
+  | bes2.~
+  | bes4 a8 (g16) r f8 (ees16) r
+  | d2.
+  | a2.
+  | \clef bass d,2.~\pp
+  | d2. \pageBreak
+
+  % page 8 line 1
+
+  | ees2.
+  | bes'2.~
+  | bes2.~
+  | bes2.~
+  | bes2.~
+  | bes4 a8 (g16) r e8 (bes16) r
+  | a2.~
+  | \afterGrace a4 ({ bes32 a gis a) } bes4. (a8) \break
+
+  % line2
+
+  | d2.~
+  | d8 fis, (a d fis a)
+  | \clef treble d8 (cis e d) g (fis
+  | b) a (e' d) cis (c)
+  | a8-.^\rit (fis-.) ees-. d-. \tuplet 3/2 { cis!8 (c a_\markup { \tiny \italic "attacca" }) }
+  \bar "||" \clef bass \time 2/4 s
+
+}
+
+mvtIII = \relative {
+  \numericTimeSignature
+  \time 2/4
+  \key g \major
+  \clef bass
+  \romanStringNumbers
+  \set stringNumberOrientations = #'(down)
+  \override Fingering.avoid-slur = #'outside
+  g4.\accent\p (a8)
+  | b4.\accent (g8)
+  | a4.\accent (d8)
+  | d4.\accent (b8)
+  | e4.\accent (cis8)
+  | d4.\accent (b8)
+  | a8 (g a \acciaccatura c8 b)
+  | a4. (d,8)
+  | g4.\accent (a8) \break
+
+  % line 4
+
+  | b4.\accent (g8)
+  | a4.\accent (d8)
+  | d4.\accent (b8)
+  | g'4._\crescM (f8)
+  | g4.\> (f8)
+  | e8\pp (dis e \acciaccatura g8 fis)
+  | e2
+  \repeat volta 2 {
+    | f4. (gis,8)
+    | f4.\< a,16 (c
+    | e8\> d bes g) \! \break
+
+    % line 5
+    | a2
+    | \clef treble a''4. (c,8)
+    | a'4.\< (c,8)
+    | a'8\> ([fis e fis]) \!
+    | d2
+    | e4.\accent (b16 f')
+    | e4.\accent (c8)
+    | d4.\accent (a16 e')
+    | e4.\accent (b'8)
+    | g4.\< (d'8) \break
+
+    % line 6
+
+    | \clef bass g,,4.\> (e'8)
+    | a,2~\p
+    | a8 [b (c a)]
+    | g4. (a8)
+    | b4. (g8)
+    | a4. (d8)
+    | d4. (b8)
+    | g'4.\< (bis,8)
+    | g'4.\! b,16\> (d
+    | f8 [e c a]) \! \break
+
+    % line 7
+
+    | g2
+  }
+  | a8\p [(g a \acciaccatura c8 b)]
+  | a4. (g8)
+  | a8 [(g a \acciaccatura c8 b)]
+  | g4. (b8)
+  | a8\pp [(g a \acciaccatura c8 b)] \break
+
+  % line 8
+
+  | a4. (g8)
+  | a8\pp [(g a \acciaccatura c8 b)]
+  | g2~
+  | g2~
+  | g2
+  | g'8\fz r r4 \pageBreak
+
+  % page 9 line 1
+
+  | r4 r8 g,8
+  \bar "||" \key c \minor c16\mf (g) c-. ees-. c16 (g) c-. ees-.
+  | c16 (g) c-. ees-. c16 (g) c-. ees-.
+
+}
 
 \book {
   \score {
+    \header {
+      piece = "I. Allegro moderato"
+    }
     \mvtI
   }
+
+  \pageBreak
+
+  \score {
+    \header {
+      piece = "II. Adagio"
+    }
+    \mvtII
+  }
+
+  \score {
+    \header {
+      piece = "III. Allegretto"
+    }
+    \mvtIII
+  }
+
 }
