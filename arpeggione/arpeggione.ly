@@ -290,8 +290,8 @@ mvtI = \relative {
 
   % line 2
 
-  | ees2~\downbow\> ees16\! ees (fis ees) c-1 a\2-4 fis-1 ees\3-4
-  | d4-2 r r fis8.\upbow (e32\trill fis)
+  | ees?2~\downbow\> ees16\! ees (fis ees) c\2-4 a\2-4 fis-1 ees\3-4
+  | d4-2 r r \acciaccatura g16 fis8.\trill\upbow (e32 fis)
   | g2~g16 \clef treble bes-2\< (d-1 bes) g'-\plus d bes'-2 g\flageolet d'2.-3\> c8-3 (bes-1) \break
 
   % line 3
