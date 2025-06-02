@@ -575,7 +575,7 @@ mvtIII = \relative {
   | c16 (g) c-. ees-. c16 (g) c-. ees-.
   | d16 (g,) d' (g) g-. g-. g-. g-.
   | g4.\accent ees8
-  | c16 (g) c-. ees-. c16 (g) c-. ees-. \break 
+  | c16 (g) c-. ees-. c16 (g) c-. ees-. \break
 
   % line 2
 
@@ -593,40 +593,105 @@ mvtIII = \relative {
   | c16 (g) c-. ees-. c16 (g) c-. ees-.
   | d16 (g,) d' (g) g-. g-. g-. g-.
   | g4.\accent ees8
-  | c16 (g) c-. ees-. c16 (g) c-. ees-. \break  
+  | c16 (g) c-. ees-. c16 (g) c-. ees-. \break
 
   % line 4
 
-  | c16 (g) c-. ees-. c16 (g) c-. ees-. 
-  | ees8\p [(bes\<) g bes] 
+  | c16 (g) c-. ees-. c16 (g) c-. ees-.
+  | ees8\p [(bes\<) g bes]
   | \clef treble ees8\> [(g) c8. (bes16)] \!
   | aes8 [(f) c d]
-  | ees4. (bes8) 
-  | a16 (bes) d-. f-. aes (bes) c-. bes 
-  | bes4. g8 \break 
+  | ees4. (bes8)
+  | a16 (bes) d-. f-. aes (bes) c-. bes
+  | bes4. g8 \break
 
   % line 5
 
   | aes!16 (f) d-. bes-. \clef bass a (bes) f-. aes-.
-  | g4. bes8 
+  | g4. bes8
   | \clef treble a16 (bes) d-. f-. aes (bes) c-. bes-.
   | bes4. g8
-  | aes!16 (f) d-. bes-. \clef bass a (bes) f-. g-. 
+  | aes!16 (f) d-. bes-. \clef bass a (bes) f-. g-.
   | ees4. g8 (
   | f'4.\accent) g,8 ( \break
-  
+
   % line 6
-  
+
   | ees'4.\accent) g,8 (
   | d'8) \clef treble g16 (aes g8) g-.
-  | d'8\accent [(g,) g-. g-.] 
+  | d'8\accent [(g,) g-. g-.]
   | f4.\accent g,8 (
   | ees'4.) g,8 (
   | d'8) \clef bass g,16 ([aes] g8) g-.
-  | d8\accent (g) g-. g-. 
-  | g16 (d) g_\crescM-. a-. b (g) b-. c-. \break 
+  | d8\accent (g) g-. g-.
+  | g16 (d) g_\crescM-. a-. b (g) b-. c-. \break
 
   % line 7
+
+  | d16-.\< g,-. d'-. ees-. \clef treble f-.\> g-. a-. b-.
+  | c16\p (g,) c-. ees-. c (g) c-. ees-.
+  | c16 (g) c-. ees-. c (g) c-. ees-.
+  | d (g,) d' (g) g-. g-. g-. g-.
+  | g4.\> ees8 \! \break
+
+  % line 8
+
+  | \repeat unfold 2 { c16 (g) c-. ees-. c (g) c-. ees-. }
+  | aes16 (g) g-. g-. aes (g) b-. d-.
+  | c4. g8 (
+  | fis16\> g f g ees f d ees) \!
+  | c4 (c'8) g ( \pageBreak
+
+  % page 10 line 1
+
+  | fis16\pp) g-. f-. g-. ees-. f-. d-. ees-.
+  | c4. g8 (
+  | f'4.\accent) g,8 (
+  | ees'4.\accent) g,8 (
+  | d'8) g16 ([aes] g8) g-.
+  | d'8\accent [(g,) g-. g-.]
+  | f4.\accent g,8 (
+  | ees'4.) g,8 ( \break
+
+  % line 2
+
+  | d'8) \clef bass g,16 (aes g8) g-.
+  | d8\accent [(g) g-. g-.]
+  | c4.\accent\pp d,8 (
+  | bes'4.\accent) d,8 (
+  | a'8) \clef treble d16 ([ees] d8) d-.
+  | a'8\accent [(d,) d-. d-.]
+  | c'4.\accent d,8 (
+  | b'4.\accent) d,8 (
+  | a'2)~ \break
+
+  % line 3
+
+  | \afterGrace a4 ({ bes32 a g a) } bes8 (g)
+  | fis8 [(a) a-. a-.]
+  | a8-. [a-. a-. a-.]
+  | a2~
+  | a8 g'^\markup { \tiny \italic "rit." } e cis
+  | d2~
+  | d4. d,8 (
+  | c'4.)^\markup { \tiny \italic "a tempo" } d,8 (
+  | bes'4.) d,8 (
+  | a'4) \clef bass d,,4~ \break
+
+  % line 4
+
+  | d4. d8 (
+  | c'4.) d,8 (
+  | bes'4.) d,8 (
+  | a'2~
+  | a8) [bes8-. (a-. fis-.)]
+  | d8-.^\markup { \tiny \italic "rit." } [(e-.) fis-. g-.]
+  | a8-. [(aes-.) b-. (d-.)]
+  | \key g \major g,4.\p^\markup { \tiny \italic "a tempo" } (a8)
+  | b4.\accent (g8)
+  | a4.\accent (d8) \break
+
+  % line 5
 
   |
 
