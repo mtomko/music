@@ -9,8 +9,10 @@ rit = \markup { \small \italic "rit." }
 
 % fingerings
 plus = \finger \markup \fontsize #4 "+"
+mplus = \finger \markup \fontsize #4 "-+"
 mi = \finger "-1"
 mii = \finger "-2"
+miii = \finger "-3"
 miv = \finger "-4"
 
 % other
@@ -122,18 +124,18 @@ mvtI = \relative {
 
     | \repeat unfold 4 { a,16 (gis) bes-. a-. }
     | f8 (f'8) f4-4\accent f,8 (f'8) f4\accent
-    | ees8-\plus\upbow (ees'-3) ees4\accent~\> 16 d (c bes\! a g f ees) \break
+    | ees8\1-1\upbow (ees'-3) \breathe ees4\accent~\> 16-3 d-\miii (c-1 bes-\miii\!) a-2 (g-\plus f-3 ees-1) \break
 
     % line 6
 
-    | d8-\plus\flageolet d'-3 d4\accent~\> 16\! (c bes a g f ees d)
-    | \clef bass c16 (bes a g f ees d c) des8-.\upbow bes-.\upbow g-. e-.
+    | d8-\plus\flageolet (d'-3) d4\accent~\> 16\! c-1 (bes-3 a-2) g-\plus (f-3 ees-1 d)
+    | \clef bass c16 (bes a g) f (ees d c) des8-.\upbow bes-.\upbow g-. e-.
     | f16-.\p bes-3 bes-. d-. d-. f-. f-.\accent g-. f-. bes-. bes-. d\2-\plus-. \clef treble d-. f-1-. f-.\accent g-3-. \break
 
     % line 7
 
 
-    | f16-. bes-. bes-. d-. d-. ees-. ees-. g-. bes4 des
+    | f16-. bes-.-2 bes-. d-.-\plus d-. f-.-1 f-. g-.-\plus bes4-1 des-2
     | f,,8\2-2-.\f g16-\plus-. (a-1-.) bes-2-. c-. d!-. ees-. f4.\accent (a,8)
     | bes4\upbow des,2-2\p\downbow c8-4 (bes-1)
     | bes2 \acciaccatura bes16 \afterGrace a2~ ( \trill { g16 a }
@@ -187,17 +189,17 @@ mvtI = \relative {
   % line 4
 
   | \clef bass c16\p (g) aes-. g-. \repeat unfold 3 { g (fis) aes-. g-. }
-  | g8 (g'16) r g,8\flageolet (f'16) r g,8 (ees'16) r g,8 (d'16) r \break
+  | g8 (g'16) r g,8\flageolet (f'16) r g,8 (ees'16) r g,8 (d'16\2-1) r \break
 
   % line 5
 
   | \clef treble c16-1_\plus\2 (g'-\mii) aes-3-. g-1-. \repeat unfold 3 { g (fis) a-. g-. }
   | g8 (g,16) r f'!8 (g,16) r ees'8 (g,16) r d'8 (g,16) r
-  | c16\mf (b) d-. c-. c16 (b) d-. c-. aes'2\accent \break
+  | c16\2-1\mf (b-\plus) d-.-3 c-. c16 (b) d-. c-. aes'2-3\accent \break
 
   % line 6
 
-  | bes,16\downbow (a) c-. bes-. bes16 (a) c-. bes-. g'2\accent
+  | bes,16\2-1\downbow (a-\plus) c-.-3 bes-. bes16 (a) c-. bes-. g'2\accent
   | \clef bass aes,16\2-2\downbow (g-1) bes-4-. aes-. aes16 (g) bes-. aes-. f'-4_\crescM ees-1 d c b\2 aes! g f
   | ees16\f\< c' e, c' f, c' g\flageolet c-4 aes-1 c-4 bes!-1 c-2 aes-4 c-2 g\flageolet c-2 \! \break
 
@@ -212,8 +214,8 @@ mvtI = \relative {
   % line 8
 
   | aes8-2\downbow (g aes bes d\accent\flageolet) c-4\accent (aes-1 f\3-4)
-  | ees16-1\mf (bes'\2-2) c-4-. bes-. bes (a!) c-. bes-. bes (a) c-. bes-. bes (a) c-. bes-.
-  | \clef treble bes8-\plus\mf (bes'16-3) r bes,8-\plus (aes'16-3) r bes,8-\plus (g'16-3\flageolet) r bes,8-1 (f'16-4) r \pageBreak
+  | ees16-1\mf (bes'\2-4) c-.-\miii bes-.-1 bes-1 (a!-\plus) c-.-3 bes-.-1 bes (a) c-. bes-. bes (a) c-.-2 bes-.-\mplus
+  | \clef treble bes8-\plus\mf (bes'16-\miii) r bes,8-\plus (aes'16-3) r bes,8-\plus (g'16-3\flageolet) r bes,8-1 (f'16-4) r \pageBreak
 
   | % page 4 line 1
 
@@ -284,34 +286,34 @@ mvtI = \relative {
 
   | r4 e'8-4\accent\downbow (a-1\flageolet_\crescM) f-4\accent\upbow (a-1\flageolet) e\accent (a)
   | f8\accent (a) r <<a,, cis' e\downbow>> r <<d f\downbow>> r <<a,, cis' e\downbow>>
-  | r8 <<d f>> \clef treble a,-\plus\flageolet_\dimM ([a'-2\flageolet]) a, (a') a-.\pp\upbow~ a-.\upbow
+  | r8 <<d f\downbow>> \clef treble a,-\plus\flageolet_\dimM\upbow ([a'-2\flageolet]) a, (a') a-.\pp\upbow~ a-.\upbow
   | d1~-2\flageolet
   | d4 r r \clef bass d,-1\upbow\f \break
 
   % line 2
 
-  | ees?2~\downbow\> ees16\! ees (fis ees) c\2-4 a\2-4 fis-1 ees\3-4
+  | ees?2~\downbow\> ees16\! ees (fis ees) c\2-4 a-4 fis-1 ees\3-4
   | d4-2 r r \acciaccatura g16 fis8.\trill\upbow (e32 fis)
   | g2~g16 \clef treble bes-2\< (d-1 bes) g'-\plus d bes'-2 g\flageolet d'2.-3\> c8-3 (bes-1) \break
 
   % line 3
 
-  | aes16\p (g bes aes c bes d c) ees4-3\upbow g,-\plus\flageolet (
-  | fis8\2-2) d'-3\flageolet (bes-1) g-3 (fis-2) d'-3\flageolet (bes) g (
-  | fis8) d' (b_\decrescM) gis-3 (e) c' (a) fis! (
-  | d-\plus\flageolet)^\markup { "ritard." } b' (g!) e-1 (cis-\plus) a'-3\upbow (fis-\plus) d-1\flageolet\downbow \break
+  | aes16\p-1 (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-3 c-1) ees4-3\upbow g,-2\flageolet (
+  | fis8\2-1) d'-3\flageolet (bes-\plus) g-2 (fis-1) d'-3\flageolet (bes) g (
+  | fis8) d'-3\flageolet (b_\decrescM-3) gis-\plus (e-1) c'-3 (a-\mi) fis!-3 (
+  | d-\plus\flageolet)^\markup { "ritard." } b' (g!-1\flageolet) e-3 (cis-\plus) a'-3\upbow (fis-\plus) d-1\flageolet\downbow \break
 
   % line 4
 
   | g16\1-1\pp\upbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 3 { g (fis a g) }
-  | e8-3 (e'16-3) r e4\accent\downbow e,8-1\flageolet (e'16-3) r e4\accent
+  | e8\2-\plus (e'16-3) r e4\accent\downbow e,8-1\flageolet (e'16-3) r e4\accent
   | fis,16\1-1 (eis-\plus g-2 fis) \repeat unfold 3 { fis (eis g fis) } \break
 
   % line 5
 
   | d8-2\flageolet (d'16)-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
-  | c16-1\downbow (b-\plus d-3 c-1 e-3 d-1 c-2 b-1) a-\plus\upbow (b-1 c-2 a fis-2 d-\plus e-1 c\3-2)
-  | \stemDown b16-.\p d'-1 (e d) d,-. d' (e d) \stemNeutral g,-.-\plus d' (e d) b-.-\plus d (e d) \break
+  | c16-1\downbow (b-\plus d-3 c-1 e-3 d-2 c-1 b-\plus) a-1\upbow (b-\mii c-3 a-\mi fis\2-3 d-\plus e-1 c\3-2)
+  | \stemDown b16-.\p-1 d'-2 (e-3 d) d,-.-\plus d' (e d) \stemNeutral g,-.-1 d'-2 (e d) b-.\2-\miii d (e d) \break
 
   % line 6
 
@@ -320,9 +322,9 @@ mvtI = \relative {
 
   % line 7
 
-  | \clef bass e,,16\3-1\upbow_\crescM (fis-2 g-4\< fis g b\2 c b) c\downbow (dis\1 e dis \clef treble e-1 fis-4 g-\plus a-1)
+  | \clef bass e,,16\3-1\upbow_\crescM (fis-2 g-4\< fis g b\2 c b) c\downbow (dis\1 e dis) \clef treble e-1 (fis-4 g-\plus a-1)
   | bes2.-2\f\> a8-3 (g)\!
-  | g2 \afterGrace fis2-1\trill ( { e16-\plus \(fis\) }
+  | g2 \acciaccatura g32 \afterGrace fis2-1\trill ( { e16-\plus \(fis\) }
   | g8)\< \clef bass g, (a b-3 d\flageolet) c\downbow\> (\tuplet 3/2 { b8 c a}) \! \break
 
   % line 8
@@ -687,7 +689,7 @@ mvtIII = \relative {
   | a8) [bes8-. (a-. fis-.)]
   | d8-.^\markup { \tiny \italic "rit." } [(e-.) fis-. g-.]
   | a8-. [(aes-.) b-. (d-.)]
-  | \key g \major g,4.\p^\markup { \tiny \italic "a tempo" } (a8)
+  \bar "||" \key g \major g,4.\p\accent^\markup { \tiny \italic "a tempo" } (a8)
   | b4.\accent (g8)
   | a4.\accent (d8) \break
 
