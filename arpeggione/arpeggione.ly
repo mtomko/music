@@ -129,7 +129,7 @@ mvtI = \relative {
     % line 6
 
     | d8-\plus\flageolet (d'-3) d4\accent~\> 16\! c-1 (bes-3 a-2) g-\plus (f-3 ees-1 d)
-    | \clef bass c16 (bes a g) f (ees d c) des8-.\upbow bes-.\upbow g-. e-.
+    | \clef bass c16 (bes a g f ees d c) des8-. bes-. g-. e-.
     | f16-.\p bes-3 bes-. d-. d-. f-. f-.\accent g-. f-. bes-. bes-. d\2-\plus-. \clef treble d-. f-1-. f-.\accent g-3-. \break
 
     % line 7
@@ -336,29 +336,29 @@ mvtI = \relative {
   % page 6 line 1
 
   | \repeat unfold 4 { fis,16 (eis) g-. fis-. }
-  | b,8 (d') d4\accent d,8 (fis') fis4\accent\downbow
-  | \clef treble c8\f\2-2 (c'16) r c4~\accent c16 b (a g fis\2-3 e-1 d-\plus c\3-2) \break
+  | b,8\upbow (d') d4\accent d,8 (fis') fis4\accent
+  | \clef treble c8\f\2-2 (c'16) r c4~\accent c16 b (a g) fis\2-3 (e-1 d-\plus c\3-2) \break
 
   % line 2
 
-  | b8-1\downbow b'16-3\upbow r b4~\accent\downbow 16 a-1\upbow (g-\plus\downbow fis-4\upbow e-1 d c b)
+  | b8-1-\plus (b'16-3) r b4~\accent b16 a-1 (g-\plus fis-4) e-1 (d c b)
   | \clef bass a16 (g fis e d c b a) g8 g' e cis
-  | d16-.\p g,-. g-. b-. b-. d-. d-.\accent e-. d-. g-.-2 g-. b\1-1-. \clef treble b-. d-.-1 d-.\accent e-. \break
+  | d16-.\p g,-. g-. b-. b-. d-. d-.\accent e-. d-. g-.-2 g-. b\1-1-. b-. d-.-1 d-.\accent e-. \break
 
   % line 3
 
-  | d16_\crescM g-\plus\flageolet g b-3 b d-1 d e-3 g4-1 bes-3
+  | \clef treble d16_\crescM g-\plus\flageolet g b-3 b d-\plus d e-1 g4-3 bes!-3
   | d,,8-\plus\flageolet\f e16 (fis) g a b c d4.-3 (f,8)
   | g4-2 bes!2\> a8-2\p (g-1)
-  | g2 \afterGrace fis2-1\trill ({ e16-\plus \(fis\) }
-  | g4)\< a8 (b d-3\flageolet)\> c8-3 (\tuplet 3/2 { b8-2 c a}) \! \break
+  | g2 \afterGrace fis2~-1\trill { e16-\plus fis }
+  | g4\< (a8 b d-3\flageolet)\> c8-3 (\tuplet 3/2 { b8-2 c a}) \! \break
 
   %line 4
 
   | \afterGrace g2. ( { a16 g fis g)} b8.-3\upbow (a16)
-  | g4-\plus\flageolet\fp\downbow \clef bass bes,2\2-2\> a8-4\upbow (g-1)\!
-  | g2 \afterGrace fis2-2\trill ({ e16 \(fis\)}
-  | g4)\< a8\downbow (b e\>) c\upbow (b a)\!
+  | g4-\plus\flageolet \clef bass bes,2\2-2\fp\downbow a8-4\> (g-1)\!
+  | g2 \afterGrace fis2~-2\trill { \stemDown e16 fis } \stemNeutral
+  | g4\< (a8 b e\>) c (b a)\!
   | e4~\downbow (16 fis g a) \afterGrace g4 ({ a16 g fis g)} b8.\downbow (a16) \break
 
   % line 5
