@@ -755,9 +755,61 @@ mvtIII = \relative {
   | g2
   | g'8\fz r r4 \pageBreak
 
-  % page 11 line 1
+  % page 11 line 1 (in Sankey, this is mm 283, top of page 6)
 
-  |
+  | r4 r8 fis,16\p (g)
+  | a8.\accent (fis16) d (a d fis)
+  | a4.\accent fis16 (d)
+  | a8\pp [(e') a, (g')]
+  | fis4. fis16 (g)
+  | a8.\accent (fis16) d (a d fis)
+  | a8\accent (d4) fis8
+  | \clef bass a,,8.\pp (b16 a) g' (fis e)
+  | d4~ 16 (a' fis d) \break
+
+  % line 2
+
+  | cis16 (e) b (e) a, (e') g, (e')
+  | fis,8 (a~16 a' fis d)
+  | cis16 (e) b (e) a, (e') g, (e')
+  | fis,8 (a8.) \clef treble a'16 (fis d)
+  | b8 (d'8.) \clef bass d,16 (b g
+  | e8) g'8. \clef treble  g16 (e cis
+  | e8) cis'8. \clef bass cis,16 (a fis \break
+
+  % line 3
+
+  | d8) \clef bass fis'8. fis16 (d b
+  | g8) \clef treble b'4.~_\crescM
+  | b8 aes\> (b cis)
+  | ais2\pp~
+  | ais (
+  | a2)~
+  | a8 [a_\crescM (b cis]
+  | d8) [fis,\< (g a]
+  | b8) [d, e (fis)]
+  | g2~ (\f\>
+  | g2~
+  | g4\p f) \break
+
+  % line 4
+
+  | \afterGrace e4 ({ f32 e d e) } bes'8 (a)
+  | \repeat volta 2 {
+    \clef bass d,8.\accent\p (a16) fis (a d fis)
+    | d8.\accent (a16) fis (a d fis)
+    | fis8\< (e16) r fis8 (e16) r \!
+    | fis8 (e16) r \acciaccatura e8 g8\fp\accent (cis,16) r
+    | d8.\accent (a16) fis (a d fis)
+    | d8.\accent (a16) fis (a d e) \break
+
+    % line 5
+
+    | fis8 (e16) r fis8 (e16) r
+    | fis8 (e16) r \acciaccatura e8 g8\accent (cis,16) r
+    | \clef treble d16 (fis) e-. d-.
+  }
+
 }
 
 \book {
