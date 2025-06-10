@@ -34,15 +34,15 @@ mvtI = \relative {
   \time 4/4
   \key g \minor
   \clef bass
-  %\tempo "Allegro moderato"
+  \tempo "Allegro moderato" 4=100
   \romanStringNumbers
   \set stringNumberOrientations = #'(down)
   \override Fingering.avoid-slur = #'outside
 
   \repeat volta 2 {
     \compressMMRests R1*9
-    g2\mf\upbow \(a4. (bes8)\)
-    | g2~ g8 a\1 (bes c)
+    g2\mf a4. (bes8)
+    | g2~\> g8 \! a\1 (bes c)
     | d4. (g,8) ees'4. (g,8)
     | d'2-2 \clef treble r8 d8\upbow (g ees-4) \break
 
@@ -305,20 +305,20 @@ mvtI = \relative {
 
   % line 4
 
-  | g16\1-1\pp\upbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 3 { g (fis a g) }
-  | e8\2-\plus (e'16-3) r e4\accent\downbow e,8-1\flageolet (e'16-3) r e4\accent
+  | g16\1-1\pp\upbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 2 { g (fis a g) } g (fis a g\flageolet)
+  | e8\3-1\flageolet (e'16\parenthesize-2-3) r e4\accent\downbow e,8-1\flageolet (e'16-3) r e4\accent
   | fis,16\1-1 (eis-\plus g-2 fis) \repeat unfold 3 { fis (eis g fis) } \break
 
   % line 5
 
-  | d8-2\flageolet (d'16)-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
-  | c16-1\downbow (b-\plus d-3 c-1 e-3 d-2 c-1 b-\plus) a-1\upbow (b-\mii c-3 a-\mi fis\2-3 d-\plus e-1 c\3-2)
-  | \stemDown b16-.\p-\3\plus d'\1-1 (e-3 d-1) d,-.\3-\plus d'\1-1 (e-3 d-1) \stemNeutral g,-.\2-\plus d'\1-1 (e-3 d-1) b-.\2-3 d-1 (e-3 d-1) \break
+  | d8-\plus\flageolet (d'16)-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
+  | c16-1\upbow (b-\plus d-2 c-1 e-3 d-2 c-1 b-\plus) a-1\downbow \< (b-\mii c-3 a-\mi fis\2-3) d-\plus\upbow (e-1 c\3-2
+  | \stemDown b16-.-\3\plus) d'\1-1\p (e-3 d-1) d,-.\2-\plus d'\1-1 (e-3 d-1) \stemNeutral g,-.\2-\plus d'\1-1 (e-3 d-1) b-.\2-3 d-1 (e-3 d-1) \break
 
   % line 6
 
-  | c16\downbow_\crescM (b d c e d c b) a\upbow (b c a fis d e c)
-  | \stemDown b16-.\p\upbow d' (e d)\downbow d,-. d' (e d) \stemNeutral g,-. d' (e d) b-. d (e d) \break
+  | c16\downbow_\crescM (b d c e d c b) a\downbow\< (b c a) fis\upbow (d e c
+  | \stemDown b16-.) d'\p (e d) d,-. d' (e d) \stemNeutral g,-. d' (e d) b-. d (e d) \break
 
   % line 7
 
@@ -348,7 +348,7 @@ mvtI = \relative {
   % line 3
 
   | \clef treble d16_\crescM g-\plus\flageolet g b-3 b d-\plus d e-1 g4-3 bes!-3
-  | d,,8-\plus\flageolet\f e16 (fis) g a b c d4.-3 (f,8)
+  | d,,8-\plus\flageolet\f e16 (fis) g a b c d4.-3 (fis,8)
   | g4-2 bes!2\> a8-2\p (g-1)
   | g2 \afterGrace fis2~-1\trill { e16-\plus fis }
   | g4\< (a8 b d-3\flageolet)\> c8-3 (\tuplet 3/2 { b8-2 c a}) \! \break
@@ -396,6 +396,7 @@ mvtII = \relative {
   \time 3/4
   \key d \major
   \clef treble
+  \tempo "Adagio"
   \romanStringNumbers
   \set stringNumberOrientations = #'(down)
   \override Fingering.avoid-slur = #'outside
@@ -498,6 +499,7 @@ mvtIII = \relative {
   \time 2/4
   \key g \major
   \clef bass
+  \tempo "Allegretto"
   \romanStringNumbers
   \set stringNumberOrientations = #'(down)
   \override Fingering.avoid-slur = #'outside
@@ -815,7 +817,7 @@ mvtIII = \relative {
 \book {
   \score {
     \header {
-      piece = "I. Allegro moderato"
+      piece = "I."
     }
     \mvtI
   }
@@ -824,14 +826,14 @@ mvtIII = \relative {
 
   \score {
     \header {
-      piece = "II. Adagio"
+      piece = "II."
     }
     \mvtII
   }
 
   \score {
     \header {
-      piece = "III. Allegretto"
+      piece = "III."
     }
     \mvtIII
   }
