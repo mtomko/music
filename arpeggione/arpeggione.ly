@@ -809,8 +809,101 @@ mvtIII = \relative {
 
     | fis8 (e16) r fis8 (e16) r
     | fis8 (e16) r \acciaccatura e8 g8\accent (cis,16) r
-    | \clef treble d16 (fis) e-. d-.
-  }
+    | \clef treble d16 (fis) e-. d-. cis (a') g-. e-.
+    | d16 (fis) e-. d-. cis (a') g-. e-.
+    | d (fis) e-. d-. cis (fis) e-. cis-.
+    | b16_\crescM (d) cis-. b-. a (d) a-. fis-. \break
+
+    % line 6
+
+    | g16 b' a-. g-. g (b) a-. g-.
+    | g16 (b) a-. g-. g (b) a-. b-.
+    | g4\f\> e'~
+    | e8\> e, (fis g)
+    | fis4 (aes)
+    | b4\< c~ \!
+    | c8 b\> (a g)
+    | \afterGrace fis4\! ( { g32 fis e fis) } a8 (cis,)
+  } \break
+
+  % line 7
+
+  | d4~16\pp (fis e d)
+  | cis16 (d cis d cis d fis a)
+  | a4 b,8 (b')
+  | b4 a8 (g)
+  | eis4 (fis16) fis (e d)
+  | cis16 (d cis d) cis (d fis a)
+  | a4 b,8 (d')
+  | d2\f\> (
+  | gis,4) r\!
+  | f2\pp (
+  | gis,4) r \break
+
+  % line 8
+
+  | a4\p (b)
+  | a4\< (d)
+  | \afterGrace e4 ( {fis32 e d fis) } g8\> (fis)
+  | d4 r \!
+  | \clef bass r8^\markup { \small "pizz." } g,8-. bes-. ees-.
+  | r8 a, [c ees]
+  | r8 fis, [a d]
+  | r8 g, [bes d]
+  | r8 e, [g cis]
+  | r8 ees, [g c!]
+  | r8 d, [g b!]
+  | r8 d, [g bes] \break
+
+  % line 9
+
+  | r8 c, ees a
+  | r8 ees a c
+  | r8 d, g bes
+  | r8 d, fis a
+  | d,8 g [bes ees]
+  | d,8 a' [c ees]
+  | d,8 fis [a d]
+  | d,8 g [bes d]
+  | e,8 g [cis e]
+  | ees,8 g [c ees] \break
+
+  % line 10
+
+  | d,8  g [b d]
+  | d,8 g [bes d]
+  | c,8 ees [a c]
+  | c,8 ees [a c]
+  | d,8 d [g bes]
+  | d,8 d [fis a]
+  | \key g \minor g16\p^\markup { \small "arco" } (d) g-. bes-. g (d) g-. bes-.
+  | \repeat unfold 2 { g (d) g-. bes-. } \break
+
+  % line 11
+
+  | a16 (d,) a' (d) \clef treble d-. d-. d-. d-.
+  | d4.\accent (bes'8)
+  | g16-\plus (d) g-. bes g16 (d) g-. bes
+  | \repeat unfold 2 { g16 (d) g-. bes }
+  | b16 (a) a-. a-. a-. a-. cis-. e-.
+  | d4. a8\> (
+  | gis16 a g a fis g e f) \! \pageBreak % really we want the next line on this page, too
+
+  % line 12
+
+  | \autoBeamOff d4 (d'8) a (
+  | \autoBeamOn gis16\pp) a-. g-. a-. f-. g-. e-. f-.
+  | d4. \clef bass d,8
+  | g16\mf (d) g-. bes-. g (d) g-. bes-.
+  | \repeat unfold 2 { g (d) g-. bes-. }
+  | a (d,) a' (d) \clef treble d-. d-. d-. d-.
+  | d4.\accent (bes'8) \break % really we want this to be the page break
+
+  % page 12 line 1
+
+  | \repeat unfold 4 { g16 (d) g-. bes-. }
+  | bes8\< [(f) d f] \!
+  | b8\> [(d) g8. (f16)] \!
 
 }
 
