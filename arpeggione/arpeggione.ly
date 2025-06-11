@@ -294,13 +294,13 @@ mvtI = \relative {
 
   | ees?2~\downbow\> ees16\! ees (fis ees) c\2-4 a-4 fis-1 ees\3-4
   | d4-2 r r \acciaccatura g16 fis8.\trill\upbow (e32 fis)
-  | g2~g16 \clef treble bes-2\< (d-1 bes) g'-\plus d bes'-2 g\flageolet d'2.-3\> c8-3 (bes-1) \break
+  | g2~g16 \clef treble bes-2\< (d-1 bes) g'-\plus d bes'-2 g\flageolet d'2.-3\> c8-3\upbow (bes-1) \break
 
   % line 3
 
-  | aes16\p-1 (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-3 c-1) ees4-3\upbow g,-2\flageolet (
+  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-3 c-1) ees4-3\upbow g,-2 (
   | fis8\2-1) d'-3\flageolet (bes-\plus) g-2 (fis-1) d'-3\flageolet (bes) g (
-  | fis8) d'-3\flageolet (b_\decrescM-3) gis-\plus (e-1) c'-3 (a-\mi) fis!-3 (
+  | fis8) d'-3\flageolet (b_\decrescM-2\parenthesize-3) gis-\plus (e-1) c'-3 (a-\mi) fis!-3 (
   | d-\plus\flageolet)^\markup { "ritard." } b' (g!-1\flageolet) e-3 (cis-\plus) a'-3\upbow (fis-\plus) d-1\flageolet\downbow \break
 
   % line 4
@@ -317,7 +317,7 @@ mvtI = \relative {
 
   % line 6
 
-  | c16\downbow_\crescM (b d c e d c b) a\downbow\< (b c a) fis\upbow (d e c
+  | c16\upbow_\crescM (b d c e d c b) a\downbow\< (b c a fis) d\upbow (e c
   | \stemDown b16-.) d'\p (e d) d,-. d' (e d) \stemNeutral g,-. d' (e d) b-. d (e d) \break
 
   % line 7
