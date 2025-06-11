@@ -846,7 +846,7 @@ mvtIII = \relative {
   | a4\< (d)
   | \afterGrace e4 ( {fis32 e d fis) } g8\> (fis)
   | d4 r \!
-  | \clef bass r8^\markup { \small "pizz." } g,8-. bes-. ees-.
+  | \clef bass r8^\markup { \small "pizz." } g,8-. [bes-. ees-.]
   | r8 a, [c ees]
   | r8 fis, [a d]
   | r8 g, [bes d]
@@ -857,10 +857,10 @@ mvtIII = \relative {
 
   % line 9
 
-  | r8 c, ees a
-  | r8 ees a c
-  | r8 d, g bes
-  | r8 d, fis a
+  | r8 c, [ees a]
+  | r8 ees [a c]
+  | r8 d, [g bes]
+  | r8 d, [fis a]
   | d,8 g [bes ees]
   | d,8 a' [c ees]
   | d,8 fis [a d]
