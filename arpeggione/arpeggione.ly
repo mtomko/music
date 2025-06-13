@@ -904,7 +904,57 @@ mvtIII = \relative {
   | \repeat unfold 4 { g16 (d) g-. bes-. }
   | bes8\< [(f) d f] \!
   | b8\> [(d) g8. (f16)] \!
+  | ees8 [(c) g a]
+  | b4. \clef bass f,8
+  | e16\pp (f) a-. c-. \clef treble ees (f) g-. f-.
+  | f4. d'8 \break
 
+  % line 2
+
+  | ees16 (c) a-. f-. e (f) c-. ees-.
+  | d4. \clef bass f,8
+  | e16 (f) a-. c-. \clef treble ees (f) g-. f-.
+  | f4. d'8
+  | ees16 (c) a-. f-. e (f) c-. d-.
+  | bes4. d8\p (
+  | c'4.\accent) d,8 (
+  | bes'4.\accent) d,8 ( \break
+
+  % line 3
+
+  | a'8) d,16 (ees d8) d-.
+  | a'8\accent (d,) d-. d-.
+  | c4.\accent\pp \clef bass d,8 (
+  | bes'4.) d,8 (
+  | a'8) d,16 (ees d8) d-.
+  | a8\accent (d) d-. d-.
+  | d16\fz a d e fis (d) fis-. g-.
+  | a16 (d,) a'-. bes-. \clef treble c-. d-. e-. fis-. \break
+
+  % line 4
+
+  | g16\p (d) g-. bes-. g16 (d) g-. bes-.
+  | \repeat unfold 2 { g16 (d) g-. bes-. }
+  | a16 (d, a' d) d-. d-. d-. d-.
+  | d4.\accent bes8
+  | \repeat unfold 4 { g16 (d) g-. bes-. }
+  | ees,16 (d) d-. d-. ees (d) fis-. a-. \break
+
+  % line 5
+
+  | g4. d'8 (
+  | cis16 d\> c d bes c a bes) \!
+  | \autoBeamOff g4 (g'8) d8 (
+  | \autoBeamOn cis16\pp) d-. c-. d-. bes-. c-. a-. bes-.
+  | g4. \clef bass d,8\p (
+  | c'4.) d,8 (
+  | bes'4.) d,8 (
+  | a'8) \clef treble d16 ([ees] d8) d-.
+  | a'8\accent [(d,) d-. d-.] \break
+
+  % line 6
+
+  |
 }
 
 \book {
