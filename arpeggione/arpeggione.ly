@@ -312,7 +312,7 @@ mvtI = \relative {
   % line 5
 
   | d8-\plus\flageolet\upbow (d'16)-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
-  | c16-1\upbow (b-\plus d-2 c-1 e-3 d-2 c-1 b-\plus) a-1\downbow \< (b-\mii c-3 a-\mi fis\2-3) d-\plus\upbow (e-\plus\parenthesize-1 c\3-2
+  | c16-1\upbow (b-\plus d-2 c-1 e-3 d-2 c-1 b-\plus) a-1\downbow \< (b-\mii c-3 a-\mi fis\2-3) d-\plus\upbow (e-\plus c\3-2
   | \stemDown b16-.-\3\plus) d'\1-1\p\downbow (e-3 d-1) d,-.\2-\plus\upbow d'\1-1\downbow (e-3 d-1) \stemNeutral g,-.\2-\plus\upbow d'\1-1\downbow (e-3 d-1) b-.\2-3\upbow d-1\downbow (e-3 d-1) \break
 
   % line 6
@@ -322,14 +322,14 @@ mvtI = \relative {
 
   % line 7
 
-  | \clef bass e,,16\3-1\upbow_\crescM (fis-2 g-4\< fis g b\2 c b) \clef treble c\downbow (dis\1 e dis) e-1 (fis-4 g-\plus a-1)
+  | \clef bass e,,16\3-1\upbow_\crescM (fis-2 g-4\< fis g b\2 c b) \clef treble c\downbow (dis\1 e dis) e-1\upbow (fis-4 g-\plus a-1)
   | bes2.-2\f\> a8-3 (g)\!
-  | g2 \acciaccatura g32 \afterGrace fis2-1\trill ( { e16-\plus \(fis\) }
-  | g8)\< \clef bass g, (a b-3 d\flageolet) c\downbow\> (\tuplet 3/2 { b8 c a}) \! \break
+  | g2 \acciaccatura g32\upbow \afterGrace fis2-1\trill ( { e16-\plus \(fis\) }
+  | g8)\< \clef bass g,\downbow (a b-3) d\flageolet\upbow (c\>) \tuplet 3/2 { b8\downbow (c a }) \! \break
 
   % line 8
 
-  | \afterGrace g2. ( { a16 g fis g)} b8. (a16)
+  | \afterGrace g2.\upbow ( { a16 g fis g)} b8. (a16)
   | g16\2-2\p\upbow (fis-1) a-.-4 g-. \repeat unfold 3  { g (fis) a-. g }
   | c,8 (e'16) r e4\accent e,8 (g'16) r g4\accent \pageBreak
 
