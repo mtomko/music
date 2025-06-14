@@ -292,33 +292,33 @@ mvtI = \relative {
 
   % line 2
 
-  | ees?2~\downbow\> ees16\! ees (fis ees) c\2-4 a-4 fis-1 ees\3-4
-  | d4-2 r r \acciaccatura g16 fis8.\trill\upbow (e32 fis)
+  | ees?2~\downbow-1\> ees16\! ees (fis-4 ees) c\2-4 a-4 fis-1 ees\3-4
+  | d4-2 r r \acciaccatura g16\upbow fis8.\trill (e32 fis)
   | g2~g16 \clef treble bes-2\< (d-1 bes) g'-\plus d bes'-2 g\flageolet d'2.-3\> c8-3\upbow (bes-1) \break
 
   % line 3
 
-  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-3 c-1) ees4-3\upbow g,-2 (
-  | fis8\2-1) d'-3\flageolet (bes-\plus) g-2 (fis-1) d'-3\flageolet (bes) g (
+  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-2 c-1) ees4-3\upbow g,-2\downbow (
+  | fis8\2-1) d'-3\flageolet\upbow (bes-\plus) g-2\downbow (fis-1) d'-3\flageolet (bes) g (
   | fis8) d'-3\flageolet (b_\decrescM-2\parenthesize-3) gis-\plus (e-1) c'-3 (a-\mi) fis!-3 (
   | d-\plus\flageolet)^\markup { "ritard." } b' (g!-1\flageolet) e-3 (cis-\plus) a'-3\upbow (fis-\plus) d-1\flageolet\downbow \break
 
   % line 4
 
-  | g16\1-1\pp\upbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 2 { g (fis a g) } g (fis a g\flageolet)
-  | e8\3-1\flageolet (e'16\parenthesize-2-3) r e4\accent\downbow e,8-1\flageolet (e'16-3) r e4\accent
-  | fis,16\1-1 (eis-\plus g-2 fis) \repeat unfold 3 { fis (eis g fis) } \break
+  | g16\1-1\pp\upbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 2 { g (fis a g) } g\downbow (fis a g\flageolet)
+  | e8\3-1\flageolet\upbow (e'16\parenthesize-2-3) r e4\accent e,8-1\flageolet (e'16-3) r e4\accent
+  | fis,16\1-1\upbow (eis-\plus g-2 fis) \repeat unfold 3 { fis (eis g fis) } \break
 
   % line 5
 
-  | d8-\plus\flageolet (d'16)-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
-  | c16-1\upbow (b-\plus d-2 c-1 e-3 d-2 c-1 b-\plus) a-1\downbow \< (b-\mii c-3 a-\mi fis\2-3) d-\plus\upbow (e-1 c\3-2
-  | \stemDown b16-.-\3\plus) d'\1-1\p (e-3 d-1) d,-.\2-\plus d'\1-1 (e-3 d-1) \stemNeutral g,-.\2-\plus d'\1-1 (e-3 d-1) b-.\2-3 d-1 (e-3 d-1) \break
+  | d8-\plus\flageolet\upbow (d'16)-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
+  | c16-1\upbow (b-\plus d-2 c-1 e-3 d-2 c-1 b-\plus) a-1\downbow \< (b-\mii c-3 a-\mi fis\2-3) d-\plus\upbow (e-\plus\parenthesize-1 c\3-2
+  | \stemDown b16-.-\3\plus) d'\1-1\p\downbow (e-3 d-1) d,-.\2-\plus\upbow d'\1-1\downbow (e-3 d-1) \stemNeutral g,-.\2-\plus\upbow d'\1-1\downbow (e-3 d-1) b-.\2-3\upbow d-1\downbow (e-3 d-1) \break
 
   % line 6
 
   | c16\upbow_\crescM (b d c e d c b) a\downbow\< (b c a fis) d\upbow (e c
-  | \stemDown b16-.) d'\p (e d) d,-. d' (e d) \stemNeutral g,-. d' (e d) b-. d (e d) \break
+  | \stemDown b16-.) d'\p\downbow (e d) d,-. d'\downbow (e d) \stemNeutral g,-. d'\downbow (e d) b-. d\downbow (e d) \break
 
   % line 7
 
@@ -470,7 +470,7 @@ mvtII = \relative {
   | d2.
   | a2.
   | \clef bass d,2.~\pp
-  | d2. \pageBreak
+  | d2. \break
 
   % page 8 line 1
 
@@ -569,7 +569,7 @@ mvtIII = \relative {
   | g2~
   | g2~
   | g2
-  | g'8\fz r r4 \pageBreak
+  | g'8\fz r r4 \break
 
   % page 9 line 1
 
@@ -643,7 +643,7 @@ mvtIII = \relative {
   | aes16 (g) g-. g-. aes (g) b-. d-.
   | c4. g8 (
   | fis16\> g f g ees f d ees) \!
-  | c4 (c'8) g ( \pageBreak
+  | c4 (c'8) g ( \break
 
   % page 10 line 1
 
@@ -755,7 +755,7 @@ mvtIII = \relative {
   | g2~
   | g2~
   | g2
-  | g'8\fz r r4 \pageBreak
+  | g'8\fz r r4 \break
 
   % page 11 line 1 (in Sankey, this is mm 283, top of page 6)
 
@@ -887,7 +887,7 @@ mvtIII = \relative {
   | \repeat unfold 2 { g16 (d) g-. bes }
   | b16 (a) a-. a-. a-. a-. cis-. e-.
   | d4. a8\> (
-  | gis16 a g a fis g e f) \! \pageBreak % really we want the next line on this page, too
+  | gis16 a g a fis g e f) \! \break % really we want the next line on this page, too
 
   % line 12
 
@@ -954,7 +954,100 @@ mvtIII = \relative {
 
   % line 6
 
-  |
+  | c'4.\pp\accent d,8 (
+  | bes'4.\accent) d,8 ( \(
+  | a'2~)
+  | \afterGrace a4 { bes32 (a g a)} bes8 g\)
+  | fis8 [(a) a-. a-.]
+  | a8-. [a8-. a8-. a8-.]
+  | a2~\<
+  | a8\> g' e\> cis \!
+  | d2~^\markup { \small \italic "rit." }
+  | d4. d,8 (
+  | c'4.^\markup { \small \italic "a tempo" }) d,8 (
+  | bes'4.) d,8 ( \break
+
+  % line 7
+
+  | a'4) \clef bass d,,4~
+  | d4. d8 (
+  | c'4.) d,8 (
+  | bes'4.) d,8 (
+  | a'2~
+  | a8) [bes-. (a-. fis-.^\markup { \small \italic "rit." })]
+  | d8 [(e) fis-. g-.]
+  | a8 [(ais) b-. d-.]
+  | \key g \major g,4.^\markup { \small \italic "a tempo" }\accent (a8)
+  | b4.\accent (g8)
+  | a4.\accent (d8)
+  | d4.\accent (b8)
+  | e4.\accent (cis8) \break
+
+  % line 8
+
+  | d4.\accent (b8)
+  | a8 [(g a \acciaccatura c8 b)]
+  | a4. (d,8)
+  | g4. (a8)
+  | b4. (gis8)
+  | a4. (d8)
+  | d4._\crescM (b8)
+  | \clef treble g'4.\> (fis8)
+  | g4. (f8)
+  | e8\pp (dis e \acciaccatura g8 f)
+  | e2 \break
+
+  % line 9
+
+  | f4.\p (gis,8)
+  | f'4.\< a,16 (c
+  | e4~\>16 d bes g) \!
+  | a2
+  | a'4. (c,8)
+  | a'4.\< (cis,16 a')
+  | a8\> [(fis e fis)] \!
+  | d2
+  | e4.\accent (b16 f')
+  | e4.\accent (c'8) \break
+
+  % line 10
+
+  | d4.\accent (a,16 e')
+  | d4. (b'8)
+  | g4. (d8)
+  | \clef bass g,4._\crescM\> (e'8)
+  | a,2~ \!
+  | a8\p [b (c a)]
+  | g4.\accent (a8)
+  | b4.\accent (g8)
+  | a4.\accent (d8)
+  | d4.\accent (b8) \break
+
+  % line 11
+
+  | g'4.\accent (b,8)
+  | g'4.\< (b,16 d)
+  | f4~\> (16 e c a) \!
+  | g2
+  | a8\p [(g a \acciaccatura c8 b)]
+  | a4._\decrescM (g8)
+  | a8 [(g a \acciaccatura c8 b)]
+  | g4. (b8)
+  | a8 [(g a \acciaccatura c8 b)] \break
+
+  % line 12
+
+  | a4. (g8)
+  | a8 [(g a \acciaccatura c8 b)]
+  | g2~
+  | g16 d (b d g d b' g)
+  | \clef treble d'16_\dimM (b g' d b' g d' b)
+  | g'2~
+  | g2~
+  | g4 r
+  | <b, d, g,>4\arpeggio \ff  r
+  | \clef bass \arpeggioArrowUp <g, d b g\p>4\arpeggio^\markup { \small "pizz." }  r \fine
+
 }
 
 \book {
