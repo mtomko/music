@@ -292,7 +292,7 @@ mvtI = \relative {
 
   % line 2
 
-  | ees?2~\downbow-1\> ees16\! ees (fis-4 ees) c\2-4 a-4 fis-1 ees\3-4
+  | ees?2~\downbow-1\> ees16\! ees (fis-4 ees) c\2-4 a-1 fis-1 ees\3-4
   | d4-2 r r \acciaccatura g16\upbow fis8.\trill (e32 fis)
   | g2~g16 \clef treble bes-2\< (d-1 bes) g'-\plus d bes'-2 g\flageolet d'2.-3\> c8-3\upbow (bes-1) \break
 
@@ -306,7 +306,7 @@ mvtI = \relative {
   % line 4
 
   | g16\1-1\pp\upbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 2 { g (fis a g) } g\downbow (fis a g\flageolet)
-  | e8\3-1\flageolet\upbow (e'16\parenthesize-2-3) r e4\accent e,8-1\flageolet (e'16-3) r e4\accent
+  | e8\3-1\flageolet\upbow (e'16\parenthesize-2) r e4\accent e,8-1\flageolet (e'16-2) r e4\accent
   | fis,16\1-1\upbow (eis-\plus g-2 fis) \repeat unfold 3 { fis (eis g fis) } \break
 
   % line 5
