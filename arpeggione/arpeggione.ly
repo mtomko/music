@@ -292,28 +292,28 @@ mvtI = \relative {
 
   % line 2
 
-  | ees?2~\downbow-1\> ees16\! ees (fis-4 ees) c\2-4 a-1 fis-1 ees\3-4
+  | ees?2~\downbow-1\> ees16\! ees (fis-4 ees) c\2-4 a-1 fis-1 ees-4
   | d4-2 r r \acciaccatura g16\upbow fis8.\trill (e32 fis)
-  | g2~g16 \clef treble bes-2\< (d-1 bes) g'-\plus d bes'-2 g\flageolet d'2.-3\> c8-3\upbow (bes-1) \break
+  | g2~g16 \clef treble bes-2\< (d-1 bes) g'-\plus\flageolet d bes'-2 g d'2.-3\> c8-3\upbow (bes-1) \break
 
   % line 3
 
-  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-2 c-1) ees4-3\upbow g,-2\downbow (
-  | fis8\2-1) d'-3\flageolet\upbow (bes-\plus) g-2\downbow (fis-1) d'-3\flageolet (bes) g (
-  | fis8) d'-3\flageolet (b_\decrescM-2\parenthesize-3) gis-\plus (e-1) c'-3 (a-\mi) fis!-3 (
+  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-2 c-1) ees4-3\upbow g,-2\2\downbow (
+  | fis8-1) d'-3\flageolet\upbow (bes-\plus) g-2\downbow (fis-1) d'-3\flageolet (bes) g (
+  | fis8) d'-3\flageolet (b_\decrescM-2) gis-\plus (e-1) c'-3 (a-1) fis!-3 (
   | d-\plus\flageolet)^\markup { "ritard." } b' (g!-1\flageolet) e-3 (cis-\plus) a'-3\upbow (fis-\plus) d-1\flageolet\downbow \break
 
   % line 4
 
   | g16\1-1\pp\upbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 2 { g (fis a g) } g\downbow (fis a g\flageolet)
-  | e8\3-1\flageolet\upbow (e'16\parenthesize-2) r e4\accent e,8-1\flageolet (e'16-2) r e4\accent
+  | e8\3-1\flageolet\upbow (e'16-2) r e4\accent e,8-1\flageolet (e'16-2) r e4\accent
   | fis,16\1-1\upbow (eis-\plus g-2 fis) \repeat unfold 3 { fis (eis g fis) } \break
 
   % line 5
 
   | d8-\plus\flageolet\upbow (d'16)-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
-  | c16-1\upbow (b-\plus d-2 c-1 e-3 d-2 c-1 b-\plus) a-1\downbow \< (b-\mii c-3 a-\mi fis\2-3) d-\plus\upbow (e-\plus c\3-2
-  | \stemDown b16-.-\3\plus) d'\1-1\p\downbow (e-3 d-1) d,-.\2-\plus\upbow d'\1-1\downbow (e-3 d-1) \stemNeutral g,-.\2-\plus\upbow d'\1-1\downbow (e-3 d-1) b-.\2-3\upbow d-1\downbow (e-3 d-1) \break
+  | c16-1\upbow (b-\plus d-2 c-1 e-3 d-2 c-1 b-\plus) a-1\downbow \< (b-2 c-3 a-1 fis\2-3) d-\plus\upbow (e-1 c\3-2
+  | \stemDown b16-.-1\3) d'\1-1\p\downbow (e-3 d-1) d,-.\2-\plus\upbow d'\1-1\downbow (e-3 d-1) \stemNeutral g,-.\2-\plus\upbow d'\1-1\downbow (e-3 d-1) b-.\2-3\upbow d-1\downbow (e-3 d-1) \break
 
   % line 6
 
@@ -322,7 +322,7 @@ mvtI = \relative {
 
   % line 7
 
-  | \clef bass e,,16\3-1\upbow_\crescM (fis-2 g-4\< fis g b\2 c b) \clef treble c\downbow (dis\1 e dis) e-1\upbow (fis-4 g-\plus a-1)
+  | \clef bass e,,16\3-1\upbow_\crescM (fis-2 g-4\< fis g b\2 c b) \clef treble c\downbow (dis e dis) e-1\upbow (fis-4 g-\plus a-1)
   | bes2.-2\f\> a8-3 (g)\!
   | g2 \grace g32\upbow \( \afterGrace fis2-1\trill { e16-\plus fis \) }
   | g8\< \clef bass g,\upbow (a b-3 d\flageolet) c\>\downbow (\tuplet 3/2 { b8 c a }) \! \break
