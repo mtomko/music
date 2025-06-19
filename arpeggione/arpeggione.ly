@@ -103,9 +103,9 @@ mvtI = \relative {
 
     % line 2
 
-    | d16-.\parenthesize\upbow) f'-1\downbow\p (g-3 f) f,\3\plus-.\upbow f' (g f) d\2-\plus f-. (g f) d-3\flageolet-. f (g f)
+    | d16-.\parenthesize\upbow) f'-1\downbow\p (g-3 f) f,\3\plus-.\upbow f' (g f) bes,-.\2-\plus f' (g f) d-3\flageolet-. f (g f)
     | ees16-2\upbow (d-1 f-4 ees-1 g-3_\crescM f-1 ees-2 d-1) c-1\downbow (d ees c a) f\upbow (g ees
-    | d16-.) f'-1\downbow\p (g-3 f) f,\plus-.\upbow f' (g f) d-\plus f-. (g f) d-3\flageolet-. f (g f) \break
+    | d16-.) f'-1\downbow\p (g-3 f) f,\plus-.\upbow f' (g f) bes,-.-\plus f' (g f) d-3\flageolet-. f (g f) \break
 
     % line 3
 
