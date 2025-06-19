@@ -5,6 +5,9 @@ plus = \finger \markup \fontsize #6 "+"
 mi = \finger "-1"
 mii = \finger "-2"
 miv = \finger "-4"
+mdi = \finger "·1"
+mdii = \finger "·2"
+mdiv = \finger "·4"
 
 \header {
   title = "Symphony no. 9, mvt IV"
@@ -36,7 +39,7 @@ excerptI = \relative {
   \bar "||"
 }
 
-excerptII = \relative {
+excerptIIalt = \relative {
   \time 6/4
   \key d \major
   \clef bass
@@ -57,6 +60,27 @@ excerptII = \relative {
   \bar "||"
 }
 
+excerptII = \relative {
+  \time 6/4
+  \key d \major
+  \clef bass
+  \romanStringNumbers
+  \set stringNumberOrientations = #'(down)
+  \override Fingering.avoid-slur = #'outside
+  \set Score.currentBarNumber = 709
+  \mark 16
+  b,8\ff-1 (fis-1 gis-4 ais-2 b-4 cis-\mdi) d-2 (cis-1 b-1 cis-4 d-0 e-1)
+  | fis8-\mdii (g-4 fis-2 e-1 fis-4 e-1) d-0 (e-1 d-0 cis-\mdii d-4 cis-2)
+  | cis8-4^\markup { \tiny "r.f." } (fis,-1 gis-4 ais-2 b-4 cis-\mdi) dis-4 (b-1 cis-4 dis-2 e-4 cis-\mdi) \break
+  | fis8-1 (gis-4 fis-1 dis-\mdii e-4 dis-2) cis-\mdi (dis-4 cis-1 b-1 cis-4 b-1)
+  | fis'8-4 (b,-1 cis-4 dis-2 e-4 fis-\mdi) gis-4 (b,-1 fis'-4 gis-2 a!-4 fis-\mdi)
+  | a8\2-1 (b-4 a-1 gis-1 a-2 gis-1) fis-1 (gis-4 fis-1 e-1 fis-4 e-1)
+  | b'8-4 (e,-\mdii gis-1 a-2 b-\mdiv e,-1\parenthesize -2) e'-\mdi (fis-4 e-1 d-1 e-4 d-1)
+  | cis8-1 (e-\mdiv d-1 cis-\mdi d-2 cis-1) b-1 (cis-4 b-1 a-1 cis-4 b-1)
+  | b8-4 (a-1 b-4 a-1) a,4-0 r2.
+  \bar "||"
+}
+
 \book {
   \score {
     \layout {
@@ -64,6 +88,12 @@ excerptII = \relative {
     }
     \excerptI
   }
+ 
+  \markup {
+    "
+    "
+  }
+
   \score {
     \layout {
       indent = 0.0
