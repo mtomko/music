@@ -219,7 +219,7 @@ mvtI = \relative {
 
   | % page 4 line 1
 
-  | ees16-2\pp (bes) ces-. bes-. \repeat unfold 3 { bes (a) ces-. bes-. }
+  | ees16-2\pp (bes) ces-. bes-. \repeat unfold 2 { bes (a) ces-. bes-. } bes (a) ces-.-1 bes-.-\plus
   | bes8 (bes'16) r bes,8 (aes'16) r bes,8-1 (ges'16-4) r bes,8 (f'16) r
   | ges1~
   | ges1\upbow (
@@ -230,7 +230,7 @@ mvtI = \relative {
   | g1\!\upbow
   | \afterGrace a2-1\downbow ( { bes16 a g a) } bes4-2\upbow (g-\plus\flageolet)
   | d'2.-2\f ees8.-3 (d16)
-  | d2. c16-1 (bes-\plus a\2-3 g-1)
+  | d2. c16-1 (bes-\plus a\2-2 g-1)
   | d'2.\ff ees8. (d16)
   | d2. c16 (bes a g) \break
 
