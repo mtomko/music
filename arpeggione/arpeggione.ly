@@ -130,7 +130,7 @@ mvtI = \relative {
 
     | d8-1 (d'-3) d4\accent~\> 16\! c-1 (bes-3 a-2) g-\plus (f-3 ees-1 d)
     | \clef bass c16 (bes a g f ees d c) des8-. bes-. g-. e-.
-    | f16-.\p bes-3 bes-. d-. d-. f-. f-.\accent g-. f-. bes-. bes-. d\2-\plus-. d-. f-1-. f-.\accent g-3-. \break
+    | f16-.\p bes bes-. d-. d-. f-. f-.\accent g-. f-. bes-. bes-. d\2-\plus-. d-. f-1-. f-.\accent g-3-. \break
 
     % line 7
 
@@ -145,8 +145,8 @@ mvtI = \relative {
 
     | \afterGrace bes2. ({ c16 bes a bes) } d8 (c)
     | bes4\downbow des'2\downbow\> c8 (bes)
-    | bes2\! \acciaccatura bes16 \once \slurDown \afterGrace a2~ ( \trill { g16 a }
-    | bes4)\< c8 (d g-3\flageolet\>) ees-2 (d-1 c-\plus)\!
+    | bes2\! \acciaccatura bes16 \once \slurDown \afterGrace a2~ \trill { g16 a }
+    | bes4\< (c8 d g-3\flageolet\>) ees-2 (d-1 c-\plus)\!
     | g4~-\plus\flageolet (g16 a bes c) \afterGrace bes4 ( {c16 bes a bes) } d8.\downbow (c16) \break
 
     % line 9
@@ -154,11 +154,11 @@ mvtI = \relative {
     | bes4\upbow \clef bass <<a,\f f'^\markup { \small "pizz." } >> <<d bes>> <<a f'>>
     \alternative {
       \volta 1 {
-        | <<bes, f'>> r4 <<fis,\fz a d>> r4
+        | <<bes, d>> r4 <<fis\fz d, \parenthesize a>> r4
         | R1
       }
       \volta 2 {
-        <<bes4 d>> r4 \clef treble <<d bes'\fz>> r4
+        <<bes'4 d>> r4 \clef treble <<d bes'\fz>> r4
       }
     }
   }
@@ -240,15 +240,15 @@ mvtI = \relative {
   | d'1~-2\flageolet\fz\>
   | d1~ \tweak X-offset 4 \upbow
   | d2_\dimM\! \once \set fingeringOrientations = #'(left) <\parenthesize a' a,\harmonic-3 d,\harmonic\2-\plus>2\downbow
-  | d,2\1-3\flageolet\upbow a2\2\flageolet
-  | d,2\flageolet\upbow \clef bass a4.\downbow fis8
-  | d1~\upbow \break
+  | d,2\1-3\flageolet\upbow a2\2\flageolet\upbow
+  | d,2\flageolet \clef bass a4. (fis8)
+  | d1~ \break
 
   % line 4
 
-  | \tuplet 3/2 { d8 fis,-.\tweak Y-offset 4.5 \downbow (a-. } \tuplet 3/2 { c-.) ees!-. (fis-3 } \tuplet 3/2 { a-.) c-.\upbow (d-.\upbow) } ees4~-2\fp\downbow
-  | ees1~
-  | ees4 d-. cis8-. c\2-.\upbow^\markup { \small "rit." } (bes-. a-.)
+  | \tuplet 3/2 { d8 fis, (a } \tuplet 3/2 { c ees! fis } \tuplet 3/2 { a) c\tenuto\downbow d\tenuto\upbow } ees4~-2\fp
+  | ees1~\upbow
+  | ees4 d (cis8-.) c\2-.\upbow^\markup { \small "rit." } (bes-. a-.)
   | g2-1\downbow^\markup { \small "a tempo" } a4.-2\upbow (bes8)
   | g2~ g8 a (bes c)
   | d4.\accent (g,8) ees'4.\accent (g,8) \break
