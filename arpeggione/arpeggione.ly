@@ -176,7 +176,7 @@ mvtI = \relative {
   | r8 f, c' ees r f, aes d
   | r8 g,,16\f\upbow (b\3 d\flageolet g\2-2 b\1-1 d-4) \clef treble g2~\downbow\>
   | g1~\p\upbow
-  | g4 f8-1 (ees-4) des-1\upbow (f g aes)
+  | g4 f8-4 (ees-1) des-1\upbow (f-4 g-2 aes-3)
   | \afterGrace c,2 ( { d!16 c b c) } ees4.\upbow (d8) \break
 
   % line 3
@@ -271,8 +271,8 @@ mvtI = \relative {
 
   % line 7
 
-  | a8\accent (g) d (f) f\accent (ees) c\2-4 (a-\miv)
-  | g4-1 r r2
+  | a8\accent (g) d (f) f\accent (ees) c (a)
+  | g4 r r2
   | R1
   | r4 a'8-1\upbow (bes-2) bes\accent (a) cis, (e) \break
 
@@ -325,7 +325,7 @@ mvtI = \relative {
   | \clef bass e,,16\3-1\upbow_\crescM (fis-2 g-4\< fis g b\2 c b) \clef treble c\downbow (dis e dis) e-1\upbow (fis-4 g-\plus a-1)
   | bes2.-2\f\> a8-3 (g)\!
   | g2 \grace g32\upbow \( \afterGrace fis2-1\trill { e16-\plus fis \) }
-  | g8\< \clef bass g,\upbow (a b-3 d\flageolet) c\>\downbow (\tuplet 3/2 { b8 c a }) \! \break
+  | g8\< \clef bass g,\2\upbow (a b-3 d\flageolet) c\>\downbow (\tuplet 3/2 { b8 c a }) \! \break
 
   % line 8
 
