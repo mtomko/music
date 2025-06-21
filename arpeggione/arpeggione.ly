@@ -116,7 +116,7 @@ mvtI = \relative {
 
     % line 4
 
-    | \afterGrace bes2. ({ c16 bes a bes) } d8\upbow (c)
+    | \afterGrace bes2. ({ c16 bes a bes) } d8\downbow (c)
     | bes16\pp\upbow (a) c-. bes-. \repeat unfold 3 { bes16 (a) c-. bes-. }
     | g8 (g') g4\accent g,8 (g') g4\accent \break
 
@@ -124,7 +124,7 @@ mvtI = \relative {
 
     | \repeat unfold 4 { a,16 (gis) bes-. a-. }
     | f8 (f'8) f4-4\accent f,8 (f'8) f4\accent
-    | ees8\1-1\upbow (ees'-2) \breathe ees4\accent~\> 16 d-1 (c-\plus bes-2\!) a-1 (g-\plus f-4 ees-2) \break
+    | ees8\1-1\upbow (ees'-2) \breathe ees4\accent~\> 16 d-1 (c-\plus bes-2\!) a-1 (g-\plus f-4 ees-1) \break
 
     % line 6
 
@@ -195,12 +195,12 @@ mvtI = \relative {
 
   | \clef treble c16-\plus\2 (g'-2) aes-3-. g-2-. \repeat unfold 3 { g (fis) a-. g-. }
   | g8 (g,16) r f'!8 (g,16) r ees'8 (g,16) r d'8 (g,16) r
-  | c16\2-1\mf (b-\plus) d-.-3 c-. c16 (b) d-. c-. aes'2-3\accent \break
+  | c16\2-1\mf (b-\plus) d-.-3 c-. c16 (b) d-. c-. aes'2-3\accent\downbow \break
 
   % line 6
 
-  | bes,16\2-1\downbow (a-\plus) c-.-3 bes-. bes16 (a) c-. bes-. g'2\accent
-  | \clef bass aes,16\2-2\downbow (g-1) bes-4-. aes-. aes16 (g) bes-. aes-. f'-4_\crescM ees-2 d-1 c-2 b-1 aes!\2-4 g-2 f-4
+  | bes,16\2-1\upbow (a-\plus) c-.-3 bes-. bes16 (a) c-. bes-. g'2\accent\upbow
+  | \clef bass aes,16\2-2\downbow (g-1) bes-4-. aes-. aes16 (g) bes-. aes-. f'-4_\crescM\downbow ees-2 d-1 c-2 b-1 aes!\2-4 g-2 f-4
   | ees!16-1\f\< c'-4 e, c' f, c' g\flageolet c-2 aes-4 c-2 bes!-1 c-\mii aes-4 c-2 g\flageolet c-2 \! \break
 
   % line 7
@@ -259,11 +259,11 @@ mvtI = \relative {
   | d4 (cis c8) a' (g16 fis ees d)
   | c4 (bes) r8 bes8 (d g)
   | bes8\< aes g2 fis4
-  | d'4.\> bes8\upbow (\clef bass g8) d (bes g) \break
+  | d'4.\> bes8\upbow (g8) \clef bass d-1 (bes-2 g-4) \break
 
   % line 6
 
-  | c,16\pp (ees aes c) ees2.~\downbow
+  | c,16\pp-1 (ees-4 aes-4 c) ees2.~\downbow
   | ees2~ ees8\< \clef treble aes (c aes)
   | ees'2~\fp\downbow\> ees8 c (aes ees)\!
   | \afterGrace d2\downbow ({ ees16 d cis d) } bes'4.\upbow (a8)
@@ -337,7 +337,7 @@ mvtI = \relative {
 
   | \repeat unfold 4 { fis,16 (eis) g-. fis-. }
   | b,8\upbow (d') d4\accent d,8 (fis') fis4\accent
-  | \clef treble c8\f\2-2 (c'16) r c4~\accent c16 b-3 (a-1 g-\plus\flageolet) fis\2-3 (e-1 d-3\2\flageolet c\3-2) \break
+  | \clef treble c8\f\2-2 (c'16) r c4~\accent c16 b-3 (a-1 g-\plus\flageolet) fis\2-3 (e-1 d\2-3\flageolet c-1) \break
 
   % line 2
 
@@ -424,15 +424,15 @@ mvtII = \relative {
   | f8 (bes) f4 g
   | a4. g8 ( \tuplet 3/2 { e) cis (b) }
   | a4\mf d e
-  | f2.
-  | a4 f (d)
+  | fis2.
+  | a4 fis (d)
   | e2 ( \grace { d16 cis b )} a4
   | a4\p (d\tenuto e\tenuto)
   | fis2._\crescM \break
   | fis2.
   | fis4.\f\> gis8 (ais b) \!
   | ais8 ( \once \override TupletBracket.bracket-visibility = ##f \tuplet 3/2 { gis16 e cis) } b4\p (cis)
-  | d2.
+  | dis2.
   | fis2.
   | fis2\< a8 (d)
   | cis16\> (b g e) a4. (cis,8) \!
@@ -443,7 +443,7 @@ mvtII = \relative {
   | \clef bass f,4\p (g a)
   | bes4..\accent (a16 g4_\crescM)
   | bes4..\accent (a16 g4)
-  | b2.~\fp\>
+  | b?2.~\fp\>
   | b4 \! a (gis
   | a8) d, (fis a) \tuplet 3/2 { d\> (e fis) } \!
   | fis8.\> (e16) \! d4 (cis)
@@ -481,7 +481,7 @@ mvtII = \relative {
   | bes2.~
   | bes4 a8 (g16) r e8 (bes16) r
   | a2.~
-  | \afterGrace a4 ({ bes32 a gis a) } bes4. (a8) \break
+  | \afterGrace a4 ({ bes32 a gis a) } bes!4. (a8) \break
 
   % line2
 
@@ -518,24 +518,24 @@ mvtIII = \relative {
   | b4.\accent (g8)
   | a4.\accent (d8)
   | d4.\accent (b8)
-  | g'4._\crescM (f8)
-  | g4.\> (f8)
+  | g'4._\crescM (fis8)
+  | g4.\> (fis8)
   | e8\pp (dis e \acciaccatura g8 fis)
   | e2
   \repeat volta 2 {
     | f4. (gis,8)
-    | f4.\< a,16 (c
+    | f'4.\< a,16 (c
     | e8\> [d bes g]) \! \break
 
     % line 5
     | a2
-    | \clef treble a''4. (c,8)
-    | a'4.\< (c,8)
+    | \clef treble a'4. (c,8)
+    | a'4.\< (cis,8)
     | a'8\> ([fis e fis]) \!
     | d2
     | e4.\accent (b16 f')
-    | e4.\accent (c8)
-    | d4.\accent (a16 e')
+    | e4.\accent (c'8)
+    | d,4.\accent (a16 e')
     | e4.\accent (b'8)
     | g4.\< (d'8) \break
 
@@ -548,9 +548,9 @@ mvtIII = \relative {
     | b4. (g8)
     | a4. (d8)
     | d4. (b8)
-    | g'4.\< (bis,8)
+    | g'4.\< (bes,8)
     | g'4.\! b,16\> (d
-    | f8 [e c a]) \! \break
+    | fis8 [e c a]) \! \break
 
     % line 7
 
@@ -626,7 +626,7 @@ mvtIII = \relative {
   | f4.\accent g,8 (
   | ees'4.) g,8 (
   | d'8) \clef bass g,16 ([aes] g8) g-.
-  | d8\accent (g) g-. g-.
+  | d8\accent [(g) g-. g-.]
   | g16 (d) g_\crescM-. a-. b (g) b-. c-. \break
 
   % line 7
@@ -643,11 +643,11 @@ mvtIII = \relative {
   | aes16 (g) g-. g-. aes (g) b-. d-.
   | c4. g8 (
   | fis16\> g f g ees f d ees) \!
-  | c4 (c'8) g ( \break
+  | \autoBeamOff c4 (c'8) g ( \break
 
   % page 10 line 1
 
-  | fis16\pp) g-. f-. g-. ees-. f-. d-. ees-.
+  | \autoBeamOn fis16\pp) g-. f-. g-. ees-. f-. d-. ees-.
   | c4. g8 (
   | f'4.\accent) g,8 (
   | ees'4.\accent) g,8 (
@@ -658,14 +658,14 @@ mvtIII = \relative {
 
   % line 2
 
-  | d'8) \clef bass g,16 (aes g8) g-.
+  | d'8) \clef bass g,16 ([aes] g8) g-.
   | d8\accent [(g) g-. g-.]
   | c4.\accent\pp d,8 (
   | bes'4.\accent) d,8 (
   | a'8) \clef treble d16 ([ees] d8) d-.
   | a'8\accent [(d,) d-. d-.]
   | c'4.\accent d,8 (
-  | b'4.\accent) d,8 (
+  | bes'4.\accent) d,8 (
   | a'2)~ \break
 
   % line 3
@@ -689,7 +689,7 @@ mvtIII = \relative {
   | a'2~
   | a8) [bes8-. (a-. fis-.)]
   | d8-.^\markup { \tiny \italic "rit." } [(e-.) fis-. g-.]
-  | a8-. [(aes-.) b-. (d-.)]
+  | a8-. [(ais-.) b-. (d-.)]
   \bar "||" \key g \major g,4.\p\accent^\markup { \tiny \italic "a tempo" } (a8)
   | b4.\accent (g8)
   | a4.\accent (d8) \break
@@ -705,12 +705,12 @@ mvtIII = \relative {
   | b4.\accent (g8)
   | a4.\accent (d8)
   | d4.\accent (b8)
-  | \clef treble g'4._\crescM (f8) \break
+  | \clef treble g'4._\crescM (fis8) \break
 
   % line 6
 
-  | g4.\> (f8)
-  | e\pp [(fis e \acciaccatura g fis)]
+  | g4.\> (fis8)
+  | e\pp [(dis e \acciaccatura g fis)]
   | e2
   | f4. (gis,8)
   | f'4.\< a,16 (c\!
@@ -777,13 +777,13 @@ mvtIII = \relative {
   | fis,8 (a8.) \clef treble a'16 (fis d)
   | b8 (d'8.) \clef bass d,16 (b g
   | e8) g'8. \clef treble  g16 (e cis
-  | e8) cis'8. \clef bass cis,16 (a fis \break
+  | a8) cis'8. \clef bass cis,16 (a fis \break
 
   % line 3
 
   | d8) \clef bass fis'8. fis16 (d b
   | g8) \clef treble b'4.~_\crescM
-  | b8 aes\> (b cis)
+  | b8 ais\> (b cis)
   | ais2\pp~
   | ais (
   | a2)~
