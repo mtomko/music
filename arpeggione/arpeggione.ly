@@ -60,7 +60,7 @@ mvtI = \relative {
     | ees'2-3~\fp\> ees8 c-1 (aes-\plus ees-4)
     | \afterGrace d2\! ({ ees16 d cis d) } bes'4.-2 (a?8-1)
     | g4-\plus\flageolet d'8-2\p (ees\accent) ees (d) fis,-\plus (a-3)
-    | a8\accent (g) d-1 (f!-4) f-4\accent (ees-2) c-1-. (a-4-.) \break
+    | a8\accent (g) d-1 (f!-4) f-4\accent (ees-1) c-1-. (a-4-.) \break
 
     % line 4
 
@@ -88,7 +88,7 @@ mvtI = \relative {
 
     | a8 f) d \! (g) g\> (ees) c (f)
     | f8 (d) \! \clef bass bes16\2-1_\decrescM (c-4 bes ees) ees8 (c) a16-1 (bes-2 a d)
-    | d8 (bes) fis (bes) g8\downbow^\markup { \tiny rit. } (bes \tuplet 3/2 { a8-1 g'-3\flageolet f-1) }  \break
+    | d8 (bes) fis\upbow (bes g8)^\markup { \tiny rit. } bes\downbow (\tuplet 3/2 { a8-1 g'-3\flageolet f-1) }  \break
 
     % line 8
 
@@ -188,7 +188,7 @@ mvtI = \relative {
 
   % line 4
 
-  | \clef bass c16\p (g) aes-. g-. \repeat unfold 3 { g (fis) aes-. g-. }
+  | \clef bass c16\p\1-2 (g\2-2) aes-.-4 g-.-2 \repeat unfold 3 { g (fis) aes-. g-. }
   | g8 (g'16) r g,8\flageolet (f'16) r g,8 (ees'16) r g,8 (d'16\2-2\flageolet) r \break
 
   % line 5
@@ -246,9 +246,9 @@ mvtI = \relative {
 
   % line 4
 
-  | \tuplet 3/2 { d8 fis, (a } \tuplet 3/2 { c ees! fis } \tuplet 3/2 { a) c\tenuto\downbow d\tenuto\upbow } ees4~-2\fp
+  | \tuplet 3/2 { d8 fis,\tweak Y-offset 5 \upbow (a } \tuplet 3/2 { c ees! fis } \tuplet 3/2 { a) c\tenuto\downbow d\tenuto\upbow } ees4~-2\fp
   | ees1~\upbow
-  | ees4 d (cis8-.) c\2-.\upbow^\markup { \small "rit." } (bes-. a-.)
+  | ees4 d (cis8-.) c\2-.\upbow^\markup { \small "rit." } (bes!-. a-.)
   | g2-1\downbow^\markup { \small "a tempo" } a4.-2\upbow (bes8)
   | g2~ g8 a (bes c)
   | d4.\accent (g,8) ees'4.\accent (g,8) \break
@@ -259,11 +259,11 @@ mvtI = \relative {
   | d4 (cis c8) a' (g16 fis ees d)
   | c4 (bes) r8 bes8 (d g)
   | bes8\< aes g2 fis4
-  | d'4.\> bes8\upbow (g8) \clef bass d-1 (bes-2 g-4) \break
+  | d'4.\> bes8\upbow (g8) \clef bass d-1 (bes-2 g\2-4) \break
 
   % line 6
 
-  | c,16\pp-1 (ees-4 aes-4 c) ees2.~\downbow
+  | c,16\pp\3-1 (ees-4 aes\2-4 c\1) ees2.~\downbow
   | ees2~ ees8\< \clef treble aes (c aes)
   | ees'2~\fp\downbow\> ees8 c (aes ees)\!
   | \afterGrace d2\downbow ({ ees16 d cis d) } bes'4.\upbow (a8)
@@ -349,15 +349,15 @@ mvtI = \relative {
 
   | \clef treble d16_\crescM g-\plus\flageolet g b-3 b d-\plus d e-1 g4-3 bes!-3
   | d,,8-\plus\flageolet\f e16 (fis) g a b c d4.-3 (fis,8)
-  | g4-2 bes!2\> a8-2\p (g-1)
-  | g2 \afterGrace fis2~-1\trill { e16-\plus fis }
+  | g4-2 bes!2\>\downbow a8-2\p (g-1)
+  | g2 \grace g16 (\afterGrace fis2-1\trill { e16-\plus fis) }
   | g4\< (a8 b d-3\flageolet)\> c8-3 (\tuplet 3/2 { b8-2 c a}) \! \break
 
   %line 4
 
   | \afterGrace g2. ( { a16 g fis g)} b8.-3\upbow (a16)
   | g4-\plus\flageolet \clef bass bes,2\2-2\fp\downbow a8-4\> (g-1)\!
-  | g2 \afterGrace fis2~-2\trill { \stemDown e16 fis } \stemNeutral
+  | g2 \grace g16 (\afterGrace fis2-2\trill { \stemDown e16 fis) } \stemNeutral
   | g4\< (a8 b e\>) c (b a)\!
   | e4~\downbow (16 fis g a) \afterGrace g4 ({ a16 g fis g} b8. a16) \break
 
@@ -387,7 +387,7 @@ mvtI = \relative {
 
   | g1~-3\p\flageolet
   | g1~_\decrescM
-  | g4 r\f \clef bass <<\acciaccatura <<d,,8-0 a'-2>> d4-2_\flageolet fis-1>> r
+  | g4 r\f \clef bass <<\acciaccatura <<d,,8-0 a'-2>> d4-2\flageolet fis-1>> r
   | <<\acciaccatura <<g,8-0 d'-3>> bes4_1 g'-4\flageolet>> r r2 \fine
 }
 
