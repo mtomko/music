@@ -110,13 +110,13 @@ mvtI = \relative {
     % line 3
 
     | g,16\upbow (fis g a bes a bes d) \clef treble ees-2\downbow\< (d ees-1 fis-4 g-\plus a-1 bes-2 c-1)
-    | des2.-2\f\> c8-3 (bes-1)
+    | des2.-2\f\>\upbow c8-3 (bes-1)
     | bes2\p \acciaccatura bes16 \once \slurDown \afterGrace a2-1 ( \trill { g16 a }
-    | bes8) bes,-1\< (c-4 d-1 f-4\>) ees-2 (\tuplet 3/2 { d8 ees c) } \! \break
+    | bes8) bes,-1\<\upbow (c-4 d-1 f-4\>) ees-2\downbow (\tuplet 3/2 { d8 ees c) } \! \break
 
     % line 4
 
-    | \afterGrace bes2. ({ c16 bes a bes) } d8\downbow (c)
+    | \afterGrace bes2.\upbow ({ c16 bes a bes) } d8 (c)
     | \clef bass bes16\pp\upbow (a) c-. bes-. \repeat unfold 3 { bes16 (a) c-. bes-. }
     | g8 (g') g4\accent g,8 (g') g4\accent \break
 
@@ -313,7 +313,7 @@ mvtI = \relative {
 
   | d8-\plus\flageolet\upbow (d'16)-3\flageolet r d4\accent d,8-\plus (d'16) r d4\accent
   | c16-1\upbow (b-\plus d-2 c-1 e-3 d-2 c-1 b-\plus) a-1\downbow \< (b-2 c-3 a-1 fis\2-3) d-\plus\upbow (e-1 c\3-2
-  | \stemDown b16-.-1\3) d'\1-1\p\downbow (e-3 d-1) d,-.\2-\plus\upbow d'\1-1\downbow (e-3 d-1) \stemNeutral g,-.\2-\plus\upbow d'\1-1\downbow (e-3 d-1) b-.\2-3\upbow d-1\downbow (e-3 d-1) \break
+  | \stemDown b16-.-1\3) d'\1-1\p\downbow (e-3\parenthesize-2 d-1) d,-.\2-\plus\upbow d'\1-1\downbow (e-3\parenthesize-2 d-1) \stemNeutral g,-.\2-\plus\upbow d'\1-1\downbow (e-3\parenthesize-2 d-1) b-.\2-3\upbow d-1\downbow (e-3\parenthesize-2 d-1) \break
 
   % line 6
 
