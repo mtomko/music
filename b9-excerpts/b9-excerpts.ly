@@ -55,9 +55,9 @@ recit = \relative {
   | r4 r8 f8\upbow c'8 8
   | ees4. 8 c bes
   | bes8 (a) 8 8 bes\upbow c\upbow
-  | c8 (f) r ees\upbow 8 d
+  | c8 (f,) r ees\upbow 8 d
   | c8\downbow (bes) r4 r
-  \bar "||" \time 2/4 \tempo \markup { \small "Allegro mo non troppo" } 4 = 88 \startMeasureCount cis,2~\pp\tweak X-offset -1 \upbow
+  \bar "||" \time 2/4 \tempo \markup { \small "Allegro mo non troppo" } 4 = 88 \startMeasureCount cis2~\pp\tweak X-offset -1 \upbow
   | \repeat unfold 3 { cis2~ } \break
   | \repeat unfold 3 { cis2~ }
   | cis2 \stopMeasureCount
@@ -82,7 +82,7 @@ recit = \relative {
   | d8 (c) c8\upbow 8\upbow 8 d
   | ees4 r r
   \bar "||" \time 4/4 \key g \minor \tweak X-offset -0.7 \textMark \markup { \small \bold "Adagio cantabile" } \compressMMRests {R1*2}
-  \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } bes2.~\p (
+  \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } bes2.~\p\upbow (
   | bes2 ces4)
   | ces2 (aes4
   | ges2 f4) \break
@@ -101,11 +101,11 @@ recit = \relative {
   \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } e'4\f\downbow r4 d8\downbow e
   | d8 (cis) r4 r8 e8\upbow
   | e4 g,4. a8
-  | g4 fis a8. (d16)
+  | g4\upbow fis a8. (d16)
   | d4. e8 (fis e)
-  | e8 (d) d (cis d a \break
+  | e8 (d) d\upbow (cis d a \break
 
-  | g8 fis) fis (e d c)
+  | g8\tweak X-offset -2 \parenthesize\upbow fis) fis (e d c)
   | c8\upbow (b) g'2~\sf\downbow
   | g4. e8 cis d
   | d4\downbow a\upbow_\flageolet r4
