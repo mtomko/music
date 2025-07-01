@@ -340,7 +340,40 @@ grodner = \relative c' {
   | gis (a4~a4.) \fine
 }
 
+simandlVISeven = \relative c' {
+  \romanStringNumbers
+  \time 4/4
+  \key g \major
+  \clef bass
+  g8_0^\markup { "I" } a_1 b_4 c_1 d4_4 c8_1 b_4
+  | a8_1 b_2 c_4 d_1 e4_4 r
+  | a,8_1^\markup { "I" } b_2 c_4 d_1 e4_4 d8_1 c_4 
+  | b8_2 c_1 d_4 e_1 fis4_4 r 
+  | b,8_4^\markup { "I" } c_1 d_4 e_1 fis4_4 e8_1 d_4 \break 
+  
+  | c8_1 d_1 e_4 fis_2 g4_3_\flageolet r4 
+  | c,8_4^\markup { "II" } d_1 e_4 fis_2 g4_3_\flageolet fis8_2 e_4 
+  | d8_4 c_1 b_4 a_1 g4_0 r4 
+  \bar "||" g'8_3_\flageolet fis_2 e_4 d_1 c4_1 d8_4 e_1 
+  | fis8_4 e_1 d_4 c_1 b4 c8_4 d_1 \break 
+
+  | e8_4 d_1 c_4 b_2 a4_1 r4 
+  | e'8_4 d_1 c_4 b_2 a4_1 b8_4 c_1 
+  | d8_4 c_1 b_4 a_1 g4_0 r4 
+  | d'8_4 c_1 b_4 a_1 g4_0 a8_1 b_2 
+  | c8_4 b_2 a4_1 g_0 r4 \fine
+}
+
 \book {
+    \score {
+    \header {
+      composer = "Franz Simandl"
+      piece = "Exercises in the VI. Position, no. 7"
+    }
+    \new Staff {
+      \simandlVISeven
+    }
+  }
   \score {
     \header {
       subtitle = "Thumb Position Exercises"
