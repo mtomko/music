@@ -66,8 +66,8 @@ petracchiscalenotes = \relative c {
   \repeat volta 2 {
     \once \override Staff.TimeSignature.stencil = ##f
     \time 12/8
-    \bar ".|:" g8-1\4 (b-4 d-1\3  f-1 g-4 b-2) \clef treble d_\scr-\plus (f-2 g b-3 d-\plus\flageolet f-1)
-    | g-3 (f d\flageolet  b-3_\scr g\flageolet f-2) \clef bass d-\plus\flageolet (b-2 g-4 f-1 d\4-4 b-1 ) \break
+    \bar ".|:" g8-1\4 (b-4 d-1\3  f-1 g-4 b-2) \clef treble d_\scr-\plus (f-2 g b-3 d\flageolet f-1)
+    | g-3 (f d\flageolet  b-3_\scr g\flageolet f-2) \clef bass d\flageolet (b-2 g-4 f-1 d\4-4 b-1 ) \break
   }
   % line 2 c
   \repeat volta 2 {
@@ -77,12 +77,12 @@ petracchiscalenotes = \relative c {
   % line 3 f
   \repeat volta 2 {
     |f-1 a-0 c-4\4 ees-1 f-4 a-2 \clef tenor c-4 ees-1 f \clef treble a-\plus_\cr c-3 ees-1
-    |f-3 ees c-3\2 a-1\flageolet f-3\2 ees-1 \clef bass c-3\3 a-\plus\flageolet f-4 ees-1 c-4\4 a-1 \break
+    |f-3 ees c-3\2 a\flageolet f-3\2 ees-1 \clef bass c-3\3 a\flageolet f-4 ees-1 c-4\4 a-1 \break
   }
   % line 4 bes
   \repeat volta 2 {
     | bes-2 d-1 f-4 aes-1 bes-4 d\flageolet \clef treble f-3 aes-1 bes d-\plus f-3 aes-1
-    | bes-2 aes-1 f-\plus d\flageolet-1\2 bes-3\1 aes-1 \clef bass f-3\2 d-\plus\flageolet bes-4 aes-1 f-4\3 d\flageolet\2 \break
+    | bes-2 aes-1 f-\plus d\flageolet-1\2 bes-3\1 aes-1 \clef bass f-3\2 d\flageolet bes-4 aes-1 f-4\3 d\flageolet\2 \break
   }
   % line 5 ees
   \repeat volta 2 {
@@ -104,7 +104,7 @@ petracchiscalenotes = \relative c {
     \override TextSpanner.bound-details.right.text = \markup { \draw-line #'(0 . -1) }
     \override TextSpanner.direction = #UP
     <<\parenthesize des,\parenthesize-0 des'-2>> f,-1 aes-4 ces-1\3 des-4 f-4 aes-1 ces-1\2 des-4 \clef treble f-2\1 aes-\plus\startTextSpan ces-1
-    | des-3\1 ces-1 aes-\plus f-2_\cr\stopTextSpan\2 des-4_"___________" ces-1 \clef bass aes-1 f-4\3 des-4 ces-1 aes-4\4 f-1 \break
+    | des-3\1 ces-1 aes-\plus\stopTextSpan f-2_\cr\2 des-4_"___________" ces-1 \clef bass aes-1 f-4\3 des-4 ces-1 aes-4\4 f-1 \break
   }
   % line 8 fis
   \repeat volta 2 {
@@ -123,7 +123,7 @@ petracchiscalenotes = \relative c {
   }
   % line 11 a
   \repeat volta 2 {
-    | a-2 cis-1 e-4\3 g!-1\2 a-4 cis-4 \clef treble e-1 g-\plus\flageolet a\flageolet-3_cr cis-\plus e-3 g-1
+    | a-2 cis-1 e-4\3 g!-1\2 a-4 cis-4 \clef treble e-1 g\flageolet a\flageolet-1_cr cis-\plus e-3 g-1
     | a-2 g-1 e-3_\cr  cis-\plus a\flageolet g\flageolet \clef bass e-1 cis-4 a-4 g-1 e-4 cis-1 \break
   }
   % line 12 d
@@ -331,7 +331,7 @@ grodner = \relative c' {
     | cis-1 (dis-4 d-2) g!-2 (fis-1 gis-4)
   }
   \repeat volta 2 {
-    | cis-4 (c-2 b-1) gis-4 (fis-1 g-2) 
+    | cis-4 (c-2 b-1) gis-4 (fis-1 g-2)
     | c!-4 (b-2 bes-1) g-4 (f-1 fis-2) \break
     | b!-4 (bes-2 a-1) f!-2 (fis-4 e-1)
     | b-1 (cis-4 c-2) f!-2 (e-1 fis-4)
@@ -347,25 +347,26 @@ simandlVISeven = \relative c' {
   \clef bass
   g8_0^\markup { "I" } a_1 b_4 c_1 d4_4 c8_1 b_4
   | a8_1 b_2 c_4 d_1 e4_4 r
-  | a,8_1^\markup { "I" } b_2 c_4 d_1 e4_4 d8_1 c_4 
-  | b8_2 c_1 d_4 e_1 fis4_4 r 
-  | b,8_4^\markup { "I" } c_1 d_4 e_1 fis4_4 e8_1 d_4 \break 
-  
-  | c8_1 d_1 e_4 fis_2 g4_3_\flageolet r4 
-  | c,8_4^\markup { "II" } d_1 e_4 fis_2 g4_3_\flageolet fis8_2 e_4 
-  | d8_4 c_1 b_4 a_1 g4_0 r4 
-  \bar "||" g'8_3_\flageolet fis_2 e_4 d_1 c4_1 d8_4 e_1 
-  | fis8_4 e_1 d_4 c_1 b4 c8_4 d_1 \break 
+  | a,8_1^\markup { "I" } b_2 c_4 d_1 e4_4 d8_1 c_4
+  | b8_2 c_1 d_4 e_1 fis4_4 r
+  | b,8_4^\markup { "I" } c_1 d_4 e_1 fis4_4 e8_1 d_4 \break
 
-  | e8_4 d_1 c_4 b_2 a4_1 r4 
-  | e'8_4 d_1 c_4 b_2 a4_1 b8_4 c_1 
-  | d8_4 c_1 b_4 a_1 g4_0 r4 
-  | d'8_4 c_1 b_4 a_1 g4_0 a8_1 b_2 
+  | c8_1 d_1 e_4 fis_2 g4_3_\flageolet r4
+  | c,8_4^\markup { "II" } d_1 e_4 fis_2 g4_3_\flageolet fis8_2 e_4
+  | d8_4 c_1 b_4 a_1 g4_0 r4
+  \bar "||" g'8_3_\flageolet fis_2 e_4 d_1 c4_1 d8_4 e_1
+  | fis8_4 e_1 d_4 c_1 b4_2 r4
+  | fis'8_4 e_1 d_4 c_1 b4_2 c8_4 d_1 \break
+
+  | e8_4 d_1 c_4 b_2 a4_1 r4
+  | e'8_4 d_1 c_4 b_2 a4_1 b8_4 c_1
+  | d8_4 c_1 b_4 a_1 g4_0 r4
+  | d'8_4 c_1 b_4 a_1 g4_0 a8_1 b_2
   | c8_4 b_2 a4_1 g_0 r4 \fine
 }
 
 \book {
-    \score {
+  \score {
     \header {
       composer = "Franz Simandl"
       piece = "Exercises in the VI. Position, no. 7"
