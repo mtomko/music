@@ -125,7 +125,7 @@ letterK = \relative {
   \mark 11
   d'8\ff-1 \tweak direction #DOWN \textMark \markup { \small \italic "sempre" } 8 8 8 ees-2 f-1
   | f8 g-3 f-1 ees-4 d-2 c-1
-  | bes8-1 a-1 bes-2 b-4 c-1 d
+  | bes8-1 a-1 bes-2 b-4 c-1 d-4
   | c8-1 f,\2-4 8 bes-4 bes,\4-1 8
   | f''4-4 f,8\2-1\upbow f4.~\sf\downbow
   | f4 g8-4\upbow g4.~\sf\downbow
@@ -187,8 +187,8 @@ letterK = \relative {
   | dis4 8\downbow e4-4\upbow 8\upbow
   | cis4-1\downbow 8\downbow d4-2 8
   | b4-1 8 cis4-4 8
-  | aes4\2 8 b4-4 8
-  | e8-4 8 8 d-1 cis-4 b-1
+  | ais4\2-2 8 b4-4 8
+  | e8-4 8 8 d-1 cis\1-4 b-1
   | ais8-1 b-2 cis-2 8 8 8 \break
 
   | cis8 d-4 cis-2 b-2 ais-1 gis-4
