@@ -68,8 +68,8 @@ recit = \relative {
   | d4. c8 c b \break
 
   | b8 [f'8] f e4\upbow d8\upbow
-  | d8_\markup { \tiny \italic "dimin." } [b'8] 8^\markup { \small "rit."} [8 8 c]
-  | d2.^\markup { \small "poco adagio" } \(
+  | d8_\markup { \tiny \italic "dimin." } [b'8] 8^\markup { \small \bold "rit."} [8 8 c]
+  | d2.^\markup { \small \bold "poco adagio" } \(
   | c2\upbow b4\)
   | d4\downbow (c) r4\fermata
   \bar "||" \tempo "Vivace" \compressMMRests { R2.*8 }
