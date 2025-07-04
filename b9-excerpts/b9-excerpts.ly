@@ -88,7 +88,7 @@ recit = \relative {
   | ges2 f4) \break
 
   | r4 r f\upbow (
-  | aes2 d4)
+  | aes2 des4)
   | cis4 \tweak font-size -1 \cresc fis,4.\upbow a8\downbow
   | a4\upbow bis,8-!\downbow dis'8-!\upbow dis-! cis-!
   | cis8\downbow (bis) bis\upbow dis\upbow dis e
@@ -97,7 +97,7 @@ recit = \relative {
   | R2. \break
 
   \bar "||" \key d \major \time 4/4 \tempo \markup { \small "Allegro assai" } 2=80 \compressMMRests R1*3
-  | r2 a4\f r4
+  | r2 a4\f\upbow r4
   \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } e'4\f\downbow r4 d8\downbow e
   | d8 (cis) r4 r8 e8\upbow
   | e4 g,4. a8
@@ -124,9 +124,9 @@ letterK = \relative {
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \mark 11
   d'8\ff-1 \tweak direction #DOWN \textMark \markup { \small \italic "sempre" } 8 8 8 ees-2 f-1
-  | f8 g-3 f-1 ees-4 d-2 c-1
-  | bes8-1 a-1 bes-2 b-4 c-1 d-4
-  | c8-1 f,\2-4 8 bes-4 bes,\4-1 8
+  | f8 g-3 f-1 ees-4_4 d-2_2 c-4_1
+  | bes8-1_2 a-1_1 bes-2_2 b-4 c-1 d-4
+  | c8-1 f,\3-4 8 bes-4 bes,\4-1 8
   | f''4-4 f,8\2-1\upbow f4.~\sf\downbow
   | f4 g8-4\upbow g4.~\sf\downbow
   | g4 a8-4\downbow d4-4\upbow c8-1\upbow \break
