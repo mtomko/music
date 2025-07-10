@@ -56,7 +56,7 @@ mvtI = \relative {
 
     % line 3
 
-    | ees2~\< ees8 aes-\plus (c-2\parenthesize-1 aes)
+    | ees2~\< ees8 aes-\plus (c-1 aes)
     | ees'2-3~\fp\> ees8 c-1 (aes-\plus ees-4)
     | \afterGrace d2\! ({ ees16 d cis d) } bes'4.-2 (a?8-1)
     | g4-\plus\flageolet d'8-2\p (ees\accent) ees (d) fis,-\plus (a-3)
@@ -336,26 +336,26 @@ mvtI = \relative {
   % page 6 line 1
 
   | \repeat unfold 4 { fis,16 (eis) g-. fis-. }
-  | b,8\upbow (d') d4\accent d,8 (fis') fis4\accent
-  | \clef treble c8\f\2-2\upbow (c'16) r c4~\accent c16 b-3\upbow (a-1 g-\plus\flageolet) fis\2-3\downbow (e-1 d\2-3\flageolet c-1) \break
+  | b,8\upbow (d') d4\accent d,8 (fis'-1) fis4\accent
+  | \clef treble c8\f\2-\plus\upbow (c'16) r c4~\accent c16 b-3\upbow (a-1 g-\plus\flageolet) fis\2-3\downbow (e-1 d\2-3\flageolet c-1) \break
 
   % line 2
 
-  | b8-1-\plus\upbow (b'16-3) r b4~\accent b16 a-1\upbow (g-\plus fis-4) e-1\downbow (d c b)
+  | b8-\plus\upbow (b'16-3) r b4~\accent b16 a-1\upbow (g-\plus fis-4) e-1\downbow (d c b)
   | \clef bass a16\upbow (g fis e d c b a) g8 g' e cis
-  | d16-.\p g,-. g-. b-. b-. d-. d-.\accent e-. d-. g-.-2 g-. b\1-1-. b-. d-.-1 d-.\accent e-. \break
+  | d16-.\p g,-.\4-2 g-. b-.\3-1 b-. d-.-1 d-.\accent e-.-4 d-. g-.\2-1 g-. b\2-4-. b-. d-.\1-1 d-.\accent e-. \break
 
   % line 3
 
-  | \clef treble d16_\crescM g-\plus\flageolet g b-3 b d-\plus d e-1 g4-3 bes!-3
-  | d,,8-\plus\flageolet\f e16 (fis) g a b c d4.-3 (fis,8)
+  | \clef treble d16_\crescM\1-1 g-\plus\flageolet g b-3 b d-\plus d e-1 g4-1 bes!-2
+  | d,,8-\plus\flageolet\f e16 (fis) g a b c d4.-3 (fis,8\1-1)
   | g4-2 bes!2\>\downbow a8-2\p (g-1)
   | g2 \grace g16 (\afterGrace fis2-1\trill { e16-\plus fis) }
   | g4\< (a8 b d-3\flageolet)\> c8-3 (\tuplet 3/2 { b8-2 c a}) \! \break
 
   %line 4
 
-  | \afterGrace g2. ( { a16 g fis g)} b8.-3\upbow (a16)
+  | \afterGrace g2.-1 ( { a16 g fis-\plus g)} b8.-3\upbow (a16)
   | g4-\plus\flageolet \clef bass bes,2\2-2\fp\downbow a8-4\> (g-1)\!
   | g2 \grace g16 (\afterGrace fis2-2\trill { \stemDown e16 fis) } \stemNeutral
   | g4\< (a8 b e\>) c (b a)\!

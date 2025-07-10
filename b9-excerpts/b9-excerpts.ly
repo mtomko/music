@@ -137,7 +137,7 @@ letterK = \relative {
   | g4-4 r8 r4.
   | \compressMMRests R2.*12
   | r8 r f\f-4\downbow bes4-4\upbow aes8-1\upbow
-  | g8-0 aes-1 bes-4 8 8 8 \break
+  | g8-0 aes-1 bes-1 8 8 8 \break
 
   | bes8-1 c-4 bes-1 aes-4 g-2 f-4
   | ees8-1 f-4 ees-1 e-2 f-1 g-4
