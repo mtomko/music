@@ -6,6 +6,7 @@ dimM = \markup { \small \italic "dim." }
 decrescM = \markup { \small \italic "decresc." }
 
 rit = \markup { \small \italic "rit." }
+atempo = \markup { \small \italic "a tempo" }
 
 % fingerings
 plus = \finger \markup \fontsize #4 "+"
@@ -88,11 +89,11 @@ mvtI = \relative {
 
     | a8 f) d \! (g) g\> (ees) c (f)
     | f8 (d) \! \clef bass bes16\2-1_\decrescM (c-4 bes ees) ees8 (c) a16-1 (bes-2 a d)
-    | d8 (bes) fis (bes) g8^\markup { \tiny rit. } (bes) \tuplet 3/2 { a8-1\upbow g'-3\flageolet\downbow (f-1) }  \break
+    | d8 (bes) fis (bes) g8^\rit (bes) \tuplet 3/2 { a8-1\upbow g'-3\flageolet\downbow (f-1) }  \break
 
     % line 8
 
-    | bes,16-2\upbow\pp^\markup { \tiny "a tempo" } (a c bes) \repeat unfold 3 { bes (a c bes) }
+    | bes,16-2\upbow\pp^\atempo (a c bes) \repeat unfold 3 { bes (a c bes) }
     | g8\flageolet\upbow(g'-3\flageolet) g4\accent g,8 (g') g4\accent \pageBreak
 
     % page 2 line 1
@@ -248,8 +249,8 @@ mvtI = \relative {
 
   | \tuplet 3/2 { d8 fis,\tweak Y-offset 5 \upbow (a } \tuplet 3/2 { c ees! fis } \tuplet 3/2 { a) c\tenuto\downbow d\tenuto\upbow } ees4~-2\fp
   | ees1~\upbow
-  | ees4 d (cis8-.) c\2-.\upbow^\markup { \small "rit." } (bes!-. a-.)
-  | g2-1\downbow^\markup { \small "a tempo" } a4.-2\upbow (bes8)
+  | ees4 d (cis8-.) c\2-.\upbow^\rit (bes!-. a-.)
+  | g2-1\downbow^\atempo a4.-2\upbow (bes8)
   | g2~ g8 a (bes c)
   | d4.\accent (g,8) ees'4.\accent (g,8) \break
 
@@ -301,11 +302,11 @@ mvtI = \relative {
   | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-2 c-1) ees4-3\upbow g,-2\2\downbow
   | fis8-1\upbow (d'-3\flageolet bes-\plus g-2) fis-1 (d'-3\flageolet bes g)
   | fis8\upbow (d'-3\flageolet b_\decrescM-2 gis-\plus) e-1 (c'-3 a-1 fis!-3)
-  | d-\plus\flageolet^\markup { "ritard." }\upbow (b' g!-1\flageolet e-3) cis-\plus (a'-3 fis-\plus d-1\flageolet) \break
+  | d-\plus\flageolet^\rit\upbow (b' g!-1\flageolet e-3) cis-\plus (a'-3 fis-\plus d-1\flageolet) \break
 
   % line 4
 
-  | g16\1-1\pp\upbow^\markup { "a tempo" } (fis-\plus a-3 g) \repeat unfold 2 { g (fis a g) } g\downbow (fis a g\flageolet)
+  | g16\1-1\pp\upbow^\atempo (fis-\plus a-3 g) \repeat unfold 2 { g (fis a g) } g\downbow (fis a g\flageolet)
   | e8\3-1\flageolet\upbow (e'16-2) r e4\accent e,8-1\flageolet (e'16-2) r e4\accent
   | fis,16\1-1\upbow (eis-\plus g-2 fis) \repeat unfold 3 { fis (eis g fis) } \break
 
@@ -674,10 +675,10 @@ mvtIII = \relative {
   | fis8 [(a) a-. a-.]
   | a8-. [a-. a-. a-.]
   | a2~
-  | a8 g'^\markup { \tiny \italic "rit." } e cis
+  | a8 g'^\rit e cis
   | d2~
   | d4. d,8 (
-  | c'4.)^\markup { \tiny \italic "a tempo" } d,8 (
+  | c'4.)^\atempo d,8 (
   | bes'4.) d,8 (
   | a'4) \clef bass d,,4~ \break
 
@@ -688,9 +689,9 @@ mvtIII = \relative {
   | bes'4.) d,8 (
   | a'2~
   | a8) [bes8-. (a-. fis-.)]
-  | d8-.^\markup { \tiny \italic "rit." } [(e-.) fis-. g-.]
+  | d8-.^\rit [(e-.) fis-. g-.]
   | a8-. [(ais-.) b-. (d-.)]
-  \bar "||" \key g \major g,4.\p\accent^\markup { \tiny \italic "a tempo" } (a8)
+  \bar "||" \key g \major g,4.\p\accent^\atempo (a8)
   | b4.\accent (g8)
   | a4.\accent (d8) \break
 
@@ -962,9 +963,9 @@ mvtIII = \relative {
   | a8-. [a8-. a8-. a8-.]
   | a2~\<
   | a8\> g' e\> cis \!
-  | d2~^\markup { \small \italic "rit." }
+  | d2~^\rit
   | d4. d,8 (
-  | c'4.^\markup { \small \italic "a tempo" }) d,8 (
+  | c'4.^\atempo) d,8 (
   | bes'4.) d,8 ( \break
 
   % line 7
@@ -974,10 +975,10 @@ mvtIII = \relative {
   | c'4.) d,8 (
   | bes'4.) d,8 (
   | a'2~
-  | a8) [bes-. (a-. fis-.^\markup { \small \italic "rit." })]
+  | a8) [bes-. (a-. fis-.^\rit)]
   | d8 [(e) fis-. g-.]
   | a8 [(ais) b-. d-.]
-  | \key g \major g,4.^\markup { \small \italic "a tempo" }\accent (a8)
+  | \key g \major g,4.^\atempo\accent (a8)
   | b4.\accent (g8)
   | a4.\accent (d8)
   | d4.\accent (b8)
