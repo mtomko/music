@@ -154,11 +154,11 @@ mvtI = \relative {
     | bes4\upbow \clef bass <<a,\f f'^\markup { \small "pizz." } >> <<d bes>> <<a f'>>
     \alternative {
       \volta 1 {
-        | <<bes, d>> r4 <<fis\fz d, \parenthesize a>> r4
+        | <<bes, f'>> r4 <<fis,\fz a d>> r4
         | R1
       }
       \volta 2 {
-        <<bes'4 d>> r4 \clef treble <<d bes'\fz>> r4
+        <<bes4 d>> r4 \clef treble <<d bes'\fz>> r4
       }
     }
   }
@@ -298,10 +298,10 @@ mvtI = \relative {
 
   % line 3
 
-  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-2 c-1) ees4-3\upbow g,-2\2\downbow (
-  | fis8-1) d'-3\flageolet\upbow (bes-\plus) g-2\downbow (fis-1) d'-3\flageolet (bes) g (
-  | fis8) d'-3\flageolet (b_\decrescM-2) gis-\plus (e-1) c'-3 (a-1) fis!-3 (
-  | d-\plus\flageolet)^\markup { "ritard." } b' (g!-1\flageolet) e-3 (cis-\plus) a'-3\upbow (fis-\plus) d-1\flageolet\downbow \break
+  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-2 c-1) ees4-3\upbow g,-2\2\downbow
+  | fis8-1\upbow (d'-3\flageolet bes-\plus g-2) fis-1 (d'-3\flageolet bes g)
+  | fis8\upbow (d'-3\flageolet b_\decrescM-2 gis-\plus) e-1 (c'-3 a-1 fis!-3)
+  | d-\plus\flageolet^\markup { "ritard." }\upbow (b' g!-1\flageolet e-3) cis-\plus (a'-3 fis-\plus d-1\flageolet) \break
 
   % line 4
 
