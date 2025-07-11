@@ -50,16 +50,16 @@ mvtI = \relative {
 
     | d4-4 (cis-2 c8-1) a'-3 (g16-1 fis-\plus ees\2-2 d-1)
     | c4-4_\markup { \small \italic "non dim." } (bes) r8 bes (d-\plus\flageolet [g])
-    | bes8-3\< aes-1\upbow g2-\mi fis4-\plus
+    | bes8-3\< aes-1 g2-\mi fis4-\plus
     | d'4.\> bes8-2\upbow (g-\plus) \clef bass d\2-3\downbow (bes-\mi g-4)
     | c,4\4-1\pp\upbow \clef treble ees'2.-1~\downbow \break
 
     % line 3
 
-    | ees2~\< ees8 aes-\plus (c-1 aes)
-    | ees'2-3~\fp\> ees8 c-1 (aes-\plus ees-4)
-    | \afterGrace d2\! ({ ees16 d cis d) } bes'4.-2 (a?8-1)
-    | g4-\plus\flageolet d'8-2\p (ees\accent) ees (d) fis,-\plus (a-3)
+    | ees2~\< ees8 aes-\plus (c-3 aes-\plus)
+    | ees'2-3~\fp\> ees8 c-3 (aes-\plus ees-4)
+    | \afterGrace d2\!-2 ({ ees16 d cis d) } bes'4.-3 (a?8-3)
+    | g4-1\flageolet d'8-2\p (ees\accent) ees (d) fis,-\plus (a-3)
     | a8\accent (g) d-1 (f!-4) f-4\accent (ees-1) c-1-. (a-4-.) \break
 
     % line 4
@@ -146,8 +146,8 @@ mvtI = \relative {
     | \afterGrace bes2. ({ c16 bes a bes) } d8 (c)
     | bes4\downbow des'2\downbow\> c8 (bes)
     | bes2\! \acciaccatura bes16 \once \slurDown \afterGrace a2~ \trill { g16 a }
-    | bes4\< (c8 d g-3\flageolet\>) ees-2 (d-1 c-\plus)\!
-    | g4~-\plus\flageolet (g16 a bes c) \afterGrace bes4 ( {c32 bes a bes) } d8.\downbow (c16) \break
+    | bes4\< (c8 d g-3\flageolet\>) ees-2\upbow (d-1 c-\plus)\!
+    | g4~-\plus\flageolet (g16 a bes c) \afterGrace bes4\upbow ( {c32 bes a bes) } d8.\downbow (c16) \break
 
     % line 9
 
@@ -325,7 +325,7 @@ mvtI = \relative {
   | \clef bass e,,16\3-1\upbow_\crescM (fis-2 g-4\< fis g b\2 c b) \clef treble c\downbow (dis e dis) e-1\upbow (fis-4 g-\plus a-1)
   | bes2.-2\f\> a8-3 (g)\!
   | g2 \grace g32\upbow \( \afterGrace fis2-1\trill { e16-\plus fis \) }
-  | g8\< \clef bass g,\2\upbow (a b-3 d\flageolet) c\>\downbow (\tuplet 3/2 { b8 c a }) \! \break 
+  | g8\< \clef bass g,\2\upbow (a b-3 d\flageolet) c\>\downbow (\tuplet 3/2 { b8 c a }) \! \break
 
   % line 8
 
