@@ -215,8 +215,77 @@ letterK = \relative {
   | fis4 8-4\upbow fis,4.~\sf-1\downbow
   | fis4 8\downbow fis'4.~\sf-4\upbow
   | fis4 r8 r4.
-  \bar "||"
+  | \compressMMRests R2.*3
+  | b,2.~\p
+  | b2.
+  | \compressMMRests R2.*4
+  | b2.~\pp
+  | b2.
+  | \compressMMRests R2.*4
+  | a2.~\pp_\cresc\upbow
+  | a4.~(a8 b-1\downbow cis-4\upbow) \break
 
+  | \mark \default d8\ff-.-0 d'-.-4 cis-.-2 b-.-4 a-.-1 g-.-0
+  | fis8-4 e-1 d-0 cis-4 b-1 a'-1
+  | a,8-0 a'-1 b-4 cis-1 d-2 e-1
+  | fis8-4 g,-0 a-1 b-4 a-1 cis-2
+  | d8-4 a-4 g-1 fis-4 e-1 d-0
+  | cis8-\mii d-4 b-1 a-0 b-1 gis-4 \break
+
+  | a8-0 a'-1 b-4 cis-1 d-2 e-1
+  | fis8-4 g-0 a,\2-1 b-4 a-1 cis-1
+  | d8-2 b\1-4 a-1 g-0 fis-4 e-1
+  | d8-0 e-1 d-0 c-2 b-1 a-0
+  | g8-2 a'-1 b-4 c-1 d-4 e-1
+  | fis-4 g-0 a,\2-1 b-4 g,-2 8 \break
+
+  | a8-0 g''-0 fis-4 e-1 d-4 cis-1
+  | b8-4 a-1 d-4 a-4 fis-1 d-0
+  | b8-1 a-0 gis-4 a-0 a'-4 8
+  | d,8-0 a'-4 gis-2 a-4 fis-1 d-0
+  | a8 a'-4 gis-2 a-4 e-4 cis-1
+  | a8-0 a'-4 gis-2 a-4 fis-1 d-0 \break
+
+  | a8-0 a'-1 b-4 a-1 a,-0 8
+  | a8 a'-4 gis-2 a-4 fis-1 d-0
+  | a8-0 a'-1 b-4 a-1 a,-0 8
+  | ais8-1 ais'-4 8 fis,-1 fis'-4 8
+  | b,8-1 b'-4 8 e,,-0 e'-1 8
+  | a,8-0 a'-4 a a,\ff a' a  \break
+
+  | d,8-0 d'-4 c-1 b-4 a-1 g-0
+  | fis8-4 e-1 d-0 c-2 b-1 a-0
+  | g8-2 a'-1 b-4 c-1 d-1 e-1
+  | fis8-4 g-0 a,-1 b-4 g,-2 g
+  | a8-0 g''-0 fis-4 e-1 d-2 cis-1
+  | b-4 a-1 d-4 a-4 fis-1 d-0 \break
+
+  | b8-1 a-0 gis-4 a-0 a'-4 8
+  | d,8-0 a'-4 gis-2 a-4 fis-1 d-0
+  | a8-0 a'-4 gis-2 a-4 e-4 cis-1
+  | a8-0 a'-4 gis-2 a-4 fis-1 d-0
+  | a8-0 a'-1 b-4 a-1 a,-0 8
+  | a8-0 a'-4 gis-2 a-4 fis-1 d-0 \break
+
+  | a8-0 a'-1 b-4 a-1 a,-0 8
+  | ais8-1 ais'-4 8 fis,-1 fis'-4 8
+  | b,8-1 b'-4 8 e,,-0 e'-1 8
+  | a,8-0 a'-4 8 a,\ff-0 a'-4 8
+  | d,8-0 d'-4 c-1 b-4 a-1 g-0
+  | fis8-4 e-1 d-0 c-2 b-1 a-0 \break
+
+  | g8-2 a'-1 b-4 c-1 d-4 e-1
+  | fis8-4 g-0 a,-1 b-4 g,-2 8
+  | a8-0 g''-0 fis-4 e-1 d-2 cis-1
+  | b8-4 a-1 d-1 a-1 fis-4 d-0
+  | b8-1 a-0 gis-4 a-0 a'-4 8 \break
+
+  | d,8-0 d'-4 cis-2 d-4 fis,-1 a-4
+  | d,\sf-0 8 cis-4 d-0 fis-4 a-1
+  | c8-4 e,-1 d-0 c-2 b-4 a-0
+  | g8\sf-2 b-1 d-0 g-0 b-4 d-1
+  | g4-0 r8 r4.\fermata
+  \bar "||"
 }
 
 excerptI = \relative {
