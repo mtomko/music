@@ -239,7 +239,7 @@ letterK = \relative {
   | g8-2 a'-1 b-4 c-1 d-4 e-1
   | fis-4 g-0 a,\2-1 b-4 g,-2 8 \break
 
-  | a8-0 g''-0 fis-4 e-1 d-4 cis-1
+  | a8-0 g''-0 fis-4 e-1 d-4 cis-2
   | b8-4 a-1 d-4 a-4 fis-1 d-0
   | b8-1 a-0 gis-4 a-0 a'-4 8
   | d,8-0 a'-4 gis-2 a-4 fis-1 d-0
@@ -255,9 +255,9 @@ letterK = \relative {
 
   | d,8-0 d'-4 c-1 b-4 a-1 g-0
   | fis8-4 e-1 d-0 c-2 b-1 a-0
-  | g8-2 a'-1 b-4 c-1 d-1 e-1
+  | g8-2 a'-1 b-4 c-1 d-4 e-1
   | fis8-4 g-0 a,-1 b-4 g,-2 g
-  | a8-0 g''-0 fis-4 e-1 d-2 cis-1
+  | a8-0 g''-0 fis-4 e-1 d-4 cis-2
   | b-4 a-1 d-4 a-4 fis-1 d-0 \break
 
   | b8-1 a-0 gis-4 a-0 a'-4 8
@@ -276,8 +276,8 @@ letterK = \relative {
 
   | g8-2 a'-1 b-4 c-1 d-4 e-1
   | fis8-4 g-0 a,-1 b-4 g,-2 8
-  | a8-0 g''-0 fis-4 e-1 d-2 cis-1
-  | b8-4 a-1 d-1 a-1 fis-4 d-0
+  | a8-0 g''-0 fis-4 e-1 d-4 cis-2
+  | b8-4 a-1 d-4 a-4 fis-4 d-0
   | b8-1 a-0 gis-4 a-0 a'-4 8 \break
 
   | d,8-0 d'-4 cis-2 d-4 fis,-1 a-4
