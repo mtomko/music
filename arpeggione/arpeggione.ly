@@ -155,11 +155,11 @@ mvtI = \relative {
     | bes4\upbow \clef bass <<a,\f f'^\markup { \small "pizz." } >> <<d bes>> <<a f'>>
     \alternative {
       \volta 1 {
-        | <<bes, f'>> r4 <<fis,\fz a d>> r4
+        | <<d bes>> r4 <<fis'\fz d,>> r4
         | R1
       }
       \volta 2 {
-        <<bes4 d>> r4 \clef treble <<d bes'\fz>> r4
+        <<bes'4 d>> r4 \clef treble <<d bes'\fz>> r4
       }
     }
   }
@@ -250,7 +250,7 @@ mvtI = \relative {
   | \tuplet 3/2 { d8 fis,\tweak Y-offset 5 \upbow (a } \tuplet 3/2 { c ees! fis } \tuplet 3/2 { a) c\tenuto\downbow d\tenuto\upbow } ees4~-2\fp
   | ees1~\upbow
   | ees4 d (cis8-.) c\2-.\upbow^\rit (bes!-. a-.)
-  | g2-1\downbow^\atempo a4.-2\upbow (bes8)
+  | g2-1\pp\downbow^\atempo a4.-2\upbow (bes8)
   | g2~ g8 a (bes c)
   | d4.\accent (g,8) ees'4.\accent (g,8) \break
 
