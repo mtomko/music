@@ -79,7 +79,7 @@ recit = \relative {
 
   | f4. f8 8 g
   | bes8 (a) r a\upbow a bes
-  | d8 (c) c8\upbow 8\upbow 8 d
+  | d8 (c) c8\upbow 8 8\upbow_\markup {\tiny \italic "dim." } d
   | ees4 r r
   \bar "||" \time 4/4 \key g \minor \tweak X-offset -0.7 \textMark \markup { \small \bold "Adagio cantabile" } \compressMMRests {R1*2}
   \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } bes2.~\p\upbow (
@@ -100,10 +100,10 @@ recit = \relative {
   | r2 a4\f\upbow r4
   \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } e'4\f\downbow r4 d8\downbow e
   | d8 (cis) r4 r8 e8\upbow
-  | e4 g,4. a8
-  | g4\upbow fis a8. (d16)
+  | e4 g,4. a8 \tenuto
+  | g4\tenuto\upbow fis\tenuto a8. (d16)
   | d4. e8 (fis e)
-  | e8 (d) d\upbow (cis d a \break
+  | e8 (d) d\upbow (cis d a\1 \break
 
   | g8\tweak X-offset -2 \parenthesize\upbow fis) fis (e d c)
   | c8\upbow (b) g'2~\sf\downbow
