@@ -50,11 +50,11 @@ solonotes = \relative {
   | c,4.\<~ c16 e-4\3 (g-1\2 c-4 e-2\1 g)\! \clef treble bes\> a-. (g-. f-. e-. d-.) \grace { c32 (d) } c16 (d c cis d bes) \!
   | a4 r8 r4 r8 r2. \break
   % line 7
-  | g4.\2~ 16\< (b-4\upbow d-1\1 f-4 g-\plus b-1) d-3\downbow (g-\plus b) d-. g-.\! g,,\upbow (b-.) a-. (aes-. g-. fis-. f-.)
-  | e4.\accent\< g\accent c\accent d\accent \!
-  | e4. b'2.\accent-2\upbow\< b8 (a g)\! \break
+  | g4.\2~ 16\< (b-4\upbow d-1\1 f-4 g-\plus b-1) d-3\downbow (g-\plus b) d-. g-.\! g,,\upbow (b-.) a-.\downbow (aes-. g-. fis-. f-.)
+  | e4.\accent\<\upbow g\accent c\accent d\accent \!
+  | e4.\upbow b'2.\accent-2\< b8 (a g)\! \break
   % line 8
-  | \ottava 1 g'4.\upbow \ottava 0 c,,,8\upbow d e f4\accent\downbow (aes,8) g8.\upbow \stemDown g'32 ([b] \stemNeutral d [g b d])
+  | \ottava 1 g'4. \ottava 0 c,,,8\upbow d e f4\accent\downbow (aes,8) g8.\upbow \stemDown g'32 ([b] \stemNeutral d [g b d])
   | \ottava 1 g4.\upbow \ottava 0 c,,,8\upbow d e f4\accent\downbow (aes,8) g8.\upbow \stemDown g'32 ([b] \stemNeutral d [g b d])
   | \ottava 1 g 8-3\upbow \ottava 0 r16 c,,,-.\downbow b-. bes-. a8\upbow\< (b16)\! e-. dis-. d-. c8\< (d16)\! g-. fis-. f-. e8\< (g16)\! d'-. c-. b-. \break
   % line 9
