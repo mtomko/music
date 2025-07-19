@@ -55,7 +55,7 @@ recit = \relative {
   | r4 r8 f8\upbow c'8 8
   | ees4. 8 c bes
   | bes8 (a) 8 8 bes\upbow c\upbow
-  | c8 (f,) r ees\upbow 8 d
+  | c8 (f,) r ees\2\upbow 8 d
   | c8\downbow (bes) r4 r
   \bar "||" \time 2/4 \tempo \markup { \small "Allegro mo non troppo" } 4 = 88 \startMeasureCount cis2~\pp\tweak X-offset -1 \upbow
   | \repeat unfold 3 { cis2~ } \break
@@ -79,7 +79,7 @@ recit = \relative {
 
   | f4. f8 8 g
   | bes8 (a) r a\upbow a bes
-  | d8 (c) c8\upbow 8 8\upbow_\markup {\tiny \italic "dim." } d
+  | d8 (c) c8\upbow 8\upbow 8_\markup {\tiny \italic "dim." } d
   | ees4 r r
   \bar "||" \time 4/4 \key g \minor \tweak X-offset -0.7 \textMark \markup { \small \bold "Adagio cantabile" } \compressMMRests {R1*2}
   \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } bes2.~\p\upbow (
@@ -108,7 +108,7 @@ recit = \relative {
   | g8\tweak X-offset -2 \parenthesize\upbow fis) fis (e d c)
   | c8\upbow (b) g'2~\sf\downbow
   | g4. e8 cis d
-  | d4\downbow a\upbow_\flageolet r4
+  | d4\downbow a\upbow\flageolet r4
   | R2.
   \bar "||" \pageBreak
 }
@@ -124,8 +124,8 @@ letterK = \relative {
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \mark 11
   d'8\ff-1 \tweak direction #DOWN \textMark \markup { \small \italic "sempre" } 8 8 8 ees-2 f-1
-  | f8 g-3 f-1 ees-4_4 d-2_2 c-4_1
-  | bes8-1_2 a-1_1 bes-2_2 b-4 c-1 d-4
+  | f8 g-3 f-1 ees-4 d-2 c-4
+  | bes8-1 a-1 bes-2 b-4 c-1 d-4
   | c8-1 f,\3-4 8 bes-4 bes,\4-1 8
   | f''4-4 f,8\2-1\upbow f4.~\sf\downbow
   | f4 g8-4\upbow g4.~\sf\downbow
