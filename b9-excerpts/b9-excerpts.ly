@@ -78,7 +78,7 @@ recit = \relative {
   | bes8 (a) a4 f4~\break
 
   | f4. f8 8 g
-  | bes8 (a) r a\upbow a bes
+  | bes8\1 (a) r a\upbow a bes
   | d8 (c) c8\upbow 8\upbow 8_\markup {\tiny \italic "dim." } d
   | ees4 r r
   \bar "||" \time 4/4 \key g \minor \tweak X-offset -0.7 \textMark \markup { \small \bold "Adagio cantabile" } \compressMMRests {R1*2}
