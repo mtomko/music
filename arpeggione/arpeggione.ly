@@ -100,12 +100,12 @@ mvtI = \relative {
 
     | a,16\upbow (gis bes a) \repeat unfold 3 { a16 (gis bes a) }
     | f8\upbow (f') f4\accent f,8 (f') f4\accent
-    | ees16-2\upbow (d-1 f-4 ees-1 g-3_\crescM f-1 ees-2 d-1) c-1\downbow (d-4 ees-4 c-\mi a\2-4) f\upbow (g ees \break
+    | ees16-2\upbow (d-1 f-4 ees-1 g-3_\crescM f-1 ees-4 d-2) c-1\downbow (d-4 ees-4 c-\mi a\2-4) f\upbow (g ees \break
 
     % line 2
 
     | d16-.\parenthesize\upbow) f'-1\downbow\p (g-3 f) f,\3\plus-.\upbow f' (g f) bes,-.\2-\plus f' (g f) d-3\flageolet-. f (g f)
-    | ees16-2\upbow (d-1 f-4 ees-1 g-3_\crescM f-1 ees-2 d-1) c-1\downbow (d-4 ees-4 c-\mi a\2-4) f\upbow (g ees
+    | ees16-2\upbow (d-1 f-4 ees-1 g-3_\crescM f-1 ees-4 d-2) c-1\downbow (d-4 ees-4 c-\mi a\2-4) f\upbow (g ees
     | d16-.) f'-1\downbow\p (g-3 f) f,\plus-.\upbow f' (g f) bes,-.-\plus f' (g f) d-3\flageolet-. f (g f) \break
 
     % line 3
@@ -137,15 +137,15 @@ mvtI = \relative {
 
 
     | \clef treble f16-. bes-.-2 bes-. d-.-\plus d-. f-.-1 f-. g-.-\plus bes4-1 des-2
-    | f,,8\2-2-.\f g16-\plus (a-1) bes-2-. c-. d!-. ees-. f4.\accent (a,8)
+    | f,,8\2-2-.\f g16-\plus (a-1) bes-2-. c-.-\plus d!-.-1 ees-.-2 f4.\accent-3 (a,8)
     | bes4\upbow des,2-2\p\downbow c8-4 (bes-1)
-    | bes2 \acciaccatura bes16 \afterGrace a2 ( \trill { g16 a }
-    | bes4\<) c8 (d f) ees\upbow \> ( \tuplet 3/2 { d8 ees c }) \! \break
+    | bes2 \acciaccatura bes16 \afterGrace a2 ( \trill { g16 a) }
+    | bes4\< c8 (d f) ees \> ( \tuplet 3/2 { d8 ees c }) \! \break
 
     % line 8
 
-    | \afterGrace bes2. ({ c16 bes a bes) } d8 (c)
-    | bes4\downbow des'2\downbow\> c8 (bes)
+    | \afterGrace bes2.\upbow ({ c16 bes a bes) } d8 (c)
+    | bes4\upbow des'2\downbow\> c8 (bes)
     | bes2\! \acciaccatura bes16 \once \slurDown \afterGrace a2~ \trill { g16 a }
     | bes4\< (c8 d g-3\flageolet\>) ees-2\upbow (d-1 c-\plus)\!
     | g4~-\plus\flageolet (g16 a bes c) \afterGrace bes4\upbow ( {c32 bes a bes) } d8.\downbow (c16) \break
