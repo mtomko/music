@@ -100,12 +100,12 @@ mvtI = \relative {
 
     | a,16\upbow (gis bes a) \repeat unfold 3 { a16 (gis bes a) }
     | f8\upbow (f'-.) f4\accent f,8 (f'-.) f4\accent
-    | ees16-2\downbow (d-1 f-4 ees-1 g-3_\crescM f-1 ees-4 d-2) c-1\upbow (d-4 ees-4 c-\mi a\2-4) f\downbow (g ees \break
+    | ees16-2\downbow (d-1 f-4 ees-1 g-3_\crescM f-1 ees-4 d-2) c-1\upbow (d-2 ees-4 c-\mi a\2-4) f\downbow (g ees \break
 
     % line 2
 
     | d16-.\parenthesize\downbow) f'-1\upbow\p (g-3 f) f,\3\plus-.\downbow f' (g f) bes,-.\2-\plus f' (g f) d-3\flageolet-. f (g f)
-    | ees16-2\downbow (d-1 f-4 ees-1 g-3_\crescM f-1 ees-4 d-2) c-1\upbow (d-4 ees-4 c-\mi a\2-4) f\downbow (g ees
+    | ees16-2\downbow (d-1 f-4 ees-1 g-3_\crescM f-1 ees-4 d-2) c-1\upbow (d-2 ees-4 c-\mi a\2-4) f\downbow (g ees
     | d16-.) f'-1\upbow\p (g-3 f) f,\plus-.\downbow f' (g f) bes,-.-\plus f' (g f) d-3\flageolet-. f (g f) \break
 
     % line 3
