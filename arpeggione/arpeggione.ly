@@ -299,7 +299,7 @@ mvtI = \relative {
 
   % line 3
 
-  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-2 c-1) ees4-3\upbow g,\2-1\downbow
+  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-2 c-1) ees4-3\upbow g,\2-2\downbow
   | fis8-1\upbow (d'-3\flageolet bes-\plus g-2) fis-1 (d'-3\flageolet bes g)
   | fis8\upbow (d'-3\flageolet b_\decrescM-3 gis-\plus) e-1 (c'-3 a-1 fis!-3)
   | d-\plus\flageolet^\rit\upbow (b' g!-1\flageolet e-3) cis-\plus (a'-3 fis-\plus d-1\flageolet) \break
