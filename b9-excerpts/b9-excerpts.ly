@@ -52,8 +52,8 @@ recit = \relative {
   | \compressMMRests { R2.*7 }
   | r8 fis\f\upbow a4 r \break
 
-  | r4 r8 f8\upbow c'8 8
-  | ees4. 8 c bes
+  | r4 r8 f8\tenuto\upbow_\markup { \tiny \italic "(non-marcato)" } c'8\tenuto 8\tenuto
+  | ees4.\tenuto 8 c bes
   | bes8 (a) 8 8 bes\upbow c\upbow
   | c8 (f,) r ees\2\upbow 8 d
   | c8\downbow (bes) r4 r
@@ -278,13 +278,13 @@ letterK = \relative {
   | g8-2 a'-1 b-4 c-1 d-4 e-1
   | fis8-4 g-3 a,-1 b-4 g,-2 8
   | a8-0 g''-3 fis-4 e-1 d-4 cis-2
-  | b8-4 a-1 d-4 a-4 fis-4 d-0
+  | b8-4 a-1 d-4 a-4 fis-1 d-0
   | b8-1 a-0 gis-4 a-0 a'-4 8 \break
 
   | d,8-0 d'-4 cis-2 d-4 fis,-1 a-4
   | d,\sf-0 8 cis-4 d-0 fis-4 a-1
   | c8-4 e,-1 d-0 c-2 b-4 a-0
-  | g8\sf-2 b-1 d-0 g-0 b-4 d-1
+  | g8\sf-2 b-1 d-0 g-0 b-1 d-4
   | g4-3 r8 r4.\fermata
   \bar "||"
 }
