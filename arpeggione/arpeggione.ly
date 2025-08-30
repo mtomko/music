@@ -57,7 +57,7 @@ mvtI = \relative {
 
     % line 3
 
-    | ees2~\< ees8 aes-\plus (c-3 aes-\plus)
+    | ees2~\< ees8 aes-\plus (c-3 aes-\plus)\glissando
     | ees'2-3~\fp\> ees8 c-3 (aes-\plus ees-4)
     | \afterGrace d2\!-2 ({ ees16 d cis d) } bes'4.-2 (a?8-1)
     | g4-1\flageolet d'8-2\p (ees) ees\accent (d) fis,-\plus (a-3)
@@ -104,7 +104,7 @@ mvtI = \relative {
 
     % line 2
 
-    | d16-.\parenthesize\downbow) f'-1\upbow\p (g-3 f) f,\3\plus-.\downbow f' (g f) bes,-.\2-\plus f' (g f) d-3\flageolet-. f (g f)
+    | d16-.\parenthesize\downbow)\breathe f'-1\upbow\p (g-3 f) f,\3\plus-.\downbow f' (g f) bes,-.\2-\plus f' (g f) d-3\flageolet-. f (g f)
     | ees16-2\downbow (d-1 f-4 ees-1 g-3_\crescM f-1 ees-4 d-2) c-1\upbow (d-2 ees-4 c-\mi a\2-4) f\downbow (g ees
     | d16-.) f'-1\upbow\p (g-3 f) f,\plus-.\downbow f' (g f) bes,-.-\plus f' (g f) d-3\flageolet-. f (g f) \break
 
@@ -240,14 +240,14 @@ mvtI = \relative {
   | d'4 c16 (bes a g) d'4 c16 (bes a g)
   | d'1~-3\flageolet\fz\>
   | d1~ \tweak X-offset 4 \upbow
-  | d2_\dimM\! \once \set fingeringOrientations = #'(left) <\parenthesize a' a,\harmonic-3 d,\harmonic\2-\plus>2\downbow
-  | d,2\1-3\flageolet\upbow a2\2\flageolet\upbow
+  | d2_\dimM\! a2\flageolet-3
+  | \clef bass d,2\flageolet\upbow a2\flageolet\upbow
   | d,2\flageolet \clef bass a4. (fis8)
   | d1~ \break
 
   % line 4
 
-  | \tuplet 3/2 { d8 fis,\tweak Y-offset 5 \upbow (a } \tuplet 3/2 { c ees! fis } \tuplet 3/2 { a) c\tenuto\downbow d\tenuto\upbow } ees4~-2\fp
+  | \tuplet 3/2 { d8 fis\tweak Y-offset 5 \upbow (a } \tuplet 3/2 { c ees! fis } \tuplet 3/2 { a) c\tenuto\downbow d\tenuto\upbow } ees4~-2\fp
   | ees1~\upbow
   | ees4 d (cis8-.) c\2-.\upbow^\rit (bes!-. a-.)
   | g2-1\pp\downbow^\atempo a4.-2\upbow (bes8)
@@ -299,7 +299,7 @@ mvtI = \relative {
 
   % line 3
 
-  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-2 c-1) ees4-3\upbow g,\2-2\downbow
+  | aes16\p-1\downbow (g-\plus\flageolet bes-3 aes-1 c-1 bes-\plus d-2 c-1) ees4-3\upbow g,\2-1\downbow
   | fis8-1\upbow (d'-3\flageolet bes-\plus g-2) fis-1 (d'-3\flageolet bes g)
   | fis8\upbow (d'-3\flageolet b_\decrescM-3 gis-\plus) e-1 (c'-3 a-1 fis!-3)
   | d-\plus\flageolet^\rit\upbow (b' g!-1\flageolet e-3) cis-\plus (a'-3 fis-\plus d-1\flageolet) \break
@@ -313,7 +313,7 @@ mvtI = \relative {
   % line 5
 
   | d8-\plus\flageolet\upbow (d'16-.)-3\flageolet r d4\accent d,8-\plus (d'16-.) r d4\accent\flageolet-2
-  | c16-1\downbow (b-\plus d-2 c-\plus e-3 d-1 c-2 b-1) a-\plus\upbow \< (b-1 c-2 a-\plus fis\2-1) d-\plus\downbow (e-1 c\3-2
+  | c16-1\downbow (b-\plus d-2 c-1 e-3 d-1 c-2 b-1) a-\plus\upbow \< (b-1 c-2 a-\plus fis\2-1) d-\plus\downbow (e-1 c\3-2
   | \stemDown b16-.-1\3) d'\1-1\flageolet\p\upbow (e-2 d-1) d,-.\2-\plus\downbow d'\1-1\flageolet\upbow (e-2 d-1) \stemNeutral g,-.\2-\plus\downbow d'\1-1\upbow (e-2 d-1) b-.\2-2\downbow d-1\upbow (e-2 d-1) \break
 
   % line 6

@@ -73,7 +73,7 @@ recit = \relative {
   | c2\upbow b4\)
   | d4\downbow (c) r4\fermata
   \bar "||" \tempo "Vivace" \compressMMRests { R2.*8 }
-  \bar "||" \tweak X-offset -0.4 \textMark \markup { \smaller \smaller \musicglyph #"scripts.ufermata" } \tempo \markup { \small "Tempo I" } f4\f\downbow c\upbow r
+  \bar "||" \tweak X-offset -0.4 \textMark \markup { \smaller \smaller \musicglyph #"scripts.ufermata" } \tempo \markup { \small "Tempo I" } f4\f\downbow c\1\upbow r
   | r4 c\upbow bes8 c
   | bes8 (a) a4 f4~\break
 
@@ -89,8 +89,8 @@ recit = \relative {
 
   | r4 r f\upbow (
   | aes2 des4)
-  | cis4 \tweak font-size -1 \cresc fis,4.\upbow a8\downbow
-  | a4\upbow bis,8-!\downbow dis'8-!\upbow dis-! cis-!
+  | cis4 fis,4.\upbow a8\downbow
+  | a4\tweak font-size -1 \cresc\upbow bis,8-!\downbow dis'8-!\upbow dis-! cis-!
   | cis8\downbow (bis) bis\upbow dis\upbow dis e
   | fis4.\ff dis8 bis cis
   | cis4\downbow gis\upbow r
@@ -110,7 +110,7 @@ recit = \relative {
   | g4. e8 cis d
   | d4\downbow a\upbow\flageolet r4
   | R2.
-  \bar "||" \pageBreak
+  \bar "||"
 }
 
 letterK = \relative {
@@ -123,6 +123,7 @@ letterK = \relative {
   \set Score.currentBarNumber = 431
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \mark 11
+  \autoPageBreaksOff
   d'8\ff-1 \tweak direction #DOWN \textMark \markup { \small \italic "sempre" } 8 8 8 ees-2 f-1
   | f8 g-3 f-1 ees-4 d-2 c-4
   | bes8-1 a-1 bes-2 b-4 c-1 d-4
@@ -214,8 +215,18 @@ letterK = \relative {
   | fis4 8\downbow fis,4.~\sf-1\upbow
   | fis4 8-4\upbow fis,4.~\sf-1\downbow
   | fis4 8\downbow fis'4.~\sf-4\upbow
-  | fis4 r8 r4. \break
+  | fis4 r8 r4.
+  \autoPageBreaksOn
+}
 
+letterM = \relative {
+  \time 6/8
+  \key d \major
+  \clef bass
+  \romanStringNumbers
+  \set stringNumberOrientations = #'(down)
+  \set Score.currentBarNumber = 526
+  \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   | \compressMMRests R2.*3
   | b,2.~\p
   | b2.
@@ -226,22 +237,22 @@ letterK = \relative {
   | a2.~\pp_\cresc\upbow
   | a4.~(a8 b-1\downbow cis-4\upbow) \break
 
-  | \mark \default d8\ff-.-0 d'-.-4 cis-.-2 b-.-4 a-.-1 g-.-0
+  | \mark 13 d8\ff-.-0 d'-.-4 cis-.-2 b-.-4 a-.-1 g-.-0
   | fis8-4 e-1 d-0 cis-4 b-1 a'-1
   | a,8-0 a'-1 b-4 cis-1 d-2 e-1
   | fis8-4 g,-0 a-1 b-4 a-1 cis-2
   | d8-4 a-4 g-1 fis-4 e-1 d-0
   | cis8-\mii d-4 b-1 a-0 b-1 gis-4 \break
 
-  | a8-0 a'-1 b-4 cis-1 d-2 e-1
+  | a8-0 a'\2-1 b-4 cis\1-1 d-2 e-1
   | fis8-4 g-3 a,\2-1 b-4 a-1 cis-1
   | d8-2 b\1-4 a-1 g-0 fis-4 e-1
   | d8-0 e-1 d-0 c-2 b-1 a-0
-  | g8-2 a'-1 b-4 c-1 d-4 e-1
-  | fis-4 g-3 a,\2-1 b-4 g,-2 8 \break
+  | g8-2 a'\2-1 b-2 c-4 d\1-1 e-4
+  | fis-2 g-3 a,\2-1 b-4 g,-2 8 \break
 
-  | a8-0 g''-3 fis-4 e-1 d-4 cis-2
-  | b8-4 a-1 d-4 a-4 fis-1 d-0
+  | a8-0 g''-3 fis-2 e-4 d-1 cis-4
+  | b8-1 a\2-4 d\1-4 a\2-4 fis-1 d-0
   | b8-1 a-0 gis-4 a-0 a'-4 8
   | d,8-0 a'-4 gis-2 a-4 fis-1 d-0
   | a8 a'-4 gis-2 a-4 e-4 cis-1
@@ -250,16 +261,16 @@ letterK = \relative {
   | a8-0 a'-1 b-4 a-1 a,-0 8
   | a8 a'-4 gis-2 a-4 fis-1 d-0
   | a8-0 a'-1 b-4 a-1 a,-0 8
-  | ais8-1 ais'-4 8 fis,-1 fis'-4 8
+  | ais8\4-1 ais'-4 8 fis,-1 fis'-4 8
   | b,8-1 b'-4 8 e,,-0 e'-1 8
   | a,8-0 a'-4 a a,\ff a' a  \break
 
   | d,8-0 d'-4 c-1 b-4 a-1 g-0
   | fis8-4 e-1 d-0 c-2 b-1 a-0
-  | g8-2 a'-1 b-4 c-1 d-4 e-1
-  | fis8-4 g-3 a,-1 b-4 g,-2 g
-  | a8-0 g''-3 fis-4 e-1 d-4 cis-2
-  | b-4 a-1 d-4 a-4 fis-1 d-0 \break
+  | g8-2 a'-1 b-2 c-4 d-1 e-4
+  | fis8-2 g-3 a,-1 b-4 g,-2 g
+  | a8-0 g''-3 fis-2 e-4 d-1 cis-4
+  | b-1 a-4 d-4 a-4 fis-1 d-0 \break
 
   | b8-1 a-0 gis-4 a-0 a'-4 8
   | d,8-0 a'-4 gis-2 a-4 fis-1 d-0
@@ -269,24 +280,25 @@ letterK = \relative {
   | a8-0 a'-4 gis-2 a-4 fis-1 d-0 \break
 
   | a8-0 a'-1 b-4 a-1 a,-0 8
-  | ais8-1 ais'-4 8 fis,-1 fis'-4 8
+  | ais8\4-1 ais'-4 8 fis,-1 fis'-4 8
   | b,8-1 b'-4 8 e,,-0 e'-1 8
   | a,8-0 a'-4 8 a,\ff-0 a'-4 8
   | d,8-0 d'-4 c-1 b-4 a-1 g-0
   | fis8-4 e-1 d-0 c-2 b-1 a-0 \break
 
-  | g8-2 a'-1 b-4 c-1 d-4 e-1
-  | fis8-4 g-3 a,-1 b-4 g,-2 8
-  | a8-0 g''-3 fis-4 e-1 d-4 cis-2
-  | b8-4 a-1 d-4 a-4 fis-1 d-0
+  | g8-2 a'-1 b-2 c-4 d-1 e-4
+  | fis8-2 g-3 a,-1 b-4 g,-2 8
+  | a8-0 g''-3 fis-2 e-4 d-1 cis-4
+  | b8-1 a-4 d-4 a-4 fis-1 d-0
   | b8-1 a-0 gis-4 a-0 a'-4 8 \break
 
   | d,8-0 d'-4 cis-2 d-4 fis,-1 a-4
-  | d,\sf-0 8 cis-4 d-0 fis-4 a-1
-  | c8-4 e,-1 d-0 c-2 b-4 a-0
+  | d,\sf-2 8-2 cis-1 d-2 fis-1 a-4
+  | c8-1 e, d-0 c-2 b-4 a-0
   | g8\sf-2 b-1 d-0 g-0 b-1 d-4
   | g4-3 r8 r4.\fermata
   \bar "||"
+  \pageBreak
 }
 
 excerptI = \relative {
@@ -375,6 +387,19 @@ excerptII = \relative {
     }
     \letterK
   }
+
+  \markup {
+    "
+    "
+  }
+
+  \score {
+    \layout {
+      indent = 0.0
+    }
+    \letterM
+  }
+
 
   \markup {
     "
