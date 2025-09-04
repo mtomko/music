@@ -58,10 +58,14 @@ recit = \relative {
   | c8 (f,) r ees\2\upbow 8 d
   | c8\downbow (bes) r4 r
   \bar "||" \time 2/4 \tempo \markup { \small "Allegro mo non troppo" } 4 = 88 \startMeasureCount cis2~\pp\tweak X-offset -1 \upbow
-  | \repeat unfold 3 { cis2~ } \break
-  | \repeat unfold 3 { cis2~ }
+  | cis2~
+  | cis2~
+  | cis2~\downbow \break
+  | cis2~
+  | cis2~
+  | cis2~\upbow
   | cis2 \stopMeasureCount
-  \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } fis8\f 8 ees'2~\ff
+  \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } fis8\f\downbow 8 ees'2~\ff
   | ees4. 8 8 c
   | bes8 (a) c fis, g a
   | a8\upbow c, d ees8~8 d
