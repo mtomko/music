@@ -63,8 +63,8 @@ recit = \relative {
   | cis2 \stopMeasureCount
   \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } fis8\f 8 ees'2~\ff
   | ees4. 8 8 c
-  | bes8 a c fis, g a
-  | a8 c,\upbow d\upbow ees8~8 d
+  | bes8 (a) c fis, g a
+  | a8\upbow c, d ees8~8 d
   | d4. c8 c b \break
 
   | b8 [f'8] f e4\upbow d8\upbow
