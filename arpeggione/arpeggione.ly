@@ -313,7 +313,7 @@ mvtI = \relative {
   % line 5
 
   | d8-\plus\flageolet\upbow (d'16-.)-3\flageolet r d4\accent d,8-\plus (d'16-.) r d4\accent\flageolet-2
-  | c16-1\downbow (b-\plus d-2 c-1 e-3 d-1 c-2 b-1) a-\plus\upbow \< (b-1 c-2 a-\plus fis\2-1) d-\plus\downbow (e-1 c\3-2
+  | c16-1\downbow (b-\plus d-2 c-1 e-2 d-1 c-2 b-1) a-\plus\upbow \< (b-1 c-2 a-\plus fis\2-1) d-\plus\downbow (e-1 c\3-2
   | \stemDown b16-.-1\3) d'\1-1\flageolet\p\upbow (e-2 d-1) d,-.\2-\plus\downbow d'\1-1\flageolet\upbow (e-2 d-1) \stemNeutral g,-.\2-\plus\downbow d'\1-1\upbow (e-2 d-1) b-.\2-2\downbow d-1\upbow (e-2 d-1) \break
 
   % line 6
