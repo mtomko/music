@@ -74,8 +74,8 @@ recit = \relative {
   | b8 [f'8] f e4\upbow d8\upbow
   | d8_\markup { \tiny \italic "dimin." } [b'8] 8^\markup { \small \bold "rit."} [8 8 c]
   | d2.^\markup { \small \bold "poco adagio" } \(
-  | c2\upbow b4\)
-  | d4\downbow (c) r4\fermata
+  | c2 b4\)
+  | d4\upbow (c) r4\fermata
   \bar "||" \tempo "Vivace" \compressMMRests { R2.*8 }
   \bar "||" \tweak X-offset -0.4 \textMark \markup { \smaller \smaller \musicglyph #"scripts.ufermata" } \tempo \markup { \small "Tempo I" } f4\f\downbow c\1\upbow r
   | r4 c\upbow bes8 c
@@ -83,8 +83,8 @@ recit = \relative {
 
   | f4. f8 8 g
   | bes8\1 (a) r a\upbow a bes
-  | d8 (c) c8\upbow 8\upbow 8_\markup {\tiny \italic "dim." } d
-  | ees4 r r
+  | d8 (c) c8 8 8_\markup {\tiny \italic "dim." } d
+  | ees4\parenthesize\upbow r r
   \bar "||" \time 4/4 \key g \minor \tweak X-offset -0.7 \textMark \markup { \small \bold "Adagio cantabile" } \compressMMRests {R1*2}
   \bar "||" \time 3/4 \tempo \markup { \small "Tempo I" } bes2.~\p\upbow (
   | bes2 ces4)
@@ -355,7 +355,7 @@ excerptII = \relative {
   \override Fingering.avoid-slur = #'outside
   \set Score.currentBarNumber = 709
   \mark 16
-  b,8\ff-1 (fis-1 gis-4 ais-2 b-4 cis-\mdi) d-2 (cis-1 b-1 cis-4 d-0 e-1)
+  d8\ff-4 (fis,-1 gis-4 ais-2 b-4 cis-\mdi) d-2 (cis-1 b-1 cis-4 d-0 e-1)
   | fis8-\mdii (g-4 fis-2 e-1 fis-4 e-1) d-0 (e-1 d-0 cis-\mdii d-4 cis-2)
   | cis8-4^\markup { \tiny "r.f." } (fis,-1 gis-4 ais-2 b-4 cis-\mdi) dis-4 (b-1 cis-4 dis-2 e-4 cis-\mdi) \break
   | fis8-1 (gis-4 fis-1 dis-\mdii e-4 dis-2) cis-\mdi (dis-4 cis-1 b-1 cis-4 b-1)
