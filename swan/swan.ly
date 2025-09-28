@@ -64,7 +64,7 @@ notes = \relative {
   | a2~(8 b) c2 r4 \break
 
   | e,2 fis8 g a b c d e\tenuto (fis\tenuto)
-  | b1.\<\downbow\upbow
+  | b1.\<
   | b4\mf (a) e g fis (c)
   | e4 (d g,) a (b g) \break
 
