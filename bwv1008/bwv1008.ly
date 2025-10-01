@@ -38,21 +38,21 @@ prelude = \relative {
   \romanStringNumbers
   \set stringNumberOrientations = #'(down)
   \override Fingering.avoid-slur = #'outside
-  \set Timing.beamExceptions = #'()
-  \set Timing.baseMoment = #(ly:make-moment 1/4)
-  \set Timing.beatStructure = 1,1,1
+  %\set Timing.beamExceptions = #'()
+  %\set Timing.baseMoment = #(ly:make-moment 1/4)
+  %\set Timing.beatStructure = 1,1,1
   a8 c e4~16 c ( b a)
-  | gis16 (b) d e f4~16 e (d c)
-  | b16 (d) f gis b8. f16 (e d c b)
-  | c16 (d e) c a8 g f e \break
+  | gis16 (b d e) f4~16 e (d c)
+  | b16 (d f gis) b8. f16 (e d c b)
+  | c16 (d e c) a8 (g f e) \break
 
-  | f16 (a) c e a8. (g16) f (e) d c
+  | f16 a (c e) a8. (g16) f (e) d c
   | b16 (d) f a g (e) f (d) c (b d) f,
   | e16 (g) b d g8. (f16) e (d) c b \break
 
   | a16 (c) e g f (d) e (c) b (c e) c
   | d,16 (f) a c f8. (e16) d (c) b d
-  | e,16 (g) b d g (e) b (d) c (e) a, (bis \break
+  | e,16 (g) b d g (e) b (d) c (e) a, (bes \break
 
   | a16) e (f a) d (f) e (g) f (d) a' (c,)
   | b16 fis (g b) d (a) b (g) f (d) b' f
@@ -60,7 +60,7 @@ prelude = \relative {
   | cis16 (e f g) a, (g' f e) cis' (bes) a g \break
 
   | f16 (e) d f a4~16 g (f e)
-  | dis16 fis (g a) b, a' (g f) dis' (c) b a
+  | dis16 fis (g a) b, a' (g fis) dis' (c) b a
   | g16 (fis) e g c (b) c dis e (c) a g \break
 
   | fis16 a dis fis \clef treble a8. (g16) fis (e) dis e
@@ -73,7 +73,7 @@ prelude = \relative {
 
   | e16 (fis g) b e (fis g) e b g e d
   | cis16 (e) g a bes8. (a16) g f g e'
-  | f,16 (e f) a d, bes' (c d) a, d' (c b) \break
+  | f,16 (e f) a d, bes' (c d) a, d' (c bes) \break
 
   | a16 (g a) c f, d' (e f) gis, f' (e d)
   | c16 (b c) e a, \clef treble f' (g a) b, a' (g f)
@@ -88,7 +88,7 @@ prelude = \relative {
   | d (c d) gis b gis d gis e, d' (c b) \break
 
   | \clef treble a16 (e') a b c (a) e c a g' (f e)
-  | d16 (e f) a, (bis c d e) f (d) bes' (d,)
+  | d16 (e f) a, (bes c d e) f (d) bes' (d,)
   | c16 (d e) gis, (a b c d) e (c) a' (c,) \break
 
   | \clef bass b16 (c d) f, (e fis gis a) b f d' f,
@@ -105,7 +105,7 @@ prelude = \relative {
   | \clef bass <<d,4 b' gis'>> r r \break
 
   | f16 d (cis d) bes (d) a (d) bes (d f) a,
-  | gis16 (b d e) fis8. (e16) d (cis d) b'
+  | gis16 (b d e) f8. (e16) d (cis d) b'
   | c,16 a' (f d) e (c) b (d) c (a) gis (b) \break
 
   | a16 f (e d) cis (e) g bes a (g f e)
