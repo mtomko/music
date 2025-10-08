@@ -38,7 +38,7 @@ mvtI = \relative {
   \tempo "Allegro moderato"
   \romanStringNumbers
   \set stringNumberOrientations = #'(down)
-  %\override Fingering.avoid-slur = #'outside
+  \override Fingering.avoid-slur = #'outside
   %\set Timing.beamExceptions = #'()
   %\set Timing.baseMoment = #(ly:make-moment 1/4)
   %\set Timing.beatStructure = 1,1,1,1
@@ -46,7 +46,7 @@ mvtI = \relative {
   \repeat volta 2 {
     \compressMMRests R1*9
     g2\mf (a4. bes8)
-    | g2~\> g8 \! a-.\1 (bes-.-1 c-.-4)
+    | g2~\> (g8 \! a-.\1 \(bes-.-1 c-.-4\))
     | d4.-1 (g,8) ees'4. (g,8)
     | d'2 \clef treble r8 d8\upbow (g ees) \break
 
@@ -79,20 +79,20 @@ mvtI = \relative {
     | g1~\!-3\flageolet\pp\>
     | g4 r4\! r \clef bass g,,4\2-1\f
     | a2-4~ a16 c\1-1 (ees c) a\2\> f c\3-. a-.
-    | f4\! r r a'8.\trill (g32 a) \break
+    | f4\! r r a'8.\trill\upbow (g32 a) \break
 
     % line 6
 
     | bes2~ bes16 f (d f) bes f d' bes \clef treble
-    | f'2.-4 (ees8-2 d-1)
-    | c16-2\p\upbow (b d c ees d f ees g4-\plus\flageolet) bes-2\accent
+    | f'2.-4 ees8-2 (d-1)
+    | c16-2\p\downbow (b d c ees d f ees) g4-\plus\flageolet\upbow bes-2\accent\downbow
     | a8\upbow (f e bes') a (f\< e bes') \break
 
     % line 7
 
     | a8\upbow (f d\! g) g\> (ees c f)
     | \clef bass f8\upbow (d \! bes16-1_\decrescM c-4 bes ees) ees8 (c a16-1 bes-2 a d)
-    | d8 (bes) fis (bes) g8^\rit (bes) \tuplet 3/2 { a8-1\downbow (g'-3\flageolet f-1) }  \break
+    | d8\upbow (bes) fis\downbow (bes) g8^\rit\upbow (bes) \tuplet 3/2 { a8-1\downbow (g'-3\flageolet f-1) }  \break
 
     % line 8
 
