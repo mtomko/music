@@ -42,11 +42,11 @@ prelude = \relative {
   %\set Timing.baseMoment = #(ly:make-moment 1/4)
   %\set Timing.beatStructure = 1,1,1
   a8 c e4~16 c ( b a)
-  | gis16 (b d e) f4~16 e (d c)
-  | b16 (d f gis) b8. f16 (e d c b)
-  | c16 (d e c) a8 (g f e) \break
+  | gis16 (b) d e f4~16 e (d c)
+  | b16 (d) f gis b8. f16 (e d c b)
+  | c16 (d e) c a8 g f e \break
 
-  | f16 a (c e) a8. (g16) f (e) d c
+  | f16 (a) c e a8. (g16) f (e) d c
   | b16 (d) f a g (e) f (d) c (b d) f,
   | e16 (g) b d g8. (f16) e (d) c b \break
 
@@ -56,7 +56,7 @@ prelude = \relative {
 
   | a16) e (f a) d (f) e (g) f (d) a' (c,)
   | b16 fis (g b) d (a) b (g) f (d) b' f
-  | c8 e g4~16 (f e d)
+  | c8 e g4~16 f (e d)
   | cis16 (e f g) a, (g' f e) cis' (bes) a g \break
 
   | f16 (e) d f a4~16 g (f e)
@@ -67,12 +67,12 @@ prelude = \relative {
   | g,16 b e g b8. (g16) fis (e) dis e
   | a,16 c e a c8. (b16) a (g) fis a \break
 
-  | b,16 (a' g fis) e g fis e \clef bass a, fis' (e dis)
+  | b,16 a' (g fis) e g (fis e) \clef bass a, fis' (e dis)
   | g,16 (e' d c) gis d' (c b) a c (b a)
   | dis,16 a' (b c) fis c (b a) dis, a' (g fis) \break
 
   | e16 (fis g) b e (fis g) e b g e d
-  | cis16 (e) g a bes8. (a16) g f g e'
+  | cis16 (e) g a bes8. (a16) g (f g) e'
   | f,16 (e f) a d, bes' (c d) a, d' (c bes) \break
 
   | a16 (g a) c f, d' (e f) gis, f' (e d)
