@@ -41,17 +41,17 @@ prelude = \relative {
   %\set Timing.beamExceptions = #'()
   %\set Timing.baseMoment = #(ly:make-moment 1/4)
   %\set Timing.beatStructure = 1,1,1
-  a8 c e4~16 c ( b a)
-  | gis16 (b) d e f4~16 e (d c)
-  | b16 (d) f gis b8. f16 (e d c b)
-  | c16 (d e) c a8 g f e \break
+  a8 c e4~16 c-4 (b-4 a-1)
+  | gis16 (b) d-\plus e f4~16 e (d c)
+  | b16 (d-\plus) f gis-\plus b8. f16 (e d c b)
+  | c16 (d e) c a8-\plus g-4 f-2 e-1 \break
 
-  | f16 (a) c e a8. (g16) f (e) d c
-  | b16 (d) f a g (e) f (d) c (b d) f,
-  | e16 (g) b d g8. (f16) e (d) c b \break
+  | f16 (a) c e a8. (g16) f (e) d c\2-4
+  | b16-2 (d-3) f\1-1 a-3 g-1 (e-2) f-4 (d-1) c-4 (b-2 d-3) f,
+  | e16 (g) b\2-2 d-3 g8.-3 (f16-1) e-4 (d-1) c-4 b-2 \break
 
-  | a16 (c) e g f (d) e (c) b (c e) c
-  | d,16 (f) a c f8. (e16) d (c) b d
+  | a16 (c) e g f-4 (d-1) e-2 (c-4) b (c e) c
+  | d,16 (f) a c f8. (e16) d-3 (c-2) b-1 d-3
   | e,16 (g) b d g (e) b (d) c (e) a, (bes \break
 
   | a16) e (f a) d (f) e (g) f (d) a' (c,)
