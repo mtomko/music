@@ -327,7 +327,7 @@ mvtI = \relative {
   % line 7
 
   | \clef bass e,,16\3-1\downbow_\crescM (fis-2 g-4\< fis g b\2 c b) \clef treble c\upbow (dis e dis e-1 fis-4 g-\plus a-1)
-  | bes2.-2\f\> a8-3 (g)\!
+  | bes2.-2\f\>\downbow a8-3 (g)\!
   | g2\p \afterGrace fis2-1\trill\upbow ({ e16-\plus fis) }
   | g4\< a8\upbow (b d\flageolet) c\>\downbow (\tuplet 3/2 { b8 c a }) \! \break
 
