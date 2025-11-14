@@ -38,17 +38,17 @@ nine = \new StaffGroup {
     | b,1\accent
     | c,2~ (\tuplet 3/2 { c8 ees aes } \clef tenor \tuplet 3/2 { c ees c') }
     | f,1\<
-    | \mark \default \clef bass \tuplet 3/2 { bes,,8\fff (ees g } bes4~ \tuplet 3/2 { bes8 c bes } ees4~ \break
-    | \tuplet 3/2 { ees8) c (d } \clef tenor \tuplet 3/2 { ees8 f fis } g4.) g8 (
+    | \mark \default \clef bass \tuplet 3/2 { bes,,8\fff (ees g } bes4~\upbow \tuplet 3/2 { bes8 c\downbow bes } ees4~ \break
+    | \tuplet 3/2 { ees8) c\upbow (d } \clef tenor \tuplet 3/2 { ees8 f fis } g4.\downbow) g8\upbow (
     | bes8) a16-. aes16-. g4~8 f16-. e-. ees8-. d16-. c-. \break
     <<
       {  bes2.\> b4 
-         | c2 \clef bass f,\accent\f
-         | g2\accent aes\accent 
+         | c2\! \clef bass f,\accent\f \cresc
+         | g2\accent\! aes\accent 
          | \mark \default bes1\startTrillSpan\ff 
          | bes1  
          | bes1 
-         | bes2~\acciaccatura a8 bes8\stopTrillSpan bes,8 8 8
+         | bes2~\acciaccatura a8\downbow bes8\stopTrillSpan bes,8 8 8
       }
       \new Staff {
         \clef tenor
@@ -63,11 +63,11 @@ nine = \new StaffGroup {
         | bes2~\acciaccatura a8 bes8\stopTrillSpan bes8 8 8
       }
     >> \break
-    | ees,2~ (\tuplet 3/2 { ees8 bes' ees } \tuplet 3/2 { g8 bes g' }
+    | ees,2~\ff (\tuplet 3/2 { ees8 bes' ees } \tuplet 3/2 { g8 bes g' }
     | c,2.) ees8. (bes'16) 
-    | bes2. g4 (
+    | bes2. g4\upbow (
     | ees8) ees,8\tenuto\upbow \repeat unfold 6 ees8\tenuto 
-    | \mark \default c,2~ (\tuplet 3/2 { c8 g' c } \tuplet 3/2 { ees8 g ees' } \break 
+    | \mark \default c,2~\ff (\tuplet 3/2 { c8 g' c } \tuplet 3/2 { ees8 g ees' } \break 
     | aes,2.) c8. (g'16) 
     | g2. ees4 (
     | c8) c g g ees ees c c 
