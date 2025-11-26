@@ -1,5 +1,7 @@
 \version "2.24.3"
 
+\include "bass/extd.ly"
+
 % dynamics
 crescM = \markup { \small \italic "cresc." }
 dimM = \markup { \small \italic "dim." }
@@ -18,10 +20,10 @@ miv = \finger "-4"
 
 % other
 
-
 \header {
   title = "Arpeggione Sonata"
   subtitle = \markup { \small "in a minor, D. 821" }
+  meter = \extD
   composer = "Franz Schubert"
   tagline = #f
 }
