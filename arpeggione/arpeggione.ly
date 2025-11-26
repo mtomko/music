@@ -172,7 +172,7 @@ mvtI = \relative {
 
   % page 3 line 1
 
-  | \clef bass r8 g,8\p^\markup { \small "pizz." } bes [ees] r8 aes, bes [d]
+  | \set Score.currentBarNumber = 74 \clef bass r8 g,8\p^\markup { \small "pizz." } bes [ees] r8 aes, bes [d]
   | r8 g, [bes ees] g d, [ees f]
   | g8 g [bes ees] aes, aes [c ees]
   | r8 g, bes ees r ees, bes' ees \break
