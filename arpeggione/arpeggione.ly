@@ -294,12 +294,12 @@ mvtI = \relative {
   | f8\accent (a) r <<a,, cis' e\downbow>> r <<d f\downbow>> r <<a,, cis' e\downbow>>
   | r8 <<d f\downbow>> \clef treble a,-\plus\flageolet_\dimM\upbow ([a'-2\flageolet]) a, (a') a-.\pp\upbow~ a-.\upbow
   | d1~-2\flageolet
-  | d4 r r \clef bass d,-1\f \break
+  | d4 r r \clef bass d,-2\f \break
 
   % line 2
 
-  | ees2~-4 ees16\! c-1 a-4 fis-4 ees-1 c-4 a-0 fis-1
-  | d4 r r fis'8.\trill\upbow (e32 fis)
+  | ees2~-4 ees16\! c-1 a-4 fis-4 ees-1 c-4 a-0 fis-2
+  | d4-\flageolet r r fis'8.\trill\upbow (e32 fis)
   | g2\accent~g16 \clef treble bes-2\< (d-1 bes) g'-\plus\flageolet d bes'-2 g d'2.-3\> c8-3\upbow (bes-1) \break
 
   % line 3
