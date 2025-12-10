@@ -54,7 +54,7 @@ mvtI = \relative {
 
     % line 2
 
-    | d4-4 (cis-2) c8-1 (a'-3\> g16-1 fis-\plus ees\2-2 d-1)
+    | d4-4\< (cis-2) c8-1\!\upbow (a'-3\> g16-1 fis-\plus ees\2-2 d-1)
     | c4-4\! (bes) r8 bes\upbow (d-\plus\flageolet [g])
     | bes8-3\< (aes-1) g2-2 (fis4-1)
     | d'4.-2\> bes8-2 (g-\plus \clef bass d\2-3 bes-\mi g-4
@@ -86,8 +86,8 @@ mvtI = \relative {
     % line 6
 
     | bes2~ bes16 f (d f) bes f d' bes \clef treble
-    | f'2.-4 ees8-2 (d-1)
-    | c16-2\p\downbow (b d c ees d f ees) g4-\plus\flageolet\upbow bes-2\accent\downbow
+    | f'2.-4 ees8-2\> (d-1)
+    | c16-2\p\downbow (b d c ees-2 d-1 f-4 ees-1) g4-\plus\flageolet\upbow bes-2\accent\downbow
     | a8\upbow (f e bes') a (f\< e bes') \break
 
     % line 7
@@ -130,12 +130,12 @@ mvtI = \relative {
 
     | \repeat unfold 4 { a,16 (gis) bes-. a-. }
     | f8 (f'8-.) f4-4\accent f,8 (f'8-.) f4\accent
-    | \clef treble ees8\1-1\upbow (ees'-2) \breathe ees4\accent~\>\downbow 16 d-1\upbow (c-\plus bes-2\! a\1-1 g-\plus f-4 ees-1) \break
+    | \clef treble ees8\2-1\upbow (ees'\1-3) \breathe ees4\accent~\>\downbow 16 d-2\upbow (c-1 bes-2\! a-1 g-\plus\flageolet f-3 ees-1) \break
 
     % line 6
 
-    | d8-1\downbow (d'-3) d4\accent~\>\upbow 16\! c-1\downbow (bes-3 a-2 g-\plus f\2-3 ees-1 d)
-    | \clef bass c16\upbow (bes a g f ees d c) des8-. bes-. g-. e-.-1
+    | d8-1\downbow (d'-3) d4\accent~\>\upbow 16\! c-1\downbow (bes-3 a-2 g-\plus f-4 ees-1 d-4)
+    | \clef bass c16-1\upbow (bes-4 a-2 g-0 f-4 ees-1 d-0 c-2) des8-. bes-. g-. e-.-1
     | f16-.\p bes bes-. d-. d-. f-. f-.\accent g-. f-. bes-. bes-. d\2-\plus-. d-. f-1-. f-.\accent g-3-. \break
 
     % line 7
@@ -150,7 +150,7 @@ mvtI = \relative {
     % line 8
 
     | \afterGrace bes2.\upbow ({ c16 bes a bes) } d8 (c)
-    | bes4\upbow des'2\downbow\> (c8 bes)
+    | bes4\upbow \breathe des'2\downbow\> (c8 bes)
     | bes2\!\upbow \once \slurDown \afterGrace a2~ \trill { g16 a }
     | bes4\<\upbow (c8 d g-3\flageolet\>) ees-2 (d-1 c-\plus)\!
     | g4~-\plus\flageolet (g16 a bes c) \afterGrace bes4 ( {c32 bes a bes) } d8. c16 \break
@@ -189,8 +189,8 @@ mvtI = \relative {
 
   | d1~
   | d4\< d'2.-2\upbow
-  | ees4\downbow\> (d8 c) bes-3 (aes-1 g-\plus\flageolet f-4)\!
-  | f8 (ees f-1 g-3) g4.\>\upbow (b,8-1) \break
+  | ees4\downbow\> (d8 c) bes-3 (aes-1 g-3\flageolet f-1)\!
+  | f8 (ees-\plus f-1 g-3) g4.\>\upbow (b,8-1) \break
 
   % line 4
 
@@ -220,13 +220,13 @@ mvtI = \relative {
   % line 8
 
   | aes8-2\downbow (g aes bes d\accent\flageolet) c-4 (aes-1 f\3-4)
-  | ees16-1\mf (bes'\2-4) c-.-\miii bes-.-1 bes-1 (a!-\plus) c-.-3 bes-.-1 bes (a) c-. bes-. bes (a) c-.-2 bes-.-\mplus
-  | \clef treble bes8-\plus\mf (bes'16-\miii) r bes,8-\plus (aes'16-3) r bes,8-\plus (g'16-3\flageolet) r bes,8-1 (f'16-4) r \pageBreak
+  | ees16-1\mf (bes'\2-4) c-.-\miv bes-.-2 bes-2 (a!-1) c-.-4 bes-.-2 bes (a) c-. bes-. bes (a) c-.-4 bes-.-2
+  | \clef treble bes8-1\mf (bes'16-\miii) r bes,8\3-1 (aes'16\1-2) r bes,8\2-1 (g'16-\miv\flageolet) r bes,8-1 (f'16-4) r \pageBreak
 
   | % page 4 line 1
 
-  | ees16-2\pp (bes) ces-. bes-. \repeat unfold 2 { bes (a) ces-. bes-. } bes (a) ces-.-1 bes-.-\plus
-  | bes8 (bes'16) r bes,8 (aes'16) r bes,8-1 (ges'16-4) r bes,8 (f'16) r
+  | ees16-2\pp (bes) ces-. bes-. \repeat unfold 2 { bes (a) ces-. bes-. } bes (a) ces-. bes-.-2
+  | bes8-2 (bes'16-3) r bes,8\3-1 (aes'16\1-2) r bes,8\2-1 (ges'16-4) r bes,8 (f'16) r
   | ges1~
   | ges1\upbow (
   | g!1~\downbow_\crescM) \break
@@ -290,8 +290,8 @@ mvtI = \relative {
 
   % page 5 line 1
 
-  | r4 e'8-4\accent\downbow (a-1\flageolet_\crescM) f-4\accent\upbow (a-1\flageolet) e\accent (a)
-  | f8\accent (a) r <<a,, cis' e\downbow>> r <<d f\downbow>> r <<a,, cis' e\downbow>>
+  | \ottava -1 \set Staff.ottavation = \markup { \tiny \italic "8vb ad lib" } r4 e8-4\accent\downbow (a-1\flageolet_\crescM) f-4\accent\upbow (a-1\flageolet) e\accent (a)
+  | f8\accent (a) \ottava 0 r <<a, cis' e\downbow>> r <<d f\downbow>> r <<a,, cis' e\downbow>>
   | r8 <<d f\downbow>> \clef treble a,-\plus\flageolet_\dimM\upbow ([a'-2\flageolet]) a, (a') a-.\pp\upbow~ a-.\upbow
   | d1~-2\flageolet
   | d4 r r \clef bass d,-2\f \break
