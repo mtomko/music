@@ -134,7 +134,7 @@ mvtI = \relative {
 
     % line 6
 
-    | d8-1\downbow (d'-3) d4\accent~\>\upbow 16\! c-1\downbow (bes-3 a-2 g-\plus f-4 ees-1 d-4)
+    | d8-1\downbow (d'-3) d4\accent~\>\upbow 16\! c-1\downbow (bes-2 a-1 g-\plus f-4 ees-1 d-4)
     | \clef bass c16-1\upbow (bes-4 a-2 g-0 f-4 ees-1 d-0 c-2) des8-. bes-. g-. e-.-1
     | f16-.\p bes bes-. d-. d-. f-. f-.\accent g-. f-. bes-. bes-. d\2-\plus-. d-. f-1-. f-.\accent g-3-. \break
 
@@ -220,12 +220,12 @@ mvtI = \relative {
   % line 8
 
   | aes8-2\downbow (g aes bes d\accent\flageolet) c-4 (aes-1 f\3-4)
-  | ees16-1\mf (bes'\2-4) c-.-\miv bes-.-2 bes-2 (a!-1) c-.-4 bes-.-2 bes (a) c-. bes-. bes (a) c-.-4 bes-.-2
+  | ees16-1\mf (bes'\2-4) c-.-\miv bes-.-2 bes-2 (a!-1) c-.-4 bes-.-2 bes (a) c-. bes-. bes (a) c-.-4 bes-.-1
   | \clef treble bes8-1\mf (bes'16-\miii) r bes,8\3-1 (aes'16\1-2) r bes,8\2-1 (g'16-\miv\flageolet) r bes,8-1 (f'16-4) r \pageBreak
 
   | % page 4 line 1
 
-  | ees16-2\pp (bes) ces-. bes-. \repeat unfold 2 { bes (a) ces-. bes-. } bes (a) ces-. bes-.-2
+  | ees16-2\pp (bes) ces-. bes-. \repeat unfold 2 { bes (a) ces-. bes-. } bes (a) ces-. bes-.-1
   | bes8-2 (bes'16-3) r bes,8\3-1 (aes'16\1-2) r bes,8\2-1 (ges'16-4) r bes,8 (f'16) r
   | ges1~
   | ges1\upbow (
