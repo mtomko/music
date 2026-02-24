@@ -49,7 +49,7 @@ mvtI = \relative {
     \compressMMRests R1*9
     g2\mf (a4. bes8)
     | g2~\> (g8 \! a-.\1 \(bes-.-1 c-.-4\))
-    | d4.-1 (g,8) ees'4. (g,8)
+    | d4.-2 (g,8) ees'4. (g,8)
     | d'2 \clef treble r8 d8\upbow (g ees) \break
 
     % line 2
@@ -136,7 +136,7 @@ mvtI = \relative {
 
     | d8-1\downbow (d'-3) d4\accent~\>\upbow 16\! c-1\downbow (bes-2 a-1 g-\plus f-4 ees-1 d-4)
     | \clef bass c16-1\upbow (bes-4 a-2 g-0 f-4 ees-1 d-0 c-2) des8-. bes-. g-. e-.-1
-    | f16-.\p bes bes-. d-. d-. f-. f-.\accent g-. f-. bes-. bes-. d\2-\plus-. d-. f-1-. f-.\accent g-3-. \break
+    | f16-.\p-2 bes-2 bes-. d-.-0 d-. f-. f-.\accent g-. f-. bes-. bes-. d\2-\plus-. d-. f-1-. f-.\accent g-3-. \break
 
     % line 7
 
