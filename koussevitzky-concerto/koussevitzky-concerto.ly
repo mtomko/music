@@ -66,7 +66,7 @@ mvtI = \relative {
   | a4.-1 (g8-1) g2
   | b4-1\f (d2-3) d8 (cis8-3)
   | cis4 (b-1) b2~\<
-  | 4\! e-3 d-1 (cis-2)
+  | 4\! e-3 d-1 (cis-3)
   | cis4 (b-1) b2~ \break
 
   | b4 c-2 b-1 (a-3)
@@ -82,8 +82,8 @@ mvtI = \relative {
 
   | \tempo "a tempo" c2.\mf-1 \tuplet 3/2 { c8-1 (d-1 e-4) }
   | d4.-1 (c8) c2~
-  | c4\< e-4 g-\plus (b-2) \!
-  | d4.-2 (c8-1) c2
+  | c4\< e-4 g-\plus (b-3) \!
+  | d4.-3 (c8-1) c2
   | c,8\p-\plus (bes'-3) bes4~8 a8-2 (g-\plus\flageolet f-3\2)
   | f8 (e-2) dis4-1\downbow~8 e-\plus\upbow (f-1 e-\plus) \break
 
@@ -129,6 +129,93 @@ mvtI = \relative {
   | \tempo "rit." d2-1 dis-2 \break
 
   | \clef treble \tempo "a tempo" e4-1\p (fis-4) g-\plus (gis-1)
+  | cis4-3 (b-1) gis-\plus (e-4)
+  | c2-1 (cis-2~
+  | cis4) cis4 (e-4 d-1)
+  | d-4 (cis-2 bis-1 cis-2)
+  | eis4-4\< (gis-\plus cis-3 b-1)
+  | b2-3\> (a-1~ \! \break
+  | a4) eis-\plus (gis-3 fis-1)
+  | eis2-1 (fis-2~
+  | fis4) fis\< (b-3 a-1) \!
+  | gis2-1 (a2-2~
+  | a4) a\f (f'-2 e-1)
+  | e (dis-3) dis (d-2)
+  | d! (cis-1) cis (c-2)
+  | c2 (b-1~ \break
+
+  | b4) b\mf (d-3 cis-2)
+  | b-3\> (a-1) gis-3 (fis-1)
+  | eis-\plus\p (fis-1 gis8-3) a-.-\plus (b-.-1 cis-.-3)
+  | cis2\downbow\> cis~\upbow
+  | cis4 a-\plus\pp\downbow c-2\upbow (b-1)
+  | a4-2 (gis-1) fis-3\1 (e-1)
+  | dis4-\plus (e-1 fis8-3) gis-\plus (a-1 b-3) \break
+
+  | b4 (gis-\plus) gis (e-4)
+  | c2-2 b-1
+  | e4-1\mf (fis-4) g-\plus (gis-1)
+  | cis-3 (b-1) gis-\plus (e-4)
+  | c2-1\downbow cis-2\upbow~
+  | cis4 cis4\downbow e-4\upbow (d-1)
+  | d-4\< (cis-2) bis-1 (cis-2)
+  | eis-4 (gis-\plus) cis-3 (b-1) \break
+
+  | b2-3\f a-1~
+  | a4 a\< f'-2\upbow (e-1)
+  | e2\ff d-2~
+  | d2 c-1
+  | c2 b-1~
+  | b4 b (d-3 c-1)
+  | c2 b2~
+  | b2 a-1
+  | a2 g-1~
+  | g4 g-1 (a-3 g-1)
+  | g1-2\1
+  | fis-1 \break
+
+  | \time 4/4 \new Voice <<
+    \relative {
+      \stemDown
+      g'16-1 (b-2) b g g (c-3) c g g (b) b g g (c) c g
+      | a-1 (cis) cis a a (d) d a a (cis) cis a a (d) d a
+      | bes-1 (d-2) d bes bes (ees-3) ees bes bes (d) d bes bes (ees) ees bes \break
+      | b!-1\< (dis-3) dis b b (e-3) e b b (dis) dis b b (e) e e \!
+    }
+    \relative {
+      e'16-\plus e e e e e e e e e e e e e e e
+      | fis-\plus \repeat unfold 15 {fis}
+      | g-\plus \repeat unfold 15 {g}
+      | g-\plus \repeat unfold 12 {g} s16 s16
+    }
+  >>
+  | \stemNeutral e'-3 (dis-2) dis (e) e (d-1) d (c-2) c (b-1) b (c-2) c (b-1) b (a-3)
+  | a (gis-2) gis (a) a (g-1) g (fis-4) fis (ees-2) ees (fis) fis (e) e (dis-1) \break
+
+  | dis8 (c'-3) c4~16 b-2 (a-1 g-\plus) a-1 (g-\plus fis-4 e-1)
+  | dis8-1 (b'-2) b4\>~16 a-3 (g fis-\plus) dis-\plus (e-1 fis-3 g-\plus) \!
+  | \new Voice <<
+    \relative {      
+      g'16-1 b-2 b g g c-3 c g g b b g g c c g
+      | a-1 cis cis a a d d a a cis cis a a d d a \break
+      | bes-1 d-2 d bes bes ees-3 ees bes bes d d bes bes ees ees bes
+      | b!-1 dis-3 dis b b e-3 e b b dis dis b b e e e
+    }
+    \relative {
+      e'16-\plus\f e e e e e e e e e e e e e e e
+      | fis-\plus \repeat unfold 15 {fis}
+      | g-\plus \repeat unfold 15 {g}
+      | g-\plus \repeat unfold 12 {g} s16 s16
+    }
+  >>
+  | e'16-3 (dis-2) dis (e) e (ais,-1) ais (b-2) b (fis) fis (g-2) g (dis-2) dis (e-4) \break 
+
+  | \clef tenor e (ais,-1) ais (b-2) b (fis-2) fis (g-4) g (dis-1) dis (e-2) e (g-0) g (b-4\1)
+  | e2-4~16 g,-1\downbow^\markup { \tiny "(retake)" } g (b-4) b (e-4) e (g-2)
+  | g2~16 b,-1 b (e-1) e (g-\plus) g (b-2)
+  | e2-2 r2 
+  | \compressMMRests R1*4
+  \fine 
 
 }
 
