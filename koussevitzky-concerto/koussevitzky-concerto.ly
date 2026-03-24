@@ -43,9 +43,9 @@ mvtI = \relative {
   | \time 3/4 R2.
   | \time 4/4 R1
   | r4 b'4\f-2~ 8 ais-1 c-3 b-2
-  | g8-\plus e-4 c-4 (ais-1 c) b-2 g-0 e-1 \break
+  | g8-\plus e-4 c-4 (ais-1 \clef bass c) b-2 g-0 e-1 \break
 
-  | b8-1 (e-1) g-0 b-4 dis-2 (e-4) g-\plus b-2
+  | b8-1 (e-1) g-0 b-4 \clef tenor dis-2 (e-4) g-\plus b-2
   | b2 f4-1\1 r4
   | \compressMMRests R1*3
   | \time 2/4 R2
@@ -96,7 +96,7 @@ mvtI = \relative {
   | d,8-\plus (d'-3\flageolet) d2-3 (c4-1)
   | c4-1 (bes-2) a-1 (bes-2)
   | bes-2 (a-1) gis-\plus (a-1)
-  | g!-\plus (f-4) d-1 (bes-2\1)
+  | \clef tenor g!-\plus (f-4) d-1 (bes-2\1)
   | bes2-2 a-1
   | \clef tenor f2-2\> \tempo "rit." e-1 \pageBreak
 
@@ -124,7 +124,7 @@ mvtI = \relative {
   | b8\ff (fis'!-3) fis (b,) b4 r4
   | \compressMMRests R1*4 \pageBreak
 
-  | \clef tenor \tempo \markup { \small "Alla breve" } r4 ais,2\accent-1\downbow (b4-2)
+  | \clef bass \tempo \markup { \small "Alla breve" } r4 ais,2\accent-1\downbow (b4-2)
   | c2-1 cis-2~
   | cis4 c2-1 (cis4-2)
   | \tempo "rit." d2-1 dis-2 \break
