@@ -88,9 +88,9 @@ mvtI = \relative {
   | c,8\p-\plus (bes'-3) bes4~8 a8-2 (g-\plus\flageolet f-3\2) \break
 
   | f8 (e-2) dis4-1\downbow~8 e-\plus\upbow (f-1 e-\plus)
-  | e\mf (d'-3\flageolet) d4-3~8 c-1 (bes-2 a-1)
-  | a8 (g4-2) fis8-1~8 g-1 (a-3) g-1
-  | g8\f (f'-2) f2 (e4-2)
+  | e\mf (d'-3\flageolet) d4-3~8 c-1\downbow (bes-2 a-1)
+  | a8\upbow (g4-2) fis8-1~8 g-1 (a-3) g-1
+  | g8\f\downbow (f'-2) f2 (e4-2)
   | e4-2 (d-2) cis-1 (d-2) \break
 
   | d,8-\plus (d'-3\flageolet) d2-3 (c4-1)
