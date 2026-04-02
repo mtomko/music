@@ -219,9 +219,41 @@ mvtI = \relative {
 
 }
 
+mvtII = \relative {
+  \time 3/4
+  \key e \minor
+  \clef treble 
+  \numericTimeSignature
+  \romanStringNumbers
+  \override Fingering.avoid-slur = #'outside
+  \set stringNumberOrientations = #'(down)
+  \tempo \markup { \small "Andante" }
+
+  \set Timing.beamExceptions = #'()
+  \set Timing.baseMoment = #(ly:make-moment 1/4)
+  \set Timing.beatStructure = 1,1,1
+
+  \compressMMRests R2.*3
+  d'8-1\mf (e-4) g-\plus b-2 (d-1) 8 
+  | d (e-2) e (b-1)) b4~
+  | 2 g4-3\flageolet
+  | fis8-4 (e-1) e4 d-1 
+  | r8 e8-4\upbow^\markup { \tiny "U.H." } g-\plus (b-2 d-1) d
+  | \once \override Hairpin.to-barline = ##f d8 (e-1)\< e (fis-2) fis (d-1)
+  | d4 b2-1\!
+  | r8 e-2\f\downbow e (c-\plus) c (gis-\plus)
+  | b4-3 a2-1 \break
+
+  | r8 c-3\mf\upbow c (a-1) a (e-1)
+  | g4-3 fis2-2
+
+}
+
 \book {
   \score {
     \mvtI
   }
-
+  %{\score {
+    \mvtII
+  }%}
 }
