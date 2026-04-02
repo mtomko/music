@@ -21,10 +21,10 @@ solonotes = \relative {
   \time 4/4
   \key c \major
   \set Score.rehearsalMarkFormatter = #format-mark-box-numbers
-  \set Score.currentBarNumber = #117
+  \set Score.currentBarNumber = 117
   r2^\markup { \small "solo, arco" }_\pocoF d'2
   | e2 fis
-  | \mark #119 \clef treble g2 g
+  | \mark 119 \clef treble g2 g
   | g1~
   | g2 g
   | a2 b \break
@@ -39,7 +39,7 @@ solonotes = \relative {
   | fis1
   | r2 fis_\piuF
   | g2 a
-  | \mark #134
+  | \mark 134
   | b2\< b \break
   | e1\!~
   | e2 e
@@ -56,7 +56,7 @@ solonotes = \relative {
   | g1\> \break
   | c2\! g
   | a1~
-  | \mark #150 a1~
+  | \mark 150 a1~
   | a1
   | c2 g
   | aes1~
@@ -120,6 +120,11 @@ tuttinotes = \relative {
 
 \book {
   \bookOutputSuffix "score"
+  \header {
+    title = "BANNER"
+    instrument = "Contrabass"
+    composer = "Jessie Montgomery"
+  }
   \score {
     \new StaffGroup {
       <<
@@ -132,7 +137,15 @@ tuttinotes = \relative {
 
 \book {
   \bookOutputSuffix "solo"
+  \header {
+    title = "BANNER"
+    instrument = "Contrabass"
+    composer = "Jessie Montgomery"
+  }
+  \paper {
+    system-count = #10
+  }
   \score {
-    \new Staff { \solonotes \pageBreak S1 }
+    \new Staff { \solonotes }
   }
 }
