@@ -212,7 +212,7 @@ mvtI = \relative {
 
   | \clef tenor e (ais,-1) ais (b-2) b (fis-2) fis (g-4) g (dis-1) dis (e-2) e (g-0) g (b-4\1)
   | e2-4~16 g,-1\downbow^\markup { \tiny "(retake)" } g (b-4) b (e-4) e (g-2)
-  | g2~16 b,-1 b (e-1) e (g-\plus) g (b-2)
+  | g2~16 b,-1\downbow b (e-1) e (g-\plus) g (b-2)
   | e2-2 r2
   | \compressMMRests R1*4
   \fine
