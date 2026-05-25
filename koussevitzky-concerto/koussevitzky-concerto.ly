@@ -1,9 +1,8 @@
-\version "2.24.3"
+\version "2.26.0"
 
 \include "bass/solo-tuning.ly"
 
 plus = \finger \markup \fontsize #6 "+"
-% mi = \finger \markup { \fontsize #-4 "•" 1 }
 mi = \finger "-1"
 mii = \finger "-2"
 miv = \finger "-4"
@@ -56,10 +55,10 @@ mvtI = \relative {
   | b8-3 a-1 g-1 fis-\plus (a-3) g-1 e-4 (c-4)
   | c8-4\> (b-2 ais-1 b-2) c-1 (cis-2 d-1 dis-2) \!
   | e2. \tempo \markup { \small "Alla breve" } r4
-  | \clef treble e2.-1\2\p \tuplet 3/2 { e8 (fis g) }
+  | \clef treble e2.\p \tuplet 3/2 { e8 (fis g) }
   | fis4. (e8-1) e2~
-  | e4 e\downbow fis\upbow (g)
-  | fis4. (e8-3) e2-3 \break
+  | e4\tenuto e\downbow fis\upbow (g)
+  | fis4. (e8) e2 \break
 
   | g2.\mf-1\1 \tuplet 3/2 { g8 (a b) }
   | a4. (g8) g2~
@@ -102,10 +101,10 @@ mvtI = \relative {
 
   | \time 4/4 \set crescendoText = \markup { \small \italic "poco a poco cresc." } \set crescendoSpanner = #'text \tweak Y-offset 6 \tempo \markup { \small "a tempo" } \tuplet 3/2 { d8-\tweak extra-offset #'(0.0 . 0.9)-2\p\< (cis-\tweak extra-offset #'(-0.5 . 0.9)-1\! d-\tweak extra-offset #'(0.0 . 0.9)-2 } \tuplet 3/2 { f-\tweak extra-offset #'(0.0 . 1.2)-4 e-\tweak extra-offset #'(-0.3 . 1.2)-2 f-\tweak extra-offset #'(0.0 . 1.2)-4}) \omit TupletNumber \tuplet 3/2 { a-\tweak extra-offset #'(0.3 . 0.3)-2 (gis-1 a-2 } \tuplet 3/2 { e'-2 dis-1 e-2 })
   | \crescHairpin \clef treble \tuplet 3/2 { f8-4\p (e-2 f-4 } \tuplet 3/2 { a-1 gis-\plus a-1 }) \tuplet 3/2 { d-1 (cis-\plus d-1 } \tuplet 3/2 { f-3 e-2 d-1 }) \break
-  | \tuplet 3/2 { cis-\plus ( d-1 dis-3 } \tuplet 3/2 { e-3) g,-\plus (a-1 } \tuplet 3/2 { bes-2) e,-1 (f-1 } \tuplet 3/2 { g-3\flageolet) cis,-1 (d-2) }
+  | \tuplet 3/2 { cis-\plus ( d-1 dis-3 } \tuplet 3/2 { e-3) g,-\plus (a-1 } \tuplet 3/2 { bes-2) e,-1 (f-2 } \tuplet 3/2 { g-4\parenthesize-3\flageolet) cis,-1 (d-2) }
 
-  | \tuplet 3/2 { e-4 (ees-2 d-2 } \tuplet 3/2 { cis-1 e-4 g-\plus }) \tempo \markup { \small "poco rit." } \tuplet 3/2 { bes-2 ( a-1 g-2~ } \tuplet 3/2 { g f-4 e-2) } \break
-  | \tempo \markup { \small "a tempo" } \tuplet 3/2 { d-2 (cis-1 d-2) } \tuplet 3/2 { fis-4 (eis-1 fis-4) } \tuplet 3/2 { a-1 (gis-\plus a-1) } \tuplet 3/2 { c-1 (b-\plus c-1) }
+  | \tuplet 3/2 { e-4 (ees-2 d-2\parenthesize-1 } \tuplet 3/2 { cis-1 e-4 g-\plus }) \tempo \markup { \small "poco rit." } \tuplet 3/2 { bes-2 ( a-1 g-2~ } \tuplet 3/2 { g f-4 e-2) } \break
+  | \tempo \markup { \small "a tempo" } \tuplet 3/2 { d-2 (cis-1 d-2) } \tuplet 3/2 { fis-4 (eis-2 fis-4) } \tuplet 3/2 { a-1 (gis-\plus a-1) } \tuplet 3/2 { c-1 (b-\plus c-1) }
 
   | \tuplet 3/2 { ees-3 (d-2 c-1~ } \tuplet 3/2 { c) bes-3 (a-2) } \tuplet 3/2 { a (g-1 fis-\plus~ } \tuplet 3/2 { fis) g-1 (a-3) } \break
   | \tuplet 3/2 { g-1 (fis-\plus g-1) } \tuplet 3/2 { b-1 (ais-\plus b-1) } \tuplet 3/2 { d-1 (cis-\plus d-1) } \tuplet 3/2 { f-3 (e-2 d-1) }
@@ -117,22 +116,22 @@ mvtI = \relative {
 
   | cis,-2 cis bis-1 cis-2 e-4 e dis-2 e-4 g-3 g fis-2 g-3 bes-2 bes a-1 bes-2 \break
   | e,16-\plus\1 (eis-1 fis-2 g-3) e16 (eis fis g) g-\plus (gis-1 a-2 bes-3) g (gis a bes)
-  | b-1 (c-2) c (b) b (aes-\plus) aes (b) b (c) c (b) b (aes) aes (b) \break
+  | b-1 (c-2) c (b) b (ais-\plus) ais (b) b (c) c (b) b (ais) ais (b) \break
 
   | b16-\plus\p\< (c-1) c (b) b (cis-1) cis (b) b (d-2) d (b) b (dis-3) dis (b)
   | b (d-2) d (b) b (dis-3) dis (b) b (e-3) e (b) b (eis-3) eis (b) \break
   | b8\ff (fis'!-3) fis (b,) b4 r4
   | \compressMMRests R1*4 \pageBreak
 
-  | \clef bass \tempo \markup { \small "Alla breve" } r4 ais,2\accent-1\downbow (b4-2)
+  | \clef bass \tempo \markup { \small "Alla breve" } r4 ais,2\accent\f-1\downbow (b4-2)
   | c2-1 cis-2~
   | cis4 c2-1 (cis4-2)
   | \tempo "rit." d2-1 dis-2 \break
 
   | \clef treble \tempo \markup { \small "a tempo" } e4-1\p (fis-4) g-\plus (gis-1)
   | cis4-3 (b-1) gis-\plus (e-4)
-  | c2-1 (cis-2~
-  | cis4) cis4 (e-4 d-1)
+  | c2-1 (cis-2~\>
+  | cis4\!) cis4 (e-4 d-1)
   | d-4 (cis-2 bis-1 cis-2)
   | eis4-4\< (gis-\plus cis-3 b-1)
   | \once \override Hairpin.to-barline = ##f b2-3\> (a-1~ \! \break
@@ -192,8 +191,8 @@ mvtI = \relative {
   | e'-3 (dis-2) dis (e) e (d-1) d (c-2) c (b-1) b (c-2) c (b-1) b (a-3)
   | a (gis-2) gis (a) a (g-1) g (fis-4) fis (eis-2) eis (fis) fis (e) e (dis-1) \break
 
-  | dis8 (c'-3) c4~16 b-2 (a-1 g-\plus) a-1 (g-\plus fis-4 e-1)
-  | dis8-1 (b'-2) b4\>~16 a-3 (g-1 fis-\plus) dis-\plus (e-1 fis-3 g-\plus) \!
+  | dis8 (c'-3) c4~16 b-2 (a-1 g-\plus) a-1 (g-\plus fis-3\2 e-1)
+  | dis8-\plus (b'-3\1) b4\>~16 a-1 (g-\plus fis-3\2) dis-\plus (e-1 fis-3 g-\plus) \!
   | \new Voice <<
     \relative {
       g'16-1 b-2 b g g c-3 c g g b b g g c c g
@@ -210,9 +209,9 @@ mvtI = \relative {
   >>
   | e'16-3 (dis-2) dis (e) e (ais,-1) ais (b-2) b (fis) fis (g-2) g (dis-2) dis (e-4) \break
 
-  | \clef tenor e (ais,-1) ais (b-2) b (fis-2) fis (g-4) g (dis-1) dis (e-2) e (g-0) g (b-4\1)
+  | \clef bass e (ais,-2\2) ais (b-4) b (fis-2) fis (g-4) g (dis-1) dis (e-2) e (g-0) g (b-1\1)
   | e2-4~16 g,-1\downbow^\markup { \tiny "(retake)" } g (b-4) b (e-4) e (g-2)
-  | g2~16 b,-1\downbow b (e-1) e (g-\plus) g (b-2)
+  | \clef treble g2~16 b,-1\downbow b (e-1) e (g-\plus) g (b-2)
   | e2-2 r2
   | \compressMMRests R1*4
   \fine
@@ -230,7 +229,7 @@ mvtII = \relative {
   \tempo \markup { \small "Andante" }
 
   \set Timing.beamExceptions = #'()
-  \set Timing.baseMoment = #(ly:make-moment 1/4)
+  \set Timing.beatBase = 4
   \set Timing.beatStructure = 1,1,1
 
   \compressMMRests R2.*3
@@ -246,6 +245,22 @@ mvtII = \relative {
 
   | r8 c-3\mf\upbow c (a-1) a (e-1)
   | g4-3 fis2-2
+  | r8 \once \override Hairpin.to-barline = ##f e\<-1\downbow (fis-4) g-\plus (a-1) b-2 (
+  | d4\!) c2-1
+  | r8 gis\f-\plus\downbow a-1 (b-2) c-1 (cis-2) 
+  | e4-2 d2-1 
+  | r8 e8-2\ff\downbow e (c-\plus) c (gis-\plus)
+  | b4-3 a2-1 \break 
+
+  | r8 c\f-3\upbow c (a-1) a (e-1) 
+  | g4 \clef tenor d2-1~
+  | 8 b8-4\2 (a-1) g-2 (fis-1 g-2)
+  | fis'4-4\1\> e-1 ees-2\!
+  | d8-1 cis4-4 c4 (fis,8)
+  | g2.
+  | \compressEmptyMeasures R2.*5 \break 
+
+  | \clef bass
 
 }
 
@@ -253,7 +268,7 @@ mvtII = \relative {
   \score {
     \mvtI
   }
-  %{\score {
+  \score {
     \mvtII
-  }%}
+  }
 }
