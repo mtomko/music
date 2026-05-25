@@ -17,7 +17,7 @@ clean:
 	rm -f *.pdf 
 
 tidy:
-	rm -f lilypond-tmp-*pdf *-[0-9]*.pdf
+	rm -f -- -.pdf lilypond-tmp-*pdf *-[0-9]*.pdf
 
 .PHONY: force
 force: clean $(PDF)
