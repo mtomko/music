@@ -34,6 +34,7 @@ mvtI = \relative {
   \romanStringNumbers
   \override Fingering.avoid-slur = #'outside
   \set stringNumberOrientations = #'(down)
+  \override DynamicText.font-size = #-2 
   \tempo \markup { \small "Allegro" }
 
   \partial 4. r8 r4
@@ -99,7 +100,7 @@ mvtI = \relative {
   | bes2-2 a-1
   | \clef tenor f2-2\> \tempo "rit." e-1 \pageBreak
 
-  | \time 4/4 \set crescendoText = \markup { \small \italic "poco a poco cresc." } \set crescendoSpanner = #'text \tweak Y-offset 6 \tempo \markup { \small "a tempo" } \tuplet 3/2 { d8-\tweak extra-offset #'(0.0 . 0.9)-2\p\< (cis-\tweak extra-offset #'(-0.5 . 0.9)-1\! d-\tweak extra-offset #'(0.0 . 0.9)-2 } \tuplet 3/2 { f-\tweak extra-offset #'(0.0 . 1.2)-4 e-\tweak extra-offset #'(-0.3 . 1.2)-2 f-\tweak extra-offset #'(0.0 . 1.2)-4}) \omit TupletNumber \tuplet 3/2 { a-\tweak extra-offset #'(0.3 . 0.3)-2 (gis-1 a-2 } \tuplet 3/2 { e'-2 dis-1 e-2 })
+  | \time 4/4 \set crescendoText = \markup { \tiny \italic "poco a poco cresc." } \set crescendoSpanner = #'text \tweak Y-offset 6 \tempo \markup { \small "a tempo" } \tuplet 3/2 { d8-\tweak extra-offset #'(0.0 . 0.9)-2\p\< (cis-\tweak extra-offset #'(-0.5 . 0.9)-1\! d-\tweak extra-offset #'(0.0 . 0.9)-2 } \tuplet 3/2 { f-\tweak extra-offset #'(0.0 . 1.2)-4 e-\tweak extra-offset #'(-0.3 . 1.2)-2 f-\tweak extra-offset #'(0.0 . 1.2)-4}) \omit TupletNumber \tuplet 3/2 { a-\tweak extra-offset #'(0.3 . 0.3)-2 (gis-1 a-2 } \tuplet 3/2 { e'-2 dis-1 e-2 })
   | \crescHairpin \clef treble \tuplet 3/2 { f8-4\p (e-2 f-4 } \tuplet 3/2 { a-1 gis-\plus a-1 }) \tuplet 3/2 { d-1 (cis-\plus d-1 } \tuplet 3/2 { f-3 e-2 d-1 }) \break
   | \tuplet 3/2 { cis-\plus ( d-1 dis-3 } \tuplet 3/2 { e-3) g,-\plus (a-1 } \tuplet 3/2 { bes-2) e,-1 (f-2 } \tuplet 3/2 { g-4\parenthesize-3\flageolet) cis,-1 (d-2) }
 
@@ -226,6 +227,7 @@ mvtII = \relative {
   \romanStringNumbers
   \override Fingering.avoid-slur = #'outside
   \set stringNumberOrientations = #'(down)
+  \override DynamicText.font-size = #-2 
   \tempo \markup { \small "Andante" }
 
   \set Timing.beamExceptions = #'()
