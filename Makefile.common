@@ -14,7 +14,7 @@ $(PDF): $(LY)
 
 .PHONY: clean
 clean:
-	rm -f *.pdf 
+	rm -f -- *.pdf 
 
 tidy:
 	rm -f -- -.pdf lilypond-tmp-*pdf *-[0-9]*.pdf
