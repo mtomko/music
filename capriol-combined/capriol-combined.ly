@@ -147,7 +147,7 @@ pavane = \relative {
   | f4 8 8
   | bes,4 8 8 \break
 
-  | \clef tenor \mark \default
+  | \clef treble \mark \default
   | bes'4 8 8
   | f4 d8 8
   | g4 c,8 8
@@ -171,7 +171,6 @@ pavane = \relative {
   | 2~
   | 2
   | R2\fermata \fine
-
 }
 
 mattachins = \relative {
@@ -187,7 +186,7 @@ mattachins = \relative {
   \set Timing.beatBase = 2
 
   \tempo "Allegro con brio" 2=80
-  f4\mf 8 8
+  f4\mf 8\upbow 8\upbow
   | f4 8 8
   | f4 8\> 8
   | f4 8 8
@@ -237,14 +236,13 @@ mattachins = \relative {
   | R2
   | f4\accent f4\accent
   | \compressMMRests R2*3
-  | \tempo \markup { \small "Con tutta forza" } R2
+  | R2^\markup { \bold \small "Con tutta forza" }
   | f4\accent f4\accent
   | R2
   | f4\accent f4\accent
   | \compressMMRests R2*2
-  | f4\accent f4~\accent
+  | f4\accent f4 \accent
   | 4\marcato r4 \fine
-
 }
 
 \book {
