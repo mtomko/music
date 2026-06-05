@@ -34,7 +34,7 @@ mvtI = \relative {
   \romanStringNumbers
   \override Fingering.avoid-slur = #'outside
   \set stringNumberOrientations = #'(down)
-  \override DynamicText.font-size = #-2 
+  \override DynamicText.font-size = #-2
   \tempo \markup { \small "Allegro" }
 
   \partial 4. r8 r4
@@ -113,7 +113,7 @@ mvtI = \relative {
 
   | \tempo \markup { \small "piu vivo" } a16-1)\p a\downbow (gis-\plus a-1 c-3) c\upbow (b-2 c-3 a-1) a\downbow (gis-\plus a-1 e-4) e\upbow (dis-2 e-4)
   | e16\downbow e\upbow (dis e c-4) c (b-2 c-4) c\upbow c\downbow (b c a-2) a (gis-1 a-2) \break
-  | bes16-4\downbow bes-\tweak extra-offset #'(0.0 . 1.5)\upbow a-2\downbow bes-4\upbow cis-4 cis bis-2 cis-4 e-4 e dis-2 e-4 g-3 g fis-2 g-3 
+  | bes16-4\downbow bes-\tweak extra-offset #'(0.0 . 1.5)\upbow a-2\downbow bes-4\upbow cis-4 cis bis-2 cis-4 e-4 e dis-2 e-4 g-3 g fis-2 g-3
 
   | cis,-2 cis bis-1 cis-2 e-4 e dis-2 e-4 g-3 g fis-2 g-3 bes-2 bes a-1 bes-2 \break
   | e,16-\plus\1 (eis-1 fis-2 g-3) e16 (eis fis g) g-\plus (gis-1 a-2 bes-3) g (gis a bes)
@@ -222,23 +222,22 @@ mvtI = \relative {
 mvtII = \relative {
   \time 3/4
   \key e \minor
-  \clef treble 
+  \clef treble
   \numericTimeSignature
   \romanStringNumbers
   \override Fingering.avoid-slur = #'outside
   \set stringNumberOrientations = #'(down)
-  \override DynamicText.font-size = #-2 
+  \override DynamicText.font-size = #-2
   \tempo \markup { \small "Andante" }
 
   \set Timing.beamExceptions = #'()
-  \set Timing.beatBase = 4
   \set Timing.beatStructure = 1,1,1
 
   \compressMMRests R2.*3
-  d'8-1\mf (e-4) g-\plus b-2 (d-1) 8 
+  d'8-1\mf (e-4) g-\plus b-2 (d-1) 8
   | d (e-2) e (b-1)) b4~
   | 2 g4-3\flageolet
-  | fis8-4 (e-1) e4 d-1 
+  | fis8-4 (e-1) e4 d-1
   | r8 e8-4\upbow^\markup { \tiny "U.H." } g-\plus (b-2 d-1) d
   | \once \override Hairpin.to-barline = ##f d8 (e-1)\< e (fis-2) fis (d-1)
   | d4 b2-1\!
@@ -249,20 +248,98 @@ mvtII = \relative {
   | g4-3 fis2-2
   | r8 \once \override Hairpin.to-barline = ##f e\<-1\downbow (fis-4) g-\plus (a-1) b-2 (
   | d4\!) c2-1
-  | r8 gis\f-\plus\downbow a-1 (b-2) c-1 (cis-2) 
-  | e4-2 d2-1 
+  | r8 gis\f-\plus\downbow a-1 (b-2) c-1 (cis-2)
+  | e4-2 d2-1
   | r8 e8-2\ff\downbow e (c-\plus) c (gis-\plus)
-  | b4-3 a2-1 \break 
+  | b4-3 a2-1 \break
 
-  | r8 c\f-3\upbow c (a-1) a (e-1) 
+  | r8 c\f-3\upbow c (a-1) a (e-1)
   | g4 \clef tenor d2-1~
   | 8 b8-4\2 (a-1) g-2 (fis-1 g-2)
   | fis'4-4\1\> e-1 ees-2\!
   | d8-1 cis4-4 c4 (fis,8)
   | g2.
-  | \compressEmptyMeasures R2.*5 \break 
+  | \compressEmptyMeasures R2.*5 \break
 
-  | \clef bass
+  | \clef bass c,16\p (b c d e) d (e f fis g a g)
+  | \clef tenor c16\< (d e f e) f (fis g fis g a g)
+  | \clef treble b16\! (c e8\>~16) d (c b c b a g)
+  | \clef tenor a16 (g f e) e (f cis d) gis,\! (a e f) \break
+
+  | d16\mp (cis d e) f (g gis a) cis\< (d e f)
+  | \clef treble gis16\! (a d8~8) c (b a)
+  | a16\> (gis d' b g) f (d b) \clef tenor gis (f e d)
+  | cis16\p (e g\< bes cis) e (g bes) 4 \break
+
+  | e,,16\mf (g bes cis e) g (bes d) d4
+  | e,,16\f\< (gis b d e) \clef treble gis (b d) d4~
+  | \tuplet 3/2 { 8\ff d, (d' } \tuplet 3/2 { e) e, (e' } \tuplet 3/2 { f) f, (f'}
+  | \tuplet 3/2 { d) d, (d'} \tuplet 3/2 { a) f\> (a } \tuplet 3/2 { f) d (f } \break
+
+  | \clef tenor \tuplet 3/2 { d) a (d } \tuplet 3/2 { a) f (a) } f8 (d~)
+  | d2.~\pp
+  | 8 e\mf (f) gis (a) cis
+  | e8 (d f2~
+  | 8) \tempo "rit." dis (fis2) \break
+
+  | \clef treble \tempo "più mosso" g2\mf a4
+  | bes2 b4
+  | b8 (d,) cis (b') a (g)
+  | f2.
+  | d'2 f,4
+  | f2 e4~
+  | 8 b' ais (b) c d
+  | d2 \tempo "più vivo" c4
+  | c2 ees,4
+  | ees2 d4
+  | \clef bass c2 ees,4
+  | ees2 d4~ \break
+
+  | \tempo "a tempo" d4 e fis
+  | a4 (g) e
+  | e4 (d) b
+  | b2  a4
+  | g2.~
+  | 4 r r
+  | \compressMMRests R2.*3 \break
+
+  \clef treble d''8-1 (e-4) g-\plus b-2 (d-1) 8
+  | d (e-2) e (b-1)) b4~
+  | 2 g4-3\flageolet
+  | fis8-4 (e-1) e4 d-1
+  | r8 e8-4\upbow^\markup { \tiny "U.H." } g-\plus (b-2 d-1) d
+  | \once \override Hairpin.to-barline = ##f d8 (e-1)\< e (fis-2) fis (d-1)
+  | d4 b2-1\!
+  | r8 e-2\f\downbow e (c-\plus) c (gis-\plus)
+  | b4-3 a2-1 \break
+
+  | r8 c-3\upbow c (a-1) a (e-1)
+  | g4-3 fis2-2
+  | r8 \once \override Hairpin.to-barline = ##f e\<-1\downbow (fis-4) g-\plus (a-1) b-2 (
+  | d4\!) c2-1
+  | r8 gis-\plus\downbow a-1 (b-2) c-1 (cis-2)
+  | e4-2 d2-1
+  | r8 e8-2\ff\downbow e (c-\plus) c (gis-\plus)
+  | b4-3 a2-1 \break
+
+  | r8 c-3\mf\upbow c (a-1) a (e-1)
+  | g4-3 d2~
+  | 8 b (a) g (fis) g (
+  | fis'4) e2
+  | d'8 b (a) g fis (g)
+  | fis2 e4
+  | d8 (e) g b\< (d) d
+  | d8 (g\flageolet\!) g (d\>) d (b)\!
+  | b2 g4 \break
+
+  | fis8 (e) e4 d4~
+  | 8 e g (b\< d) d
+  | d8 (g\flageolet\!) g (d\>) d (b)\!
+  | b4. g8\p (b_\markup { \tiny \italic "dolce" } g)
+  | d'4. g,8 (d' b)
+  | g'2.~
+  | 2.
+  | 2.\fermata \fine
 
 }
 
