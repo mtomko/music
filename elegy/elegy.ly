@@ -35,32 +35,33 @@ solonotes = \relative {
   % line 3
   | d8-1 e-1 fis-4 g-\plus a-1 b-3\! c-\plus ees-1 g-3\parenthesize \flageolet fis-2\> b8.-2 (a16-2) \!
   | g2.\< a,4.\accent\! a,4~ \(a16.-. a32-.\)
-  | a4.-1~16 b (cis d e32 f g a) \clef treble bes16-. g-. cis4~ 8 d (e) \break
+  | a4.-1~16 b-4 (cis-2 d-4 e32-2 f-4 g-\plus\flageolet a-1) \clef treble bes16-.-2 g-.\flageolet cis4~-1 8 d-1 (e) \break
   % line 4
-  | a,4. aes\accent\upbow (g\downbow) g,4~\(g16.-. g32-.\)
-  | g4.~16\< a-1 (b-4 c-1 d32-4 e-2 f-4 g-\plus) aes16-.-1 \! f-.-2 b4-3~ 8 c (d)
-  | g,2.~4 r8 bes,4~\(16.-. bes32-.\) \break
+  | a,4.-2 aes-2\accent\upbow (g-1\downbow) g,4~\(g16.-. g32-.\)
+  | g4.~16\2\< a-1 (b-2 c-4 d32-\plus\flageolet e-1 f-2 g-\plus\flageolet) aes16-.-1 \! f-.-2 b4-3~ 8 c (d)
+  | g,2.~4 r8 bes,4~\(16.-. bes32-.\) %\break
   % line 5
-  | bes4\< (a8) d4.\accent\! c4\< (b8) g'4.\accent\!
+  | bes4\< (a8) d4.\accent\! c4\< (b8) g'4.\accent\! \break
   | g8\p\accent-\plus a\accent\<-1 b\accent-3 c\accent-1 d\accent-3 e\accent-2 e4. e,4-1 e8 \! (
   | g4.\accent-3) f\accent e\accent \clef bass d8\> (c aes)
   | g4.\p~ 16 (a b c d e) e8\> e4\accent~4\pp d8 \break
   % line 6
   | c4 r8 r4 r8 r2.
   | c,4.\<~ c16 e-4\3 (g-1\2 c-4 e-2\1 g)\! \clef treble bes\> a-. (g-. f-. e-. d-.) \grace { c32 (d) } c16 (d c cis d bes) \!
-  | a4 r8 r4 r8 r2. \break
+  | a4 r8 r4 r8 r2. \pageBreak
+
   % line 7
-  | g4.\2~ 16\< (b-4\upbow d-1\1 f-4 g-\plus b-1) d-3\downbow (g-\plus b) d-. g-.\! g,,\upbow (b-.) a-.\downbow (aes-. g-. fis-. f-.)
-  | e4.\accent\<\upbow g\accent c\accent d\accent \!
-  | e4.\upbow b'2.\accent-2\< b8 (a g)\! \break
+  | g4.\2~ 16\< (b-4\upbow d-1\1 f-4 g-\plus b-1) d-3\downbow (g-\plus b) d-. g-.\! g,,\upbow (b-.) a-.-2\downbow (aes-.-1 g-.-\plus fis-.-4 f-.-2)
+  | e4.\accent\<\upbow g\accent c\accent d\accent \! \break
+  | e4.\upbow b'2.\accent-2\< b8 (a g)\! %\break
   % line 8
-  | \ottava 1 g'4. \ottava 0 c,,,8\upbow d e f4\accent\downbow (aes,8) g8.\upbow \stemDown g'32 ([b] \stemNeutral d [g b d])
-  | \ottava 1 g4.\upbow \ottava 0 c,,,8\upbow d e f4\accent\downbow (aes,8) g8.\upbow \stemDown g'32 ([b] \stemNeutral d [g b d])
-  | \ottava 1 g 8-3\upbow \ottava 0 r16 c,,,-.\downbow b-. bes-. a8\upbow\< (b16)\! e-. dis-. d-. c8\< (d16)\! g-. fis-. f-. e8\< (g16)\! d'-. c-. b-. \break
+  | g'4.\flageolet \ottava 0 c,,,8\upbow d e f4\accent\downbow (aes,8) g8.\upbow \stemDown g'32 ([b] \stemNeutral d [g b d]) \break
+  | g4.\flageolet\upbow \ottava 0 c,,,8\upbow d e f4\accent\downbow (aes,8) g8.\upbow \stemDown g'32 ([b] \stemNeutral d [g b d]) %\break
+  | g 8-3\upbow \ottava 0 r16 c,,,-.\downbow b-. bes-. a8\upbow\< (b16)\! e-. dis-. d-. c8\< (d16)\! g-. fis-. f-. e8\< (g16)\! d'-. c-. b-. \break
   % line 9
   | a8.\upbow a16\downbow gis a e'4.\upbow~ 8.\< d16\downbow cis d b'4\accent\upbow-2 (a8) \!
   | g8^\flageolet-\plus r16 \ottava #1 g16^\flageolet\upbow\< fis^\flageolet g^\flageolet e'4.^\flageolet-\plus-2\2~ 8 \ottava #0 r16\f e,,-.\2 dis-. e-. c'4 c8\upbow
-  | \stemDown d8.\downbow c16 a-.-3 f-.-\plus \stemNeutral c\accent b\accent c\accent b\accent c\accent d\accent e8-1 (b'-3) a-. g16-.\> f (a,8 b) \! \break
+  | \stemDown d8.\downbow c16-3 a-.-1 f-.-4 \stemNeutral c-2\accent b\accent c\accent b\accent c\accent d\accent e8-1 (b'-3) a-. g16-.\> f (a,8 b) \! \break
   % line 10
   | c4 r8 r4 r8 r2.
   | d4.\p~ (8 e f) a,4\2 (c8) b4 (d8)
