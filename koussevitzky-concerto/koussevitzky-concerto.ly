@@ -113,18 +113,18 @@ mvtI = \relative {
   | \tempo \markup { \small "più mosso" }\tuplet 3/2 { g-1 (fis-\plus g-1) } \tuplet 3/2 { b-1 (ais-\plus b-1) } \tuplet 3/2 { d-1 (cis-\plus d-1) } \tuplet 3/2 { f-3 (e-2 d-1) }
   | \tuplet 3/2 { d (c-3 b-2~ } \tuplet 3/2 { b) a-1 (gis-\plus) } \tuplet 3/2 { gis (a-1 b-2) } \tuplet 3/2 { d-3 (c-1 b-2 } \break
 
-  | \set crescendoText = \markup { \tiny \italic "cresc." } \set crescendoSpanner = #'text \tempo \markup { \small "più vivo non accel" } a16-1)\p\< a\downbow (gis-\plus a-1 c-3) c\upbow (b-2 c-3 a-1) a\downbow (gis-\plus a-1 e-4) e\upbow (dis-2 e-4)
-  | e16\downbow e\upbow (dis e c-4) c (b-2 c-4) c\upbow c\downbow (b c a-2) a (gis-1 a-2\!) \break
+  | \set crescendoText = \markup { \tiny \italic "cresc." } \set crescendoSpanner = #'text \tempo \markup { \small "più vivo non accel" } a16-1)\p\< a\downbow (gis-\plus a-1 c-3-.) c\upbow (b-2 c-3 a-1-.) a\downbow (gis-\plus a-1 e-4-.) e\upbow (dis-2 e-4)
+  | e16-.\downbow e\upbow (dis e c-4-.) c\downbow (b-2 c-4) c-.\upbow c\downbow (b c a-2-.) a\upbow (gis-1 a-2\! \break
 
-  | \set crescendoText = \markup { \tiny \italic "cresc." } \set crescendoSpanner = #'text bes16-4\p\<\downbow bes-\tweak extra-offset #'(0.0 . 1.5)\upbow a-2\downbow bes-4\upbow cis-4 cis bis-2 cis-4 e-4 e dis-2 e-4 g-3 g fis-2 g-3
-  | \crescHairpin cis,-2 cis bis-1 cis-2 e-4 e dis-2 e-4 g-3 g fis-2 g-3 bes-2 bes a-1 bes-2\! \break
+  | \set crescendoText = \markup { \tiny \italic "cresc." } \set crescendoSpanner = #'text bes16-4-.)\p\< bes\downbow (a-2 bes-4 cis-4-.) cis\upbow (bis-2 cis-4 e-4-.) e (dis-2 e-4 g-3-.) g (fis-2 g-3
+  | \crescHairpin cis,-2-.) cis\downbow (bis-1 cis-2 e-4-.) e (dis-2 e-4 g-3-.) g (fis-2 g-3 bes-2-.) bes\upbow (a-1 bes-2)\! \break
 
   | e,16-\plus\1 (eis-1 fis-2 g-3) e16 (eis fis g) g-\plus (gis-1 a-2 bes-3) g (gis a bes)
   | b-1 (c-2) c (b) b (ais-\plus) ais (b) b (c) c (b) b (ais) ais (b) \break
 
   | b16-\plus\p\< (c-1) c (b) b (cis-1) cis (b) b (d-2) d (b) b (dis-3) dis (b)
   | b (d-2) d (b) b (dis-3) dis (b) b (e-3) e (b) b (eis-3) eis (b) \break
-  | b8\ff (fis'!-3) fis (b,) b4 r4
+  | b8\ff (fis'!-2) fis (b,) b4 r4
   | \compressMMRests R1*4 \pageBreak
 
   | \clef bass \tempo \markup { \small "Alla breve" } r4 ais,2\accent\f-1\downbow (b4-2)
