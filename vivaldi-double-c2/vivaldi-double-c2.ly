@@ -4,6 +4,7 @@
   title = "Concerto in G minor for Two Cellos"
   composer = "Antonio Vivaldi"
   opus = "RV 531"
+  instrument = \markup { \tiny "Cello II (Contrabass)" }
   tagline = #f
 }
 
@@ -16,7 +17,7 @@ mfp = \markup { \dynamic mf - \dynamic p }
 celloii = \relative {
   \time 4/4
   \key d \minor
-  \clef bass
+  \clef tenor
   \tempo Allegro
   \romanStringNumbers
   \set stringNumberOrientations = #'(down)
@@ -24,16 +25,16 @@ celloii = \relative {
   \override DynamicTextSpanner.font-size = #-2
 
   R1
-  | g,8\f g'16 fis g8\upbow g,\upbow bes' c d ees
-  | g,,8 g'16 fis g8\upbow g,\upbow  d'' e! fis g
-  | g,,8 bes'16 a bes8\upbow g\upbow g, a'16 g a8\upbow fis\upbow \break
+  | g8\f g'16 fis g8\upbow g,\upbow bes' c d ees
+  | g,,8 g'16 fis g8\upbow g,\upbow  \clef treble d'' e! fis g
+  | \clef tenor g,,8 bes'16 a bes8\upbow g\upbow g, a'16 g a8\upbow fis\upbow \break
 
   | g,8\p bes'16 a bes8\upbow g\upbow g, a'16 g a8\upbow fis\upbow
   | g,16\f bes d bes g bes d bes g8 bes d g
   | bes,16 d g d bes d g d bes8 d g bes
   | d,16 g bes g d g bes g d8 g bes d \break
 
-  | bes,8 d' a, c' g, bes' f, a'
+  | \clef treble bes,8 d' a, c' \clef tenor g, bes' f, a'
   | ees,8 g' d, fis' g g, g g
   | g8 8 8 8 c c'8 8 8
   | bes8 8 bes\prall a16 (g) a8 f f f
@@ -57,7 +58,7 @@ celloii = \relative {
   | g8 8 8 8 d'4 r16 c bes a
   | g8 g' c, d g,4 r
   | R1
-  | g'16\f a bes c d bes a g a bes c d ees c bes a \break
+  | \clef treble g'16\f a bes c d bes a g a bes c d ees c bes a \break
 
   | bes8 a16 g a8 g16 fis g8 d g,4
   | c16\mf d ees f g ees d c a'8 c, a c
@@ -66,11 +67,11 @@ celloii = \relative {
 
   | bes,4\upbow r ees r
   | ees4 r f r
-  | f,4 r bes16\p bes' c bes d bes c bes
+  | \clef bass f,4 r \clef treble bes16\p bes' c bes d bes c bes
   | d,16 bes' c bes d bes c bes ees,\cresc bes' c bes d bes c bes \break
 
   | ees,16 bes' c bes d bes c bes f a bes a c a bes a
-  | f16 a bes a c a bes a bes,8\f 8 8 8
+  | f16 a bes a c a bes a \clef bass bes,8\f 8 8 8
   | c8 8 8 8 f8 8 8 8
   | bes,8 8 8 8 ees8 8 8 8 \break
 
@@ -80,7 +81,7 @@ celloii = \relative {
   | f4 r bes8\f\downbow bes' ees, f
   | bes,4 r bes\p r \break
 
-  | bes4 r bes'16\f d c bes a bes a g
+  | \clef treble bes4 r bes'16\f d c bes a bes a g
   | f16 bes a g f\dim g f ees d g f ees d ees d c
   | bes16\p 16 d f bes4 r2
   | R1
@@ -97,7 +98,7 @@ celloii = \relative {
   | aes8 f'16 ees f a, (g) f g8 ees'16 d ees g, (f) ees \break
 
   | f8 d'16 c d f, (ees) d ees\f g a b c ees, d c
-  | g c' (d c) g, c' (d b) c8 c,\mf c c
+  | \clef tenor g c' (d c) g, c' (d b) c8 c,\mf c c
   | \repeat unfold 8 { c8 }
   | \repeat unfold 8 { bes8 } \break
 
@@ -106,10 +107,10 @@ celloii = \relative {
   | aes16 f f f aes f\cresc f f a fis fis fis a fis fis fis \break
 
   | bes16 g g g bes g g g b g g g b g g g
-  | c16 g g g c g g g d' g, g g d' g, g g
+  | \clef treble c16 g g g c g g g d' g, g g d' g, g g
   | ees'16\f c c c ees c c c g, b' b b d b b b \pageBreak
 
-  | c,,16\p c'' c c ees c c c g, b' b b d b b b
+  | \clef tenor c,,16\p c'' c c ees c c c g, b' b b d b b b
   | c,,4 r r16 aes''\f aes aes c aes aes aes
   | d8 8 8 c bes16 g g g bes g g g \break
 
@@ -122,12 +123,12 @@ celloii = \relative {
   | \repeat unfold 4 { c } \repeat unfold 4 { d }
   | g,4 r g'16 f ees d c bes a g \break
 
-  | g'8\p bes d g g,16 f ees d c bes a g
-  | d'8 fis a d d,16 c bes a g fis e d
-  | d'8\p fis a d d,16 c bes a g fis e d
+  | \clef treble g'8\p bes d g \clef tenor g,16 f ees d c bes a g
+  | \clef treble d'8 fis a d \clef tenor d,16 c bes a g fis e d
+  | \clef treble d'8\p fis a d \clef tenor d,16 c bes a g fis e d
   | g4 r r2 \break
 
-  | c16\f c' bes c \repeat unfold 3 { c,16 c' bes c }
+  | \clef treble c16\f c' bes c \repeat unfold 3 { c,16 c' bes c }
   | a8 f a c r f,\upbow a [c]
   | bes,16 bes' a bes \repeat unfold 3 { bes,16 bes' a bes } \break
 
@@ -137,7 +138,7 @@ celloii = \relative {
 
   | g16\f a g a bes c bes c g\p a g a bes c bes c
   | g16\f a g a bes c bes c d,8 bes' d, a'
-  | g,16 g g g bes g g g b g g g b g g g \break
+  | \clef bass g,16 g g g bes g g g b g g g b g g g \break
 
   | c16 g g g c g g g ces g g g ces g g g
   | d'4 r d r
