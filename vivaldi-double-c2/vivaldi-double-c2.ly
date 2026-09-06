@@ -16,7 +16,7 @@ mfp = \markup { \dynamic mf - \dynamic p }
 
 celloii = \relative {
   \time 4/4
-  \key d \minor
+  \key g \minor
   \clef tenor
   \tempo Allegro
   \romanStringNumbers
@@ -45,7 +45,7 @@ celloii = \relative {
   | g g g\prall fis16 (e) fis8 d d d
   | d8 8 8 8 g,16 g' f ees d c bes a \break
 
-  | g16 g' f ees d c bes a g bes' a g f e d c
+  | g16 g' f ees d c bes a g bes' a g f ees d c
   | bes16 bes' a g f ees d c bes g g g bes g g g
   | \repeat unfold 2 { bes16 g g g } \repeat unfold 2 { b16 g g g } \break
 
@@ -95,7 +95,7 @@ celloii = \relative {
   | f4 d ees c
   | d b c ees8\upbow c\upbow
   | g4 g c8 g''16 f g bes, (aes) g
-  | aes8 f'16 ees f a, (g) f g8 ees'16 d ees g, (f) ees \break
+  | aes8 f'16 ees f aes, (g) f g8 ees'16 d ees g, (f) ees \break
 
   | f8 d'16 c d f, (ees) d ees\f g a b c ees, d c
   | \clef tenor g c' (d c) g, c' (d b) c8 c,\mf c c
