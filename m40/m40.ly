@@ -13,7 +13,7 @@ plus = \finger \markup \fontsize #6 "+"
   #(set-paper-size "letter")
 }
 
-kb = \relative {
+kbI = \relative {
   \time 4/4
   \key g \minor
   \clef bass
@@ -42,7 +42,7 @@ kb = \relative {
     | b4\upbow c8\downbow (b) b4\upbow c8\upbow (b)
     | b4-1\downbow (g'-3) r g8\upbow (fis-2)
     | e4-4 e8 (d-1) c4-4 c8-4 (b-2)
-    | a8-.-1 b-.-2 c-.-4 b-.-2 a-.-1 bes-.-2 g-.-0 a-.-1 \break
+    | a8-.-1 b-.-4 c-.-4 b-.-2 a-.-1 bes-.-2 g-.-0 a-.-1 \break
     | f8-.-2 a-.-4 d-.-4 f,-.-2 e-.-1 g-.-2 cis-.-4 e,-.-1
     | d8-0 a-0 b-1 cis-2 d-4 a-0 d-0 e-1
     | f8-2 d-0 e-1 fis-2 g-4 d-0 g-0 a-1
@@ -66,7 +66,7 @@ kb = \relative {
   }
 }
 
-zim = \relative {
+zimI = \relative {
   \time 4/4
   \key c \major
   \clef bass
@@ -112,8 +112,8 @@ zim = \relative {
       \set Score.currentBarNumber = 114
       \set Score.rehearsalMarkFormatter = #format-mark-alphabet
       <<
-        \new Staff \kb
-        \new Staff \zim
+        \new Staff \kbI
+        \new Staff \zimI
       >>
     }
   }
