@@ -107,7 +107,7 @@ celloii = \relative {
   | f4 r bes8\f\downbow bes' ees, f
   | bes,4 r bes\p r \break
 
-  | \clef treble bes4 r bes'16\f d c bes a bes a g
+  | bes4 r \clef treble bes'16\f d c bes a bes a g
   | f16 bes a g f\dim g f ees d g f ees d ees d c
   | bes16\p 16 d f bes4 r2
   | R1
@@ -120,7 +120,7 @@ celloii = \relative {
 
   | f4 d ees c
   | d b c ees8\upbow c\upbow
-  | g4 g c8 g''16 f g bes, (aes) g
+  | g4 g <<c8 \parenthesize c'8>> g'16 f g bes, (aes) g
   | aes8 f'16 ees f aes, (g) f g8 ees'16 d ees g, (f) ees \break
 
   | f8 d'16 c d f, (ees) d ees\f g a b c ees, d c
