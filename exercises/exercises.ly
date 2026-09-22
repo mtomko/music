@@ -18,6 +18,37 @@ plus = \finger \markup \fontsize #6 "+"
 cr = \markup { \small \italic "cr" }
 scr = \markup { \small \italic "s.cr" }
 
+obrienshifting = \relative c' {
+  \clef bass
+  \time 3/2
+  \key c \major
+  \hide Staff.TimeSignature
+  \cadenzaOn
+   a2-1 \grace { \autoBeamOff bes8-1 b8-1 } c2-1 a2-1 \bar "|"
+  a2-1 \grace { c8-1 } cis2-2 a2-1 \bar "|"
+  a2-1 \grace { \autoBeamOff c!8-1 cis-2 } d2-4 a2-1 \bar "||" \break 
+  
+  a2-2 \once \omit Accidental c \bar "|"
+  bes-2 c-2  \bar "|"
+  b!-4 c-2 \bar "|"
+  c2 r2 \bar "||" \break
+  
+  a2-1 cis-2 bes-2 \bar "|"
+  a2-1 d-4 \bar "|"
+  bes-2 d-4  \bar "|"
+  b!-4 d-4 \bar "|"
+  d2 r2 \bar "||" \break
+
+  d2-1 (f-4) d-1 (f-2) \bar "|"
+  d-1 (f-1) d-1 (f-\plus) \bar "|"
+  d-2 (f-4) d-2 (f-2) \bar "|"
+  d-2 (f-1) d-2 (f-\plus) \bar "|" \break 
+  d-4 (f-4) d-4 (f-2) \bar "|"
+  d-4 (f-1) d-4 (f-\plus) \bar "||"
+  s1*2 \bar "|"
+  s1*2 \bar "||"
+}
+
 bradetichthirdsfourths = \relative c'' {
   \clef treble
   \time 3/2
@@ -368,11 +399,20 @@ simandlVISeven = \relative c' {
 \book {
   \score {
     \header {
+      composer = "Orin O'Brien"
+      piece = "Shifting Practice (no. 9)"
+    }
+    \new Staff {
+      \obrienshifting
+    }
+  }
+  \score {
+    \header {
       composer = "Franz Simandl"
       piece = "Exercises in the VI. Position, no. 7"
     }
     \new Staff {
-      \simandlVISeven
+      \simandlVISeven \pageBreak 
     }
   }
   \score {
