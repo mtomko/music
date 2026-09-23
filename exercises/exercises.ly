@@ -400,7 +400,7 @@ simandlVISeven = \relative c' {
   \score {
     \header {
       composer = "Orin O'Brien"
-      piece = "Shifting Practice (no. 9)"
+      subtitle = "Shifting Practice (no. 9)"
     }
     \new Staff {
       \obrienshifting
@@ -409,7 +409,7 @@ simandlVISeven = \relative c' {
   \score {
     \header {
       composer = "Franz Simandl"
-      piece = "Exercises in the VI. Position, no. 7"
+      subtitle = "Exercises in the VI. Position, no. 7"
     }
     \new Staff {
       \simandlVISeven \pageBreak 
