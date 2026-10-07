@@ -110,7 +110,25 @@ zimI = \relative {
     | e,, a ees'' e,,
     | a8 e ees''4 e,, a8 e 
 
-    
+    | ees''4 e,, a8 e ees''4
+    | e,,4 a8 e ees''4 e,,
+    | a8 e ees''4 e,, a8 e
+    | ees''4 e,, a8 e ees''4
+    | e,,4 a8 e ees''4 e,,
+
+    | a8 e ees''4 e,, a8 e
+    | ees''4 e,, a8 e ees''4
+    | a,,2 a'4 4 
+    | ees'4 r r2 
+    | a,2 4 4 
+    | ees'4 r r2
+    | a,2 a4 ees'
+
+    | ees4 r r2
+    | ees4 r r2 
+    | \compressMMRests R1*2
+    | R1
+    | ees4 a,,8 e ees''4 e,,
   }
 }
 
