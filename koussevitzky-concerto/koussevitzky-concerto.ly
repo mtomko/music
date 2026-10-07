@@ -195,7 +195,7 @@ mvtI = \relative {
   | e'-3 (dis-2) dis (e) e (d-1) d (c-2) c (b-1) b (c-2) c (b-1) b (a-3)
   | a (gis-2) gis (a) a (g-1) g (fis-4) fis (eis-2) eis (fis) fis (e) e (dis-1) \break
 
-  | dis8 (c'-3) c4~16 b-2 (a-1 g-\plus) a-1 (g-\plus fis-3\2 e-1)
+  | dis8 (c'-3) c4~16 b-3 (a-1 g-\plus) a-1 (g-\plus fis-3\2 e-1)
   | dis8-\plus (b'-3\1) b4\>~16 a-1 (g-\plus fis-3\2) dis-\plus (e-1 fis-3 g-\plus) \!
   | \new Voice <<
     \relative {
